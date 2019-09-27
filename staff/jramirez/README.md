@@ -8,7 +8,7 @@ Lorem ipsum dolor sit amet
 [CODE](##code)
 
 ## Subtitle
-Lorem ipsum *dolor* sit amet. **entonces** el asunto ***está*** to loco.
+Lorem ipsum *dolor* sit amet. **entonces** el asunto ***está*** to locgit status.
 
 ![Skylab logo](default.png)
 
