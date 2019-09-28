@@ -358,6 +358,7 @@ body {
 @media (max-width: 1024px) {
   .mainContainer .sectionBase {
     margin-bottom: 0rem;
+    padding: 0rem;
   }
   .mainContainer .sectionBase .subtitle {
     display: -webkit-box;
