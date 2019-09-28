@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap");
+.ffamily, * {
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0rem;
+}
+
+.shadow, .mainContainer .sectionBase {
+  -webkit-box-shadow: 5px 5px 5px 2px #aaaaaa;
+  box-shadow: 5px 5px 5px 2px #aaaaaa;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background: #eee;
+  border-bottom: solid 0.25rem darkred;
+}
+
+.header .userContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .userContainer .userImg {
+  background-image: url("./IMG_20190810_210314.jpg");
+  width: 7rem;
+  height: 6rem;
+  border-radius: 0.5rem;
+  background-size: cover;
+  background-position: center;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.header .contactContainer .unlist {
+  list-style-type: none;
+}
+
+.mainContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mainContainer .sectionBase {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-bottom: solid 1px #ccc;
+}
+
+.mainContainer .sectionBase .subtitle {
+  width: 30vw;
+  color: darkred;
+  font-style: italic;
+}
+
+.mainContainer .sectionBase .contentContainer {
+  width: 60vw;
+  padding-left: 3rem;
+  padding-right: 1rem;
+}
+
+.mainContainer .sectionBase .contentContainer .workContainer {
+  margin-bottom: 0.875rem;
+}
+
+.mainContainer .sectionBase .contentContainer .workContainer .company {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.mainContainer .sectionBase .contentContainer .workContainer .date {
+  margin: 0;
+  font-size: 0.875rem;
+  font-style: italic;
+}
+
+.mainContainer .sectionBase .contentContainer .workContainer .description {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.mainContainer .sectionBase .contentContainer .skillContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.mainContainer .sectionBase .contentContainer .skillContainer .skill {
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  background: lavender;
+  border-radius: 0.5rem;
+}
+
+.mainContainer .sectionBase .contentContainer .proyectsImg {
+  border-radius: 0.5rem;
+}
+
+.mainContainer .sectionBase .contentContainer.imgs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.mainContainer .sectionBase:nth-child(n + 1) {
+  -webkit-animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+}
+
+.mainContainer .sectionBase:nth-child(n + 2) {
+  -webkit-animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.mainContainer .sectionBase:nth-child(n + 3) {
+  -webkit-animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
+}
+
+.mainContainer .sectionBase:nth-child(n + 4) {
+  -webkit-animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.mainContainer .sectionBase:nth-child(n + 5) {
+  -webkit-animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation-delay: 1.25s;
+          animation-delay: 1.25s;
+}
+
+.mainContainer .sectionBase:nth-child(n + 6) {
+  -webkit-animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.mainContainer .sectionBase:nth-child(n + 7) {
+  -webkit-animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation-delay: 1.75s;
+          animation-delay: 1.75s;
+}
+
+.mainContainer .sectionBase:nth-child(n + 8) {
+  -webkit-animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.mainContainer .sectionBase:nth-child(n + 9) {
+  -webkit-animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation-delay: 2.25s;
+          animation-delay: 2.25s;
+}
+
+.mainContainer .sectionBase:nth-child(n + 10) {
+  -webkit-animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+
+.mainContainer .sectionBase:nth-child(n + 11) {
+  -webkit-animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation-delay: 2.75s;
+          animation-delay: 2.75s;
+}
+
+.mainContainer .sectionBase:nth-child(n + 12) {
+  -webkit-animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.mainContainer .sectionBase:nth-child(n + 13) {
+  -webkit-animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation-delay: 3.25s;
+          animation-delay: 3.25s;
+}
+
+.mainContainer .sectionBase:nth-child(n + 14) {
+  -webkit-animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
+}
+
+.mainContainer .sectionBase:nth-child(n + 15) {
+  -webkit-animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation-delay: 3.75s;
+          animation-delay: 3.75s;
+}
+
+.mainContainer .sectionBase:nth-child(n + 16) {
+  -webkit-animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.mainContainer .sectionBase:nth-child(n + 17) {
+  -webkit-animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation-delay: 4.25s;
+          animation-delay: 4.25s;
+}
+
+.mainContainer .sectionBase:nth-child(n + 18) {
+  -webkit-animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation-delay: 4.5s;
+          animation-delay: 4.5s;
+}
+
+.mainContainer .sectionBase:nth-child(n + 19) {
+  -webkit-animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation-delay: 4.75s;
+          animation-delay: 4.75s;
+}
+
+.mainContainer .sectionBase:nth-child(n + 20) {
+  -webkit-animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+.mainContainer .sectionBase:nth-child(n + 21) {
+  -webkit-animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation-delay: 5.25s;
+          animation-delay: 5.25s;
+}
+
+.mainContainer .sectionBase:nth-child(n + 22) {
+  -webkit-animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation-delay: 5.5s;
+          animation-delay: 5.5s;
+}
+
+.mainContainer .sectionBase:nth-child(n + 23) {
+  -webkit-animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation-delay: 5.75s;
+          animation-delay: 5.75s;
+}
+
+.mainContainer .sectionBase:nth-child(n + 24) {
+  -webkit-animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+.mainContainer .sectionBase:nth-child(n + 25) {
+  -webkit-animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation-delay: 6.25s;
+          animation-delay: 6.25s;
+}
+
+.mainContainer .sectionBase:nth-child(n + 26) {
+  -webkit-animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation-delay: 6.5s;
+          animation-delay: 6.5s;
+}
+
+.mainContainer .sectionBase:nth-child(n + 27) {
+  -webkit-animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation-delay: 6.75s;
+          animation-delay: 6.75s;
+}
+
+@media (max-width: 1024px) {
+  .mainContainer .sectionBase {
+    margin-bottom: 0rem;
+  }
+  .mainContainer .sectionBase .subtitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100vw;
+    margin-bottom: 1rem;
+  }
+  .mainContainer .sectionBase .contentContainer {
+    width: 100vw;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
