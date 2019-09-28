@@ -1,0 +1,8 @@
+- CHALLENGE SPECIFICITY: [CSS Diner](http://flukeout.github.io)
+- CHALLENGE: [Flexboxdefense](http://www.flexboxdefense.com/)
+- CHALLENGE: [Navbar responsive](navbar-responsive/)
+- CHALLENGE: [Flex-nav](flex-nav/) 
+- CHALLENGE: [Flex-box](flex-box/) 
+- RESEARCH Flexbox [CSS Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox)
+- RESEARCH Grid [CSS Tricks](https://css-tricks.com/snippets/css/complete-guide-grid/)
+- CHALLENGE: [Grid layout](grid-layout-monopoly/) [timing 1h]
