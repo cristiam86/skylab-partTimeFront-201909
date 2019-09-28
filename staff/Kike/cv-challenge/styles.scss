@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap");
 
+$principalColor: darkred;
+
 .ffamily {
   font-family: "Montserrat", sans-serif;
 }
@@ -12,10 +14,41 @@ body {
   margin: 0rem;
 }
 
+a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  text-decoration: none;
+  color: rgba($principalColor, 0.8);
+  &:hover {
+    color: rgba($principalColor, 0.6);
+    cursor: pointer;
+  }
+  &:active {
+    color: rgba($principalColor, 1);
+  }
+}
+
 .shadow {
-    -webkit-box-shadow: 5px 5px 5px 2px rgba(170,170,170,1);
-    -moz-box-shadow: 5px 5px 5px 2px rgba(170,170,170,1);
-    box-shadow: 5px 5px 5px 2px rgba(170,170,170,1);
+  -webkit-box-shadow: 5px 5px 5px 2px rgba(170, 170, 170, 1);
+  -moz-box-shadow: 5px 5px 5px 2px rgba(170, 170, 170, 1);
+  box-shadow: 5px 5px 5px 2px rgba(170, 170, 170, 1);
+}
+.noShadow {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Opera and Firefox */
 }
 
 @-webkit-keyframes fade-in {
@@ -42,13 +75,13 @@ body {
   padding: 1rem;
   margin-bottom: 1rem;
   background: #eee;
-  border-bottom: solid 0.25rem darkred;
+  border-bottom: solid 0.25rem $principalColor;
 
   .userContainer {
     display: flex;
     align-items: center;
     .userImg {
-      background-image: url("./IMG_20190810_210314.jpg");
+      background-image: url("./imgs/IMG_20190810_210314.jpg");
       width: 7rem;
       height: 6rem;
       border-radius: 0.5rem;
@@ -58,8 +91,38 @@ body {
     }
   }
   .contactContainer {
-    .unlist {
-      list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 15rem;
+    .contactLine {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+
+      svg {
+        width: 1.5rem;
+        height: 1.5rem;
+        fill: rgba($principalColor, 0.8);
+        margin: 1rem;
+        &:hover {
+          fill: rgba($principalColor, 0.6);
+          cursor: pointer;
+        }
+        &:active {
+          fill: rgba($principalColor, 1);
+        }
+      }
+      &:hover {
+        svg {
+          &:hover {
+            fill: rgba($principalColor, 0.6);
+            cursor: pointer;
+          }
+          &:active {
+            fill: rgba($principalColor, 1);
+          }
+        }
+      }
     }
   }
 }
@@ -70,7 +133,7 @@ body {
   justify-content: center;
 
   .sectionBase {
-      @extend .shadow;
+    @extend .shadow;
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 1rem;
@@ -79,7 +142,7 @@ body {
     border-bottom: solid 1px #ccc;
     .subtitle {
       width: 30vw;
-      color: darkred;
+      color: $principalColor;
       font-style: italic;
     }
     .contentContainer {
@@ -118,8 +181,8 @@ body {
           border-radius: 0.5rem;
         }
       }
-      .proyectsImg{
-          border-radius: 0.5rem;
+      .proyectsImg {
+        border-radius: 0.5rem;
       }
       &.imgs {
         display: flex;
@@ -141,6 +204,11 @@ body {
 }
 
 @media (max-width: 1024px) {
+  .header {
+    .contactContainer {
+      width: 100vw;
+    }
+  }
   .mainContainer {
     .sectionBase {
       margin-bottom: 0rem;

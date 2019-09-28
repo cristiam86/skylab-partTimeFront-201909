@@ -12,9 +12,53 @@ body {
   margin: 0rem;
 }
 
+a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  text-decoration: none;
+  color: rgba(139, 0, 0, 0.8);
+}
+
+a:hover {
+  color: rgba(139, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+a:active {
+  color: darkred;
+}
+
 .shadow, .mainContainer .sectionBase {
   -webkit-box-shadow: 5px 5px 5px 2px #aaaaaa;
   box-shadow: 5px 5px 5px 2px #aaaaaa;
+}
+
+.noShadow {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                    supported by Chrome, Opera and Firefox */
 }
 
 @-webkit-keyframes fade-in {
@@ -60,7 +104,7 @@ body {
 }
 
 .header .userContainer .userImg {
-  background-image: url("./IMG_20190810_210314.jpg");
+  background-image: url("./imgs/IMG_20190810_210314.jpg");
   width: 7rem;
   height: 6rem;
   border-radius: 0.5rem;
@@ -70,8 +114,48 @@ body {
           transform: rotate(90deg);
 }
 
-.header .contactContainer .unlist {
-  list-style-type: none;
+.header .contactContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 15rem;
+}
+
+.header .contactContainer .contactLine {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.header .contactContainer .contactLine svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: rgba(139, 0, 0, 0.8);
+  margin: 1rem;
+}
+
+.header .contactContainer .contactLine svg:hover {
+  fill: rgba(139, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+.header .contactContainer .contactLine svg:active {
+  fill: darkred;
+}
+
+.header .contactContainer .contactLine:hover svg:hover {
+  fill: rgba(139, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+.header .contactContainer .contactLine:hover svg:active {
+  fill: darkred;
 }
 
 .mainContainer {
@@ -356,6 +440,9 @@ body {
 }
 
 @media (max-width: 1024px) {
+  .header .contactContainer {
+    width: 100vw;
+  }
   .mainContainer .sectionBase {
     margin-bottom: 0rem;
     padding: 0rem;
