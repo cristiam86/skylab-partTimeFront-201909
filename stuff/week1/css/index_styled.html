@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .tomato {
+      background-color: tomato;
+    }
+    section.tomato {
+      background-color: tomato;
+      border: 3px solid black;
+    }
+
+    section > div > div {
+      background-color: yellow;
+    }
+
+    div {
+      background-color: turquoise;
+    }
+
+    #blue1, .blue {
+      background-color: steelblue;
+    }
+
+    .tomato ~ .blue {
+      opacity: 0.2;
+    }
+  </style>
+</head>
+<body>
+  <div id="blue1" class="tomato">asdasd</div>  
+  <section class="tomato">skdjsd</section>
+  <section class="blue">
+    <div>
+      <div>inner 2</div>
+      <p>inner</p>
+    </div>  
+  </section>
+  <div  class="blue">asdasd</div>  
+  <div class="tomato">asdasd</div>  
+  <div id="blue2" class="blue">asdasd</div>  
+</body>
+</html>
