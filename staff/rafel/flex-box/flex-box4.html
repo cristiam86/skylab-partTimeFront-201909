@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+
+            background-color: white;
+            border: 6px solid lightsalmon;
+            display: flex;
+            height: fit-content;
+            flex-direction: column;
+        }
+
+        .box {
+            text-align: center;
+            color: gray;
+            display: flex;
+            border: 6px solid lightskyblue;
+            margin: 20px;
+
+        }
+
+
+        .box-photo {
+            width: fit-content;
+            margin: 10px;
+        }
+
+        .box-photo img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .box-personal {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .box:nth-child(2){
+            justify-content: flex-end;
+            flex-direction: row-reverse;
+            text-align: right;
+        }
+
+        /*.box-personal {
+            text-align: right;
+        } */
+
+
+        .box-name {
+           font-size: 30px;
+           padding: 5px;
+           font-weight: 700;
+        }
+
+        .box-text {
+            font-size: 30px; 
+            padding: 5px;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="box">
+            <div class="box-photo">
+                <img src="../flex-box/images.png" alt="">
+            </div>
+            <div class="box-personal">
+                <div class="box-name">Lisa</div>
+                <div class="box-text">
+                    <p>Hey, have you tried Flexbox? This is so much better than floats!</p>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+                <div class="box-photo">
+                    <img src="../flex-box/images.png" alt="">
+                </div>
+                <div class="box-personal">
+                    <div class="box-name">David</div>
+                    <div class="box-text">
+                        <p>Hey, I've never tried it yet</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                    <div class="box-photo">
+                        <img src="../flex-box/images.png" alt="">
+                    </div>
+                    <div class="box-personal">
+                        <div class="box-name">Lisa</div>
+                        <div class="box-text">
+                            <p>It's a real layout model, you can forget clearfix and other hacks.</p>
+                        </div>
+                    </div>
+                </div>
+    </div>
+</body>
+
+</html>
