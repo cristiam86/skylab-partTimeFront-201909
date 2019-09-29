@@ -35,10 +35,17 @@
         font-size: 18px;
     }
 
+    .chat{
+        border: 5px solid #55b6c5;
+        padding: .5em;
+        margin-bottom: 2em;
+    }
+
     .box-odd {
           display: flex;
           flex-direction: row;
           justify-content: flex-start;
+          text-align: justify;
         }
         .box-odd :nth-child(1) { order: 1; }
         .box-odd :nth-child(2) { order: 2; }
@@ -48,10 +55,30 @@
           display: flex;
           flex-direction: row;
           justify-content: flex-end;
+          text-align: right;
         }
         .box-even :nth-child(1) { order: 1; }
         .box-even :nth-child(0) { order: 0; }
     
+    .image-odd{
+        margin: 0 1.5em 0 0;
+    }
+
+    .image-even{
+        margin: 0 0 0 1.5em;
+    }
+
+    .h2-chat{
+        margin: 0.5em 0;
+        font-weight: bold;
+        color: #2c7992;
+    }
+    .p-chat{
+        margin: 0;
+        font-size: 18px;
+        color: #2c7992;
+    }
+
 </style>
 <body>
   <header>
@@ -72,22 +99,31 @@
       </section>
       <!-- Section 3 -->
       <section>
-        <div class="box-odd">
-          <div>
+        <div class="chat box-odd">
+          <div class="image-odd">
             <img src="https://image.flaticon.com/icons/svg/118/118781.svg" alt="" width="80px;">
           </div>
           <div>
-            <h2>Lisa</h2>
-            <p>Hey, have to tried Flexbox? This is so much better than floats!</p>
+            <h2 class="h2-chat">Lisa</h2>
+            <p class="p-chat">Hey, have to tried Flexbox? This is so much better than floats!</p>
           </div>
         </div>
-        <div class="box-even">
-          <div>
+        <div class="chat box-even">
+          <div class="image-even">
             <img src="https://image.flaticon.com/icons/svg/118/118781.svg" alt="" width="80px;">
           </div>
           <div>
-            <h2>David</h2>
-            <p>Hey, I've never tried it yet</p>
+            <h2 class="h2-chat">David</h2>
+            <p class="p-chat">Hey, I've never tried it yet.</p>
+          </div>
+        </div>
+        <div class="chat box-odd">
+          <div class="image-odd">
+            <img src="https://image.flaticon.com/icons/svg/118/118781.svg" alt="" width="80px;">
+          </div>
+          <div>
+            <h2 class="h2-chat">Lisa</h2>
+            <p class="p-chat">It's a real layout model, you can forget about clearfix and other hacks.</p>
           </div>
         </div>
       </section>
