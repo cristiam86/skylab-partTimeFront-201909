@@ -35,18 +35,23 @@
         font-size: 18px;
     }
 
-    .container-chat{
-        display: flex;
-        border: 5px solid bisque;
-        padding: 1em;
-    }
+    .box-odd {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+        }
+        .box-odd :nth-child(1) { order: 1; }
+        .box-odd :nth-child(2) { order: 2; }
+        
 
-    .container-chat .chat-section-icon{
-        flex-basis: 25%;
-        width: 25%;
-        flex:  0 0 25%;
-        justify-content: flex-start;
-    }
+    .box-even {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+        }
+        .box-even :nth-child(1) { order: 1; }
+        .box-even :nth-child(0) { order: 0; }
+    
 </style>
 <body>
   <header>
@@ -67,14 +72,23 @@
       </section>
       <!-- Section 3 -->
       <section>
-        <div class="container-chat">
-            <div class="chat-section-icon">
-                <img src="https://image.flaticon.com/icons/svg/118/118781.svg" alt="" width="80px;">
-            </div>
-            <div class="chat-section-comment">
-                <h2>Lisa</h2>
-                <p>Hey, have to tried Flexbox? This is so much better than floats!</p>
-            </div>
+        <div class="box-odd">
+          <div>
+            <img src="https://image.flaticon.com/icons/svg/118/118781.svg" alt="" width="80px;">
+          </div>
+          <div>
+            <h2>Lisa</h2>
+            <p>Hey, have to tried Flexbox? This is so much better than floats!</p>
+          </div>
+        </div>
+        <div class="box-even">
+          <div>
+            <img src="https://image.flaticon.com/icons/svg/118/118781.svg" alt="" width="80px;">
+          </div>
+          <div>
+            <h2>David</h2>
+            <p>Hey, I've never tried it yet</p>
+          </div>
         </div>
       </section>
   </header>
