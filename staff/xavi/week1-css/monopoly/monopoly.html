@@ -6,6 +6,11 @@
     <title>Document</title>
 </head>
 <style>
+    body{
+        max-width: 700px;
+        margin: auto;
+        padding: 2em;
+    }
     section{
         display: flex;
     }
@@ -29,6 +34,12 @@
     .p-c5{
         transform: rotate(-145deg)
     }
+    .p-c9{
+        transform: rotate(-45deg)
+    }
+    .p-c13{
+        transform: rotate(45deg)
+    }
     .card-green{
        border-top: 2em solid green;
        transform: rotate(180deg)
@@ -37,6 +48,7 @@
         margin-top: 0.5em;
     }
 
+    /* ------------------- section center --------------*/
     .section-center{
         display: flex;
     }
@@ -44,12 +56,15 @@
     .section-center-left{
         flex-grow: 0;
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .section-center-midle{
         flex-grow: 2;
         display: flex;
         justify-content: center;
+        align-items: center;
+        transform: rotate(-45deg);
+        font-size: 35px;
     }
     .section-center-right{
         flex-grow: 0
@@ -67,6 +82,26 @@
     .section-center-midle{
         display: flex;
     }
+
+    .card-orange{
+       border-top: 2em solid orange;
+       transform: rotate(-90deg);
+       margin-bottom: 2em;
+    }
+
+    /* ------------------- section bottom --------------*/
+    .section-bottom{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+    .card-red{
+       border-top: 2em solid red;
+       transform: rotate(0deg);
+       margin-bottom: 2em;
+    }
+
+
 </style>
 <body>
    <!-- green cards -->
@@ -91,25 +126,47 @@
   <section class="section-center">
     <div class="section-center-left">
         <div class="card card-blue">
-            <h2 class="number">16</h2>
+            <h2 class="number">14</h2>
         </div>
         <div class="card card-blue">
             <h2 class="number">15</h2>
         </div>
         <div class="card card-blue">
-            <h2 class="number">14</h2>
+            <h2 class="number">16</h2>
         </div>
     </div>
-    <div class="section-center-midle">monopoly</div>
+    <div class="section-center-midle">
+        <h1>Monopoly</h1>
+    </div>
     <div class="section-center-right">
-        <div class="card card-white">
-            <h2 class="p-c1">1</h2>
+        <div class="card card-orange">
+          <h2>6</h2>
+        </div>
+        <div class="card card-orange">
+          <h2>7</h2>
+        </div>
+        <div class="card card-orange">
+          <h2>8</h2>
         </div>
     </div>
   </section>
   <!-- red cards -->
-  <section>
-
+  <section class="section-bottom">
+    <div class="card card-white">
+        <h2 class="p-c9">9</h2>
+    </div>
+    <div class="card card-red">
+        <h2 class="number">10</h2>
+    </div>
+    <div class="card card-red">
+        <h2 class="number">11</h2>
+    </div>
+    <div class="card card-red">
+        <h2 class="number">12</h2>
+    </div>
+    <div class="card card-white">
+        <h2 class="p-c13">13</h2>
+    </div>
   </section>
 </body>
 </html>
