@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    section{
+        display: flex;
+    }
+    .section-top{
+        justify-content: space-between;
+        margin-bottom: 5%;
+    }
+    .card{
+        border: 1px solid black;
+        width: 100px;
+        height: 70px;
+        text-align: center;
+    }
+    .card-white{
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+    .p-c1{
+        transform: rotate(145deg)
+    }
+    .p-c5{
+        transform: rotate(-145deg)
+    }
+    .card-green{
+       border-top: 2em solid green;
+       transform: rotate(180deg)
+    }
+    .card-green .number{
+        margin-top: 0.5em;
+    }
+
+    .section-center{
+        display: flex;
+    }
+
+    .section-center-left{
+        flex-grow: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .section-center-midle{
+        flex-grow: 2;
+        display: flex;
+        justify-content: center;
+    }
+    .section-center-right{
+        flex-grow: 0
+    }
+
+    .card-blue{
+       border-top: 2em solid blue;
+       transform: rotate(90deg);
+       margin-bottom: 2em;
+    }
+    .card-blue .number{
+        margin-top: 10px;
+    }
+    
+    .section-center-midle{
+        display: flex;
+    }
+</style>
+<body>
+   <!-- green cards -->
+  <section class="section-top">
+    <div class="card card-white">
+        <h2 class="p-c1">1</h2>
+    </div>
+    <div class="card card-green">
+        <h2 class="number">2</h2>
+    </div>
+    <div class="card card-green">
+        <h2 class="number">3</h2>
+    </div>
+    <div class="card card-green">
+        <h2 class="number">4</h2>
+    </div>
+    <div class="card card-white">
+        <h2 class="p-c5">5</h2>
+    </div>
+  </section>
+  <!-- blue & orange cards + Monopoly name -->
+  <section class="section-center">
+    <div class="section-center-left">
+        <div class="card card-blue">
+            <h2 class="number">16</h2>
+        </div>
+        <div class="card card-blue">
+            <h2 class="number">15</h2>
+        </div>
+        <div class="card card-blue">
+            <h2 class="number">14</h2>
+        </div>
+    </div>
+    <div class="section-center-midle">monopoly</div>
+    <div class="section-center-right">
+        <div class="card card-white">
+            <h2 class="p-c1">1</h2>
+        </div>
+    </div>
+  </section>
+  <!-- red cards -->
+  <section>
+
+  </section>
+</body>
+</html>
