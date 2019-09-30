@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<style>
+    body{
+        margin:0;
+        padding:0;
+    }
+
+    nav{
+        background-color: lightgray;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        
+    }
+    nav ul {
+        list-style: none;
+        display:flex;
+        margin:0;
+        padding:0;
+    }
+
+    nav ul li {
+        padding: 10px;
+        flex-direction: row;
+    }
+
+    nav ul.second{
+       justify-content: flex-end;
+    }
+
+    nav ul li:hover {
+        background-color: orange
+    } 
+
+    @media all and (max-width: 580px) {
+        nav ul {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+</style>
+
+
+</head>
+<body>
+    <nav>
+        <ul class="first">
+            <li>Skylab</li>
+            <li>Inicio</li>
+            <li>Profesorado</li>
+            <li>Cursos</li>
+            <li>Comunidad</li>
+        </ul>
+        <ul class="second">
+            <li>Contacto</li>
+        </ul>
+    </nav>
+</body>
+</html>

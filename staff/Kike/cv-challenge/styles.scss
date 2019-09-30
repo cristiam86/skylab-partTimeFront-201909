@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap");
+
+$principalColor: darkred;
+
+.ffamily {
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  @extend .ffamily;
+  box-sizing: border-box;
+}
+body {
+  margin: 0rem;
+}
+
+a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  text-decoration: none;
+  color: rgba($principalColor, 0.8);
+  &:hover {
+    color: rgba($principalColor, 0.6);
+    cursor: pointer;
+  }
+  &:active {
+    color: rgba($principalColor, 1);
+  }
+}
+
+.shadow {
+  -webkit-box-shadow: 5px 5px 5px 2px rgba(170, 170, 170, 1);
+  -moz-box-shadow: 5px 5px 5px 2px rgba(170, 170, 170, 1);
+  box-shadow: 5px 5px 5px 2px rgba(170, 170, 170, 1);
+}
+.noShadow {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Opera and Firefox */
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background: #eee;
+  border-bottom: solid 0.25rem $principalColor;
+
+  .userContainer {
+    display: flex;
+    align-items: center;
+    .userImg {
+      background-image: url("./imgs/IMG_20190810_210314.jpg");
+      width: 7rem;
+      height: 6rem;
+      border-radius: 0.5rem;
+      background-size: cover;
+      background-position: center;
+      transform: rotate(90deg);
+    }
+  }
+  .contactContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 15rem;
+    .contactLine {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+
+      svg {
+        width: 1.5rem;
+        height: 1.5rem;
+        fill: rgba($principalColor, 0.8);
+        margin: 1rem;
+        &:hover {
+          fill: rgba($principalColor, 0.6);
+          cursor: pointer;
+        }
+        &:active {
+          fill: rgba($principalColor, 1);
+        }
+      }
+      &:hover {
+        svg {
+          &:hover {
+            fill: rgba($principalColor, 0.6);
+            cursor: pointer;
+          }
+          &:active {
+            fill: rgba($principalColor, 1);
+          }
+        }
+      }
+    }
+  }
+}
+
+.mainContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .sectionBase {
+    @extend .shadow;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-bottom: solid 1px #ccc;
+    .subtitle {
+      width: 30vw;
+      color: $principalColor;
+      font-style: italic;
+    }
+    .contentContainer {
+      width: 60vw;
+      padding-left: 3rem;
+      padding-right: 1rem;
+
+      .workContainer {
+        margin-bottom: 0.875rem;
+        .company {
+          margin: 0;
+          font-size: 1.25rem;
+          font-weight: 600;
+        }
+        .date {
+          margin: 0;
+          font-size: 0.875rem;
+          font-style: italic;
+        }
+        .description {
+          margin: 0;
+          font-size: 1rem;
+        }
+      }
+      .skillContainer {
+        display: flex;
+        flex-wrap: wrap;
+        .skill {
+          margin-right: 0.5rem;
+          margin-bottom: 0.5rem;
+          padding-right: 1rem;
+          padding-left: 1rem;
+          padding-top: 0.25rem;
+          padding-bottom: 0.25rem;
+          background: lavender;
+          border-radius: 0.5rem;
+        }
+      }
+      .proyectsImg {
+        border-radius: 0.5rem;
+      }
+      &.imgs {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  @for $i from 1 through 27 {
+    .sectionBase:nth-child(n + #{$i}) {
+      -webkit-animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+      animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+      $i: $i/4;
+      animation-delay: $i + s;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    .contactContainer {
+      width: 100vw;
+    }
+  }
+  .mainContainer {
+    .sectionBase {
+      margin-bottom: 0rem;
+      padding: 0rem;
+      .subtitle {
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        margin-bottom: 1rem;
+      }
+      .contentContainer {
+        width: 100vw;
+      }
+    }
+  }
+}
