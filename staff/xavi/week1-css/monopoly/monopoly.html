@@ -22,6 +22,11 @@
     .wrapper-card{
         border: 3px solid black
     }
+
+    .wrapper-card-vertical{
+        margin-bottom: 2em;
+    }
+
     .card{
         width: 100px;
         height: 70px;
@@ -76,7 +81,6 @@
     .card-blue{
        border-top: 2em solid blue;
        transform: rotate(90deg);
-       margin-bottom: 2em;
     }
     .card-blue .number{
         margin-top: 10px;
@@ -89,7 +93,9 @@
     .card-orange{
        border-top: 2em solid orange;
        transform: rotate(-90deg);
-       margin-bottom: 2em;
+    }
+    .card-orange .number{
+        margin-top: 10px;
     }
 
     /* ------------------- section bottom --------------*/
@@ -101,7 +107,10 @@
     .card-red{
        border-top: 2em solid red;
        transform: rotate(0deg);
-       margin-bottom: 2em;
+    }
+
+    .card-red .number{
+        margin-top: 10px;
     }
 
 
@@ -138,47 +147,69 @@
   <!-- blue & orange cards + Monopoly name -->
   <section class="section-center">
     <div class="section-center-left">
-        <div class="card card-blue">
+        <div class="wrapper-card wrapper-card-vertical">
+          <div class="card card-blue">
             <h2 class="number">14</h2>
+          </div>
         </div>
-        <div class="card card-blue">
+        <div class="wrapper-card wrapper-card-vertical">
+          <div class="card card-blue">
             <h2 class="number">15</h2>
+          </div>
         </div>
-        <div class="card card-blue">
+        <div class="wrapper-card wrapper-card-vertical">
+          <div class="card card-blue">
             <h2 class="number">16</h2>
+          </div>
         </div>
     </div>
     <div class="section-center-midle">
         <h1>Monopoly</h1>
     </div>
     <div class="section-center-right">
-        <div class="card card-orange">
-          <h2>6</h2>
+        <div class="wrapper-card wrapper-card-vertical">
+          <div class="card card-orange">
+            <h2 class="number">6</h2>
+          </div>
         </div>
-        <div class="card card-orange">
-          <h2>7</h2>
+        <div class="wrapper-card wrapper-card-vertical">
+          <div class="card card-orange">
+            <h2 class="number">7</h2>
+          </div>
         </div>
-        <div class="card card-orange">
-          <h2>8</h2>
+        <div class="wrapper-card wrapper-card-vertical">
+          <div class="card card-orange">
+            <h2 class="number">8</h2>
+          </div>
         </div>
     </div>
   </section>
   <!-- red cards -->
   <section class="section-bottom">
-    <div class="card card-white">
+    <div class="wrapper-card">
+      <div class="card card-white">
         <h2 class="p-c9">9</h2>
+      </div>
     </div>
-    <div class="card card-red">
+    <div class="wrapper-card">
+      <div class="card card-red">
         <h2 class="number">10</h2>
+      </div>
     </div>
-    <div class="card card-red">
+    <div class="wrapper-card">
+      <div class="card card-red">
         <h2 class="number">11</h2>
+      </div>
     </div>
-    <div class="card card-red">
+    <div class="wrapper-card">
+      <div class="card card-red">
         <h2 class="number">12</h2>
+      </div>
     </div>
-    <div class="card card-white">
+    <div class="wrapper-card">
+      <div class="card card-white">
         <h2 class="p-c13">13</h2>
+      </div>
     </div>
   </section>
 </body>
