@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+}
+
+header{
+    display: flex;
+    padding: 3%;
+    background-color: #f3f3f3;
+    border-bottom:2px solid orange;
+}
+.person {
+    border-radius: 30%;
+}
+header .user-name-info{
+    display: flex;
+    flex-direction: row;
+}
+header .user-contact-info {
+    display: flex;
+    flex-direction: column;
+}
+header .user-contact-info{
+    flex-grow:1;
+    align-items: flex-end;
+}
+header .user-contact-info a{
+    color:darkgray;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+header .user-name-info h1{
+    margin: 10 0 15px 0; 
+    font-size:32px; 
+}
+.details{
+    padding-left: 20px;
+}
+.main{
+    padding:20px;
+}
+.cv-section{
+    display: flex;
+    border-bottom: 1px solid lightgray;
+}
+.cv-section_title{
+    color:orange;
+    flex-shrink: 0;
+    font-style: italic;
+    flex:0 0 25%;
+    font-size: 20px;
+    padding: 20px;
+}
+.cv-section_info{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    flex-grow: 1;
+
+}
+.cv-section_info-item{
+    padding-bottom: 20px;
+}
+.cv-section_info-description{
+    font-size: 14px;
+
+}
+.cv-section_info-jobtitle {
+    font-size: 20px;
+
+}
+.cv-section_info-time {
+    font-size: 18px;
+}
+.cv-section_info-skills{
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+}
+.column {
+    flex-direction: column;
+    flex-grow: 1;
+}
+@media (max-width:580px){
+    header{
+        flex-direction: column;
+    }
+    header .user-contact-info{
+        align-items: center;
+    }
+    .cv-section{
+        flex-direction: column;
+    }
+    .cv-section .cv-section_title{
+        padding-bottom: 10px;
+    }
+    .cv-section_info-skills{
+        flex-direction: column;
+        align-items:center;
+    }
+
+}
