@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+    }
+
+    header {
+      display: flex;
+      padding: 3%;
+      background-color: #f3f3f3;
+      border-bottom: 3px solid orange;
+    } 
+
+    header .user-name-info {
+      display: flex;
+    }
+
+    header .user-name-info h1 {
+      margin: 0 0 15px 0;
+      font-size: 36px;
+    }      
+
+    header .user-name-info h2 {
+      font-weight: light;
+    }
+
+    header .user-name-info img {
+      border-radius: 30%;
+      margin-right: 5%;
+    }
+
+    header .user-contact-info {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      align-items: flex-end;
+    }
+
+    header .user-contact-info a {
+      color: darkgray;
+      text-decoration: none;
+      margin-bottom: 5px;
+    } 
+
+    main {
+      padding: 0 3%;
+    }
+    
+    .cv-section {
+      display: flex;
+      padding: 3% 0;
+      border-bottom: 1px solid lightgray;
+    }
+    .cv-section:last-child {
+      border-bottom: none;
+    }
+    .cv-section-title {
+      flex: 0 0 25%;
+      color: orange;
+      font-style: italic;
+      font-size: 20px;
+    } 
+    .cv-section-info {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .cv-section-info-item {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 3%;
+    }
+    .cv-section-info-jobtitle {
+      font-size: 20px;
+    } 
+    .cv-section-info-time {
+      font-size: 14px;
+    } 
+    .cv-section-info-description {
+      font-size: 16px;
+    } 
+
+    .cv-section-info-columns {
+      display: flex;
+      justify-content: space-between;
+    }
+    .cv-section-info-columns-item {
+      flex: 1 1 30%;
+      text-align: left;
+    }
+
+    @media all and (max-width: 1024px) {
+      .cv-section {
+        flex-direction: column;
+      }
+      .cv-section-title {
+        margin-bottom: 1%;
+      }
+    }  
+
+    @media all and (max-width: 580px) {
+      header {
+        flex-direction: column;
+      }
+      header .user-contact-info {
+        align-items: center;
+      }
+
+      .cv-section {
+        flex-direction: column;
+      }
+      .cv-section-title {
+        margin-bottom: 1%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <section class="user-name-info">
+      <img src="./user.jpg" alt="user profile picture">
+      <div>
+        <h1>Joe Bloggs</h1>
+        <h2>Frontend ninja hero</h2>
+      </div>
+    </section>
+    <section class="user-contact-info">
+      <a href="mailto:joe@bloggs.com">e:joe@bloggs.com</a>
+      <a href="http://www.bloggs.com">w: www.bloggs.com</a>
+      <a href="tel:01234567">m:01234567</a>
+    </section>
+  </header>
+  <main>
+    <article class="cv-section">
+      <div class="cv-section-title">Personal profile</div>
+      <div class="cv-section-info">
+        <div class="cv-section-info-description">
+          Cupidatat veniam ut tempor aliqua enim eu aliquip. Velit cillum aliquip incididunt dolor ut excepteur. Mollit non minim elit enim est elit enim velit in.
+        </div>
+      </div>
+    </article>
+    <article class="cv-section">
+      <div class="cv-section-title">Work Experience</div>
+      <div class="cv-section-info">
+        <div class="cv-section-info-item">
+            <div class="cv-section-info-jobtitle">Job title at Company</div>
+            <div class="cv-section-info-time">April 2011 - present</div>
+            <div class="cv-section-info-description">
+              Velit excepteur nisi do sint do ad fugiat eiusmod. Consequat velit dolor pariatur ea nostrud laboris elit enim. Sint sit et magna incididunt ipsum ullamco do eiusmod quis. Ut do reprehenderit incididunt deserunt incididunt exercitation quis laboris. Dolore nisi cillum ad tempor reprehenderit excepteur mollit id voluptate minim commodo sunt. Ullamco ut tempor nulla reprehenderit ut sunt do sint. Quis nostrud consectetur incididunt pariatur labore nisi Lorem occaecat.
+            </div>
+        </div>
+        <div class="cv-section-info-item">
+            <div class="cv-section-info-jobtitle">Job title at Company</div>
+            <div class="cv-section-info-time">April 2011 - present</div>
+            <div class="cv-section-info-description">
+              Velit excepteur nisi do sint do ad fugiat eiusmod. Consequat velit dolor pariatur ea nostrud laboris elit enim. Sint sit et magna incididunt ipsum ullamco do eiusmod quis. Ut do reprehenderit incididunt deserunt incididunt exercitation quis laboris. Dolore nisi cillum ad tempor reprehenderit excepteur mollit id voluptate minim commodo sunt. Ullamco ut tempor nulla reprehenderit ut sunt do sint. Quis nostrud consectetur incididunt pariatur labore nisi Lorem occaecat.
+            </div>
+        </div>
+        <div class="cv-section-info-item">
+            <div class="cv-section-info-jobtitle">Job title at Company</div>
+            <div class="cv-section-info-time">April 2011 - present</div>
+            <div class="cv-section-info-description">
+              Velit excepteur nisi do sint do ad fugiat eiusmod. Consequat velit dolor pariatur ea nostrud laboris elit enim. Sint sit et magna incididunt ipsum ullamco do eiusmod quis. Ut do reprehenderit incididunt deserunt incididunt exercitation quis laboris. Dolore nisi cillum ad tempor reprehenderit excepteur mollit id voluptate minim commodo sunt. Ullamco ut tempor nulla reprehenderit ut sunt do sint. Quis nostrud consectetur incididunt pariatur labore nisi Lorem occaecat.
+            </div>
+        </div>
+      </div>
+    </article>
+    <article class="cv-section">
+      <div class="cv-section-title">Key Skills</div>
+      <div class="cv-section-info">
+        <div class="cv-section-info-columns">
+          <div class="cv-section-info-columns-item">
+            <div>Elit magna</div>
+            <div>Elit magna</div>
+            <div>Elit magna</div>
+          </div>
+          <div class="cv-section-info-columns-item">
+            <div>Elit magna</div>
+            <div>Elit magna</div>
+            <div>Elit magna</div>
+          </div>
+          <div class="cv-section-info-columns-item">
+            <div>Elit magna</div>
+            <div>Elit magna</div>
+            <div>Elit magna</div>
+          </div>
+        </div> 
+      </div>
+      </div>
+    </article>
+  </main>
+</body>
+</html>

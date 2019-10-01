@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    margin:0;
+    font-family: Verdana;
+}
+nav{
+    border:5px solid orange;
+    color:white;
+    display: flex;
+    position: relative;
+}
+.clear{
+    margin:40px 0;
+}
+.red{
+    background: tomato;
+}
+.blue{
+    background: lightblue;
+}
+.green{
+    background: lightgreen;
+}
+.purple {
+    background: blueviolet;
+}
+.red, .blue, .green, .purple {
+    padding: 15px;
+}
+.green{
+    position: absolute;
+    right:0
+}
+
+.third .green,
+.fifth .green,
+.sixth .green,
+.seventh .green {
+    position: relative;
+}
+.fifth {
+    justify-content: center;
+}
+.sixth{
+    justify-content: flex-end;
+}
+.seventh{
+    justify-content: space-between;
+}
+.ninth .red,
+.ninth .blue{
+    flex: 45% 2 2;
+}
+.ninth .purple{
+    flex: 10% 1 1;
+}
+ 
+@media only screen and (max-width: 600px) {
+    .green {
+        position:relative;
+    }
+    nav{
+        flex-direction:column;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .third .red,
+    .third .blue,
+    .third .green{
+        margin: 0 auto;
+    }
+}

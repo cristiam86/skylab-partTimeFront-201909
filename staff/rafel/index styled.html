@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    section > div > div {
+        background-color: yellow;
+    }
+ /* net, fill de fill seleccionem el div que està dinv un div que està dins un section*/
+    .tomato #blue {
+        background-color: yellow;
+    }
+    /* germà, seleccionem el blue que és germà d'un tomato*/
+
+    .tomato .blue {
+        background-color: yellow;
+        box-sizing: border-box;
+    }
+    /* tots els germans*/
+
+
+    </style>
+</head>
+<body>
+    <div class="tomato">sasasa</div>
+    <div>asasasa</div>
+    <div class="tomato">asasasasa</div>
+    <div id="blue">asasasas</div>
+</body>
+</html>

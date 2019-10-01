@@ -1,0 +1,261 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+
+  *{
+    box-sizing: border-box;
+  }
+
+  body{
+    margin: 0;
+  }
+
+
+  header{
+    display:flex;
+    padding: 3%;
+    background-color: #f3f3f3;
+    border-bottom: 3px solid orange;
+  }
+
+  header .user-name-info{
+    display:flex;
+  }
+
+  header .user-contact-info{
+    display:flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: flex-end;
+  }
+
+  header .user-name-info h1{
+    margin-top: 0 0 15px 0; 
+    font-size: 36px;
+  }
+
+  header .user-name-info h2{
+    font-weight: lighter;
+  }
+
+  header .user-name-info img{
+    margin-right:5%;
+    width: 200px;
+    height: 200px;
+  }
+
+  header .user-contact-info a{
+    color: darkgray;
+    text-decoration: none;
+    margin-bottom: 3px;
+  }
+
+  
+  main{
+    padding: 3% 3%;
+  }
+
+  main .cv-section{
+    display: flex;
+  }
+
+  .cv-section{
+    display: flex;
+    padding-bottom: 15px;
+    margin-top:15px;
+    border-bottom: 1px solid grey;
+  } 
+  .cv-section-title{
+    flex-basis:25%;
+    color: orange;
+    font-style: italic;
+    
+  }
+  .cv-section-info{
+    display: flex;
+    flex-direction: column;
+    padding: 0 3% 0 10%;
+  }
+  .cv-section-info-jobtitle{
+    font-size: 20px;
+    
+  }
+  .cv-section-info-date{
+    font-size: 14px;
+  }
+  .cv-section-into-description{
+    font-size: 16px;
+  }
+  main .cv-section_exp{
+    display: flex;
+  }
+
+  .cv-section_exp{
+    padding-top:15px;
+    display: flex;
+    
+  } 
+  .cv-section-title_exp{
+    flex-basis:25%;
+    color: orange;
+    font-style: italic;
+    
+  }
+  .cv-section-info_exp{
+    display: flex;
+    flex-direction: column;
+    padding: 0 3% 0 10%;
+  }
+  .cv-section-info-jobtitle_exp{
+    font-size: 20px;
+    
+  }
+  .cv-section-info-date_exp{
+    font-size: 14px;
+  }
+  .cv-section-into-description_exp{
+    font-size: 16px;
+  }
+
+  .cv-section-info_skills{
+    display: flex;
+    flex-direction: column;
+    padding: 0 3% 0 10%;
+  }
+
+  @media all and (max-width: 580px) {
+    header{
+      flex-direction: column;
+    }
+    header .user-contact-info{
+    align-items: center;
+  }
+    .cv-section{
+      flex-direction: column;
+    }
+    .cv-section-title{
+      margin-bottom: 1%;
+      text-align:center;
+    }
+    .cv-section_exp{
+      flex-direction: column;
+    }
+    .cv-section-title_exp{
+      margin-bottom: 1%;
+      text-align:center;
+    }
+  }
+
+  </style>
+  <title>CV Challenge 2</title>
+</head>
+<body>
+  <header>
+    <section class="user-name-info">
+      <img src="../../stuff/week1/css/user.jpg" alt="user profile picture";/>
+      <div>
+          <h1>Eugenio Fernandez</h1>
+          <h2>Javascript developer</h2>
+      </div> 
+    </section>
+    <section class="user-contact-info">
+      <a href="mailto:eugferman@gmail.com">e: eugferman@gmail.com</a>
+      <a href="https://google.com">w: www.eugferman.com</a>
+      <a href="telf:638825113">638825113</a>      
+    </section>
+  </header>
+  <main>
+    <section>
+      <article class="cv-section">
+        <div class="cv-section-title">Personal profile</div>
+        <div class="cv-section-info">
+            <div class="cv-section-info-jobtitle">Job title at Company</div>
+            <div class="cv-section-info-date">April 2011 - present</div>
+            <div class="cv-section-info-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+                mollit anim id est laborum.
+            </div>
+        </div>
+      </article>
+      <article class="cv-section_exp">
+        <div class="cv-section-title_exp">Personal profile</div>
+        <div class="cv-section-info_exp">
+            <div class="cv-section-info-jobtitle_exp">Job title at Company</div>
+            <div class="cv-section-info-date_exp">April 2011 - present</div>
+            <div class="cv-section-info-description_exp">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+                mollit anim id est laborum.
+            </div>
+        </div>
+      </article>
+      <article class="cv-section_exp">
+          <div class="cv-section-title_exp">Personal profile</div>
+          <div class="cv-section-info_exp">
+              <div class="cv-section-info-jobtitle_exp">Job title at Company</div>
+              <div class="cv-section-info-date_exp">April 2011 - present</div>
+              <div class="cv-section-info-description_exp">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                  ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                  fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+                  mollit anim id est laborum.
+              </div>
+          </div>
+        </article>
+        <article class="cv-section">
+            <div class="cv-section-title">Personal profile</div>
+            <div class="cv-section-info">
+                <div class="cv-section-info-jobtitle">Job title at Company</div>
+                <div class="cv-section-info-date">April 2011 - present</div>
+                <div class="cv-section-info-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+                    mollit anim id est laborum.
+                </div>
+            </div>
+          </article>
+          <article class="cv-section">
+              <div class="cv-section-title">Developer Skills</div>
+              <div class="cv-section-info_skills">
+                <div>
+                  <ul>
+                    <li>HMLT5</li>
+                    <li>CSS3</li>
+                    <li>JAVASCRIPT</li>
+                  </ul>
+                </div>
+                <div>
+                  <ul>
+                    <li>HMLT5</li>
+                    <li>CSS3</li>
+                    <li>JAVASCRIPT</li>
+                  </ul>
+                </div>
+                <div>
+                  <ul>
+                    <li>HMLT5</li>
+                    <li>CSS3</li>
+                    <li>JAVASCRIPT</li>
+                  </ul>
+                </div>
+                </div>
+            </article>
+    </section>
+    
+  </main>
+  <footer>
+
+  </footer>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CV</title>
+    <style>
+     body{
+         padding: 0;
+         margin: 0;
+     }
+     header{
+         background-color: rgb(214, 214, 214);
+         padding: 1rem;
+         border-bottom: 2px solid red;
+         display: inline-flex;
+     }
+
+     header .info-name{
+        padding: 0 2rem;
+     }
+
+     .contact-info ol li{
+        font-size: 12px;
+     }
+
+     .cv-section{
+         display: inline-flex;
+         padding: 1rem;
+         width: 100%;
+     }
+     .cv-section .title{
+         flex-basis: 350px;
+         color: rgb(160, 25, 25);
+     }
+
+     .description .inner h3{
+         margin-bottom: 0rem;
+     }
+
+     .description .inner p{
+         margin-bottom: 3rem;
+     }
+
+     ul{
+        list-style: none;
+        padding: 0;
+     }
+
+     .skills-content{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+     }
+
+    /*
+      div{
+          background-color: bisque;
+      }
+       section es el padre: div es el hijo 
+      section > div{
+        background-color: rgb(160, 106, 40);
+      }
+      section ~ .class {
+        box-sizing: border-box;
+        /* te aseguras que todos los paddings funcionan bien cuando tienes medidas de w & h 
+      } 
+      */
+
+
+    </style>
+</head>
+<body>
+  <header>
+    <img src="../../stuff/html/cv-challenge/images/person.png" alt="" width="90px;" height="90px;">
+    <div class="info-name">
+        <h1>Xavier Pascual</h1>
+        <p><strong>About me:</strong> Psicólogo pero reconvertido al mundo digital. Amante de los perros y la música electrónica y disco de finales de los 70 y principios de los 80.</p>
+    </div>
+    <div class="contact-info">
+        <ol>
+          <li>Telf: 629644872</li>
+          <li>mail: xavier.pascual@thevallians.com</li>
+          <li>Adress: C/Rocafort, 217 5º 2ª</li>
+        </ol>
+    </div>
+  </header>
+  <main>
+    <section class="cv-section">
+        <div class="title">
+            <h2>Personal Profile</h2>
+        </div>
+        <div class="description">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+        </div>
+    </section>
+    <hr>
+    <section class="cv-section">
+        <div class="title">
+            <h2>Work experience</h2>
+        </div>
+        <div class="description">
+            <div class="inner">
+                <h3>Job title at Company</h3>
+                <span>April 2019 - present</span>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+            </div>
+            <div class="inner">
+                <h3>Job title at Company</h3>
+                <span>April 2019 - present</span>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+            </div>
+            <div class="inner">
+                <h3>Job title at Company</h3>
+                <span>April 2019 - present</span>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="cv-section">
+        <div class="title">
+          <h2>Key Skills</h2>
+        </div>
+        <div class="description skills-content">
+            <div class="inner">
+                <ul>
+                    <li>A key Skill</li>
+                    <li>A key Skill</li>
+                    <li>A key Skill</li>
+                </ul>
+            </div>
+            <div class="inner">
+                <ul>
+                    <li>A key Skill</li>
+                    <li>A key Skill</li>
+                    <li>A key Skill</li>
+                </ul>
+            </div>
+            <div class="inner">
+                <ul>
+                    <li>A key Skill</li>
+                    <li>A key Skill</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="cv-section">
+        <div class="title">
+            <h2>Education</h2>
+        </div>
+        <div class="description">
+            <div class="inner">
+                <h3>Job title at Company</h3>
+                <span>April 2019 - present</span>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+            </div>
+        </div>
+    </section>
+    <!-- section>
+      <h2>Educación</h2>
+      <div>
+        <h3>psicología</h3>
+        <p>UB</p>
+      </div>
+      <div>
+        <h3>Master Digital Business</h3>
+        <p>The Valley Business School</p>
+      </div>
+      <div>
+        <h3>Bootcamp: frontend</h3>
+        <p>Skylab</p>
+      </div>
+    </section -->
+    <hr>
+</body>
+</html>

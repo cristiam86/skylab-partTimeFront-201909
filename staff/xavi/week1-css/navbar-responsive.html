@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+    }
+    header{
+        display: flex;
+        background-color: lightgray;
+    }
+
+    .container{
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    .container2{
+        display: flex;
+        justify-content: flex-end;
+    }
+    ul{
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    ul li {
+        list-style: none;
+        margin: 0em;
+        padding: 1em;
+        background: transparent;
+    }
+    ul li:hover{
+        background: orange;
+    }
+
+    @media all and (max-width: 576px){
+        header{
+            display: block;
+        }
+
+        ul{
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+    }
+</style>
+<body>
+  <header>
+     <div class="container">
+        <ul class="menu">
+          <li>Skylab</li>
+          <li>Inicio</li>
+          <li>Profesorado</li>
+          <li>Cursos</li>
+          <li>Comunidad</li>
+        </ul>
+     </div>
+     <div class="container2">
+        <ul class="contact">
+          <li>Contacto</li>
+        </ul>
+     </div>
+  </header>
+</body>
+</html>
