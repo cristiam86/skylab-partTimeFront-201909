@@ -1,0 +1,50 @@
+body{
+    margin:0;
+}
+.box{
+    border:10px solid orange;
+    height:50%;;
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: center
+}
+.message{
+    color:#fff;
+    background-color: lightblue;
+    width: 50px;
+    padding: 20px;
+
+}
+.box-second{
+    border:10px solid orange;
+    padding: 30px;
+    color:darkblue;
+}
+.center{
+    margin:auto;
+}
+.center-top{
+    align-self: flex-start;
+}
+.dialogue{
+    border:5px solid lightblue;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.dialogue h3{
+    margin: 0;
+    display:inline-block;
+}
+.right{
+    text-align: right;
+}
+.dialogue img{
+    width:4%;
+    vertical-align:bottom;
+}
+.dialogue p{
+    margin:0;
+}
+.text{
+    display:inline-block;
+}
