@@ -1,0 +1,30 @@
+body{
+    margin:0;
+}
+nav{
+    background-color: #ccc;
+    display: flex;
+    width:100%;
+    position: relative;
+}
+nav .item{
+    padding:15px;
+}
+nav .item:first-child{
+    background: orange;
+}
+nav .item:last-child{
+    position: absolute;
+    right:0;
+}
+@media only screen and (max-width: 600px){
+    nav{
+        flex-direction: column;
+    }
+    nav .item{
+        text-align: center;
+    }
+    nav .item:last-child{
+        position: relative;
+    }
+}
