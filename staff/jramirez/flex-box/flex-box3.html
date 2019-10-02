@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flex-box</title>
+    <style>
+         *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            box-sizing: border-box;
+        }
+        a{
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .content{
+            margin: 24px;
+            display: flex;
+            flex-direction: column;
+            border: 8px solid #ca4721;
+        }
+        .box{
+            display: flex;
+            border: 8px solid #b5b7cf;
+            align-content: center;
+            align-items: center;
+            margin: 8px; 
+        }
+        .box:nth-child(even){
+            flex-direction: row-reverse;
+            text-align: right;
+        }
+        .box img{    
+            width: 80px;
+            margin: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="box">
+            <img src="teen-face.svg" alt="face">
+            <div>
+                <h3>Lisa</h3>
+                <p>
+                    Hey, have to tired Flexbox? This is so much better than floats!
+                </p>
+            </div> 
+        </div>
+        <div class="box">
+            <img src="teen-face.svg" alt="face">
+            <div>
+                <h3>Lil guapo</h3>
+                <p>
+                    Floats tampoco es el demonio, solo que da muchos dolores de cabeza.
+                </p>
+            </div> 
+        </div> 
+        <div class="box">
+            <img src="teen-face.svg" alt="face">
+            <div>
+                <h3>Lisa</h3>
+                <p>
+                    Que te acuestes!
+                </p>
+            </div> 
+        </div>      
+    </div>
+</body>
+</html>
