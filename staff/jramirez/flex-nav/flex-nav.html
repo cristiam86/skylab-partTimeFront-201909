@@ -1,0 +1,143 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+         *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            box-sizing: border-box;
+        }
+        a{
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .nav-content{
+            margin: 24px auto;
+            max-width: 600px;
+        }
+        .nav{
+            display: flex;
+            border: 4px solid #b5b7cf;
+        }
+        .nav a{
+            display: block;
+            color: white;
+            background-color: #2b2fe8;
+            padding: 8px 16px;
+        }
+        .nav a:first-child{
+            background-color: #90997d;
+        }
+        .nav a:last-child{
+            background-color: #ca4721;
+        }
+        .nav a:hover{
+            background-color: #90997d;
+        }
+        .nav.nav-0 a:last-child{
+            margin-left: auto;
+        }
+        .nav.nav-1{
+            flex-direction: column;
+        }
+        .nav.nav-1 a{
+            text-align: center;
+        }
+        .nav.nav-1 a:last-child{
+            width: 100%;
+        }
+        .nav.nav-3{
+            flex-direction: column;
+            align-items: center;
+        }
+        .nav.nav-4{
+            justify-content: center;
+        }
+        .nav.nav-5{
+            justify-content: flex-end;
+        }
+        .nav.nav-6{
+            justify-content: space-between;
+        }
+        .nav.nav-7 a {
+            flex-grow: 1;
+            text-align: center;
+        }
+        .nav.nav-7 .logo{
+            flex-grow: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-content">
+        <nav class="nav nav-0">
+            <a href="">Contact</a>
+            <a href="">Careers</a>
+            <a href="">About</a>
+        </nav>
+    </div>
+    <div class="nav-content">
+        <nav class="nav nav-1">
+            <a href="">Contact</a>
+            <a href="">Careers</a>
+            <a href="">About</a>
+        </nav>
+    </div>
+    <div class="nav-content">
+        <nav class="nav nav-2">
+            <a href="">Contact</a>
+            <a href="">Careers</a>
+            <a href="">About</a>
+        </nav>
+    </div>
+    <div class="nav-content">
+        <nav class="nav nav-3">
+            <a href="">Contact</a>
+            <a href="">Careers</a>
+            <a href="">About</a>
+        </nav>
+    </div>
+    <div class="nav-content">
+        <nav class="nav nav-4">
+            <a href="">Contact</a>
+            <a href="">Careers</a>
+            <a href="">About</a>
+        </nav>
+    </div>
+    <div class="nav-content">
+        <nav class="nav nav-5">
+            <a href="">Contact</a>
+            <a href="">Careers</a>
+            <a href="">About</a>
+        </nav>
+    </div>
+    <div class="nav-content">
+        <nav class="nav nav-6">
+            <a href="">Contact</a>
+            <a href="">Careers</a>
+            <a href="">About</a>
+        </nav>
+    </div>
+    <div class="nav-content">
+        <nav class="nav nav-0">
+            <a href="">Contact</a>
+            <a href="">Careers</a>
+            <a href="">About</a>
+        </nav>
+    </div>
+    <div class="nav-content">
+        <nav class="nav nav-7">
+            <a class="logo" href="">Logo</a>
+            <a href="">Team</a>
+            <a href="">About</a>
+        </nav>
+    </div>
+</body>
+</html>
