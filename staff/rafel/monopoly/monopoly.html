@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+<style>
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    width: 500px;
+    height: 500px;
+    grid-gap: 30px 30px;
+}
+
+.cell{
+
+  color: black;
+  border: 1px solid black;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.color {
+    height: 30%;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.number {
+    text-align: center;
+    font-size: 20px;
+}
+
+.item1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item1 .number {
+    transform: rotate(135deg);
+    width:fit-content;
+
+}
+
+.item2 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    transform: rotate(180deg);
+}
+
+.item3 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    transform: rotate(180deg);
+}
+
+.item4 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    transform: rotate(180deg);
+}
+
+.item5 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item5 .number {
+    transform: rotate(-135deg);
+    width:fit-content;
+
+}
+
+.item6 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    transform: rotate(-90deg);
+}
+
+.item7 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    transform: rotate(-90deg);
+}
+
+.item8 {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    transform: rotate(-90deg);
+}
+
+.item9 {
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item9 .number {
+    transform: rotate(-45deg);
+    width:fit-content;
+
+}
+
+.item10 {
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+.item11 {
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.item12 {
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.item13 {
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item13 .number {
+    transform: rotate(45deg);
+    width:fit-content;
+
+}
+
+.item14 {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    transform: rotate(90deg);
+}
+
+.item15 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    transform: rotate(90deg);
+}
+
+.item16 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    transform: rotate(90deg);
+}
+
+.item17 {
+    grid-area: 2 / 2 / 5 / 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none
+
+}
+
+.title {
+    font-size: 60px;
+    transform: rotate(-45deg);
+    height: fit-content;
+}
+
+</style>
+
+</head>
+<body>
+    <div class="content">
+        <div class="cell item1">
+            <div class="number">1</div>
+        </div>
+        <div class="cell item2">
+            <div class="color green"></div>
+            <div class="number">2</div>
+        </div>
+        <div class="cell item3">
+            <div class="color green"></div>
+            <div class="number">3</div>
+        </div>
+        <div class="cell item4">
+            <div class="color green"></div>
+            <div class="number">4</div>
+        </div>
+        <div class="cell item5">
+            <div class="number">5</div>
+        </div>
+        <div class="cell item6">
+            <div class="color yellow"></div>
+            <div class="number">6</div>
+        </div>
+        <div class="cell item7">
+            <div class="color yellow"></div>
+            <div class="number">7</div>
+        </div>
+        <div class="cell item8">
+            <div class="color yellow"></div>
+            <div class="number">8</div>
+        </div>
+        <div class="cell item9">
+            <div class="number">9</div>
+        </div>
+        <div class="cell item10">
+            <div class="color red"></div>
+            <div class="number">10</div>
+        </div>
+        <div class="cell item11">
+            <div class="color red"></div>
+            <div class="number">11</div>
+        </div>
+        <div class="cell item12">
+            <div class="color red"></div>
+            <div class="number">12</div>
+        </div>
+        <div class="cell item13">
+            <div class="number">13</div>
+        </div>
+        <div class="cell item14">
+            <div class="color blue"></div>
+            <div class="number">14</div>
+        </div>
+        <div class="cell item15">
+            <div class="color blue"></div>
+            <div class="number">15</div>
+        </div>
+        <div class="cell item16">
+            <div class="color blue"></div>
+            <div class="number">16</div>
+        </div>
+        <div class="cell item17">
+            <div class="title">Monopoly</div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    line-height: 24px;
+    box-sizing: border-box;
+    margin:0;
+}
+header {
+    background-color:#f3f3f3;
+    border-bottom: 1px solid rgb(196, 10, 10);
+    padding: 20px;
+    height:25%;
+    position: relative;
+}
+.person {
+    border-radius: 20px;
+    float: left;
+    margin-right: 20px;
+}
+.details {
+    padding-left: 10px;
+
+}
+.contact {
+    position: absolute;
+    right: 0;
+    top: 0;
+    list-style: none;
+    margin-right:20px;
+}
+.aside {
+    float: left;
+    color: rgb(196, 10, 10);
+    padding: 10px 0;
+}
+
+.experience_items,
+.education_items,
+.skills_items,
+.profile_items{
+    width:70%;
+    float:right;
+    padding: 10px 0;   
+}
+.profile,
+.experience,
+.skills,
+.education {
+    margin: 20px;
+}
+.experience,
+.skills,
+.education {
+    border-bottom: 1px solid lightgray;
+
+}
+.skills_items:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.skills_items .column{
+    float: left;
+    width: 25%;
+    list-style: none;
+}
+
+.clearfix{
+    clear:both;
+
+}
+ul{
+padding-inline-start: 0
+}
