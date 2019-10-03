@@ -1,4 +1,13 @@
-/* GENERAL  STYLES */
+/* GENERAL */
+* {
+    /* borders y paddings forman parte del width y height */
+    box-sizing: border-box; 
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
 
 /* HOME */
 
