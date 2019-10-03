@@ -1,0 +1,29 @@
+#html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    border: solid 5px plum;
+}
+
+#main_box{
+    display: flex;
+    flex-direction: row;
+}
+
+#image_container{
+    width:100px;
+}
+
+#image_container img{
+    width: 100%;
+}
+
+#text{
+    color: purple;
+}
+
