@@ -16,9 +16,8 @@ body {
   display: grid;
   grid-template-rows: 8rem 8rem 8rem 8rem 8rem;
   grid-template-columns: 8rem 8rem 8rem 8rem 8rem;
-  background: aliceblue;
+  grid-gap: 1rem;
   .small {
-    margin: 1rem;
     border: solid 1px black;
     .color {
       width: 100%;
