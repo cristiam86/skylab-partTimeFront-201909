@@ -1,0 +1,41 @@
+body{
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#navbar{
+    display: flex;
+    flex-direction:  row;
+    /* justify-content: center; */
+    width: 75%;
+}
+
+#logo{
+    color: white;
+    background-color: #1a75ff;
+    width: 10%;
+}
+
+#team{
+    color: white;
+    background-color: #b300b3;
+    width: 45%;
+}
+
+#products{
+    color: white;
+    background-color: #ff5500;
+    width: 45%;
+}
+
+.link{
+    padding: 2.5% 0 2.5% 0;
+    text-align: center;
+}
