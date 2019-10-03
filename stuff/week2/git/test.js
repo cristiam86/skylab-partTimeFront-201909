@@ -1,1 +1,1 @@
-var beatles = ['John', 'Ringo'];
+var beatles = ['John', 'Ringo', 'George'];
