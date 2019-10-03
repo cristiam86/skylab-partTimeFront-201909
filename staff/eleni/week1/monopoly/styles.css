@@ -115,16 +115,14 @@ li:nth-child(16) {
     transform: rotate(90deg);
 }
 li:nth-child(17) {
-    grid-row-start: 3;
-    grid-row-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 5;
     grid-column-start:2;
     grid-column-end:5;
     transform: rotate(90deg);
-    display: flex;
-    justify-self: right;
 }
 li:nth-child(17) span{
-    font-size: 36px;
+    font-size: 40px;
     transform: rotate(-130deg);
 }
 .green{
@@ -139,4 +137,7 @@ li:nth-child(17) span{
 }
 .blue{
     background: linear-gradient(to bottom, blue 0px, blue 2vw, blue 2vw, blue calc(2vw + 4px), white calc(2vw + 4px), white 10vw);
+}
+.monopoly .item:last-child{
+    border:none;
 }
