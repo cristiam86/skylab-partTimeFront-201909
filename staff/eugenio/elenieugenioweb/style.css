@@ -1,0 +1,11 @@
+nav{
+  display:flex;
+  flex-direction: row;
+  background-color:#c9c8c8;
+  height: 30px;
+}
+
+.menu{
+  display:flex;
+  flex-direction: row;
+}
