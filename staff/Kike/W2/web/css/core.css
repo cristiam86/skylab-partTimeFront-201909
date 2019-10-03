@@ -31,6 +31,35 @@ body {
   margin: 0rem;
 }
 
+.featuresContainer {
+  background: darkseagreen;
+  width: 100vw;
+  height: 25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.featuresContainer .part {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.featuresContainer .part .featuresImage {
+  background: url("../../../../../stuff/week2/challengeWebResponsive/assets/logo.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 10rem;
+  height: 10rem;
+}
+
 .footer {
   min-height: 3rem;
   width: 100vw;
