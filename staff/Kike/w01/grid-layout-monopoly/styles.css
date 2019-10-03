@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap");
+.ffamily, * {
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0rem;
+}
+
+.gridContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 8rem 8rem 8rem 8rem 8rem;
+      grid-template-rows: 8rem 8rem 8rem 8rem 8rem;
+  -ms-grid-columns: 8rem 8rem 8rem 8rem 8rem;
+      grid-template-columns: 8rem 8rem 8rem 8rem 8rem;
+  background: aliceblue;
+}
+
+.gridContainer .small {
+  margin: 1rem;
+  border: solid 1px black;
+}
+
+.gridContainer .small .color {
+  width: 100%;
+  height: 2rem;
+}
+
+.gridContainer .small .text {
+  text-align: center;
+}
+
+.gridContainer .small.green {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.gridContainer .small.green .color {
+  background: darkgreen;
+}
+
+.gridContainer .small.blue {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.gridContainer .small.blue .color {
+  background: darkblue;
+}
+
+.gridContainer .small.yellow {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.gridContainer .small.yellow .color {
+  background: darkorange;
+}
+
+.gridContainer .small.red {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.gridContainer .small.red .color {
+  background: darkred;
+}
+
+.gridContainer .small.white.one .text {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.gridContainer .small.white.two .text {
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+}
+
+.gridContainer .small.white.three .text {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.gridContainer .small.white.four .text {
+  -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
+}
+
+.gridContainer .big {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 5;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gridContainer .big .text {
+  -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
+  font-size: 3rem;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Navbar Responsive</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header nav{
+            color: #000;
+        }
+        ul {
+            margin: 24px;
+            list-style: none;
+            background-color: #888;
+            overflow: hidden;
+        }
+        li a{
+            display: block;
+            padding: 8px 16px;
+            font-size: 16px;
+            text-decoration: none;
+            color: #000;
+            text-transform: uppercase;
+        }
+        li:first-child a{
+            background-color: yellow;
+        }
+        @media only screen and (min-width: 800px){
+            header nav{
+                max-width: 800px;
+                margin: 0 auto;
+            }
+            li {
+                float: left;
+            }
+            li:last-child{
+                float: right;
+            }
+            li a:hover{
+                background-color: yellow;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+            <nav>
+                <ul>
+                    <li><a href="">Test</a></li>
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="">Profesorado</a></li>
+                    <li><a href="">Cursos</a></li>
+                    <li><a href="">Comunidad</a></li>
+                    <li><a href="">Contacto</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
