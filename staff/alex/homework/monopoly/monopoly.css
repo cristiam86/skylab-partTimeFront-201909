@@ -1,0 +1,15 @@
+
+.grid {
+    display: grid;
+    border: 2px blue solid;
+    width: 600px;
+    height: 600px;
+    grid-template-columns: repeat(5, 1fr);
+    
+    
+}
+
+
+    
+
+
