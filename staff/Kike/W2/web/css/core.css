@@ -1,1 +1,61 @@
-/* No CSS *//*# sourceMappingURL=core.css.map */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap");
+.ffamily, * {
+  font-family: "Montserrat", sans-serif;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                      supported by Chrome, Opera and Firefox */
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0rem;
+}
+
+.footer {
+  min-height: 3rem;
+  width: 100vw;
+  background-color: #383838;
+  position: fixed;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .part {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.footer .part .footerLink {
+  color: white;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+/*# sourceMappingURL=core.css.map */
