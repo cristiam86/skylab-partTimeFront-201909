@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "core.scss",
+        "_componentsBase.scss",
+        "_componentsExtras.scss"
+    ],
+    "names": [],
+    "file": "core.css"
+}
