@@ -1,0 +1,98 @@
+
+* {
+    /* borders y paddings forman parte del width y height */
+    box-sizing: border-box; 
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+header {
+    background-color: #dedede;
+    border-bottom: 2px solid #e81405;
+    /* 
+    no se utiliza float -> display: flex 
+    flex se aplica al padre
+    */
+    display: flex;
+    /*
+    row -> uno al lado de otro
+    column -> uno debajo de otro
+     */
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* alineación horizontal */
+    justify-content: flex-start;
+    /* alineación vertical */
+    align-items: flex-start;
+    padding: 1%;
+}
+header h1 {
+    margin: 20px 0;
+}
+header h2 {
+    font-weight: normal;
+    font-size: 16px;
+    margin: 0;
+}
+header a {
+    text-decoration: none;
+    color: #333;
+}
+header a:hover {
+    text-decoration: underline;
+}
+header div {
+    margin-right: 20px;
+}
+header div:last-child {
+    margin-right: 0px;
+}
+header .user-name {
+    display: flex;
+}
+header .user-contact {
+    /* se alinea a la derecha cuando el contendor 
+    se alinea a la izquierda 
+    margin-left: auto;*/ 
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: flex-end;
+}
+main {
+    margin: 0 3%;
+}
+main article {
+    display: flex;
+    margin: 10px;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    
+}
+main article h3 {
+    font-size: 16px;
+    font-style: italic;
+    margin-right: 30px;
+    /* poca prioridad a encogerte */
+    flex-shrink: 0;
+    /* ocupa el 10% de base */
+    flex-basis: 15%;
+    color: #e81405;
+    font-weight: normal;
+}
+
+@media all and (max-width: 580px) {
+    header {
+        flex-direction: column;
+    }
+    header .user-contact {
+        align-items: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    main article {
+        flex-direction: column;
+    }
+}
