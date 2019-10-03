@@ -1,52 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-<style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
 
-* {
-    margin:0;
-    padding: 0;
-}
+        .main {
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            border: 4px solid salmon;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 300px;
+        }
 
-.main {
-    margin:0;
-    padding: 0;
-    background-color: white;
-    border: 4px solid salmon;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 300px;
-}
+        .box {
 
-.box {
+            background-color: skyblue;
+            text-align: center;
+            padding: 15px;
+            margin: 0;
+        }
 
-    background-color: skyblue;
-    text-align: center;
-    padding: 15px;
-    margin:0;
-}
+        p {
+            color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 25px;
+        }
 
-p {
-    color: white; 
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 25px;
-}
-</style>
+        @media all and (max-width: 580px) {
+
+            .main {
+                align-items: flex-start;
+            }
+
+        }
+    </style>
 
 </head>
+
 <body>
     <div class="main">
         <div class="box">
-            <p>This box is <br> 
-                perfectly <br> 
+            <p>This box is <br>
+                perfectly <br>
                 centred</p>
         </div>
     </div>
 </body>
+
 </html>

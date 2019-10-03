@@ -1,0 +1,124 @@
+
+
+.grid {
+    display: grid;
+    border: 2px white solid;
+    width: 600px;
+    height: 600px;
+    grid-template-columns: repeat(5, 1fr);
+    gap:2em;
+
+    }
+    
+    .box {
+    
+        border: 1px solid black;
+       
+       
+        }
+    
+    .top {
+
+        border: 1px solid white;
+        height: 20%;
+        
+        
+
+    }
+
+    .number {
+
+        text-align: center;
+           
+    }
+
+    .green {
+
+        background-color: green;
+        
+    }
+    
+    .middle {
+        
+        grid-column: 2 / span 3;
+        grid-row: 2 / span 3;
+        transform: rotate(312deg);
+        font-size: 50px;
+        text-align: center;
+        padding-top: 112px;
+        
+    }
+
+    
+    .blue {
+
+        background-color: blue;
+    }  
+   
+    .orange {
+
+        background-color: orange;
+        
+    }
+
+    .red {
+        background-color: red;
+    }
+
+    
+    .n1, .n5 {
+
+        text-align: center;
+        transform: rotate(180deg);
+    }
+
+    .n12, .n16 {
+
+        text-align: center;
+    }
+
+    .n2, .n3, .n4 {
+
+        transform: rotate(180deg);
+    }
+
+    .n6, .n8, .n10 {
+
+        transform: rotate(90deg);
+
+    }
+
+    .n7, .n9, .n11 {
+
+        transform: rotate(270deg);
+       
+    }
+
+
+    .number1, .number9, .number5, .number13 {
+
+        text-align: center;
+        
+    }
+
+    .number1 {
+
+        transform: rotate(311deg);
+    }
+
+    .number5  {
+
+        transform: rotate(48deg);
+    }
+
+    .number9 {
+
+        transform: rotate(333deg);
+
+    }
+
+    .number13 {
+
+        transform: rotate(63deg);
+
+    }
