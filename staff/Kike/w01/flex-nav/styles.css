@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap");
+.ffamily, * {
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0rem;
+}
+
+.navigation {
+  border: solid 5px darkorange;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 3rem;
+  margin-bottom: 1rem;
+}
+
+.navigation .buttonContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navigation .button {
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  margin: 0rem;
+  border: none;
+  cursor: pointer;
+}
+
+.navigation .button.one {
+  background: darkred;
+}
+
+.navigation .button.two {
+  background: darkblue;
+}
+
+.navigation .button.three {
+  background: darkgreen;
+}
+
+.navigation.one {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navigation.two {
+  display: block;
+}
+
+.navigation.two .button {
+  width: 100%;
+}
+
+.navigation.three {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.navigation.four {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation.four .button {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+
+.navigation.five {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navigation.six {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.navigation.seven {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navigation.eight .button.one {
+  background: darkred;
+}
+
+.navigation.eight .button.two {
+  background: darkblue;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.navigation.eight .button.three {
+  background: darkgreen;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    padding: 0;
+    border: 8px solid orange;
+    margin: 0;
+    align-items: flex-start;
+    justify-content: center;
+    height: 300px;
+}
+
+
+.box {
+    background-color: blue;
+    color: white;
+    font-size: 30px;
+    padding: 3%;
+    text-align: center;
+
+   
+  }
+  
+
+    
+  
+        
+
+  

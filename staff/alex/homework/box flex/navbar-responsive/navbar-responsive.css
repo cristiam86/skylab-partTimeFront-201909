@@ -1,0 +1,65 @@
+
+
+nav {
+
+    display: flex;
+    padding: 0%;    
+    
+}
+
+nav ul {
+
+    display: flex;
+    list-style: none;
+    background-color: #f3f3f3;
+    width: 100%;   
+    padding: 0%;
+       
+      
+}
+
+nav ul :hover{
+
+  background-color: orange;
+  
+     
+    
+}
+
+nav ul li {
+   
+    display: flex;
+    padding: 10px 30px;
+  
+}
+
+
+nav ul :last-child {
+    
+    justify-content: flex-end;
+   
+
+}
+
+.contact {
+  
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+
+@media all and (max-width: 580px) {
+    nav ul {
+      flex-direction: column;
+    }
+
+    nav ul :last-child {
+
+        justify-content: flex-start;
+    }
+
+    .contact {
+
+      flex-direction: column;
+    }

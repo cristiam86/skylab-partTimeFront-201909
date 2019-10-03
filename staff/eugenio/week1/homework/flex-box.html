@@ -1,0 +1,181 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+
+    *{
+      box-sizing: border-box;
+    }
+
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h1{
+      text-align: center;
+    }
+    
+    h2{
+      text-align: center;
+    }
+
+    .container-box1{
+      display:flex;
+      border: 8px solid #eca372;
+      height: 200px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .text-box1{
+      display:flex;
+      color: white;
+      background-color:#5fb5e6;
+      font-size: 20px;
+      height: 100px;
+      width: 180px;
+      text-align: center;
+      justify-content: center;
+    }
+
+    .container-box2{
+      display:flex;
+      border: 8px solid #eca372;
+      height: 200px;
+      justify-content: center;
+      
+    }
+
+    .text-box2{
+      display:flex;
+      color: white;
+      background-color:#5fb5e6;
+      font-size: 20px;
+      height: 100px;
+      width: 180px;
+      text-align: center;
+      justify-content: center;
+    }
+
+    .container-box3{
+      display:flex;
+      height: 120px;
+      justify-content: center;
+        
+    }
+
+    .box-profile{
+      display:flex;
+      border: 8px solid #eca372;
+      align-self: center;
+      width: 900px;
+      flex-direction: row;  
+
+    }
+
+    .name{
+      font-size: 25px;
+      color: #1d4777;
+    }
+
+    .message{
+      font-size: 25px;  
+      color: #1d4777;
+      
+    }
+
+    .container-box4{
+      display:flex;
+      flex-direction: column;
+      border: 8px solid #eca372;
+      height: 590px;
+        
+    }
+
+    .box-profile-lisa{
+      display:flex;
+      border: 8px solid #1d4777;
+      align-self: center;
+      width: 95%;
+      flex-direction: row;
+      margin-top: 3%;  
+    }
+
+    .box-profile-david{
+      display:flex;
+      border: 8px solid #1d4777;
+      align-self: center;
+      width: 95%;
+      flex-direction: row-reverse;
+      margin-top: 25px;
+      margin-bottom: -15px;  
+    }
+
+    .box-profile-david .name{
+      text-align: right;
+    }
+
+  </style>
+  <title>Ejercicios FLEXBOX</title>
+</head>
+<body>
+  <h1>Ejercicios Week 1 Flexbox</h1>
+  <h2>Ejercicio 1</h2>  
+  <div class="container-box1">
+    <div class="text-box1">
+      <p>This box is<br> perfectly<br> centered.</p>
+    </div>
+  </div>
+  <h2>Ejercicio 2</h2>
+  <div class="container-box2">
+    <div class="text-box2">
+      <p>This box is<br> perfectly<br> centered.</p>
+    </div>
+  </div>
+  <h2>Ejercicio 3</h2>
+  <div class="container-box3">
+    <div class="box-profile">
+      <div class="img-box3">
+        <img src="profile.png"/>
+      </div>
+      <div class="text-box3">
+        <p class="name"><strong>Lisa</strong></p>
+        <p class="message">Hey, have to tried Flexbox? This is so much better than floats!</p>
+      </div>
+  </div>
+  </div>
+  <h2>Ejercicio 4</h2>
+  <div class="container-box4">
+    <div class="box-profile-lisa">
+      <div class="img-box3">
+        <img src="profile.png"/>
+      </div>
+      <div class="text-box3">
+        <p class="name"><strong>Lisa</strong></p>
+        <p class="message">Hey, have to tried Flexbox? This is so much better than floats!</p>
+      </div>
+    </div>
+    <div class="box-profile-david">
+      <div class="img-box3">
+        <img src="profile.png"/>
+      </div>
+      <div class="text-box3">
+        <p class="name"><strong>David</strong></p>
+        <p class="message">Hey, I've never tried it yet.</p>
+      </div>
+    </div>
+    <div class="box-profile-lisa">
+      <div class="img-box3">
+        <img src="profile.png"/>
+      </div>
+      <div class="text-box3">
+        <p class="name"><strong>Lisa</strong></p>
+        <p class="message">It's a real layout model, you can forget about clearfix and other hacks.</p>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>

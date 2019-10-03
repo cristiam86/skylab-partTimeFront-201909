@@ -4,6 +4,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Clase 27 09 2019</title>
+    <style>
+      /*POR DEFECTO EL BODY LLEVA 8PX DE MARGIN, LO RESETEAMOS*/
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #ddd8d8;
+        /*100vh ES TODA LA PANTALLA SEA CUAL SEA SU TAMAÑO*/
+        height: 100vh;
+      }
+      /*PROPIEDAD PARA TODO SIN RESPETAR CLASES, NI IDS NI NADA*/
+      *{
+        box-sizing: border-box;
+      }
+      /*LA CLASE TOMATO*/
+      /*EL MARGIN ES EXTERIOR Y EL PADDING INTERIOR*/
+      .tomato{
+        background-color: tomato;
+        height:300px;
+        width:300px;
+        margin:20px;
+        /*valores: HORIZONTAL-VERTICA-ENFOQUE-COLOR SOMBRA*/
+        text-shadow: 5px -2px 2px grey;
+        padding: 30px;
+        font-size: 50px;
+
+        
+      }
+      /*LA CLASE TURQUESA*/
+      .turquesa{
+        background-color: turquoise;
+      }
+      /*LAS SECCIONES CON LA CLASE TOMATO*/
+      section .tomato{
+        background-color: orange;
+      }
+      /*LA CLASE VERDE Y ID AZUL*/
+      .verde, #azul{
+        background-color: grey;
+      }
+      /*UN DIV QUE SEA HIJO DE UN DIV, QUE A LA VEZ ESE DIV SEA HIJO DE UNA SECTION TENDRÁ ALINEACIÓN CENTRADA*/
+      section >div >div{
+        text-align:center;
+      }
+    
+    </style>
 </head>
 <body>
   <header>
@@ -18,12 +63,18 @@
   </header>
   <main>
     <aside>
-      <div>Menu</div>
-      <div>Menu 2</div>
-      <div>Menu 3</div>
+      <section><div class="tomato">Menu</div></section>
+      <div class="turquesa">Menu 2</div>
+      <div class="verde">Menu 3</div>
+      <div id="azul">Menu 4</div>
     </aside>
     <section>
-      <div>Title related 1</div>
+      <div>
+        <p>Title related 1</p>
+        <div>
+          <p>Subtitle related 2</p>
+        </div>
+      </div>
     </section>
     <section>
       <div>Title related 2</div>

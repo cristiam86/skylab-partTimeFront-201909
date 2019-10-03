@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<style>
+    * {
+        margin:0;
+        padding:0;
+    }
+
+    nav{
+        border: 3px solid orange;
+        display: flex; 
+    }
+
+    nav ul {
+        list-style: none;
+        color: white;
+        font-family:'Arial Narrow';
+        font-size: 26px;
+        display: flex;
+        align-content: flex-start;
+        width: 100%;
+    }
+    .nav-end{
+        justify-content: flex-end;
+    }
+
+
+    nav ul li {
+        padding: 10px;
+        flex-direction: row;
+        width: 100px;
+        text-align: center;
+    }
+
+    .nav-start li:nth-child(1) {
+        background-color: lightcoral;
+    }
+
+    .nav-start li:nth-child(2) {
+        background-color: royalblue ;
+    }
+
+    .nav-end li:nth-child(1) {
+        background-color: lightseagreen;
+        align-self: flex-end;
+    }
+
+    @media all and (max-width: 580px) {
+        nav{
+            flex-direction: column;
+        }
+        
+        nav ul {
+        flex-direction: column;
+        display: flex;
+        align-content: flex-start;
+        }
+
+        .nav-end{
+        justify-content: flex-start;
+        }
+
+        ul .nav-end{
+           align-content: flex-start; 
+        }
+
+
+    }
+
+
+
+</style>
+
+</head>
+<body>
+    <nav>
+        <ul class="nav-start">
+            <li>Contact</li>
+            <li>Careers</li>
+        </ul>
+
+        <ul class="nav-end">
+            <li>About</li>
+        </ul>
+    </nav>
+</body>
+</html>

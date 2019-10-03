@@ -1,0 +1,106 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu-header{
+            display:flex;
+            width:100%;
+            flex-direction: row;
+            
+        }
+
+        .menu-left{
+            display:flex;
+            width: 70%;
+            justify-content: flex-start;
+            background-color: #b4b4b4;
+        }
+
+        .menu-right{
+            display:flex;
+            width: 30%;
+            justify-content: flex-end;
+            background-color: #b4b4b4;
+
+        }
+
+        .active{
+            background-color: #ff9100;
+            justify-content: flex-start;
+            width:120px;
+            height: 60px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .inactive{
+            background-color: #b4b4b4;
+            justify-content: flex-end;
+            width: 120px;
+            height: 60px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        @media all and (max-width: 700px) {
+            .menu-header{
+            flex-direction: column;
+            }
+
+            .menu-left{
+            display:flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            width:100%;
+            }
+            .menu-right{
+            display:flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            width:100%;
+            }
+            .active{
+                width:100%;
+           
+            }
+            .inactive{
+                width:100%;
+           
+            }
+
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="menu-header">
+        <div class="menu-left">
+            <div class="active">Skylab</div>
+            <div class="inactive">Inicio</div>
+            <div class="inactive">Profesorado</div>
+            <div class="inactive">Cursos</div>
+            <div class="inactive">Comunidad</div>
+        </div>
+        <div class="menu-right">
+            <div class="inactive">Contacto</div>
+        </div>
+    </div>
+    
+</body>
+</html>

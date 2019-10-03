@@ -1,0 +1,169 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+    }
+    .container{
+        border: 5px solid bisque;
+        display: flex;
+        margin-bottom: 2em;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold; 
+    }
+    .contact{
+        background: #e68e80;
+        padding: 0 1em;
+        font-weight: bold;
+        color: white;
+    }
+    .careers{
+        background: #80c6e6;
+        padding: 0 1em;
+        font-weight: bold;
+        color: white;
+    }
+    .about{
+        background: #80e6a2;
+        padding: 0 1em;
+        font-weight: bold;
+        color: white;
+    }
+    /* contenedor específico  */
+    .c1{
+        display: flex
+    }
+    .section-c1-1{
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    .section-c1-2{
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .c2{
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .c3{
+        justify-content: flex-start;
+    }
+    .c4{
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .c4-item{
+        width: fit-content;
+        margin: auto;
+    }
+    .c5{
+        justify-content: center;
+    }
+    .c6{
+        justify-content: flex-end;
+    }
+    .c7{
+        justify-content: space-between;;
+    }
+    .c9{
+        justify-content: center;
+        text-align: center;
+    }
+    .c9-item1{
+        flex-grow: 0;
+    }
+    .c9-item2{
+        flex-grow: 2;
+    }
+    .c9-item3{
+        flex-grow: 2;
+    }
+</style>
+<body>
+  <!-- Navbar 1 -->
+  <section>
+    <h2>Navbar 1 y 8:</h2>
+    <div class="container c1">
+        <div class="section-c1-1">
+          <div class="contact"><p>Contact</p></div>
+          <div class="careers"><p>Careers</p></div> 
+        </div>
+        <div class="section-c1-2">
+          <div class="about"><p>About</p></div> 
+        </div>
+    </div>
+  </section>
+  <!-- Navbar 2 -->
+  <section>
+    <h2>Navbar 2:</h2>
+    <div class="container c2">
+        <div class="contact"><p>Contact</p></div>
+        <div class="careers"><p>Careers</p></div>
+        <div class="about"><p>About</p></div>
+    </div>
+  </section>
+  <!-- Navbar 3 -->
+  <section>
+    <h2>Navbar 3:</h2>
+    <div class="container c3">
+      <div class="contact"><p>Contact</p></div>
+      <div class="careers"><p>Careers</p></div>
+      <div class="about"><p>About</p></div>
+    </div>
+  </section>
+  <!-- Navbar 3 -->
+  <section>
+    <h2>Navbar 4:</h2>
+    <div class="container c4">
+        <div class="contact c4-item"><p>Contact</p></div>
+        <div class="careers c4-item"><p>Careers</p></div>
+        <div class="about c4-item"><p>About</p></div>
+    </div>
+</section>
+  <!-- Navbar 5 -->
+  <section>
+    <h2>Navbar 5:</h2>
+    <div class="container c5">
+        <div class="contact"><p>Contact</p></div>
+        <div class="careers"><p>Careers</p></div>
+        <div class="about"><p>About</p></div>
+    </div>
+  </section>
+  <!-- Navbar 6 -->
+  <section>
+    <h2>Navbar 6:</h2>
+    <div class="container c6">
+        <div class="contact"><p>Contact</p></div>
+        <div class="careers"><p>Careers</p></div>
+        <div class="about"><p>About</p></div>
+    </div>
+  </section>
+  <!-- Navbar 7 -->
+  <section>
+    <h2>Navbar 7:</h2>
+    <div class="container c7">
+        <div class="contact"><p>Contact</p></div>
+        <div class="careers"><p>Careers</p></div>
+        <div class="about"><p>About</p></div>
+    </div>
+  </section>
+  <!-- Navbar 9 -->
+  <section>
+    <h2>Navbar 9:</h2>
+    <div class="container c9">
+        <div class="contact c9-item1"><p>Logo</p></div>
+        <div class="careers c9-item2"><p>Team</p></div>
+        <div class="about c9-item3"><p>Products</p></div>
+    </div>
+  </section>
+</body>
+</html>

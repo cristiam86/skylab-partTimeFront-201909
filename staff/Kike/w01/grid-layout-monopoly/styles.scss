@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap");
+
+.ffamily {
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  @extend .ffamily;
+  box-sizing: border-box;
+}
+body {
+  margin: 0rem;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-rows: 8rem 8rem 8rem 8rem 8rem;
+  grid-template-columns: 8rem 8rem 8rem 8rem 8rem;
+  grid-gap: 1rem;
+  .small {
+    border: solid 1px black;
+    .color {
+      width: 100%;
+      height: 2rem;
+    }
+    .text {
+      text-align: center;
+    }
+    &.green {
+      transform: rotate(180deg);
+      .color {
+        background: darkgreen;
+      }
+    }
+
+    &.blue {
+      transform: rotate(90deg);
+      .color {
+        background: darkblue;
+      }
+    }
+
+    &.yellow {
+      transform: rotate(270deg);
+      .color {
+        background: darkorange;
+      }
+    }
+
+    &.red {
+      transform: rotate(0deg);
+      .color {
+        background: darkred;
+      }
+    }
+
+    &.white {
+      &.one {
+        .text {
+          transform: rotate(135deg);
+        }
+      }
+      &.two {
+        .text {
+          transform: rotate(225deg);
+        }
+      }
+      &.three {
+        .text {
+          transform: rotate(45deg);
+        }
+      }
+      &.four {
+        .text {
+          transform: rotate(315deg);
+        }
+      }
+    }
+  }
+  .big {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .text{
+        transform: rotate(315deg);
+        font-size: 3rem;
+    }
+  }
+}

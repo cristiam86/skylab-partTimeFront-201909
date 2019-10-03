@@ -1,0 +1,224 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body{
+            margin: 0;
+        }
+
+        header{
+            display: flex;
+            padding: 3%;
+            background-color: #f3f3f3;
+            border-bottom: 2px solid orangered;
+        }
+        header .user-profile{
+            display: flex;
+        }
+
+        header .user-profile .name{
+            margin-left: 1em;
+        }
+
+        header .user-profile .name h1{
+            margin-bottom: 1rem;
+            font-size: 36px;
+        }
+
+        header .user-profile .name h2{
+            font-size: 16px;
+            font-weight: lighter;
+        }
+
+        header .user-profile img{
+            width: 100px;
+            height: 100px;
+        }
+
+        header .user-info{
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            align-items: flex-end;
+        }
+
+        header .user-info a {
+            color: darkslategrey;
+            text-decoration: none;
+            margin-bottom: .5em;
+        }
+
+
+
+
+
+        main{
+            padding: 0 1em;
+        }
+        .cv-section{
+            display: flex;
+            padding: 3em 0;
+            border-bottom: 1px solid grey;
+        }
+        /* Last child */
+        .cv-section:last-child{
+            border-bottom: none;
+        }
+
+        .cv-section-title{
+            flex-basis: 25%;
+            width: 25%;
+            flex:  0 0 25%;
+            color: red;
+        }
+
+        .cv-section-info .cv-section-item{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 3%;
+        }
+
+        .cv-section-info-jobtitle{
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: .5em;
+        }
+
+        .cv-section-info-timer{
+            font-size: 15px;
+            margin-bottom: .3em;
+        }
+
+        .cv-section-info-description{
+            font-size: 15px;
+            font-family: avenir;
+        }
+
+        .cv-section-info-column{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        .cv-section-info-column ul {
+            list-style: none;
+            padding: 0;
+            width: 33%;
+            justify-content: flex-start;
+        }
+
+
+
+        @media all and (max-width: 580px){
+            header{
+                flex-direction: column;
+            }
+
+            header .user-profile{
+                align-items: center;
+                text-align: center;
+                display: block;
+            }
+
+            header .user-info{
+                align-items: center;
+            }
+            .cv-section-info-column ul{
+                display: inline-block;
+            }
+        }
+
+        @media all and (max-width:  1024px){
+            .cv-section{
+                flex-direction: column;
+            }
+            .cv-section-title{
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <section class="user-profile">
+            <img src="../../stuff/html/cv-challenge/images/person.png" alt="">
+            <div class="name">
+                <h1>Xavier Pascual</h1>
+                <h2>Frontend Developer</h2>
+            </div>
+        </section>
+        <section class="user-info">
+            <a href="mailto:xavier.pascual@thevallians.com">email</a>
+            <a href="">web</a>
+            <a href="">629644872</a>
+        </section>
+    </header>
+    <main>
+        <article class="cv-section">
+            <div class="cv-section-title">
+                <h2>Personal Profile</h2>
+            </div>
+            <div class="cv-section-info">
+                <div class="cv-section-item">
+                    <div class="cv-section-info-jobtitle">Job title</div>
+                    <div class="cv-section-info-timer">april 2015 - actualy</div>
+                    <div class="cv-section-info-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </div>
+                </div>
+                <div class="cv-section-item">
+                    <div class="cv-section-info-jobtitle">Job title</div>
+                    <div class="cv-section-info-timer">april 2015 - actualy</div>
+                    <div class="cv-section-info-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </div>
+                </div>
+                <div class="cv-section-item">
+                    <div class="cv-section-info-jobtitle">Job title</div>
+                    <div class="cv-section-info-timer">april 2015 - actualy</div>
+                    <div class="cv-section-info-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </div>
+                </div>
+            </div>
+        </article>
+        <article class="cv-section">
+            <div class="cv-section-title">
+                <h2>Skills info</h2>
+            </div>
+            <div class="cv-section-info-column">
+              <ul>
+                <li>A key Skill</li>
+                <li>A key Skill</li>
+                <li>A key Skill</li>
+              </ul>
+              <ul>
+                <li>A key Skill</li>
+                <li>A key Skill</li>
+                <li>A key Skill</li>
+              </ul>
+              <ul>
+                <li>A key Skill</li>
+                <li>A key Skill</li>
+                <li>A key Skill</li>
+              </ul>
+            </div>          
+        </article>
+        <article class="cv-section">
+                <div class="cv-section-title">
+                    <h2>Personal Profile</h2>
+                </div>
+                <div class="cv-section-info">
+                    <div class="cv-section-item">
+                        <div class="cv-section-info-jobtitle">Job title</div>
+                        <div class="cv-section-info-timer">april 2015 - actualy</div>
+                        <div class="cv-section-info-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </div>
+                    </div>
+                </div>
+            </article>
+    </main>
+</body>
+</html>
