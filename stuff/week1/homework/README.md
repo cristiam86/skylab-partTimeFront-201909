@@ -5,4 +5,5 @@
 - CHALLENGE: [Flex-box](flex-box/) 
 - RESEARCH Flexbox [CSS Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox)
 - RESEARCH Grid [CSS Tricks](https://css-tricks.com/snippets/css/complete-guide-grid/)
+- LEARN Grid [SCRIMBA](https://scrimba.com/p/pWqLHa/cg9PpTb)
 - CHALLENGE: [Grid layout](grid-layout-monopoly/) [timing 1h]
