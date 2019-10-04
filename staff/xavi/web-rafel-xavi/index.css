@@ -92,3 +92,93 @@ nav {
 
 
 
+/* Mobile first ********************************/
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.inner{
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+}
+
+footer{
+    background: rgb(92, 180, 146);
+}
+/************************ CARDS ****************/
+.main-cards{
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 1rem;
+    width: 100%;
+}
+
+.main-cards .card{
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 5px;
+    width: auto;
+    margin: 1em;
+}
+
+.card .card-header{
+    padding: 5px;
+    border-bottom: 1px solid rgb(226, 226, 226);
+    min-height: 17em;
+}
+
+.card .card-body{
+    padding: 1rem;
+}
+
+.card .card-footer{
+    padding: 1rem;
+}
+
+
+.btn-read{
+    border: 1px solid lightgray;
+    padding: 1em;
+    border-radius: 5px;
+    background: transparent;
+}
+
+.btn-read:hover{
+    background: lightgray;
+    color: black;
+    cursor: pointer;
+}
+
+
+
+/****** Tablet ********************************/
+@media (min-width: 0px) and (min-width: 768px){
+    h1{
+        color: red;
+    }
+    .main-cards{
+        display: flex;
+        flex-direction: row;
+    }
+    .main-cards .card{
+        width: 33%;
+        
+    }
+}
+/********* Desktop ********************************/
+@media (min-width: 1024px) and (min-width: 1200px) {
+    h1{
+        color: blue;
+    }
+    .main-cards{
+        display: flex;
+        flex-direction: row;
+    }
+    .main-cards .card{
+        width: 33%;
+        
+    }
+}
+
