@@ -4,10 +4,15 @@ body{
     padding: 0;
 }
 
-main{
+.inner{
     display: flex;
+    max-width: 1200px;
+    margin: auto;
 }
 
+footer{
+    background: rgb(92, 180, 146);
+}
 /************************ CARDS ****************/
 .main-cards{
     flex-direction: column;
@@ -27,14 +32,30 @@ main{
 .card .card-header{
     padding: 5px;
     border-bottom: 1px solid rgb(226, 226, 226);
+    min-height: 17em;
 }
 
 .card .card-body{
     padding: 1rem;
 }
 
+.card .card-footer{
+    padding: 1rem;
+}
 
 
+.btn-read{
+    border: 1px solid lightgray;
+    padding: 1em;
+    border-radius: 5px;
+    background: transparent;
+}
+
+.btn-read:hover{
+    background: lightgray;
+    color: black;
+    cursor: pointer;
+}
 
 
 
