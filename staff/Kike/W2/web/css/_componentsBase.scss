@@ -4,6 +4,12 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.displayCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
@@ -26,25 +32,48 @@ body {
   margin: 0rem;
 }
 
+.navContainer {
+  background: $grey;
+  width: 100vw;
+  padding: 1rem;
+  padding-left: 4rem;
+  margin-bottom: 1rem;
+  .navigation {
+    .navigationLinks {
+      color: #383838;
+      font-size: 1.125rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      &.active {
+        color: $baseColor;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
 .featuresContainer {
-  background: darkseagreen;
+  @extend .displayCenter;
+  background: $baseColor;
   width: 100vw;
   height: 25rem;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
   .part {
-      margin-left: 1rem;
-      margin-right: 1rem;
-    .title {
-    }
-    .featuresLink {
-      .link {
+    @extend .displayCenter;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 50%;
+    .textContainer {
+      .title {
+        color: white;
+      }
+      .featuresLink {
+        color: white;
+        .link {
+        }
       }
     }
     .featuresImage {
-      background: url('../../../../../stuff/week2/challengeWebResponsive/assets/logo.png');
+      background: url("../../../../../stuff/week2/challengeWebResponsive/assets/logo.png");
       background-size: contain;
       background-position: center;
       background-repeat: no-repeat;
@@ -71,6 +100,15 @@ body {
       color: white;
       padding-left: 0.5rem;
       padding-right: 0.5rem;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .featuresContainer {
+    flex-wrap: wrap;
+    .part {
+      width: 100vw;
     }
   }
 }

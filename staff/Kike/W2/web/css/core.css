@@ -3,6 +3,18 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.displayCenter, .featuresContainer, .featuresContainer .part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .noselect {
   -webkit-touch-callout: none;
   /* iOS Safari */
@@ -31,24 +43,44 @@ body {
   margin: 0rem;
 }
 
+.navContainer {
+  background: #eee;
+  width: 100vw;
+  padding: 1rem;
+  padding-left: 4rem;
+  margin-bottom: 1rem;
+}
+
+.navContainer .navigation .navigationLinks {
+  color: #383838;
+  font-size: 1.125rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.navContainer .navigation .navigationLinks.active {
+  color: darkseagreen;
+  font-size: 1.5rem;
+}
+
 .featuresContainer {
   background: darkseagreen;
   width: 100vw;
   height: 25rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .featuresContainer .part {
   margin-left: 1rem;
   margin-right: 1rem;
+  width: 50%;
+}
+
+.featuresContainer .part .textContainer .title {
+  color: white;
+}
+
+.featuresContainer .part .textContainer .featuresLink {
+  color: white;
 }
 
 .featuresContainer .part .featuresImage {
@@ -86,5 +118,15 @@ body {
   color: white;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+
+@media (max-width: 1024px) {
+  .featuresContainer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .featuresContainer .part {
+    width: 100vw;
+  }
 }
 /*# sourceMappingURL=core.css.map */
