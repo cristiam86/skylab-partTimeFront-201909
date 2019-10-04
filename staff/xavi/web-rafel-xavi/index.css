@@ -64,9 +64,8 @@ footer{
 }
 
 
-
 /****** Tablet ********************************/
-@media (min-width: 0px) and (min-width: 768px){
+@media all and (max-width: 1024px){
     h1{
         color: red;
     }
@@ -76,6 +75,8 @@ footer{
     }
     .main-cards .card{
         width: 33%;
+        max-width: 400px;
+        margin: auto;
         
     }
     .advice {
@@ -84,100 +85,12 @@ footer{
     }
 
 }
-/********* Desktop ********************************/
-@media (min-width: 1024px) and (min-width: 1200px) {
+
+/****** mobile ******************************/
+@media all and (max-width: 567px){
     h1{
-        color: blue;
-    }
-    .main-cards{
-        display: flex;
-        flex-direction: row;
-    }
-    .main-cards .card{
-        width: 33%;
-        
-    }
-
-        /********* Desktop Nav & Header ***********************/
-
-    nav {
-        display: flex;
-        flex-direction: row;
-        background-color: #F6F6F6;
-        align-items: baseline;
-    }
-    
-    .navbar {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        color: #666666;
-        font-size: 20px;
-        
-    }
-    
-    .navbar li {
-        list-style: none;
-        padding: 1rem;
-    }
-    
-    .navbar li a {
-        text-decoration: none;
-    }
-    
-    .navbar li:visited {
-        text-decoration: none;
-    }
-    
-    
-    .navbar li:hover {
-        background-color: #E1E1E1;
-    }
-    
-    .logoGamma {
         color: #3D9B87;
-        font-size: 30px;
-        margin-left: 10%;
     }
-    
-    .back-photo {
-        background-image: url(assets/site_showcase_bg.jpg);
-        display: flex;
-        flex-direction: row;
-    }
-    
-    .highLight {
-        color: #3D9B87
-    }
-    
-    .advice {
-        color: white;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        margin-left: 10%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    .advice-capture {
-        font-size: 26px;
-        padding: 10px;
-    }
-    
-    .advice-sentence {
-        padding: 10px;
-    }
-    
-    .logos {
-        display: flex;
-        flex-direction: row;
-        padding-top: 30px;
-        justify-content: space-between;
-    }
-    
-    .mobil-hand {
-        align-items: flex-end;
-    }
-
-}
+   }
+   
 
