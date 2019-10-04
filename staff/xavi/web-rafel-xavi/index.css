@@ -1,0 +1,19 @@
+/* Mobile first ********************************/
+
+h1{
+    color: orange;
+}
+
+/* Tablet ********************************/
+@media (min-width: 0px) and (min-width: 576px){
+    h1{
+        color: red
+    }
+}
+/* Desktop ********************************/
+@media (min-width: 577px) and (min-width: 1024px) {
+    h1{
+        color: blue;
+    }
+}
+
