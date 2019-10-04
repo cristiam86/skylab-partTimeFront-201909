@@ -1,18 +1,114 @@
 ﻿*{box-sizing: content-box;}
 body{
   font-family: Arial, Helvetica, sans-serif;
+  margin:0;
+}
+a{
+  color:#666;
+  text-decoration: none;
+}
+li{
+  padding: 0;
+  margin:0;
 }
 
+
+/*CSS NAV*/
 nav{
   display:flex;
   flex-direction: row;
-  background-color:#c9c8c8;
-  height: 30px;
+  background-color:#f3f3f3;
+  vertical-align: middle;
+  color:#4d4d4d;
+  width: 100%;
+}
+nav .logo,
+nav .item-menu {
+  padding: 20px 10px;
+}
+nav .item-menu:hover{
+  background: #ccc;
+}
+nav .logo{
+  color:#00b09b;
 }
 
-.menu{
+.menu-desktop{
   display:flex;
   flex-direction: row;
+}
+#menu-mobile{
+    display: none;
+    padding: 5px 0;
+}
+.nav {
+  padding: 0px;
+}
+
+.nav ul {
+  list-style: none;
+}
+
+.nav ul li {
+  padding: 0px 10px 0px 10px;
+}
+
+#menu {
+  display: none;
+  width:100%;
+  left:0;
+  position: absolute;
+  background: #f3f3f3;
+  text-align: center;
+  padding-left: 0;
+}
+
+#menu-toggle {
+  cursor: pointer;
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+
+label[for="menu-toggle"]:before {
+  content: "\2630";
+  padding: 0px 10px 0px 0px;
+  font-size: 28px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 2px 5px;
+}
+
+#menu-toggle:checked + #menu {
+  display: block;
+}
+@media all and (max-width: 426px) {
+  .menu-desktop{
+    display: none;
+  }
+  #menu-mobile{
+    display: block;
+  }  
+}
+
+/*SLIDER*/
+.main-slider{
+  background: url(challengeWebResponsive/assets/site_showcase_bg.jpg) no-repeat;
+  background-position: center;
+  color:white;
+  text-align: center;
+  padding: 10%;
+}
+.slider-left{
+  width: 80%;
+  margin:0 auto;
+  text-align: center;
+}
+h1{
+  padding: 0;
+  margin:0;
+}
+.blue{
+  color:blue;
 }
 
 /*CSS MAIN*/
@@ -78,10 +174,6 @@ ul {
   line-height: 29px;
 }
 
-ul li:before {
-  content: '✓';
-  
-}
 
 .footer-right{
   width: 50%;
@@ -140,3 +232,4 @@ ul li:before {
 @media all and (max-width: 330px) {
   
 }
+
