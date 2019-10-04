@@ -5,18 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Photo App</title>
-    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <nav class="menu">
-                <div><img src="" alt=""></div>
-                <ul class="navbar-collapse">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+            <!--nav class="menu" role="navigation">
+                <div id="menuToggle">
+                    <input type="checkbox">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu" class="navbar-collapse">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav-->
+            <nav class="menu" role="navigation">
+                <div class="logo"><h1><a href="index.html" title="Gamma">Gamma</a></h1></div>
+                <div>
+                    <input type="checkbox">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul class="navbar-collapse">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
             </nav>
         </header>
 
@@ -31,22 +51,22 @@
                             </div>
                             <div class="section-banner-info-items">
                                 <a href="http://appStore">
-                                    <img src="assets/icon_app_store.png"/>
+                                    <img src="assets/img/icon_app_store.png"/>
                                 </a>
                                 <a href="http://googlePlay">
-                                    <img src="assets/icon_google_play.png"/>
+                                    <img src="assets/img/icon_google_play.png"/>
                                 </a>
                             </div>
                         </div>
                         <div class="section-banner-image">
-                            <img  class="main-image-movil" src="assets/site_phone.png"/>
+                            <img  class="main-image-movil" src="assets/img/site_phone.png"/>
                         </div>
                     </div>
                 </section> 
                 <section class="section-detail">
                     <div class="section-submain-detail">
                         <div class="section-detail-item">
-                            <img class="detail-images" src="assets/demo1.png">
+                            <img class="detail-images" src="assets/img/demo1.png">
                             <h2>scathcer</h2>
                             <p>bannered strabismical cathilicness tropologically
                                 subchloride babminto orthopyramid brazilein
@@ -57,7 +77,7 @@
                             <button class ="item-ReadMore">Read More</button>
                         </div>
                         <div class="section-detail-item">
-                            <img class="detail-images" src="assets/demo2.jpg">
+                            <img class="detail-images" src="assets/img/demo2.jpg">
                             <h2>cabalistically</h2>
                             <p>bannered strabismical cathilicness tropologically
                                 subchloride babminto orthopyramid brazilein
@@ -68,7 +88,7 @@
                             <button class ="item-ReadMore">Read More</button>
                         </div>
                         <div class="section-detail-item">
-                            <img class="detail-images" src="assets/demo3.jpg">
+                            <img class="detail-images" src="assets/img/demo3.jpg">
                             <h2>jorganium</h2>
                             <p>bannered strabismical cathilicness tropologically
                                 subchloride babminto orthopyramid brazilein
@@ -80,37 +100,35 @@
                         </div>
                     </div>
                 </section> 
-                <section class="section-footer">
-                    <div class="section-footer-gammafeautres">
-                        <h2>Gamma Features</h2>
-                        <ul>
-                            <li>harfatanistic</li>
-                            <li>unembattled</li>
-                            <li>bleebok</li>
-                            <li>overtipple</li>
-                            <li>empathically</li>
-                        </ul>
-                    </div>
-                    <div class="section-footer-image">
-                        <img src="assets/logo.png"/>
-                    </div>
-                </section> 
             </section>
         </main>
-
-
         <footer>
-            <div class="footer-menu">
+            <section class="section-items section-footer">
+                <div class="section-footer-wrap">
+                    <div class="features-list">
+                        <h3>Gamma Features</h3>
+                        <ul>
+                            <li>Lorem ipsum</li>
+                            <li>Lorem ipsum</li>
+                            <li>Lorem ipsum</li>
+                            <li>Lorem ipsum</li>
+                            <li>Lorem ipsum</li>
+                        </ul>
+                    </div>
+                    <div class="features-icon"><img src="assets/img/logo.png" alt=""></div>
+                </div>
+            </section> 
+            <section class="footer-menu">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="#">Privacy Policy</a></li>
                 </ul>
-            </div>
-            <div class="footer-copyright">
-                <p>Privacy Policy &copy; 2015, All Rights Reserved</p>
-            </div>
+                <div class="footer-copyright">
+                    <p>Privacy Policy &copy; 2015, All Rights Reserved</p>
+                </div>
+            </section>
         </footer>
     </div>
 </body>
