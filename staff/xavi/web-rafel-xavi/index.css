@@ -152,9 +152,8 @@ footer{
 }
 
 
-
 /****** Tablet ********************************/
-@media (min-width: 0px) and (min-width: 768px){
+@media all and (max-width: 1024px){
     h1{
         color: red;
     }
@@ -164,21 +163,17 @@ footer{
     }
     .main-cards .card{
         width: 33%;
+        max-width: 400px;
+        margin: auto;
         
     }
 }
-/********* Desktop ********************************/
-@media (min-width: 1024px) and (min-width: 1200px) {
+
+/****** mobile ******************************/
+@media all and (max-width: 567px){
     h1{
-        color: blue;
+        color: #3D9B87;
     }
-    .main-cards{
-        display: flex;
-        flex-direction: row;
-    }
-    .main-cards .card{
-        width: 33%;
-        
-    }
-}
+   }
+   
 
