@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAEQ,GAFL,CACC,EAAE,CACE,EAAE,CAAC;EACC,KAAK,ECNJ,MAAM;ECCf,UAAU,EAAE,sBAAsB;CFO7B",
+    "sources": [
+        "index.scss",
+        "_variables.scss",
+        "_animation.scss"
+    ],
+    "names": [],
+    "file": "index.css"
+}
