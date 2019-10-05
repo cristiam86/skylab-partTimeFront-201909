@@ -6,7 +6,7 @@
 
 ## Tasks
 
-### isString
+### isString(input)
 
 Write a JavaScript function to check whether an `input` is a *string or not*.
 
@@ -15,7 +15,7 @@ Write a JavaScript function to check whether an `input` is a *string or not*.
     console.log(isString([1, 2, 4, 0]));
     false
 
-### isBlank
+### isBlank(input)
 
 Write a JavaScript function to check whether a string *is blank or not*.
 
@@ -24,63 +24,63 @@ Write a JavaScript function to check whether a string *is blank or not*.
     true
     false
 
-### stringToArray
+### stringToArray(input)
 
 Write a JavaScript *function to split a string and convert it into an array* of words.
 
     console.log(stringToArray("Robin Singh"));
     ["Robin", "Singh"]
 
-### truncate
+### truncate(input, number)
 
 Write a JavaScript function to remove specified number of characters from a string.
 
     console.log(truncate_string("Robin Singh",4));
     "Robi"
 
-### abbrevName
+### abbrevName(input)
 
 Write a JavaScript function *to convert* a string in *abbreviated form*.
 
     console.log(abbrev_name("Robin Singh"));
     "Robin S."
 
-### protect
+### protect(input)
 
 Write a JavaScript function to hide email addresses to protect from unauthorized user.
 
     console.log(protect_email("robin_singh@example.com"));
     "robin...@example.com"
 
-### parameterize
+### parameterize(input)
 
 Write a JavaScript function to *parameterize a string*.
 
     console.log(string_parameterize("Robin Singh from USA."));
     "robin-singh-from-usa"
 
-### capitalizeFirst
+### capitalizeFirst(input)
 
 Write a JavaScript function to *capitalize the first letter of a string*.
 
     console.log(capitalize('js string exercises'));
     "Js string exercises"
 
-### capitalizeWords
+### capitalizeWords(input)
 
 Write a JavaScript function to *capitalize* the first letter *of each word* in a string.
 
     console.log(capitalize_Words('js string exercises'));
     "Js String Exercises"
 
-### swapcase
+### swapcase(input)
 
 Write a JavaScript function that takes a string which has lower and upper case letters as a parameter and *converts upper case letters to lower case*, and lower case letters to upper case.
 
     console.log(swapcase('AaBbc'));
     "aAbBC"
 
-### camelize
+### camelize(input)
 
 Write a JavaScript function *to convert a string into camel case*.
 
@@ -91,7 +91,7 @@ Write a JavaScript function *to convert a string into camel case*.
     "JavaScriptExercises"
     "JavaScriptExercises"
 
-### uncamelize
+### uncamelize(input)
 
 Write a JavaScript function to *uncamelize* a string.
 
@@ -99,14 +99,14 @@ Write a JavaScript function to *uncamelize* a string.
     console.log(uncamelize('helloWorld', '_'));    // "hello_world"
 ```
 
-### repeat
+### repeat(input, n)
 
 Write a JavaScript function to *concatenates a given string n times* (default is 1).
 
     console.log(repeat('Ha!',3));
     "Ha!Ha!Ha!"
 
-### insert
+### insert(input, insert, position)
 
 Write a JavaScript function to insert a string within a string at a *particular position* (default is 1).
 
