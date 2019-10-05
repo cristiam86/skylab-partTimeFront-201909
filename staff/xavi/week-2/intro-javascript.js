@@ -200,4 +200,50 @@ for(var t = 0; t < wer.length; t += 1){
     }
 }
 
+/*
+var numbers = [3, '-7', 2]
+var parsedNumbers = numbers.map((number) =>  Number(number))
+console.log('array modified ->', parsedNumbers)
+VM56:3 array modified -> (3) [3, -7, 2]
+undefined
+var numbers = [3, '-7', 2]
+var parsedNumbers = numbers.map(function(number){  return Number(number)})
+console.log('array modified ->', parsedNumbers)
+VM89:3 array modified -> (3) [3, -7, 2]
+undefined
 
+function transform(numbers){
+	return numbers.map(function(number){return  Number(number)})
+}
+
+console.log('array modified ->', transform([3, '-7', 2]))
+VM485:6 array modified -> (3) [3, -7, 2]
+undefined
+
+function transform(numbers){
+	return numbers.forEach(function(number){return  Number(number)})
+}
+
+console.log('array modified ->', transform([3, '-7', 2]))
+VM498:6 array modified -> undefined
+undefined
+
+
+function transform(numbers){
+	var result = []
+	numbers.forEach(function(number){  result.push(Number(number))})
+	return result;
+}
+
+console.log('array modified ->', transform([3, '-7', 2]))
+VM569:9 array modified -> (3) [3, -7, 2]
+undefined
+function transform(numbers){
+	return numbers.map(function(number){return  'xavi' })
+}
+
+console.log('array modified ->', transform([3, '-7', 2]))
+VM622:5 array modified -> (3) ["xavi", "xavi", "xavi"]
+undefined
+
+*/
