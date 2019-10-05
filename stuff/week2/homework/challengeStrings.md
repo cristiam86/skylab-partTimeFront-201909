@@ -38,7 +38,7 @@ Write a JavaScript function to remove specified number of characters from a stri
     console.log(truncate_string("Robin Singh",4));
     "Robi"
 
-### abbrev_name
+### abbrevName
 
 Write a JavaScript function *to convert* a string in *abbreviated form*.
 
@@ -59,14 +59,14 @@ Write a JavaScript function to *parameterize a string*.
     console.log(string_parameterize("Robin Singh from USA."));
     "robin-singh-from-usa"
 
-### capitalize_first
+### capitalizeFirst
 
 Write a JavaScript function to *capitalize the first letter of a string*.
 
     console.log(capitalize('js string exercises'));
     "Js string exercises"
 
-### capitalize_words
+### capitalizeWords
 
 Write a JavaScript function to *capitalize* the first letter *of each word* in a string.
 
