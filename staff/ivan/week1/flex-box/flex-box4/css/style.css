@@ -1,0 +1,40 @@
+#html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    border: solid 5px plum;
+    width:75%;
+}
+
+.main_box_border{
+   border: solid 3px lightseagreen;
+   margin: 2px; 
+}
+
+.main_box_left{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.main_box_right{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#image_container{
+    width:100px;
+}
+
+#image_container img{
+    width: 100%;
+}
+
+#text{
+    color: purple;
+}
+

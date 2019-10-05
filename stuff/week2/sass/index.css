@@ -1,0 +1,136 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background-color: lightgray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-pack: flex-end;
+  -ms-flex-pack: flex-end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-shadow: 0px 5px 10px -5px black;
+          box-shadow: 0px 5px 10px -5px black;
+}
+
+header .burger-button-container input {
+  display: none;
+}
+
+header .burger-button-container input:checked ~ nav {
+  left: 0;
+}
+
+header .burger-button-container input:checked ~ label .burger-button-line {
+  background-color: lightgray;
+}
+
+header .burger-button-container input:checked ~ label .burger-button-line:after {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+header .burger-button-container input:checked ~ label .burger-button-line:before {
+  bottom: 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+header .burger-button-container label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  padding: 10%;
+  border: 1px solid darkgray;
+  cursor: pointer;
+}
+
+header .burger-button-container label .burger-button-line-template, header .burger-button-container label .burger-button-line, header .burger-button-container label .burger-button-line:after, header .burger-button-container label .burger-button-line:before {
+  width: 100%;
+  height: 4px;
+  background-color: darkgray;
+}
+
+header .burger-button-container label .burger-button-line-extra-template, header .burger-button-container label .burger-button-line:after, header .burger-button-container label .burger-button-line:before {
+  content: '';
+  position: absolute;
+}
+
+header .burger-button-container label .burger-button-line {
+  position: relative;
+  -webkit-transition: all 1s cubic-bezier(0, 0.76, 0.59, 1.34);
+  transition: all 1s cubic-bezier(0, 0.76, 0.59, 1.34);
+}
+
+header .burger-button-container label .burger-button-line:after {
+  top: -11px;
+  -webkit-transition: all 2s cubic-bezier(0, 0.76, 0.59, 1.34);
+  transition: all 2s cubic-bezier(0, 0.76, 0.59, 1.34);
+}
+
+header .burger-button-container label .burger-button-line:before {
+  bottom: -11px;
+  -webkit-transition: all 0.3s cubic-bezier(0, 0.76, 0.59, 1.34);
+  transition: all 0.3s cubic-bezier(0, 0.76, 0.59, 1.34);
+}
+
+header nav {
+  position: absolute;
+  top: 49px;
+  width: 100%;
+  left: 100%;
+  -webkit-transition: left 0.6s cubic-bezier(0, 0.76, 0.59, 1.34);
+  transition: left 0.6s cubic-bezier(0, 0.76, 0.59, 1.34);
+}
+
+header nav ul {
+  list-style-type: none;
+  width: 100%;
+}
+
+header nav ul li {
+  color: tomato;
+  background-color: lightgray;
+}
+/*# sourceMappingURL=index.css.map */
