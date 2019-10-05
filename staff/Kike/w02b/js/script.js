@@ -68,11 +68,11 @@ function largestNumber(){
     Number.isInteger(num2) ? validacion++ : '';
     Number.isInteger(num3) ? validacion++ : '';
     Number.isInteger(num4) ? validacion++ : '';
-    Number.isInteger(num4) ? validacion++ : '';
+    Number.isInteger(num5) ? validacion++ : '';
     
     var numSorted = [num1, num2, num3, num4, num5];
     numSorted = numSorted.sort().reverse();
-    validacion === 3 ? alert(`el numero mas grande es ${numSorted[0]}`) : alert('NO SON NUMEROS');
+    validacion === 5 ? alert(`el numero mas grande es ${numSorted[0]}`) : alert('NO SON NUMEROS');
 }
 
 
