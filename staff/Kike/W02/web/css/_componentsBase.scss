@@ -62,7 +62,7 @@
         margin-top: 1rem;
         width: 100vw;
         height: 0rem;
-        background: rgba(white, 0.5);
+        background: rgba(white, 0.2);
         .mobileNav {
           position: absolute;
           right: 0;
@@ -94,6 +94,7 @@
     }
   }
 }
+
 .featuresContainer {
   @extend .displayCenter;
   background: $baseColor;
@@ -111,8 +112,6 @@
       }
       .featuresLink {
         color: white;
-        .link {
-        }
       }
     }
     .featuresImage {
@@ -127,20 +126,18 @@
 }
 
 .footer {
+  @extend .displayBetween;
   min-height: 3rem;
   width: 100vw;
   background-color: #383838;
   position: fixed;
   bottom: 0;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   .part {
     padding-left: 3rem;
     padding-right: 3rem;
     .footerLink {
       color: white;
+      font-size: 0.875rem;
       padding-left: 0.5rem;
       padding-right: 0.5rem;
     }
@@ -170,6 +167,15 @@
     flex-wrap: wrap;
     .part {
       width: 100vw;
+    }
+  }
+  .footer{
+    display: block;
+    .part{
+      @include displayCenter;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      height: 2rem;
     }
   }
 }

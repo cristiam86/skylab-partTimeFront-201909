@@ -15,7 +15,7 @@
           align-items: center;
 }
 
-.displayBetween {
+.displayBetween, .footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -230,7 +230,7 @@ a {
   margin-top: 1rem;
   width: 100vw;
   height: 0rem;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .navContainer .navigation.hamburguer .mobileNavShadow .mobileNav {
@@ -297,15 +297,6 @@ a {
   background-color: #383838;
   position: fixed;
   bottom: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .footer .part {
@@ -315,6 +306,7 @@ a {
 
 .footer .part .footerLink {
   color: white;
+  font-size: 0.875rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
@@ -350,6 +342,23 @@ a {
   }
   .featuresContainer .part {
     width: 100vw;
+  }
+  .footer {
+    display: block;
+  }
+  .footer .part {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 2rem;
   }
 }
 /*# sourceMappingURL=core.css.map */

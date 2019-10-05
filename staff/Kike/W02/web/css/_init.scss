@@ -6,11 +6,15 @@ $hamburgerIconSize: 2rem;
   font-family: "Montserrat", sans-serif;
 }
 
-.displayCenter {
+@mixin displayCenter {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.displayCenter{
+  @include displayCenter;
+}
+
 @mixin displayBetween {
   display: flex;
   justify-content: space-between;
