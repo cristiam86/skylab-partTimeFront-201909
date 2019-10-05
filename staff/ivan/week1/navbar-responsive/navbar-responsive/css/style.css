@@ -1,0 +1,47 @@
+body{
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#navbar{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: gray;
+}
+
+#skylab{
+    background-color: #fff01a;
+}
+
+.link{
+    padding: 2.5% 0 2.5% 0;
+    text-align: center;
+    width: 100%;
+    background-color: gray;
+}
+
+@media (min-width:900px){
+
+    /*CLASSES*/
+
+    #navbar{
+        flex-direction: row;
+    }
+    
+    .link{
+        width:10%
+    }
+
+    #contacto{
+        margin-left: auto;
+    }
+
+	/*ID*/
