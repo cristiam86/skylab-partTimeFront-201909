@@ -1,4 +1,4 @@
-# JavaScript String Exercises [timing 45m]
+# JavaScript String Exercises
 
 ## Goals
 
