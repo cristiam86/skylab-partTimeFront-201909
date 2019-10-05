@@ -1,4 +1,4 @@
 - FINISH Website PhotoApp
 - FINISH GRID and FLEX Responsive
 - CHALLENGE: [Control flow](https://github.com/SkylabCoders/skylab-partTimeFront-201909/blob/develop/stuff/week2/js/challengeControlFlow.md)
-- CHALLENGE: [Strings 1](https://github.com/SkylabCoders/skylab-partTimeFront-201909/blob/develop/stuff/week2/js/homework/challengeStrings.md)
+- CHALLENGE: [Strings 1](https://github.com/SkylabCoders/skylab-partTimeFront-201909/blob/develop/stuff/week2/homework/challengeStrings.md)
