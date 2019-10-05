@@ -1,12 +1,65 @@
+<<<<<<< HEAD
+=======
+* {
+    padding: 0;
+    margin: 0;
+}
 
-
-
-
-/* Mobile first ********************************/
 body{
     margin: 0;
     padding: 0;
 }
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: #F6F6F6;
+    align-items: baseline;
+}
+
+/** ************* navbar *************/
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    color: #666666;
+    font-size: 20px;
+    
+}
+
+.navbar li {
+    list-style: none;
+    padding: 1rem;
+}
+
+.navbar li a {
+    text-decoration: none;
+}
+
+.navbar li:visited {
+    text-decoration: none;
+}
+
+.navbar li:hover {
+    background-color: #E1E1E1;
+}
+
+
+.logoGamma {
+    color: #3D9B87;
+    font-size: 30px;
+    margin-left: 10%;
+}
+
+.back-photo {
+    background-image: url(assets/site_showcase_bg.jpg);
+    display: flex;
+    flex-direction: row;
+}
+>>>>>>> 85e96431e29bd75b9ce4a691f7b5d27576782bd7
+
+
 
 .inner{
     display: flex;
@@ -20,18 +73,19 @@ footer{
 
 
 /************************ CARDS ****************/
-.main-cards{
-    flex-direction: column;
+.main-cards {
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     padding: 1rem;
     margin: 1rem;
-    width: 100%;
+    max-width: 1200px;;
 }
 
 .main-cards .card{
     border: 1px solid rgb(209, 209, 209);
     border-radius: 5px;
-    width: auto;
+    width: 300px;
     margin: 1em;
 }
 
@@ -91,6 +145,10 @@ footer{
     h1{
         color: #3D9B87;
     }
-   }
+    .main-cards{
+        display: flex;
+        flex-direction: row;
+    }
+}
    
 
