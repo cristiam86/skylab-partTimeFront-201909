@@ -1,0 +1,67 @@
+/* .upperBlock{
+    grid-column: 1 / 6;
+    grid-row: 1 / 2;
+
+} */
+
+.block{
+    width:100px;
+    height:100px;
+    background-color: white;
+    margin:0%;
+    border: solid 2px;
+    
+}
+
+.title{
+    width: 340px;
+    height: 340px;
+    background-color: cornflowerblue;
+    margin:0%;
+    grid-column: 2 / 5;
+    grid-row: 2 / 5;
+    text-align: center;
+    border: solid 2px;
+}
+
+#content{
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px 100px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    /*can't make grid areas to work...*/
+    /* grid-template-areas: 
+      "block block block block block"
+      "block title title title block"
+      "block title title title block"
+      "block title title title block"
+      "block block block block block"; */
+}
+
+.block.toprow > div{
+    height:50px;
+    background-color: blue;
+}
+
+.block.toprow > div{
+    height:50px;
+    background-color:#2eb82e;
+}
+
+.block.leftrow > div{
+    height:50px;
+    background-color:#3366ff;
+}
+
+.block.rightrow > div{
+    height:50px;
+    background-color:#ffff4d;
+}
+
+.block.bottomrow > div{
+    height:50px;
+    background-color:#ff4d4d;
+}
+
+/*flip the divs with transform: rotate and provide deg...*/
