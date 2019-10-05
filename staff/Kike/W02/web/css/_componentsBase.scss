@@ -2,11 +2,13 @@
   @extend .displayCenter;
   background: $grey;
   width: 100vw;
+  height: 4rem;
   padding: 1rem;
   padding-left: 1rem;
   margin-bottom: 1rem;
   position: sticky;
   top: 0;
+  z-index: 1;
   .navigation {
     position: relative;
     .navigationLinks {
