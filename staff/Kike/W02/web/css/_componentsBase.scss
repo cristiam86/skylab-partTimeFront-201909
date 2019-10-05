@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap");
 
+$hamburgerIconSize: 2rem;
+
 .ffamily {
   font-family: "Montserrat", sans-serif;
 }
@@ -7,6 +9,11 @@
 .displayCenter {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+.displayBetween {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -33,11 +40,14 @@ body {
 }
 
 .navContainer {
+  @extend .displayBetween;
   background: $grey;
   width: 100vw;
   padding: 1rem;
   padding-left: 4rem;
   margin-bottom: 1rem;
+  position: sticky;
+  top: 0;
   .navigation {
     .navigationLinks {
       color: #383838;
@@ -47,6 +57,29 @@ body {
       &.active {
         color: $baseColor;
         font-size: 1.5rem;
+      }
+    }
+    &.hamburguer {
+      input {
+        display: none;
+        &:checked ~ label {
+          .hamburgerImg {
+            svg {
+              fill: $baseColor;
+            }
+          }
+        }
+      }
+      label {
+        .hamburgerImg {
+          height: $hamburgerIconSize;
+          width: $hamburgerIconSize;
+          svg {
+            height: $hamburgerIconSize;
+            width: $hamburgerIconSize;
+            fill: #383838;
+          }
+        }
       }
     }
   }
