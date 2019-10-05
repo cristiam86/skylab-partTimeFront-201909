@@ -55,6 +55,60 @@ body {
   margin: 0rem;
 }
 
+.growNavHamburger, .navContainer .navigation.hamburguer input:checked ~ nav {
+  -webkit-animation: growHamb 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) both;
+  animation: growHamb 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) both;
+}
+
+@-webkit-keyframes growHamb {
+  0% {
+    height: 0rem;
+    opacity: 0;
+  }
+  100% {
+    height: 10rem;
+    opacity: 1;
+  }
+}
+
+@keyframes growHamb {
+  0% {
+    height: 0rem;
+    opacity: 0;
+  }
+  100% {
+    height: 10rem;
+    opacity: 1;
+  }
+}
+
+.shrinkNavHamburger, .navContainer .navigation.hamburguer .mobileNav {
+  -webkit-animation: shrinkHamb 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) both;
+  animation: shrinkHamb 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) both;
+}
+
+@-webkit-keyframes shrinkHamb {
+  0% {
+    height: 100%;
+    opacity: 1;
+  }
+  100% {
+    height: 0rem;
+    opacity: 0;
+  }
+}
+
+@keyframes shrinkHamb {
+  0% {
+    height: 100%;
+    opacity: 1;
+  }
+  100% {
+    height: 0rem;
+    opacity: 0;
+  }
+}
+
 .navContainer {
   background: #eee;
   width: 100vw;
@@ -64,6 +118,10 @@ body {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+}
+
+.navContainer .navigation {
+  position: relative;
 }
 
 .navContainer .navigation .navigationLinks {
@@ -76,6 +134,10 @@ body {
 .navContainer .navigation .navigationLinks.active {
   color: darkseagreen;
   font-size: 1.5rem;
+}
+
+.navContainer .navigation.hamburguer {
+  display: none;
 }
 
 .navContainer .navigation.hamburguer input {
@@ -95,6 +157,15 @@ body {
   height: 2rem;
   width: 2rem;
   fill: #383838;
+}
+
+.navContainer .navigation.hamburguer .mobileNav {
+  position: absolute;
+  right: -1rem;
+  margin-top: 1rem;
+  width: 10rem;
+  height: 0rem;
+  background: lightpink;
 }
 
 .featuresContainer {
@@ -155,6 +226,15 @@ body {
 }
 
 @media (max-width: 1024px) {
+  .navContainer .navigation .navigationLinks {
+    display: none;
+  }
+  .navContainer .navigation .navigationLinks.mobile {
+    display: block;
+  }
+  .navContainer .navigation.hamburguer {
+    display: block;
+  }
   .featuresContainer {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
