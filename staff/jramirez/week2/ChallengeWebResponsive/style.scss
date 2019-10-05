@@ -1,3 +1,4 @@
+@import "mixins";
 // variables
 $tablet: 764px;
 $desktop: 1024px;
@@ -156,3 +157,37 @@ header {
     }
   }
  }
+
+
+ /*ivan's sass*/
+
+ .hero{
+  @include flex-complete($direction: column, $justify: center, $align: center);
+}
+
+.hero_container{
+  @include flex-complete($direction: column, $justify: center, $align: center);
+
+  width: 100%
+}
+
+.hero_title{
+  @include flex-complete($direction: column, $justify: center, $align: center);
+
+  width:100%;
+  margin-top:64px;
+}
+
+.hero_apps{
+  @include flex-complete($direction: column, $justify: center, $align: center);
+
+  margin-top:72px;
+}
+
+.googleplay{
+  @include flex-complete($direction: column, $justify: center, $align: center);
+
+  margin-top: 12px;
+}
+
+
