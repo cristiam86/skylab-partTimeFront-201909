@@ -1,0 +1,70 @@
+.gridContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 16.5vw 16.5vw 16.5vw 16.5vw 16.5vw 16.5vw;
+      grid-template-columns: 16.5vw 16.5vw 16.5vw 16.5vw 16.5vw 16.5vw;
+}
+
+.gridContainer .flexCenter, .gridContainer .grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gridContainer .grid {
+  background: lightpink;
+  height: 2rem;
+  border: solid 1px palevioletred;
+}
+
+.gridContainer .grid.one {
+  grid-column: span 1;
+}
+
+.gridContainer .grid.two {
+  grid-column: span 2;
+}
+
+.gridContainer .grid.three {
+  grid-column: span 3;
+}
+
+.gridContainer .grid.four {
+  grid-column: span 4;
+}
+
+.gridContainer .grid.five {
+  grid-column: span 5;
+}
+
+.gridContainer .grid.six {
+  grid-column: span 6;
+}
+
+@media (max-width: 1024px) {
+  .gridContainer .grid.one {
+    grid-column: span 3;
+  }
+  .gridContainer .grid.two {
+    grid-column: span 6;
+  }
+  .gridContainer .grid.three {
+    grid-column: span 6;
+  }
+  .gridContainer .grid.four {
+    grid-column: span 6;
+  }
+  .gridContainer .grid.five {
+    grid-column: span 6;
+  }
+  .gridContainer .grid.six {
+    grid-column: span 6;
+  }
+}
+/*# sourceMappingURL=style.css.map */
