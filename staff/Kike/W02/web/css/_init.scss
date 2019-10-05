@@ -11,10 +11,13 @@ $hamburgerIconSize: 2rem;
   justify-content: center;
   align-items: center;
 }
-.displayBetween {
+@mixin displayBetween {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.displayBetween {
+  @include displayBetween;
 }
 
 .noselect {
@@ -37,4 +40,7 @@ html {
 }
 body {
   margin: 0rem;
+}
+a{
+  text-decoration: none;
 }

@@ -1,9 +1,9 @@
 .navContainer {
-  @extend .displayBetween;
+  @extend .displayCenter;
   background: $grey;
   width: 100vw;
   padding: 1rem;
-  padding-left: 4rem;
+  padding-left: 1rem;
   margin-bottom: 1rem;
   position: sticky;
   top: 0;
@@ -18,17 +18,22 @@
         color: $baseColor;
         font-size: 1.5rem;
       }
+      &.logo{
+        font-size: 1.5rem;
+        margin-left: 0;
+      }
     }
     &.hamburguer {
       display: none;
       input {
         display: none;
-        &:checked ~ nav {
+        &:checked ~ .mobileNavShadow {
           @extend .growNavHamburger;
         }
 
         &:checked ~ label {
           .hamburgerImg {
+            @extend .rotateIcon;
             svg {
               fill: $baseColor;
             }
@@ -37,6 +42,7 @@
       }
       label {
         .hamburgerImg {
+          @extend .rotateIcon2;
           height: $hamburgerIconSize;
           width: $hamburgerIconSize;
           svg {
@@ -47,14 +53,41 @@
         }
       }
 
-      .mobileNav {
+      .mobileNavShadow {
         @extend .shrinkNavHamburger;
         position: absolute;
         right: -1rem;
         margin-top: 1rem;
-        width: 10rem;
+        width: 100vw;
         height: 0rem;
-        background: lightpink;
+        background: rgba(white, 0.5);
+        .mobileNav {
+          position: absolute;
+          right: 0;
+          width: 70vw;
+          height: 100%;
+          background: white;
+          .navigationLinksContainer {
+            list-style-type: none;
+            padding: 0;
+
+            .navigationLinks {
+              &.mobile {
+                @extend .displayCenter;
+                justify-content: flex-start;
+                margin: 0;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                padding-left: 1rem;
+                width: 100;
+                &:hover {
+                  background: $baseColor;
+                  color: white;
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -113,12 +146,17 @@
 }
 
 @media (max-width: 1024px) {
-  .navContainer{
-    .navigation{
-      .navigationLinks{
+  .navContainer {
+    @include displayBetween;
+    padding-left: 1rem;
+    .navigation {
+      .navigationLinks {
         display: none;
-        &.mobile{
+        &.mobile {
           display: block;
+          color: $baseColor;
+          font-size: 1.5rem;
+          margin-left: 0;
         }
       }
       &.hamburguer {
