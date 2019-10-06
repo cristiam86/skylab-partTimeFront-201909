@@ -16,9 +16,9 @@ function largerInteger(num1, num2){
 //largerInteger(valor1, valor2);
 
 // 2. EJERCICIO PARA EVALUAR SI EL VALOR PASADO ES NEGATIVO
-var valor3 = prompt("Introduce el primer valor", "0");
-var valor4 = prompt("Introduce el primer valor", "0");
-var valor5 = prompt("Introduce el primer valor", "0");
+//var valor3 = prompt("Introduce el primer valor", "0");
+//var valor4 = prompt("Introduce el primer valor", "0");
+//var valor5 = prompt("Introduce el primer valor", "0");
 function signProduct(num3, num4, num5){
   var resultado = num3*num4*num5;
   if(resultado < 0){
@@ -27,20 +27,22 @@ function signProduct(num3, num4, num5){
     alert(resultado+' es positivo');
   }
 }
-signProduct(valor3, valor4, valor5);
+//signProduct(valor3, valor4, valor5);
 
 // 3. EJERCICIO PARA ORDENAR VALORES
-//var valor6 = prompt("Introduce el primer valor", "0");
-//var valor7 = prompt("Introduce el segundo valor", "0");
-//var valor8 = prompt("Introduce el tercer valor", "0");
+var valor6 = prompt("Introduce el primer valor", "0");
+var valor7 = prompt("Introduce el segundo valor", "0");
+var valor8 = prompt("Introduce el tercer valor", "0");
 
 function sortNumbers(num6, num7, num8){
-  var arr = [num6, num7, num8]
-  arr.sort();
-  alert(arr);
+  if(num6<num7 && num7<num8){
+    alert(num6+", "+num7+", "+num8);
+  }else if(){
+    
+  }
 }
 
-//sortNumbers(valor6, valor7, valor8);
+sortNumbers(valor6, valor7, valor8);
 
 // 4. MUESTRA EL MAYOR NÚMERO DE TODOS
 
