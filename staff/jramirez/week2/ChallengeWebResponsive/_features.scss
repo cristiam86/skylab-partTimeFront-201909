@@ -1,0 +1,26 @@
+/* ivan's feature sass*/
+
+.features{
+    @include flex-complete($direction: column, $justify: center, $align: center);
+  
+    background-color: $primary;
+    color:white;
+  }
+  
+  .features_list{
+    margin-top: 30px;
+    width:80%;
+  
+    ul{
+      padding-left: 16px;
+  
+      li{
+        padding-top: 4px;
+      }
+    }
+  }
+  
+  .features_logo{
+    width: 80%;
+  }
+  
