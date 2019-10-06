@@ -93,11 +93,14 @@ function fizzBuzz(){
 
 //contruct_pattern
 function constructPattern(){
+    var arbol = [];
     for (i = 0; i < 6; i++) {
+        arbol[i]= [];
         for (j = 0; j < i; j++) {
-            console.log('*');
+            arbol[i][j] = '*';
         }
     }
+    console.log(arbol);
 }
 
 //under_1000
