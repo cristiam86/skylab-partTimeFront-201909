@@ -16,6 +16,30 @@ a {
   text-decoration: none;
 }
 
+div {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+button {
+  border: 1px solid #EBEBEB;
+  padding: 16px;
+  color: #000;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+@media only screen and (min-width: 764px) {
+  button {
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #00B09B;
+    color: white;
+    border: 1px solid #00B09B;
+  }
+}
+
 header {
   background-color: #F8F8F8;
 }
@@ -378,5 +402,61 @@ header nav a {
         align-self: flex-end;
     width: 80%;
   }
+}
+
+.content {
+  margin: 48px auto;
+}
+
+@media only screen and (min-width: 764px) {
+  .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 1160px;
+  }
+}
+
+.content .item {
+  border: 1px solid #EBEBEB;
+  padding: 4px;
+  border-radius: 3px;
+  margin: 24px;
+}
+
+@media only screen and (min-width: 764px) {
+  .content .item {
+    width: calc(50% - 58px);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .content .item {
+    width: calc(33.33% - 58px);
+  }
+}
+
+.content .item img {
+  width: 100%;
+}
+
+.content .item .item-box {
+  padding: 16px;
+}
+
+.content .item h3 {
+  font-size: 18px;
+}
+
+.content .item p {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+footer {
+  background-color: #333;
+  padding: 24px;
 }
 /*# sourceMappingURL=style.css.map */
