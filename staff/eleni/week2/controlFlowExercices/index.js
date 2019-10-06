@@ -19,7 +19,7 @@ var num1;
 var num2;
 var num3;
 function sign_product(num1,num2,num3){
-    var result=[num1,num2,num3].reduce((a, b) => a + b, 0);
+    var result=num1*num2*num3;
     if (result<0){
         console.log("The sign is -");
     }else{
@@ -102,6 +102,14 @@ pattern();
 
 
 //under_1000
-function under_1000(){
-    
+function under_1000{
+var sum = 0;
+for (var x = 0; x < 1000; x++)
+{
+    if (x % 3 === 0 || x % 5 === 0)
+    {
+       sum += x;
+    }
+}
+console.log(sum);
 }
