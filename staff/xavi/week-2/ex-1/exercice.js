@@ -92,3 +92,20 @@ for(c = 0; c < cNum.length; c++){
 
 console.log('el número más alto es: ' + comparador)
 
+
+
+// Par o impar
+
+var quince = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
+
+
+for(let p = 0; p < quince.length; p++){
+    if(p === 0){
+        console.log(p + ' cero es par ')
+    } else if(p % 2 === 0){
+        console.log(p + ' es par')
+    } else {
+        console.log(p + 'es impar')
+    }
+}
+
