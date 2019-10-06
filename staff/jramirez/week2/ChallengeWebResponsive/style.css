@@ -221,6 +221,27 @@ header nav a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  background-color: lightgrey;
+  background-image: url("img/site_showcase_bg.jpg");
+  background-size: cover;
+}
+
+@media only screen and (min-width: 1024px) {
+  .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
 }
 
 .hero_container {
@@ -238,9 +259,13 @@ header nav a {
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  background-color: lightgrey;
-  background-image: url("img/site_showcase_bg.jpg");
-  background-size: cover;
+}
+
+@media only screen and (min-width: 1024px) {
+  .hero_container {
+    width: 80%;
+    margin-left: 10%;
+  }
 }
 
 .hero_title {
@@ -313,6 +338,7 @@ header nav a {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    margin-bottom: 220px;
   }
 }
 
@@ -336,6 +362,21 @@ header nav a {
 @media only screen and (min-width: 764px) {
   .googleplay {
     margin-top: 0px;
+  }
+}
+
+.hand_container {
+  display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+  .hand_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    width: 80%;
   }
 }
 /*# sourceMappingURL=style.css.map */

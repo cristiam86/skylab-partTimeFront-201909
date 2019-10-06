@@ -163,15 +163,24 @@ header {
 
  .hero{
   @include flex-complete($direction: column, $justify: center, $align: center);
+
+  background-color: lightgrey;
+  background-image: url("img/site_showcase_bg.jpg");
+  background-size: cover;
+
+  @media only screen and (min-width: $desktop){
+    @include flex-complete($direction: row, $justify: center, $align: center);
+  }
 }
 
 .hero_container{
   @include flex-complete($direction: column, $justify: center, $align: center);
 
   width: 100%;
-  background-color: lightgrey;
-  background-image: url("img/site_showcase_bg.jpg");
-  background-size: cover;
+  @media only screen and (min-width: $desktop){
+    width:80%;
+    margin-left:10%;
+  }
 }
 
 .hero_title{
@@ -205,6 +214,7 @@ header {
 
   @media only screen and (min-width: $tablet){
     @include flex-complete($direction: row, $justify: space-evenly, $align: center);
+    margin-bottom: 220px;
   }
 }
 
@@ -215,6 +225,15 @@ header {
   @media only screen and (min-width: $tablet){
     margin-top: 0px;
   }  
+}
+
+.hand_container{
+  display:none;
+  @media only screen and (min-width: $desktop){
+    display: flex;
+    align-self: flex-end;
+    width:80%;
+  }    
 }
 
 
