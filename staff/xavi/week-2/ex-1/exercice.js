@@ -1,5 +1,5 @@
 
-/*
+
 var num1 = prompt();
 var num2 = prompt();
 
@@ -9,15 +9,11 @@ var numero2 = parseInt(num2, 10);
 
 if(numero1 > numero2){
     console.log(numero1 + " es mayor que " + numero2)
-} else{
-    if(numero1 === numero2){
-     console.log(numero1 + " es igual que " +  numero2)
-    } else{
-        console.log(numero1 + " es menor que " +  numero2)
-    }
+} else if (numero1 === numero2){
+    console.log(numero1 + " es igual que " + numero2)
+} else {
+    console.log(numero1 + " es menor que " + numero2)
 }
-
-*/
 
 // ejecicio 2
 /*
@@ -30,7 +26,7 @@ Salida: el signo es -
 
 */
 
-/*
+
 
 var numb1 = 3;
 var numb2 = -7;
@@ -44,7 +40,7 @@ var numbers = [3, -7, 2]
 var parsedNumbers = numbers.map((number) =>  Number(number))
 console.log('array modified ->', parsedNumbers)
 
-*/
+
 
 /* *************** 
 ### sort_numbers
@@ -65,9 +61,10 @@ console.log(sortNum)
 /*** 
 ###  largest_number
 
-Write a JavaScript conditional statement to find the largest of five numbers. Display an alert box to show the result.
 
-```
+Escriba una declaración condicional de JavaScript para encontrar el mayor de cinco números. Mostrar un cuadro de alerta para mostrar el resultado.
+
+
 Sample numbers : -5, -2, -6, 0, -1 
 Output : 0 
 */
@@ -85,9 +82,13 @@ var numeroc4 = parseInt(numc4, 10);
 var numeroc5 = parseInt(numc5, 10);
 
 var cNum = [numeroc1, numeroc2, numeroc3, numeroc4, numeroc5]
-console.log(cNum)
+var comparador = 0
 
 for(c = 0; c < cNum.length; c++){
-    console.log(cNum[c])
+   if(cNum[c]>comparador){
+       var comparador = cNum[c]
+   }
 }
+
+console.log('el número más alto es: ' + comparador)
 
