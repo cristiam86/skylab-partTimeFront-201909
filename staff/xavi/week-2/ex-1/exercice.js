@@ -90,7 +90,7 @@ for(c = 0; c < cNum.length; c++){
    }
 }
 
-console.log('el número más alto es: ' + comparador)
+console.log('de los siguientes números: ' + numeroc1, numeroc2, numeroc3, numeroc4, numeroc5 + ' el número más alto es: ' + comparador)
 
 
 
@@ -108,4 +108,6 @@ for(let p = 0; p < quince.length; p++){
         console.log(p + 'es impar')
     }
 }
+
+
 
