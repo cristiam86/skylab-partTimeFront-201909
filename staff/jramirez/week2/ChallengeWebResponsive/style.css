@@ -458,5 +458,38 @@ header nav a {
 footer {
   background-color: #333;
   padding: 24px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-between;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
+  }
+}
+
+footer nav {
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  margin: 8px;
+}
+
+footer .legal {
+  color: white;
+  font-size: 14px;
+  margin-top: 16px;
+}
+
+@media only screen and (min-width: 1024px) {
+  footer .legal {
+    margin: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
