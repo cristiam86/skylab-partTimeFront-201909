@@ -9,8 +9,8 @@
 * Git branch, checks the branch you’re currently working on
 * Git checkout <branch name>, switches you to new branch
 * Git merge <branch name> updates your current branch with the *contents of the selected one
-
-
+* Git log to check the last commits
+* git reset --hard (number of commit) to discard any changes and return to desired commit
 
 
 
