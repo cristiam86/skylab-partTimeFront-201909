@@ -9,3 +9,15 @@
 * Git branch, checks the branch you’re currently working on
 * Git checkout <branch name>, switches you to new branch
 * Git merge <branch name> updates your current branch with the *contents of the selected one
+
+
+
+
+
+## Questions:
+
+* How does flex basis work? Use it instead of width?
+* When using flex box, is there a better options than text-align?
+* rem 1 represents 16px of the root element. What is the recommended way?
+
+
