@@ -75,7 +75,6 @@ function oddOrEven() {
     }
 }
 
-
 function fizzBuzz() {
     for (var i = 1; i <= 100; i += 1){
         if (i%15 === 0){
@@ -89,14 +88,25 @@ function fizzBuzz() {
 }
 
 function constructPattern() {
-
+    for (var i =1; i <= 5; i += 1){
+        document.write(' * '.repeat(i)+"<br>")
+    }
 }
 
-function constructPattern() {
+function under1000() {
+    var arrSum = [];
+    for (var i = 1; i <= 1000; i += 1){
+        if (i%3 === 0 || i%5 === 0){
+            (arrSum.push(i))
+        }
+    }
+    var result = 0
+    for (var j = 1; j < arrSum.length; j += 1){
+        result = result + j
+    }
 
+    alert(result);
 }
-
-fizzBuzz()
 
 
 
