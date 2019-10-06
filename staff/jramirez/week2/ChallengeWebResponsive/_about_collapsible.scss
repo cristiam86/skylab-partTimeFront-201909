@@ -1,0 +1,29 @@
+.collapsible_area{
+    @include flex-complete($direction: column, $justify:center, $align:flex-start);
+    width:90%;
+    margin: auto;
+    // align-items: center;
+}
+
+.collapsible_title{
+    @include flex-complete($direction: column, $justify:center, $align:flex-start);
+}
+
+.collapsible_block{
+    .collapsible{
+        border: solid gray;
+        .collapsible_checkbox{
+            display:none;
+        }
+        label{
+            h3{
+                background-color: lightgrey;
+                padding:5px 0 5px 0;                
+            }
+        }
+        
+    }
+}
+
+
+
