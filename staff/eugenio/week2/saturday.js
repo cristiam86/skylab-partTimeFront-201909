@@ -35,11 +35,7 @@ var valor7 = prompt("Introduce el segundo valor", "0");
 var valor8 = prompt("Introduce el tercer valor", "0");
 
 function sortNumbers(num6, num7, num8){
-  if(num6<num7 && num7<num8){
-    alert(num6+", "+num7+", "+num8);
-  }else if(){
-    
-  }
+  
 }
 
 sortNumbers(valor6, valor7, valor8);
