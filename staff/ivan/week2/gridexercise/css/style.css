@@ -1,0 +1,32 @@
+#content{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px;
+  }
+
+.col1{
+  background-color: aqua;
+  border: solid;
+  text-align: center;
+}
+
+.col2{
+  background-color: mediumseagreen;
+  border: solid;
+  text-align: center;
+  grid-column: span 2;
+}
+
+.col3{
+  background-color: tomato;
+  border: solid;
+  text-align: center;
+  grid-column: span 2;
+}
+
+@media (min-width:900px){
+    #content{
+      grid-template-columns: 100px 100px 100px 100px 100px 100px;
+      grid-template-rows: 100px 100px 100px 100px 100px 100px;
+  }  
+}
