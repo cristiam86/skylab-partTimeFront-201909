@@ -1,9 +1,22 @@
+.content_about{
+    @include flex-complete($direction: column, $justify: center, $align: center);
+
+    @media only screen and (min-width: $desktop){
+        @include flex-complete($direction: row, $justify: flex-start, $align: flex-start);
+      }       
+}
+
 .collapsible_area{
     @include flex-complete($direction: column, $justify:center, $align:flex-start);
     width:90%;
     margin: auto;
     padding-top: 15px;
     // align-items: center;
+    @media only screen and (min-width: $desktop){
+        margin-top: 30px;
+        padding-left:15px;
+        width:60%
+      }  
 }
 
 .collapsible_title{

@@ -531,6 +531,40 @@ header nav a {
   }
 }
 
+.content_about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  .content_about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+    -webkit-box-pack: flex-start;
+    -ms-flex-pack: flex-start;
+    justify-content: flex-start;
+    -webkit-box-align: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+  }
+}
+
 .collapsible_area {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -548,6 +582,14 @@ header nav a {
   width: 90%;
   margin: auto;
   padding-top: 15px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .collapsible_area {
+    margin-top: 30px;
+    padding-left: 15px;
+    width: 60%;
+  }
 }
 
 .collapsible_title {
