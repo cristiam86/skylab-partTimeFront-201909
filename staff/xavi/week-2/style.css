@@ -43,4 +43,10 @@ body {
 .grow3{
     flex-grow: 3;
 }
+.grow4{
+    flex-grow: 4;
+}
+.grow5{
+    flex-grow: 5;
+}
 /*# sourceMappingURL=style.css.map */

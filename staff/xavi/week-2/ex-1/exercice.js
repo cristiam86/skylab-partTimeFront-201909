@@ -15,6 +15,11 @@ if(numero1 > numero2){
     console.log(numero1 + " es menor que " + numero2)
 }
 
+
+
+
+
+
 // ejecicio 2
 /*
 Escriba una declaración condicional de JavaScript para encontrar el signo del producto de tres números. Mostrar un cuadro de alerta con el signo especificado.
@@ -90,16 +95,16 @@ for(c = 0; c < cNum.length; c++){
    }
 }
 
-console.log('de los siguientes números: ' + numeroc1, numeroc2, numeroc3, numeroc4, numeroc5 + ' el número más alto es: ' + comparador)
+console.log('De los siguientes números: ' + cNum.length + ' el número más alto es: ' + comparador)
 
 
 
 // Par o impar
 
-var quince = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
+var quince = [15];
 
 
-for(let p = 0; p < quince.length; p++){
+for(let p = 0; p < quince; p++){
     if(p === 0){
         console.log(p + ' cero es par ')
     } else if(p % 2 === 0){
