@@ -1,0 +1,40 @@
+.footer-home {
+  max-width: 1000px;
+  margin: auto;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.inner {
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.col-left {
+  width: 100%;
+  text-align: justify;
+  color: white;
+  padding: 1rem;
+}
+
+ul {
+  margin: 1rem;
+}
+
+.col-right {
+  width: 100%;
+  color: blue;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem;
+}
+/*# sourceMappingURL=home.css.map */

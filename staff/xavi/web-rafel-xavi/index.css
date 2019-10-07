@@ -95,7 +95,7 @@ nav {
 }
 
 footer{
-    background: rgb(92, 180, 146);
+    background: #00B09C;
 }
 
 
@@ -106,7 +106,8 @@ footer{
     justify-content: space-between;
     padding: 1rem;
     margin: 1rem;
-    max-width: 1200px;;
+    max-width: 1000px;
+    margin: auto;
 }
 
 .main-cards .card{
@@ -119,7 +120,7 @@ footer{
 .card .card-header{
     padding: 5px;
     border-bottom: 1px solid rgb(226, 226, 226);
-    min-height: 17em;
+    max-height: 17em;
 }
 
 .card .card-body{
@@ -143,6 +144,14 @@ footer{
     color: black;
     cursor: pointer;
 }
+
+
+/***************** FOOTER
+
+foter-home*/
+
+
+
 
 
 /****** Tablet ********************************/

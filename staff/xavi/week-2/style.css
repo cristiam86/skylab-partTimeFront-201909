@@ -16,7 +16,7 @@ body {
 
 .row .column {
   border-right: 1px solid #dea4ae;
-  width: auto;
+  width: 100%;
 }
 
 .row .inner {
@@ -30,23 +30,5 @@ body {
 
 .row .inner span {
   color: white;
-}
-
-.grow1{
-    flex-grow: 1;
-}
-
-.grow2{
-    flex-grow: 2;
-}
-
-.grow3{
-    flex-grow: 3;
-}
-.grow4{
-    flex-grow: 4;
-}
-.grow5{
-    flex-grow: 5;
 }
 /*# sourceMappingURL=style.css.map */
