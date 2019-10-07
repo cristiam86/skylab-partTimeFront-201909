@@ -54,48 +54,39 @@ nav {
     background-image: url(assets/site_showcase_bg.jpg);
     display: flex;
     flex-direction: row;
-}
-
-.highLight {
-    color: #3D9B87
-}
-
-.advice {
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-left: 10%;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
 }
 
-.advice-capture {
-    font-size: 26px;
-    padding: 10px;
-}
+/************************ HEADER ****************/
+/******* new 08102019 ****************/
+.advice {
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-.advice-sentence {
-    padding: 10px;
 }
-
+/******* new 08102019 ****************/
+.advice-capture, .advice-sentence , .AppStore , .GooglePlay {
+    margin: 1rem;
+}
+/******* new 08102019 ****************/
 .logos {
     display: flex;
     flex-direction: row;
-    padding-top: 30px;
-}
-
-.AppStore {
-
 }
 
 .GooglePlay {
-
+    display: flex;
+    justify-content: center;
 }
 
-.mobil-hand {
-    align-items: flex-end;
+/******* new 08102019 ****************/
+.highLight {
+    color: #3D9B87
 }
-
 
 .inner{
     display: flex;
@@ -106,6 +97,8 @@ nav {
 footer{
     background: rgb(92, 180, 146);
 }
+
+
 /************************ CARDS ****************/
 .main-cards {
     display: flex;
@@ -167,6 +160,11 @@ footer{
         margin: auto;
         
     }
+    .advice {
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
 
 /****** mobile ******************************/
@@ -178,6 +176,19 @@ footer{
         display: flex;
         flex-direction: row;
     }
+
+    /******* new 08102019 ****************/
+    .mobil-hand {
+        display: none;
+    }
+    /******* new 08102019 ****************/
+    .logos {
+        flex-direction: column;
+        justify-content: center;
+    
+    }
+
+
 }
    
 
