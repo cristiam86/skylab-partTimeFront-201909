@@ -7,34 +7,31 @@
     <title>HOME</title>
   </head>
   <body>
-    <nav>
-      <div class="logo">Gamma</div>
-      <div class="menu-desktop">
-        <div class="item-menu"><a href="#">Home</a></div>
-        <div class="item-menu"><a href="#">About</a></div>
-        <div class="item-menu"><a href="#">Contact</a></div>
-      </div>
-      <div id="menu-mobile">
-        <label for="menu-toggle"></label>
-        <input type="checkbox" id="menu-toggle" />
-        <ul id="menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
+    <header class="header">
+      <a href="/index.html" class="logo">Gamma</a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+      <ul class="menu">
+          <li><a href="/index.html">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </header>
     <main>
       <div class="main-slider">
-        <div class="slider-left">
-          <h1>Capture <span class="blue">Life</span></h1>
-          <p>A fun and easy way to capture & share the moments you live for.</p>
-          <div class="logo-stores">
-            <img src="challengeWebResponsive/assets/icon_app_store.png">
-            <img src="challengeWebResponsive/assets/icon_google_play.png">
-          </div>
+        <div class="slider-content">
+            <div class="slider-left">
+                <h1 class="slider-left-title">Capture <span class="highlighted">Life</span></h1>
+                <p class="slider-left-text">A fun and easy way to capture & share the moments you live for.</p>
+                <div class="logo-stores">
+                  <img src="challengeWebResponsive/assets/icon_app_store.png">
+                  <img src="challengeWebResponsive/assets/icon_google_play.png">
+                </div>
+              </div>
+              <div class="slider-right">
+                <img src="challengeWebResponsive/assets/site_phone.png">
+              </div>
         </div>
-        <div class="slider-right"></div>
       </div>
       <div class="main-body">
           <div class="main-body-item">
