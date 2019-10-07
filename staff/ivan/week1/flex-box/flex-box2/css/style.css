@@ -1,0 +1,15 @@
+#content{
+    display: flex;
+    flex-basis: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#box{
+    background-color: blueviolet;
+    color: white;
+    font-size: 25px;
+    width: 150px;
+    padding:3%;
+    text-align: center;
+}
