@@ -547,6 +547,7 @@ header nav a {
   align-items: flex-start;
   width: 90%;
   margin: auto;
+  padding-top: 15px;
 }
 
 .collapsible_title {
@@ -565,17 +566,31 @@ header nav a {
   align-items: flex-start;
 }
 
-.collapsible_block .collapsible {
-  border: solid gray;
+.collapsible_block {
+  border: solid gray 1px;
+  border-radius: 5px;
+  margin-top: 10px;
 }
 
-.collapsible_block .collapsible .collapsible_checkbox {
+.collapsible_block .collapsible_checkbox {
   display: none;
 }
 
-.collapsible_block .collapsible label h3 {
+.collapsible_block .collapsible_checkbox:checked + label + .cbtext {
+  max-height: 350px;
+}
+
+.collapsible_block label h3 {
   background-color: lightgrey;
-  padding: 5px 0 5px 0;
+  padding: 5px 0 5px 3px;
+}
+
+.collapsible_block .cbtext {
+  max-height: 0px;
+  overflow: hidden;
+  -webkit-transition: max-height 0.25s ease-in-out;
+  transition: max-height 0.25s ease-in-out;
+  padding: 0 3px 0 3px;
 }
 
 footer {
