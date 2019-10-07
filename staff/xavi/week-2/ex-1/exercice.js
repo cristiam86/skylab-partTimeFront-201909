@@ -101,12 +101,12 @@ console.log('De los siguientes números: ' + cNum.length + ' el número más alt
 
 // Par o impar
 
-var quince = [15];
+var quince = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
 
 
-for(let p = 0; p < quince; p++){
+for(let p = 0; p < quince.length; p++){
     if(p === 0){
-        console.log(p + ' cero es par ')
+        console.log('El cero es un número par ')
     } else if(p % 2 === 0){
         console.log(p + ' es par')
     } else {
