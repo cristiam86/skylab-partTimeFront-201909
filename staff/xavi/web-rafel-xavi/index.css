@@ -88,6 +88,7 @@ nav {
     color: #3D9B87
 }
 
+
 .inner{
     display: flex;
     max-width: 1200px;
@@ -101,7 +102,6 @@ aside{
 footer{
     background: #666666;
 }
-
 
 /************************ CARDS ****************/
 .main-cards {
@@ -150,9 +150,6 @@ footer{
 }
 
 
-/***************** FOOTER
-
-foter-home*/
 
 
 
