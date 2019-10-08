@@ -181,6 +181,7 @@
       }
     }
     .accordionTitle {
+      cursor: pointer;
       padding: 0.5rem 1rem;
       font-size: 1.25rem;
     }
@@ -194,6 +195,11 @@
         background: white;
         margin-bottom: 0rem;
       }
+    }
+
+
+    &:hover{
+      @extend .baseShadow;
     }
   }
 }

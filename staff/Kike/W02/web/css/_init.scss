@@ -13,7 +13,7 @@ $borderRadius: 0.125rem;
   justify-content: center;
   align-items: center;
 }
-.displayCenter{
+.displayCenter {
   @include displayCenter;
 }
 
@@ -36,6 +36,12 @@ $borderRadius: 0.125rem;
                                       supported by Chrome, Opera and Firefox */
 }
 
+.baseShadow {
+  -webkit-box-shadow: 5px 5px 10px 0px rgba(204, 204, 204, 1);
+  -moz-box-shadow: 5px 5px 10px 0px rgba(204, 204, 204, 1);
+  box-shadow: 5px 5px 10px 0px rgba(204, 204, 204, 1);
+}
+
 * {
   @extend .ffamily;
   box-sizing: border-box;
@@ -44,9 +50,10 @@ $borderRadius: 0.125rem;
 html {
   font-size: 16px;
 }
-body,p {
+body,
+p {
   margin: 0rem;
 }
-a{
+a {
   text-decoration: none;
 }

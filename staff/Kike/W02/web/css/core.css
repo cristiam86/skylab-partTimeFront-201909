@@ -42,6 +42,11 @@
                                       supported by Chrome, Opera and Firefox */
 }
 
+.baseShadow, .accordionContainer .accordion:hover {
+  -webkit-box-shadow: 5px 5px 10px 0px #cccccc;
+  box-shadow: 5px 5px 10px 0px #cccccc;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -51,7 +56,8 @@ html {
   font-size: 16px;
 }
 
-body, p {
+body,
+p {
   margin: 0rem;
 }
 
@@ -249,7 +255,7 @@ a {
 }
 
 .navContainer .navigation .navigationLinks.active {
-  color: darkseagreen;
+  color: #6a8f73;
   font-size: 1.5rem;
 }
 
@@ -267,7 +273,7 @@ a {
 }
 
 .navContainer .navigation.hamburguer input:checked ~ label .hamburgerImg svg {
-  fill: darkseagreen;
+  fill: #6a8f73;
 }
 
 .navContainer .navigation.hamburguer label .hamburgerImg {
@@ -315,12 +321,12 @@ a {
 }
 
 .navContainer .navigation.hamburguer .mobileNavShadow .mobileNav .navigationLinksContainer .navigationLinks.mobile:hover {
-  background: darkseagreen;
+  background: #6a8f73;
   color: white;
 }
 
 .featuresContainer {
-  background: darkseagreen;
+  background: #6a8f73;
   width: 100vw;
   height: 25rem;
 }
@@ -408,6 +414,7 @@ a {
 }
 
 .accordionContainer .accordion .accordionTitle {
+  cursor: pointer;
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
 }
@@ -442,7 +449,7 @@ a {
   }
   .navContainer .navigation .navigationLinks.mobile {
     display: block;
-    color: darkseagreen;
+    color: #6a8f73;
     font-size: 1.5rem;
     margin-left: 0;
   }
