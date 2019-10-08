@@ -7,14 +7,17 @@
 .menu .menu-elements {
   display: flex;
 }
-.menu h1 {
+.menu .logo a {
     font-size: 1.5em;
+    font-weight: bold;
     margin-right: 3rem;
-}
-.menu h1 a {
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    display: block;
     color: #1DA591;
     text-decoration: none;
 }
+
 .menu ul {
     padding: 0;
     margin: 0;

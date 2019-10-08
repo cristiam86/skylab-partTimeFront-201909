@@ -5,21 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Photo App</title>
-    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
 </head>
-<body>
+<body class="content content-contact">
     <div class="container">
         <header>
-            <nav class="menu">
-                <div class="logo"></div>
-                
+            <nav class="menu" role="navigation">
+                <div class="logo"><a href="index.html" title="Gamma">Gamma</a></div>
+                <div class="menu-elements">
+                    <input type="checkbox">
+                    <div class="menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navbar-collapse">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li class="active"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
             </nav>
         </header>
 
+        <main>
+            <div class="page-title">
+                <h1>Contact Us</h1>
+            </div>
+            <section class="section-main">
+                <section class="section-col col-left">
+                    <form action="#" method="post">
+                        <label for="name"><b>Name</b></label>
+                        <input type="text" placeholder="Enter name" name="name" required>
+                        <label for="company"><b>Company name</b></label>
+                        <input type="text" placeholder="Enter company name" name="company">
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="email" required>
+                        <label for="message"><b>Message</b></label>
+                        <textarea name="message" id="" cols="30" rows="5" placeholder="Enter message"></textarea>
+                        <p><button class="btn">Submit</button></p>
+                    </form>
+                </section>
+                <section class="section-col col-right">
+                    <div class="content-block">
+                        <img src="assets/img/demo2.jpg" alt="">
+                        <h3>caballisticaly</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                        enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                        nisi ut aliquip ex ea commodo consequat.</p>
+                        <button class="btn">Read More</button>
+                    </div>
+                </section>
+            </section>
+        </main>
         <footer>
-            <ul>
-                <li></li>
-            </ul>
+            <section class="section-items section-footer">
+                <div class="section-footer-wrap">
+                    <div class="features-list">
+                        <h3>Gamma Features</h3>
+                        <ul>
+                            <li>Lorem ipsum</li>
+                            <li>Lorem ipsum</li>
+                            <li>Lorem ipsum</li>
+                            <li>Lorem ipsum</li>
+                            <li>Lorem ipsum</li>
+                        </ul>
+                    </div>
+                    <div class="features-icon"><img src="assets/img/logo.png" alt=""></div>
+                </div>
+            </section> 
+            <section class="footer-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+                <div class="footer-copyright">
+                    <p>Privacy Policy &copy; 2015, All Rights Reserved</p>
+                </div>
+            </section>
         </footer>
     </div>
 </body>
