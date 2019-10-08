@@ -210,6 +210,8 @@ footer {
 }
 .section-col .content-block img {
     max-width: 13rem;
+    margin: 0 auto;
+    display: block;
 }
 .section-col label {
     margin-bottom: 0.5rem;
@@ -276,6 +278,9 @@ footer {
     }
     .menu .logo a {
         margin: auto 10px;
+    }
+    .section-col .content-block img {
+        max-width: 16rem;
     }
     .footer-menu {
         display: flex;
