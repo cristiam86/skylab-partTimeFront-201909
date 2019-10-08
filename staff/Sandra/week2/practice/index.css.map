@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAEA,AAEQ,GAFL,CACC,EAAE,CACE,EAAE,CAAC;EACC,KAAK,ECLL,KAAK;CDMR",
     "sources": [
-        "index.scss"
+        "index.scss",
+        "_variables.scss"
     ],
     "names": [],
     "file": "index.css"
