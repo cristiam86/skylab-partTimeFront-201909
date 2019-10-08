@@ -40,5 +40,11 @@ ul.ul-aside li:before {
 .nav-footer{
     background: grey;
     color: white;
+    max-width: 1200px;
+    margin: auto;
+}
 
+.ul-footer{
+    display: flex;
+    flex-direction: column;
 }
