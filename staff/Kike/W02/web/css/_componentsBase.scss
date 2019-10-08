@@ -143,6 +143,14 @@
   }
 }
 
+.flexSection{
+  display: flex;
+  
+}
+.accordionContainer{
+
+}
+
 @media (max-width: 1024px) {
   .navContainer {
     @include displayBetween;

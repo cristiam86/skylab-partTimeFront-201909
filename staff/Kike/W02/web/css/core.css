@@ -310,6 +310,12 @@ a {
   padding-right: 0.5rem;
 }
 
+.flexSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 @media (max-width: 1024px) {
   .navContainer {
     display: -webkit-box;
