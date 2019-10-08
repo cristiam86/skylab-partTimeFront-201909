@@ -101,7 +101,7 @@ aside{
 }
 
 footer{
-    background: #666666;
+    background: #333333;;
 }
 
 /************************ CARDS ****************/
@@ -198,7 +198,6 @@ ul.ul-aside li:before {
 
 .nav-footer{
     max-width: 1000px;
-    padding: 1rem;
     color: white;
     margin: auto;
 }
@@ -257,6 +256,10 @@ ul.ul-aside li:before {
         flex-direction: column;
         justify-content: center;
         text-align: center;
+    }
+
+    .ul-footer{
+        justify-content: center;
     }
 
 }
