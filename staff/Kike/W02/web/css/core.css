@@ -255,7 +255,7 @@ a {
 }
 
 .navContainer .navigation .navigationLinks.active {
-  color: #6a8f73;
+  color: darkseagreen;
   font-size: 1.5rem;
 }
 
@@ -273,7 +273,7 @@ a {
 }
 
 .navContainer .navigation.hamburguer input:checked ~ label .hamburgerImg svg {
-  fill: #6a8f73;
+  fill: darkseagreen;
 }
 
 .navContainer .navigation.hamburguer label .hamburgerImg {
@@ -321,12 +321,12 @@ a {
 }
 
 .navContainer .navigation.hamburguer .mobileNavShadow .mobileNav .navigationLinksContainer .navigationLinks.mobile:hover {
-  background: #6a8f73;
+  background: darkseagreen;
   color: white;
 }
 
 .featuresContainer {
-  background: #6a8f73;
+  background: darkseagreen;
   width: 100vw;
   height: 25rem;
 }
@@ -402,35 +402,6 @@ a {
   margin-bottom: 1rem;
 }
 
-.accordionContainer .accordion {
-  background: #eee;
-  border-radius: 0.125rem;
-  border: solid 1px #ccc;
-  margin-bottom: 1rem;
-}
-
-.accordionContainer .accordion input {
-  display: none;
-}
-
-.accordionContainer .accordion .accordionTitle {
-  cursor: pointer;
-  padding: 0.5rem 1rem;
-  font-size: 1.25rem;
-}
-
-.accordionContainer .accordion .textContainer {
-  border-top: solid 1px #ccc;
-  height: 0rem;
-  overflow: hidden;
-}
-
-.accordionContainer .accordion .textContainer .text {
-  padding: 0.7rem;
-  background: white;
-  margin-bottom: 0rem;
-}
-
 @media (max-width: 1024px) {
   .navContainer {
     display: -webkit-box;
@@ -449,7 +420,7 @@ a {
   }
   .navContainer .navigation .navigationLinks.mobile {
     display: block;
-    color: #6a8f73;
+    color: darkseagreen;
     font-size: 1.5rem;
     margin-left: 0;
   }
@@ -660,5 +631,34 @@ a {
   border-radius: 5px;
   width: 80px;
   font-size: 10px;
+}
+
+.accordionContainer .accordion {
+  background: #eee;
+  border-radius: 0.125rem;
+  border: solid 1px #ccc;
+  margin-bottom: 1rem;
+}
+
+.accordionContainer .accordion input {
+  display: none;
+}
+
+.accordionContainer .accordion .accordionTitle {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+}
+
+.accordionContainer .accordion .textContainer {
+  border-top: solid 1px #ccc;
+  height: 0rem;
+  overflow: hidden;
+}
+
+.accordionContainer .accordion .textContainer .text {
+  padding: 0.7rem;
+  background: white;
+  margin-bottom: 0rem;
 }
 /*# sourceMappingURL=core.css.map */
