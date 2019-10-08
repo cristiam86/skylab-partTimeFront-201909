@@ -172,13 +172,21 @@ footer{
     padding: 1rem;
 }
 
+h2.title-aside{
+    margin-bottom: .5rem
+}
+
 ul.ul-aside {
     list-style: none;
+}
+ul.ul-aside li{
+    margin-bottom: .5rem;
 }
   
 ul.ul-aside li:before {
     content:"\2714\0020";
     margin-right: .5rem;
+    
 }
 
 .col-right{
@@ -205,6 +213,11 @@ ul.ul-aside li:before {
     margin: .5rem;
 }
 
+.ul-footer li a {
+    color: white;
+    text-decoration: none;
+}
+
 
 .legal-text span{
     text-align: right;
@@ -229,6 +242,21 @@ ul.ul-aside li:before {
     .advice {
         flex-direction: column;
         align-items: center;
+    }
+    .footer-home .inner{
+        display: inline;
+    }
+
+    .nav-footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nav-footer .inner{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
     }
 
 }
