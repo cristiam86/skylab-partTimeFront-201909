@@ -6,6 +6,7 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 nav {
@@ -181,37 +182,56 @@ footer{
     padding: 1rem;
 }
 
+h2.title-aside{
+    margin-bottom: .5rem
+}
+
 ul.ul-aside {
     list-style: none;
+}
+ul.ul-aside li{
+    margin-bottom: .5rem;
 }
   
 ul.ul-aside li:before {
     content:"\2714\0020";
     margin-right: .5rem;
+    
 }
 
 .col-right{
     width: 100%;
-    color: blue;
     justify-content: center;
     padding: 1rem;
 }
 
 
 .nav-footer{
-    background: grey;
+    max-width: 1000px;
+    padding: 1rem;
     color: white;
-    max-width: 1200px;
     margin: auto;
 }
 
 .ul-footer{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    list-style: none;
+}
+
+.ul-footer li {
+    margin: .5rem;
+}
+
+.ul-footer li a {
+    color: white;
+    text-decoration: none;
 }
 
 
-
+.legal-text span{
+    text-align: right;
+}
 
 
 /****** Tablet ********************************/
@@ -233,11 +253,29 @@ ul.ul-aside li:before {
         flex-direction: column;
         align-items: center;
     }
+<<<<<<< HEAD
     /******* new 08102019 ****************/
     .mobil-hand {
         display: none;
     }
 
+=======
+    .footer-home .inner{
+        display: inline;
+    }
+
+    .nav-footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nav-footer .inner{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+>>>>>>> 86c8148dd9c683c63b83d31cd4a7c4de404b50de
 
 }
 
