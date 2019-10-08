@@ -49,10 +49,12 @@
         color: red;
     }
 
-    .row.one { 
-        align-content: stretch;
-        display: flex;
-        flex-direction: row;
+    .content .row { 
+
+        flex-direction: column;
+    }
+    .one .row-box:nth-child(1){
+        flex-basis: 30%;
     }
 
 }
