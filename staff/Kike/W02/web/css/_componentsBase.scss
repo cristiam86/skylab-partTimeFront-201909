@@ -124,6 +124,9 @@
   }
 }
 
+.footerSpace{
+  height: 5rem;
+}
 .footer {
   @extend .displayBetween;
   min-height: 3rem;
@@ -165,6 +168,26 @@
   .text {
     font-size: 1rem;
     margin-bottom: 1rem;
+  }
+}
+
+.card{
+  width: 20rem;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+  border:solid 1px $grey;
+  border-radius: $borderRadius;
+  .cardImage{
+
+  }
+  .cardText{
+    @extend .textContainer;
+  }
+  .cardButtonContainer{
+    
+    .cardButton{
+
+    }
   }
 }
 

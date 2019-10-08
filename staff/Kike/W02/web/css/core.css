@@ -173,7 +173,7 @@ a {
   }
 }
 
-.growAccordion, .accordionContainer .accordion input:checked ~ .textContainer {
+.growAccordion, .accordionContainer .accordion input:checked ~ .textContainer, .accordionContainer .accordion .card input:checked ~ .cardText, .card .accordionContainer .accordion input:checked ~ .cardText {
   -webkit-animation: growAccordion 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) both;
   animation: growAccordion 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) both;
 }
@@ -202,7 +202,7 @@ a {
   }
 }
 
-.collapseAccordion, .accordionContainer .accordion .textContainer {
+.collapseAccordion, .accordionContainer .accordion .textContainer, .accordionContainer .accordion .card .cardText, .card .accordionContainer .accordion .cardText {
   -webkit-animation: collapseAccordion 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) both;
   animation: collapseAccordion 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) both;
 }
@@ -337,11 +337,11 @@ a {
   width: 50%;
 }
 
-.featuresContainer .part .textContainer .title {
+.featuresContainer .part .textContainer .title, .featuresContainer .part .card .cardText .title, .card .featuresContainer .part .cardText .title {
   color: white;
 }
 
-.featuresContainer .part .textContainer .featuresLink {
+.featuresContainer .part .textContainer .featuresLink, .featuresContainer .part .card .cardText .featuresLink, .card .featuresContainer .part .cardText .featuresLink {
   color: white;
 }
 
@@ -352,6 +352,10 @@ a {
   background-repeat: no-repeat;
   width: 10rem;
   height: 10rem;
+}
+
+.footerSpace {
+  height: 5rem;
 }
 
 .footer {
@@ -391,15 +395,23 @@ a {
   width: 70%;
 }
 
-.textContainer .title {
+.textContainer .title, .card .cardText .title {
   font-size: 1.25rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
 
-.textContainer .text {
+.textContainer .text, .card .cardText .text {
   font-size: 1rem;
   margin-bottom: 1rem;
+}
+
+.card {
+  width: 20rem;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+  border: solid 1px #eee;
+  border-radius: 0.125rem;
 }
 
 @media (max-width: 1024px) {
@@ -650,13 +662,13 @@ a {
   font-size: 1.25rem;
 }
 
-.accordionContainer .accordion .textContainer {
+.accordionContainer .accordion .textContainer, .accordionContainer .accordion .card .cardText, .card .accordionContainer .accordion .cardText {
   border-top: solid 1px #ccc;
   height: 0rem;
   overflow: hidden;
 }
 
-.accordionContainer .accordion .textContainer .text {
+.accordionContainer .accordion .textContainer .text, .accordionContainer .accordion .card .cardText .text, .card .accordionContainer .accordion .cardText .text {
   padding: 0.7rem;
   background: white;
   margin-bottom: 0rem;
