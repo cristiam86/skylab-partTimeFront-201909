@@ -94,8 +94,12 @@ nav {
     margin: auto;
 }
 
-footer{
+aside{
     background: #00B09C;
+}
+
+footer{
+    background: #666666;
 }
 
 

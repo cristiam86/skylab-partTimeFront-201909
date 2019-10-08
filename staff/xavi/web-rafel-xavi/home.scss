@@ -20,8 +20,13 @@
     padding: 1rem;
 }
 
-ul{
-    margin: 1rem;
+ul.ul-aside {
+    list-style: none;
+}
+  
+ul.ul-aside li:before {
+    content:"\2714\0020";
+    margin-right: .5rem;
 }
 
 .col-right{
@@ -29,4 +34,11 @@ ul{
     color: blue;
     justify-content: center;
     padding: 1rem;
+}
+
+
+.nav-footer{
+    background: grey;
+    color: white;
+
 }
