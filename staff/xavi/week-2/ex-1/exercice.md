@@ -1,3 +1,4 @@
+## DONE
 ### largerInteger (num1, num2)
 
 Escriba un programa de JavaScript que acepte dos enteros y muestre el más grande.
@@ -44,6 +45,8 @@ Salida de muestra:
 
 Escriba un programa JavaScript que itere los enteros del 1 al 100. Pero para múltiplos de tres imprima "Fizz" en lugar del número y para los múltiplos de cinco imprima "Buzz". Para números que son múltiplos de tres y cinco, imprime "FizzBuzz".
 
+
+## DONE
 ### contructPattern ()
 
 Escriba un programa JavaScript para construir el siguiente patrón, utilizando un bucle for anidado.
