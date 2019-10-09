@@ -11,7 +11,7 @@ body {
     border-bottom: 1px solid;
     display: block;
   }
-  .fcollapse-details,
+  .collapse-details,
   .collapse-toggle-hide,
   .collapse-toggle-show:target {
     display: none;
