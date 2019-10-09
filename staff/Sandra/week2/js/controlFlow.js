@@ -62,5 +62,20 @@ function fizzBuzz(){
 }
 
 /*contruct_pattern*/
-
+function contructPattern() {
+    var char = ''
+    for (var i = 0; i < 5; i +=1){
+        char =  '* ' + char;
+        console.log(char);
+    }
+}
 /*under_1000*/
+function uner1000(){
+    var result = 0;
+    for (var i=0;i<1001; i +=1){
+        if ((i % 3  === 0) || (i % 5  === 0)) { 
+            result = result + i;
+        }
+    }
+    console.log(result);
+}
