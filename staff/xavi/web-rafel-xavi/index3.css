@@ -59,11 +59,7 @@ nav {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     font-size: 30px;
-
-    
-}
-.brand p {
-    padding: 5px, 0,5px, 30px;
+    padding: 5px 0 5px 30px;  
 }
 
 .inner{
@@ -80,6 +76,40 @@ footer{
     background: #666666;
 }
 
+/************************ FORM ****************/
+
+main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    justify-content: space-around;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 65%;
+    margin-left: 10%;
+    position: relative;
+}
+
+form input {
+    width: 50em;
+    height: 2.5em;
+    margin: 1em;
+}
+
+form textarea {
+    width: 50em;
+    height: 3em;
+    margin: 1em;
+}
+
+form button {
+    width: 50px;
+    margin: 1em;
+}
 /************************ CARDS ****************/
 
 
@@ -90,6 +120,7 @@ footer{
     margin: 1em;
     display: flex;
     flex-direction: column;
+    margin-right: 10%;
 }
 
 .card .card-header{
@@ -203,6 +234,10 @@ ul.ul-aside li:before {
     h1{
         color: red;
     }
+    .logoGamma {
+        font-size: 25px;
+    }
+
     .main-cards{
         display: flex;
         flex-direction: row;
@@ -213,10 +248,6 @@ ul.ul-aside li:before {
         margin: auto;
         
     }
-
-    /******* new 08102019 ****************/
-
-
     .footer-home .inner{
         display: inline;
     }
@@ -232,7 +263,27 @@ ul.ul-aside li:before {
         justify-content: center;
         text-align: center;
     }
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .card {
+        width: 400px;
+        margin: 2em,;
+    }
+form {
+    margin: 1em;
+}
+
+    form input {
+        width: 40em;
+    }
+    
+    form textarea {
+        width: 40em;
+        height: 3em;
+    }
 }
 
 /****** mobile ******************************/
@@ -240,12 +291,25 @@ ul.ul-aside li:before {
     h1{
         color: #3D9B87;
     }
+    .logoGamma {
+        font-size: 20px;
+    }
     .main-cards{
         display: flex;
         flex-direction: row;
     }
 
+    form input {
+        width: 30em;
+    }
+    
+    form textarea {
+        width: 30em;
+    }
 
+    .navbar {
+        display: none;
+    }
 
 
 }

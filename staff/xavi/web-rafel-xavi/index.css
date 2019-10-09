@@ -60,7 +60,6 @@ nav {
 }
 
 /************************ HEADER ****************/
-/******* new 08102019 ****************/
 .advice {
     color: white;
     font-size: 20px;
@@ -75,11 +74,10 @@ nav {
     font-size: 2em;
 }
 
-/******* new 08102019 ****************/
 .advice-capture, .advice-sentence , .AppStore , .GooglePlay {
     margin: 1rem;
 }
-/******* new 08102019 ****************/
+
 .logos {
     display: flex;
     flex-direction: row;
@@ -94,7 +92,7 @@ nav {
     position: relative;
 
 }
-/******* new 08102019 ****************/
+
 .highLight {
     color: #3D9B87
 }
@@ -205,7 +203,6 @@ ul.ul-aside li:before {
     padding: 1rem;
 }
 
-
 .nav-footer{
     max-width: 1000px;
     color: white;
@@ -252,7 +249,7 @@ ul.ul-aside li:before {
         flex-direction: column;
         align-items: center;
     }
-    /******* new 08102019 ****************/
+
     .mobil-hand {
         display: none;
     }
@@ -289,17 +286,18 @@ ul.ul-aside li:before {
         flex-direction: row;
     }
 
-    /******* new 08102019 ****************/
     .mobil-hand {
         display: none;
     }
-    /******* new 08102019 ****************/
+ 
     .logos {
         flex-direction: column;
         justify-content: center;
-    
     }
 
+    .navbar {
+        display: none;
+    }
 
 }
    
