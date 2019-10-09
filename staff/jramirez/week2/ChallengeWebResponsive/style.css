@@ -635,6 +635,84 @@ header nav a {
   padding: 0 3px 0 3px;
 }
 
+.content_contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: flex-start;
+  -ms-flex-pack: flex-start;
+  justify-content: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+@media only screen and (min-width: 1024px) {
+  .content_contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+  }
+}
+
+.form_area {
+  margin-left: 10px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .form_area {
+    width: 60%;
+  }
+}
+
+.contact_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: flex-start;
+  -ms-flex-pack: flex-start;
+  justify-content: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.contact_form label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.contact_form input, .contact_form textarea {
+  width: 95%;
+  padding: 5px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: solid 1px lightgrey;
+}
+
+.contact_form #submit_button {
+  width: auto;
+  padding: 10px;
+}
+
 footer {
   background-color: #333;
   padding: 24px;
