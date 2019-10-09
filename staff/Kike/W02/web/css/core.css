@@ -255,7 +255,7 @@ a {
 }
 
 .navContainer .navigation .navigationLinks.active {
-  color: #6a8f73;
+  color: darkseagreen;
   font-size: 1.5rem;
 }
 
@@ -273,7 +273,7 @@ a {
 }
 
 .navContainer .navigation.hamburguer input:checked ~ label .hamburgerImg svg {
-  fill: #6a8f73;
+  fill: darkseagreen;
 }
 
 .navContainer .navigation.hamburguer label .hamburgerImg {
@@ -321,12 +321,42 @@ a {
 }
 
 .navContainer .navigation.hamburguer .mobileNavShadow .mobileNav .navigationLinksContainer .navigationLinks.mobile:hover {
-  background: #6a8f73;
+  background: darkseagreen;
   color: white;
 }
 
+.part-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid #f1f1f1;
+  width: 15rem;
+  padding: 10px 8px 10px;
+  font-size: 10px;
+  margin: 20px;
+}
+
+.part-box img {
+  width: 100%;
+}
+
+.part-box button {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 5px 5px;
+  border-radius: 5px;
+  width: 80px;
+  font-size: 10px;
+  margin-top: 1rem;
+}
+
 .featuresContainer {
-  background: #6a8f73;
+  background: darkseagreen;
   width: 100vw;
   height: 25rem;
 }
@@ -449,7 +479,7 @@ a {
   }
   .navContainer .navigation .navigationLinks.mobile {
     display: block;
-    color: #6a8f73;
+    color: darkseagreen;
     font-size: 1.5rem;
     margin-left: 0;
   }
@@ -462,6 +492,13 @@ a {
   .flexSection .smallPart,
   .flexSection .bigPart {
     width: 100%;
+  }
+  .flexSection .part-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .featuresContainer {
     -ms-flex-wrap: wrap;
@@ -525,7 +562,7 @@ a {
 }
 
 .hero-container .hero-container-left .hero-container-app img {
-  width: 36%;
+  width: 70%;
 }
 
 .hero-container .hero-container-right {
@@ -549,8 +586,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 20px auto;
 }
 
@@ -560,7 +598,7 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   border: 1px solid #f1f1f1;
-  width: 28%;
+  width: 15rem;
   padding: 10px 8px 10px;
   font-size: 10px;
 }
@@ -580,11 +618,15 @@ a {
 }
 
 .wrap-form .container-form {
+  width: 80%;
+  margin: 20px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 80%;
-  margin: 20px auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .wrap-form .container-form .left {
@@ -592,12 +634,12 @@ a {
   padding: 0 20px 0 0;
 }
 
-.wrap-form .container-form .left p {
+.wrap-form .container-form .left .text-form {
   padding: 0;
   margin: 0;
 }
 
-.wrap-form .container-form .left label {
+.wrap-form .container-form .left .title-form {
   font-size: 11px;
   font-weight: bold;
 }
@@ -624,7 +666,7 @@ a {
   color: grey;
 }
 
-.wrap-form .container-form .left button {
+.wrap-form .container-form .left .submit {
   padding: 5px 5px;
   background-color: none;
   border-radius: 5px;
@@ -632,7 +674,7 @@ a {
 }
 
 .wrap-form .container-form .right {
-  width: 30%;
+  width: 20%;
 }
 
 .wrap-form .container-form .right article {
@@ -660,5 +702,49 @@ a {
   border-radius: 5px;
   width: 80px;
   font-size: 10px;
+}
+
+@media (max-width: 1024px) {
+  .hero-container-app {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 1rem 0 1rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero-container-app .google-play {
+    margin-top: 1rem;
+  }
+  .wrapper-hero .hero-container-left {
+    margin: -3rem 0rem 0rem 7rem;
+  }
+  .wrapper-hero .hero-container-left h1.capture {
+    font-size: 9px;
+    text-align: center;
+  }
+  .wrapper-hero .hero-container-left p {
+    font-size: 4px;
+    text-align: center;
+  }
+  .wrapper-articles {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .handPhone {
+    visibility: hidden;
+  }
 }
 /*# sourceMappingURL=core.css.map */

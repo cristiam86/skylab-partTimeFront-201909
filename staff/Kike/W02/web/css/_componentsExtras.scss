@@ -1,3 +1,5 @@
+
+
 .wrapper-hero {
   background-image: url(../images/site_showcase_bg.jpg);
 }
@@ -6,10 +8,12 @@
   display: flex;
   margin: 0px auto;
   width: 70%;
+  
 
   .hero-container-left {
     color: white;
     align-content: center;
+    
 
     h1 {
       font-size: 35px;
@@ -25,7 +29,7 @@
       justify-content: space-around;
 
       img {
-        width: 36%;
+        width: 70%;
       }
     }
   }
@@ -47,15 +51,16 @@
 
   .section-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 20px auto;
 
     article {
       flex-direction: column;
       border: 1px solid #f1f1f1;
-      width: 28%;
+      width: 15rem;
       padding: 10px 8px 10px;
       font-size: 10px;
+      
 
       img {
         width: 100%;
@@ -73,21 +78,26 @@
 }
 
 .wrap-form {
-  .container-form {
-    display: flex;
+ 
+  
+    .container-form {
     width: 80%;
     margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    
+    
 
     .left {
       width: 70%;
       padding: 0 20px 0 0;
 
-      p {
+      .text-form {
         padding: 0;
         margin: 0;
       }
 
-      label {
+       .title-form {
         font-size: 11px;
         font-weight: bold;
       }
@@ -114,7 +124,7 @@
         color: grey;
       }
 
-      button {
+      .submit {
         padding: 5px 5px;
         background-color: none;
         border-radius: 5px;
@@ -122,8 +132,10 @@
       }
     }
 
+
+
     .right {
-      width: 30%;
+      width: 20%;
 
       article {
         flex-direction: column;
@@ -149,3 +161,61 @@
 }
 
 
+@media (max-width: 1024px) {
+
+  
+  .hero-container-app {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0 1rem;
+    align-items: center;
+
+  
+
+
+    .google-play {
+      margin-top: 1rem;
+      
+      
+    }
+
+  }
+
+  .wrapper-hero {
+
+   
+
+    .hero-container-left {
+      margin: -3rem 0rem 0rem 7rem;
+  
+    
+
+      h1.capture {
+      
+        font-size: 9px;
+        text-align: center;
+      
+      }
+      
+      p{
+        font-size: 4px;
+        text-align: center;
+      }
+
+    }
+  }
+
+  .wrapper-articles {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+  }
+  
+    .handPhone {
+      visibility: hidden;
+    } 
+}
+  
+  
+    

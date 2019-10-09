@@ -94,6 +94,31 @@
   }
 }
 
+.part-box {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #f1f1f1;
+  width: 15rem;
+  padding: 10px 8px 10px;
+  font-size: 10px;
+  margin: 20px;
+  
+  img {
+     width: 100%;
+      }
+
+    button {
+      justify-content: flex-start;
+      padding: 5px 5px;
+      border-radius: 5px;
+      width: 80px;
+      font-size: 10px;
+      margin-top: 1rem;
+      
+    }  
+}
+
+
 .featuresContainer {
   @extend .displayCenter;
   background: $baseColor;
@@ -105,6 +130,7 @@
     margin-left: 1rem;
     margin-right: 1rem;
     width: 50%;
+    
     .textContainer {
       .title {
         color: white;
@@ -229,6 +255,11 @@
     .bigPart {
       width: 100%;
     }
+    .part-box {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
   }
   .featuresContainer {
     flex-wrap: wrap;
@@ -236,6 +267,9 @@
       width: 100vw;
     }
   }
+
+
+  
   .footer {
     display: block;
     .part {
