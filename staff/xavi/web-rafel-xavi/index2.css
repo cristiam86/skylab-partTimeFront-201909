@@ -6,28 +6,28 @@ body {
     background: #ccc;
   }
   
-  .footer-toggle-show,
-  .footer-toggle-hide {
+  .collapse-toggle-show,
+  .collapse-toggle-hide {
     border-bottom: 1px solid;
     display: block;
   }
-  .footer-details,
-  .footer-toggle-hide,
-  .footer-toggle-show:target {
+  .fcollapse-details,
+  .collapse-toggle-hide,
+  .collapse-toggle-show:target {
     display: none;
   }
   
-  .footer-toggle-show:target + .footer-toggle-hide,
-  .footer-toggle-show:target ~ .footer-details {
+  .collapse-toggle-show:target + .collapse-toggle-hide,
+  .collapse-toggle-show:target ~ .collapse-details {
     display: block;
   }
   
-  .footer-toggle-show:after,
-  .footer-toggle-hide:after {
+  .collapse-toggle-show:after,
+  .collapse-toggle-hide:after {
     float: right;
     content: "+";
   }
-  .footer-toggle-hide:after {
+  .collapse-toggle-hide:after {
     transform: rotate(45deg) scale(1.09);
   }
 
@@ -76,5 +76,5 @@ body {
     .row-about{
       flex-direction: column;  
     }
-    
+
    }
