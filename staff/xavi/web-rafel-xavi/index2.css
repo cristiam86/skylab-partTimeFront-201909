@@ -36,18 +36,45 @@ body {
      padding: 3em;
    }
 
+   .row-about{
+     display: flex;
+     width: 100%;
+     /*  flex-direction: column;  para  */
+   }
 
-   a{
+   .col-left-about{
+    width: 50%;
+    padding: 2rem;
+    max-width: 600px;
+    margin: auto;
+   }
+
+   .col-right-about{
+    width: 50%;
+    padding: 2rem;
+   }
+
+   a.about {
     border: 1px solid grey;
-    padding: .3em;
-    background: grey;
-    border-radius: 3px 3px 0px 0px;
-    color: white;
     text-decoration: none;
+    padding: 1.3em;
+    background: grey;
+    color: white;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 1rem;
    }
 
    .footer-details{
       margin-bottom: 1em;
       border: 1px solid lightgray;
       padding: 1em;
+   }
+
+
+   @media all and (max-width: 1024px){
+
+    .row-about{
+      flex-direction: column;  
+    }
+    
    }

@@ -252,13 +252,11 @@ ul.ul-aside li:before {
         flex-direction: column;
         align-items: center;
     }
-<<<<<<< HEAD
     /******* new 08102019 ****************/
     .mobil-hand {
         display: none;
     }
 
-=======
     .footer-home .inner{
         display: inline;
     }
@@ -274,7 +272,6 @@ ul.ul-aside li:before {
         justify-content: center;
         text-align: center;
     }
->>>>>>> 86c8148dd9c683c63b83d31cd4a7c4de404b50de
 
     .ul-footer{
         justify-content: center;
