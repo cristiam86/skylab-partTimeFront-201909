@@ -1,6 +1,8 @@
-var getInputs = function(number){
+
+//This function works for several other functions below
+var getInputs = function(number_of_inputs){
     var inputs = [];
-    for(var i=0; i < number ; i++){
+    for(var i=0; i < number_of_inputs ; i++){
         current = prompt("please enter number");
         inputs[inputs.length] = parseInt(current);
     }
@@ -34,11 +36,11 @@ var largerInteger= function(){
 var multiply = function(n1,n2,n3){
     var product = n1*n2*n3;
     if(product>0){
-        alert("+");
+        return "+";
     } else if(product<0){
-        alert("-");
+        return "-";
     } else{
-        alert("0");
+        return "0";
     }
 }
 
@@ -71,9 +73,63 @@ var getLarger5 = function(arrayOf5){
 var largerInteger5= function(){
     var inputs = getInputs(5);
     var largest = getLarger5(inputs);
-    console.log(largest);
+    alert(largest);
+}
+
+//uncomment next line to run
+//largerInteger5();
+
+var oddOrEven = function(){
+    for(var i=0; i<16; i++){
+        i%2===0 ? console.log(i," is even") : console.log(i," is odd");
+    }
+}
+
+//uncomment next line to run
+//oddOrEven();
+
+var FizzBuzz = function(){
+    for (var i=1; i<101; i++){
+        if(i%15===0){
+            console.log("FizzBuzz");
+        } else if(i%5===0){
+            console.log("Buzz");
+        } else if(i%3===0){
+            console.log("Fizz");
+        } else{
+            console.log(i);
+        }
+    }
 }
 
 
 //uncomment next line to run
-//largerInteger5();
+//FizzBuzz();
+
+var constructPattern = function(){
+    var pattern = "";
+    for(var i=0; i<5; i++){
+        pattern += "*";
+        console.log(pattern);
+    }
+}
+
+//uncomment next line to run
+//constructPattern()
+
+var under1000 = function(){
+    total = 0;
+    for(var i=1; i<1000; i++){
+        if(i%3===0 || i%5===0){
+            console.log(i);
+            total += i;
+        }
+        else{
+            console.log("no");
+        }
+    }
+    console.log("Total: ",total)
+}
+
+//uncomment next line to run
+//under1000();
