@@ -154,14 +154,14 @@ var numerosEx6 = 100;
 // y si no =  Imprime : Ninguno de los dos.
 
 for(x6 = 0; x6 < numerosEx6; x6++){
-   if(x6 % 3 === 0){
-       console.log('Fizz')
+   if(x6 % 3 === 0 && x6 % 5 === 0){
+       console.log(x6  + ' LOS DOS')
    } else if (x6 % 5 === 0) {
-       console.log('Buzz')
-   } else if (x6 % 3 === 0 && x6 % 5 === 0){
-       console.log('FizzBuzz')
+       console.log(x6  +  ' Buzz')
+   } else if (x6 % 3 === 0){
+       console.log(x6  +  ' Fizz')
    } else {
-       console.log('Nuniguno de los dos. ')
+       console.log(x6  +  ' Nuniguno de los dos. ')
    }
 }
 
@@ -276,107 +276,6 @@ console.log(sumaEx8)
 
 
 
-
-
-
-
-
-
-
-
-// ejecicio 2
-/*
-Escriba una declaración condicional de JavaScript para encontrar el signo del producto de tres números. Mostrar un cuadro de alerta con el signo especificado.
-
-`` `
-Números de muestra: 3, -7, 2
-Salida: el signo es -
-`` `
-
-*/
-
-
-
-var numb1 = 3;
-var numb2 = -7;
-var numb3 = 2
-
-var numerob1 = parseInt(numb1, 10);
-var numerob2 = parseInt(numb2, 10);
-var numerob3 = parseInt(numb3, 10);
-
-var numbers = [3, -7, 2]
-var parsedNumbers = numbers.map((number) =>  Number(number))
-console.log('array modified ->', parsedNumbers)
-
-
-
-/* *************** 
-### sort_numbers
-
-Write a JavaScript conditional statement to sort three numbers. Display an alert box to show the result.
-
-```
-Sample numbers : 0, -1, 4 
-Output : 4, 0, -1
-
-*/
-
-var sortNum = [0, -1, 4];
-sortNum.sort(function(a, b){return b-a});
-console.log(sortNum)
-
-
-/*** 
-###  largest_number
-
-
-Escriba una declaración condicional de JavaScript para encontrar el mayor de cinco números. Mostrar un cuadro de alerta para mostrar el resultado.
-
-
-Sample numbers : -5, -2, -6, 0, -1 
-Output : 0 
-*/
-
-var numc1 = prompt();
-var numc2 = prompt();
-var numc3 = prompt();
-var numc4 = prompt();
-var numc5 = prompt();
-
-var numeroc1 = parseInt(numc1, 10);
-var numeroc2 = parseInt(numc2, 10);
-var numeroc3 = parseInt(numc3, 10);
-var numeroc4 = parseInt(numc4, 10);
-var numeroc5 = parseInt(numc5, 10);
-
-var cNum = [numeroc1, numeroc2, numeroc3, numeroc4, numeroc5]
-var comparador = 0
-
-for(c = 0; c < cNum.length; c++){
-   if(cNum[c]>comparador){
-       var comparador = cNum[c]
-   }
-}
-
-console.log('De los siguientes números: ' + cNum.length + ' el número más alto es: ' + comparador)
-
-
-
-// Par o impar
-
-var quince = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
-
-
-for(let p = 0; p < quince.length; p++){
-    if(p === 0){
-        console.log('El cero es un número par ')
-    } else if(p % 2 === 0){
-        console.log(p + ' es par')
-    } else {
-        console.log(p + 'es impar')
-    }
-}
 
 
 
