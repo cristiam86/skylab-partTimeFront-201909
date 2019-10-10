@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: #F6F6F6;
+    align-items: baseline;
+}
+
+/** ************* navbar *************/
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    color: #666666;
+    font-size: 20px;
+    
+}
+
+.navbar li {
+    list-style: none;
+    padding: 1rem;
+}
+
+.navbar li a {
+    text-decoration: none;
+}
+
+.navbar li:visited {
+    text-decoration: none;
+}
+
+.navbar li:hover {
+    background-color: #E1E1E1;
+}
+
+
+.logoGamma {
+    color: #3D9B87;
+    font-size: 30px;
+    margin-left: 10%;
+}
+
+.back-photo {
+    background-image: url(assets/site_showcase_bg.jpg);
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.inner{
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+}
+
+footer{
+    background: rgb(92, 180, 146);
+}
+
+
+/************************ CARDS ****************/
+.main-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 1rem;
+    max-width: 1200px;;
+}
+
+.main-cards .card{
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 5px;
+    width: 300px;
+    margin: 1em;
+}
+
+.card .card-header{
+    padding: 5px;
+    border-bottom: 1px solid rgb(226, 226, 226);
+    min-height: 17em;
+}
+
+.card .card-body{
+    padding: 1rem;
+}
+
+.card .card-footer{
+    padding: 1rem;
+}
+
+
+.btn-read{
+    border: 1px solid lightgray;
+    padding: 1em;
+    border-radius: 5px;
+    background: transparent;
+}
+
+.btn-read:hover{
+    background: lightgray;
+    color: black;
+    cursor: pointer;
+}
+
+
+/****** Tablet ********************************/
+@media all and (max-width: 1024px){
+    h1{
+        color: red;
+    }
+    .main-cards{
+        display: flex;
+        flex-direction: row;
+    }
+    .main-cards .card{
+        width: 33%;
+        max-width: 400px;
+        margin: auto;
+        
+    }
+    .advice {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+/****** mobile ******************************/
+@media all and (max-width: 567px){
+    h1{
+        color: #3D9B87;
+    }
+    .main-cards{
+        display: flex;
+        flex-direction: row;
+    }
+}
+   
+
