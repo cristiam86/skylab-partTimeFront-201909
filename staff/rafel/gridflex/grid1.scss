@@ -1,0 +1,23 @@
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .contain {
+        display: flex;
+        flex-direction: row;
+        .row {
+                display: flex;
+                align-items: center;
+                border: 1px solid #DA9995;
+                height: 3rem;
+                width: 100px;
+                background-color: #F3D7D6;
+                justify-content: space-between;
+            .row-in {
+                height: 1rem;
+                width: 100px;
+                background-color: #ECBCB8;
+            }
+        }
+    }
+}
