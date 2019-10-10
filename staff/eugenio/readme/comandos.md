@@ -32,6 +32,15 @@ Para iniciar git hay que ir a TERMINAL y ejectura ***git init***
 ### SI NOS DA ERROR POR SI ALGUIEN ESTÁ SUBIENDO ALGO AL MISMO TIEMPO
 ***git pull*** : os actualiza el repositorio por si alguien está subiendo algo al mismo tiempo, ejecutamos pull y luego push nuevamente
 
+### PARA CREAR UNA RAMA NUEVA
+***git checkout -b nombrecarpeta*** :  es para crear una rama nueva
+
+### PARA CAMBIAR DE RAMA
+*** git checkout nombrerama *** : nos cambiamos de una rama a otra
+
+### PARA VER TODAS LAS RAMAS, ESTRUCTURA INTERNA
+*** git fetch *** : 
+
 ### PASOS PARA SUBIR FICHEROS NUEVOS O MODIFICADOS
 
 > Cuando ejecutemos el push da error a veces si tenemos el vscode abierto o el fichero que se va a subir, cerramos y listos.
@@ -43,3 +52,6 @@ Para iniciar git hay que ir a TERMINAL y ejectura ***git init***
 5. ***git commit -m "comentario"*** : añadimos comentario de los cambios
 6. ***git push -u origin master*** : subimos definitivamente el contenido nuevo
 7. ***git pull*** : depende si nos ha dado error en el push por si hay alguien trabajando en el repositorio
+
+
+
