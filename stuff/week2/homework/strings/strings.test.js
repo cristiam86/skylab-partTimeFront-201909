@@ -233,4 +233,6 @@ if (result !== "We are doing some JavaScript exercises.") {
 /// TOTAL
 if (errors > 0) {
   console.error("ERRORS FOUND: "+errors)
+} else {
+  console.log("CONGRATULATIONS! ALL TESTS PASSED")
 }
