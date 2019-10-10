@@ -150,6 +150,9 @@
   }
 }
 
+.footerSpace{
+  height: 5rem;
+}
 .footer {
   @extend .displayBetween;
   min-height: 3rem;
@@ -194,41 +197,27 @@
   }
 }
 
-.accordionContainer {
-  .accordion {
-    background: $grey;
-    border-radius: $borderRadius;
-    border: solid 1px $grey2;
-    margin-bottom: 1rem;
-    input {
-      display: none;
-      &:checked ~ .textContainer {
-        @extend .growAccordion;
-      }
-    }
-    .accordionTitle {
-      cursor: pointer;
-      padding: 0.5rem 1rem;
-      font-size: 1.25rem;
-    }
-    .textContainer {
-      border-top: solid 1px $grey2;
-      @extend .collapseAccordion;
-      height: 0rem;
-      overflow: hidden;
-      .text {
-        padding: 0.7rem;
-        background: white;
-        margin-bottom: 0rem;
-      }
-    }
+.card{
+  width: 20rem;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+  border:solid 1px $grey;
+  border-radius: $borderRadius;
+  .cardImage{
 
+  }
+  .cardText{
+    @extend .textContainer;
+  }
+  .cardButtonContainer{
+    
+    .cardButton{
 
-    &:hover{
-      @extend .baseShadow;
     }
   }
 }
+
+
 
 @media (max-width: 1024px) {
   .navContainer {

@@ -161,6 +161,42 @@
   }
 }
 
+.accordionContainer {
+  .accordion {
+    background: $grey;
+    border-radius: $borderRadius;
+    border: solid 1px $grey2;
+    margin-bottom: 1rem;
+    input {
+      display: none;
+      &:checked ~ .textContainer {
+        @extend .growAccordion;
+      }
+    }
+    .accordionTitle {
+      cursor: pointer;
+      padding: 0.5rem 1rem;
+      font-size: 1.25rem;
+    }
+    .textContainer {
+      border-top: solid 1px $grey2;
+      @extend .collapseAccordion;
+      height: 0rem;
+      overflow: hidden;
+      .text {
+        padding: 0.7rem;
+        background: white;
+        margin-bottom: 0rem;
+      }
+    }
+
+
+    &:hover{
+      @extend .baseShadow;
+    }
+  }
+}
+
 
 @media (max-width: 1024px) {
 
