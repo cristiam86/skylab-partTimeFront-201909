@@ -3,6 +3,9 @@
     margin: 0;
 }
 
+/* falta en el nav la part active
+sticky al menu nav*/
+
 body{
     margin: 0;
     padding: 0;
@@ -14,6 +17,7 @@ nav {
     flex-direction: row;
     background-color: #F6F6F6;
     align-items: baseline;
+    position: sticky;
 }
 
 /** ************* navbar *************/
