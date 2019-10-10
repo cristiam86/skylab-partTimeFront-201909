@@ -179,12 +179,12 @@ if(result !== 'Buzz') {
   console.error("ERROR: result should be Buzz");
 }
 var result = FizzBuzz(9);
-if(result !== 'FizzBuzz') {
+if(result !== 'FizzBuzzFizzFizz') {
   errors += 1;
   console.error("ERROR: result should be Buzz");
 }
 var result = FizzBuzz(12);
-if(result !== 'FizzBuzz') {
+if(result !== 'FizzBuzzFizzFizzBuzzFizz') {
   errors += 1;
   console.error("ERROR: result should be Buzz");
 }
