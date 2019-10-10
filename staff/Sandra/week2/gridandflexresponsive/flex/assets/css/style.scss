@@ -1,0 +1,24 @@
+@import "resets";
+@import "variables";
+
+.container {
+    display:flex;
+    flex-direction: column;
+    background-color: $background-pink;
+}
+
+.row {
+    border: 1px solid $border-color;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.col-1 {
+    width: 100%;
+    border: 1px solid $border-color;
+}
+
+.col {
+    color:$color-white;
+}
