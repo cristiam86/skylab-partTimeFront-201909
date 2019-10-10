@@ -6,7 +6,7 @@
 
 .hero-container {
   display: flex;
-  margin: 0px auto;
+  margin: 0 auto;
   width: 70%;
   
 
@@ -16,8 +16,8 @@
     
 
     h1 {
-      font-size: 35px;
-      margin-top: 100px;
+      font-size: 2.188rem;
+      margin-top: 6.25rem;
 
       span {
         color: $greenBase;
@@ -27,15 +27,16 @@
     .hero-container-app {
       display: flex;
       justify-content: space-around;
+      padding-top: 1rem;
 
       img {
-        width: 70%;
+        width: 50%;
       }
     }
   }
 
   .hero-container-right {
-    padding-top: 30px;
+    padding-top: 1.875rem;
 
     img {
       width: 77%;
@@ -46,20 +47,20 @@
 
 .wrapper-articles {
   display: flex;
-  margin: 0px auto;
+  margin: 0 auto;
   width: 70%;
 
   .section-container {
     display: flex;
     justify-content: space-between;
-    margin: 20px auto;
+    margin: 1.25rem auto;
 
     article {
       flex-direction: column;
       border: 1px solid #f1f1f1;
       width: 15rem;
-      padding: 10px 8px 10px;
-      font-size: 10px;
+      padding: 0.625rem 0.5rem 0.625rem;
+      font-size: 0.625rem;
       
 
       img {
@@ -68,10 +69,10 @@
 
       button {
         justify-content: flex-start;
-        padding: 5px 5px;
-        border-radius: 5px;
-        width: 80px;
-        font-size: 10px;
+        padding: 0.3125rem 0.3125rem;
+        border-radius: 0.3125rem;
+        width: 5rem;
+        font-size: 0.625rem;
       }
     }
   }
@@ -82,7 +83,7 @@
   
     .container-form {
     width: 80%;
-    margin: 20px auto;
+    margin: 1.25rem auto;
     display: flex;
     flex-direction: row;
     
@@ -90,7 +91,7 @@
 
     .left {
       width: 70%;
-      padding: 0 20px 0 0;
+      padding: 0 1.25rem 0 0;
 
       .text-form {
         padding: 0;
@@ -98,37 +99,37 @@
       }
 
        .title-form {
-        font-size: 11px;
+        font-size: 0.6875rem;
         font-weight: bold;
       }
 
       input {
         width: 100%;
         display: block;
-        margin-bottom: 10px;
-        height: 30px;
-        padding: 5px 10px;
+        margin-bottom: 0.625rem;
+        height: 1.875rem;
+        padding: 0.3125rem 0.625rem;
         color: grey;
-        margin-top: 5px;
-        border-radius: 5px;
+        margin-top: 0.3125rem;
+        border-radius: 50.3125rem;
         border: 1px solid #e8e8e8;
       }
 
       textarea {
-        height: 60px;
+        height: 3.75rem;
         width: 100%;
-        border-radius: 5px;
-        border: 1px solid #e8e8e8;
-        margin-top: 5px;
-        padding: 5px 10px;
+        border-radius: 0.3125rem;
+        border: 0.0625rem solid #e8e8e8;
+        margin-top: 0.3125rem;
+        padding: 0.3125rem 0.625rem;
         color: grey;
       }
 
       .submit {
-        padding: 5px 5px;
+        padding: 0.3125rem 0.3125rem;
         background-color: none;
-        border-radius: 5px;
-        margin-top: 15px;
+        border-radius: 0.3125rem;
+        margin-top: 0.9375rem;
       }
     }
 
@@ -139,9 +140,9 @@
 
       article {
         flex-direction: column;
-        border: 1px solid #f1f1f1;
-        padding: 10px 8px 10px;
-        font-size: 10px;
+        border: 0.0625rem solid #f1f1f1;
+        padding: 0.625rem 0.5rem 0.625rem;
+        font-size: 0.625rem;
         justify-content: flex-end;
 
         img {
@@ -150,10 +151,10 @@
 
         button {
           justify-content: flex-start;
-          padding: 5px 5px;
-          border-radius: 5px;
-          width: 80px;
-          font-size: 10px;
+          padding: 0.3125rem 0.3125rem;
+          border-radius: 0.3125rem;
+          width: 5rem;
+          font-size: 0.625rem;
         }
       }
     }
