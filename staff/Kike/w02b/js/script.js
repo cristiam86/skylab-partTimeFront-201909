@@ -1,5 +1,5 @@
 //larger_integer
-function largerInteger(num1,num2) {
+function largerInteger(num1, num2) {
     // var num1 = window.prompt('escribe un numero', 'escribe aqui');
     // var num2 = window.prompt('escribe otro numero', 'escribe aqui');
     num1 = parseInt(num1);
@@ -15,12 +15,12 @@ function largerInteger(num1,num2) {
 
 
 //sign_product
-function signProduct(num1,num2,num3) {
+function signProduct(num1, num2, num3) {
     // var num1 = window.prompt('escribe el primer numero', 'escribe aqui');
     // var num2 = window.prompt('escribe el segundo numero', 'escribe aqui');
     // var num3 = window.prompt('escribe el tercer numero', 'escribe aqui');
 
-    
+
     num1 = parseInt(num1);
     num2 = parseInt(num2);
     num3 = parseInt(num3);
@@ -33,13 +33,13 @@ function signProduct(num1,num2,num3) {
     var numFinal = num1 * num2 * num3;
 
     validacion === 3 ? numFinal < 0 ? console.log(`el signo es -`) : console.log(`el signo es +`) : console.log('NO SON NUMEROS');
-    validacion === 3 ? numFinal < 0 ? res ='-' : res = '+' : console.log('NO SON NUMEROS');
+    validacion === 3 ? numFinal < 0 ? res = '-' : res = '+' : console.log('NO SON NUMEROS');
     return res;
 }
 
 
 //sort_numbers
-function sortNumbers(num1,num2,num3) {
+function sortNumbers(num1, num2, num3) {
     // var num1 = window.prompt('escribe el primer numero', 'escribe aqui');
     // var num2 = window.prompt('escribe el segundo numero', 'escribe aqui');
     // var num3 = window.prompt('escribe el tercer numero', 'escribe aqui');
@@ -56,16 +56,16 @@ function sortNumbers(num1,num2,num3) {
     var res = [];
 
     var numSorted = [num1, num2, num3];
-    numSorted = numSorted.sort(function(a, b){return a - b}).reverse();
+    numSorted = numSorted.sort(function (a, b) { return a - b }).reverse();
     validacion === 3 ? console.log(numSorted) : console.log('NO SON NUMEROS');
-    res =  numSorted;
+    res = numSorted;
 
     return res;
 }
 
 
 //largest_number
-function largestNumber(num1,num2,num3,num4,num5) {
+function largestNumber(num1, num2, num3, num4, num5) {
     // var num1 = window.prompt('escribe el primer numero', 'escribe aqui');
     // var num2 = window.prompt('escribe el segundo numero', 'escribe aqui');
     // var num3 = window.prompt('escribe el tercer numero', 'escribe aqui');
@@ -99,7 +99,7 @@ function oddOrEven(num) {
     // for (i = 0; i < 16; i++) {
     //     i % 2 === 0 ? console.log(`${i} es par`) : console.log(`${i} es impar`);
     // }
-    num % 2 === 0 ? res ='even': res= 'odd';
+    num % 2 === 0 ? res = 'even' : res = 'odd';
     return res;
 }
 
@@ -110,8 +110,8 @@ function FizzBuzz(num) {
     // for (i = 0; i < 101; i++) {
     //     i % 3 === 0 ? i % 5 === 0 ? console.log(`${i} FizzBuzz`) : console.log(`${i} Fizz`) : i % 5 === 0 ? console.log(`${i} Buzz`) : '';
     // }
-    for (i = 1; i < num+1; i++) {
-        i % 3 === 0 ? i % 5 === 0 ? res+='FizzBuzz' : res+='Fizz' : i % 5 === 0 ? res+='Buzz' : '';
+    for (i = 1; i < num + 1; i++) {
+        i % 3 === 0 ? i % 5 === 0 ? res += 'FizzBuzz' : res += 'Fizz' : i % 5 === 0 ? res += 'Buzz' : '';
     }
     console.log(res);
     return res;
@@ -136,8 +136,8 @@ function under1000(num) {
     // for (i = 0; i < 1001; i++) {
     //     i % 15 === 0 ? sumaN += i : '';
     // }
-    for (i = 1; i < num+1; i++) {
-        (i % 3 === 0)||(i % 5 === 0) ? sumaN += i : '';
+    for (i = 1; i < num + 1; i++) {
+        (i % 3 === 0) || (i % 5 === 0) ? sumaN += i : '';
     }
     console.log(`${sumaN}`);
     res = sumaN;
