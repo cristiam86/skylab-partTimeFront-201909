@@ -1,0 +1,11 @@
+@import "variables";
+@import "animation";
+
+nav {
+    ul {
+        li {
+            color: $text-color;
+            @include bounce();
+        }
+    }
+}
