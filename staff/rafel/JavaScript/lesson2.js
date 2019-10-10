@@ -1,32 +1,26 @@
-# JavaScript String Exercises
+function isString(input){
+    if (typeof input == 'string'){
+        console.log("this is a string")
+      }else{console.log("this is NOT a string")
+          
+      }
 
-## Goals
+}
 
-- String methods
+function isBlank(input){
+    var input = ["aa"]
+    if (input.length > 0){
+        console.log("true")
+      }else{console.log("false") 
+    }
+}
 
-## Tasks
 
-### isString(input)
+function stringToArray(input){
+    var input
+}
 
-Write a JavaScript function to check whether an `input` is a *string or not*.
-
-    console.log(isString('w3resource'));
-    true
-    console.log(isString([1, 2, 4, 0]));
-    false
-
-### isBlank(input)
-
-Write a JavaScript function to check whether a string *is blank or not*.
-
-    console.log(isBlank(''));
-    console.log(isBlank('abc'));
-    true
-    false
-
-### stringToArray(input)
-
-Write a JavaScript *function to split a string and convert it into an array* of words.
+/*Write a JavaScript *function to split a string and convert it into an array* of words.
 
     console.log(stringToArray("Robin Singh"));
     ["Robin", "Singh"]
@@ -115,3 +109,5 @@ Write a JavaScript function to insert a string within a string at a *particular 
     "We are doing some exercises."
     "JavaScript We are doing some exercises."
     "We are doing some JavaScript exercises."
+
+*/
