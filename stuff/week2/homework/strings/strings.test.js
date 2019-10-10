@@ -72,7 +72,7 @@ if (result !== "") {
 }
 
 var result = truncate("word1 word2 word3", 6);
-if (result !== "word1 w") {
+if (result !== "word1 ") {
   errors += 1;
   console.error("ERROR: truncate expected to return word1 w");
 }
