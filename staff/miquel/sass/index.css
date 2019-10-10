@@ -1,0 +1,6 @@
+nav ul li {
+  color: tomato;
+  -webkit-transition: all 0.6seg ease-in-out;
+  transition: all 0.6seg ease-in-out;
+}
+/*# sourceMappingURL=index.css.map */
