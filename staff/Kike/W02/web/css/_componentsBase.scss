@@ -179,6 +179,8 @@
 
   .smallPart {
     width: 30%;
+    display: flex;
+    justify-content: center;
   }
   .bigPart {
     width: 70%;
@@ -243,6 +245,11 @@
     .smallPart,
     .bigPart {
       width: 100%;
+    }
+    .smallPart{
+      .part-box{
+        width: 100%;
+      }
     }
     .part-box {
       display: flex;
