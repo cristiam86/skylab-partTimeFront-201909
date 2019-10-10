@@ -117,6 +117,5 @@ function under1000() {
     alert(result);
 }
 
->>>>>>> develop
 
 
