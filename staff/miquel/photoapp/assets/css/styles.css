@@ -132,7 +132,7 @@ footer {
 .section-main-banner {
     display: flex;
     justify-content: center;
-    background-image: url("../assets/site_showcase_bg.jpg");
+    background-image: url("../img/site_showcase_bg.jpg");
 }
 
 .section-submain-banner{
@@ -186,6 +186,20 @@ footer {
     width: 100%;
 }
 
+.button-ReadMore {
+    background-color: lightgray;
+    border-radius: 5%;
+    text-align: center;
+    color:black;
+    padding: 10px;
+    width: 7rem;
+    cursor: pointer;
+}
+
+.button-ReadMore:hover {
+    background-color: gray;
+    color:white;
+}
 /* ABOUT US */
 
 /* CONTACT US */
