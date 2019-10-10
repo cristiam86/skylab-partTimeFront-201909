@@ -1,4 +1,4 @@
-
+// ************************* EJERCICIO 1 - largerInteger. *******************
 // ********* Comparar dos números y evaluar si es mayor, menor o igual.
 
 // 1. Delcaro dos variables y ejecuto el método prompt para que se inserten los números a calcular
@@ -28,10 +28,33 @@ if(numero1Ex1 === numero2Ex1){
 
 
 
+/********************************** EJERCICIO 2  signProduct (num1, num2, num3) */
+
+/*signProduct (num1, num2, num3)
+
+var numb1 = 3;
+var numb2 = -7;
+var numb3 = 2
+
+var numerob1 = parseInt(numb1, 10);
+var numerob2 = parseInt(numb2, 10);
+var numerob3 = parseInt(numb3, 10);
+
+var numbers = [3, -7, 2]
+var parsedNumbers = numbers.map((number) =>  Number(number))
+console.log('array modified ->', parsedNumbers) */
+
+
+/********************************** EJERCICIO 3  sortNumbers (num1, num2, num3) */
+
+
+var sortNum = [0, -1, 4];
+sortNum.sort(function(a, b){return b-a});
+console.log(sortNum)
 
 
 
-/********************************** EJERCICIO 2 ****************************/
+/********************************** EJERCICIO 4 / MayorNúmero (num1, num2, num3, num4, num5) ****************************/
 
 // 1. Insertar 5 números y mediante un condicional imprimir cual de los 5 es el mayor 
 
@@ -76,7 +99,7 @@ console.log('De los siguientes números: ' + '' + numero1Ex2 + ', ' + numero2Ex2
 
 
 
-/********************************** EJERCICIO 3 ****************************/
+/********************************** EJERCICIO 5 par o impar ****************************/
 
 // declarar por consola los números que son pares o impares del 1 al 15.
 
@@ -118,7 +141,22 @@ for(x3a = 0; x3a < numerosEx3A; x3a++){
 }
 
 
-//********************** EJERCICIO 5  */
+//********************** EJERCICIO 6 ***********/
+
+var numerosEx6 = 100;
+
+for(x6 = 0; x6 < numerosEx6; x6++){
+   if(x6 % 3 === 0){
+       console.log(x6 + ' es múltiplo de 3')
+   } else if (x6 % 5 === 0) {
+       console.log(x6 +' es múltiplo de 5')
+   } else{
+       console.log(x6 + ' No es múltiplo de ninguno de los dos')
+   }
+}
+
+
+//********************** EJERCICIO 7 contructPattern () ***********/
 
 // Declaro una variable (numEx4) con el valor numérico que  quiero que se repita.
 // Declaro una variable (asteristo) con el string * para poder dibujar el símbolo en consola. 
@@ -216,21 +254,6 @@ for(x4 = 0; x4 < numEx4; x4++ ){
 
 
 
-
-var num1 = prompt();
-var num2 = prompt();
-
-var numero1 = parseInt(num1, 10);
-var numero2 = parseInt(num2, 10);
-
-
-if(numero1 > numero2){
-    console.log(numero1 + " es mayor que " + numero2)
-} else if (numero1 === numero2){
-    console.log(numero1 + " es igual que " + numero2)
-} else {
-    console.log(numero1 + " es menor que " + numero2)
-}
 
 
 
