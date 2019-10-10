@@ -1,7 +1,9 @@
+#DONE
 ### largerInteger (num1, num2)
 
 Escriba un programa de JavaScript que acepte dos enteros y muestre el más grande.
 
+#DONE
 ### signProduct (num1, num2, num3)
 
 Escriba una declaración condicional de JavaScript para encontrar el signo del producto de tres números. Mostrar un cuadro de alerta con el signo especificado.
@@ -10,7 +12,7 @@ Escriba una declaración condicional de JavaScript para encontrar el signo del p
 Números de muestra: 3, -7, 2
 Salida: el signo es -
 `` `
-
+#DONE
 ### sortNumbers (num1, num2, num3)
 
 Escriba una declaración condicional de JavaScript para ordenar tres números. Mostrar un cuadro de alerta para mostrar el resultado.
@@ -44,6 +46,8 @@ Salida de muestra:
 
 Escriba un programa JavaScript que itere los enteros del 1 al 100. Pero para múltiplos de tres imprima "Fizz" en lugar del número y para los múltiplos de cinco imprima "Buzz". Para números que son múltiplos de tres y cinco, imprime "FizzBuzz".
 
+
+#DONE
 ### contructPattern ()
 
 Escriba un programa JavaScript para construir el siguiente patrón, utilizando un bucle for anidado.
