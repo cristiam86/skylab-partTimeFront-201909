@@ -6,11 +6,11 @@ var valor2 = prompt("Introduce el primer valor", "0");
 function largerInteger(num1, num2){
   //parseamos con parseInt las variables que vienen por argumento ya que nos vienen como String
   if(parseInt(num1) > parseInt(num2)){
-    alert(num1+" es mayor que "+num2);
+    return alert(num1+" es mayor que "+num2);
   }else if(parseInt(var1) < parseInt(num2)){
-    alert(num1+" es menor que "+num2);
+    return alert(num1+" es menor que "+num2);
   }else{
-    alert("Los valores son iguales");
+    return alert("Los valores son iguales");
   }
 }
 
@@ -27,9 +27,9 @@ var valor5 = prompt("Introduce el primer valor", "0");
 function signProduct(num3, num4, num5){
   var resultado = num3*num4*num5;
   if(resultado < 0){
-    alert(resultado+' es negativo');
+    return alert(resultado+' es negativo');
   }else{
-    alert(resultado+' es positivo');
+    return alert(resultado+' es positivo');
   }
 }
 //signProduct(valor3, valor4, valor5);
@@ -37,34 +37,34 @@ function signProduct(num3, num4, num5){
 // 3. EJERCICIO PARA ORDENAR VALORES
 
 /*
-var valor6 = prompt("Introduce el primer valor", "0");
-var valor7 = prompt("Introduce el segundo valor", "0");
-var valor8 = prompt("Introduce el tercer valor", "0");
+var valor6 = Number(prompt("Introduce el primer valor", "0"));
+var valor7 = Number(prompt("Introduce el segundo valor", "0"));
+var valor8 = Number(prompt("Introduce el tercer valor", "0"));
 */
 
 function sortNumbers(a, b, c){
 //probar con 10 12 9
-  if(a<b && b<c){
-    alert(a+", "+b+", "+c);
-  }else if(a>b && b>c && c>a){
-    alert(c+", "+b+", "+a);
-  }else if(a<b && b>c && a<c){
-    alert(a+", "+c+", "+b);
-  }else if(a<b && b>c && a>c){
-    alert(c+", "+a+", "+b);
-  }else if(a>b && b<c){
-    alert(a+", "+c+", "+b);
-  }else if(a>b && b<c && c>a){
-    alert("hola");
-  }else if(a===b && b===c && a===c){
-    alert('Introduce números distintos, no pongas los mismos números!!');
-  }else{
-    alert('vuelve a revisar el código!!');
+  if (a < b && b < c) {
+    return alert(a + ", " + b + ", " + c);
+  } else if (a > b && b > c && c > a) {
+    return alert(c + ", " + b + ", " + a);
+  } else if (a < b && b > c && a < c) {
+    alert(a + ", " + c + ", " + b);
+  } else if (a < b && b > c && a > c) {
+    return alert(c + ", " + a + ", " + b);
+  } else if (a > b && b < c) {
+    return alert(a + ", " + c + ", " + b);
+  } else if (a > b && b < c && c > a) {
+    return alert("hola");
+  } else if (a === b && b === c && a === c) {
+    return alert('Introduce números distintos, no pongas los mismos números!!');
+  } else {
+    return alert('vuelve a revisar el código!!');
   }
   
 }
 
-//sortNumbers(valor6, valor7, valor8);
+sortNumbers(valor6, valor7, valor8);
 
 // 4. MUESTRA EL MAYOR NÚMERO DE TODOS
 
@@ -78,19 +78,19 @@ var valor13 = prompt("Introduce el quinto valor", "0");
 function largestNumber(num1, num2, num3, num4, num5){
 
   if(num1>num2 && num1>num3 && num1>num4 && num1>num5){
-    alert("El número más alto es "+num1);
+    return alert("El número más alto es "+num1);
   }else if(num2>num1 && num2>num3 && num2>num4 && num2>num5){
-    alert("El número más alto es "+num2);
+    return alert("El número más alto es "+num2);
   }else if(num3>num1 && num3>num2 && num3>num4 && num3>num5){
-    alert("El número más alto es "+num3);
+    return alert("El número más alto es "+num3);
   }else if(num4>num1 && num4>num2 && num4>num3 && num4>num5){
-    alert("El número más alto es "+num4);
+    return alert("El número más alto es "+num4);
   }else if(num5>num1 && num5>num2 && num5>num3 && num5>num4){
-    alert("El número más alto es "+num5);
+    return alert("El número más alto es "+num5);
   }else if(num1===num2 && num1===num2 && num1===num3 && num1===num4 && num1===num5){
-    alert("No pongas todos los números iguales!!!");
+    return alert("No pongas todos los números iguales!!!");
   }else{
-    alert("hola");
+    return alert("hola");
   }
 
 }
@@ -102,9 +102,9 @@ function largestNumber(num1, num2, num3, num4, num5){
 function oddOrEven(){
   for(var x =0; x <= 15; x++){
     if(x % 2){
-      alert(x + " es impar");
+      return alert(x + " es impar");
     }else{
-      alert(x + " es par");;
+      return alert(x + " es par");;
     }
   }
 }
