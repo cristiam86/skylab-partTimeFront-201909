@@ -81,29 +81,25 @@ function largestNumber(num1, num2, num3, num4, num5) {
   }
 
 
-
+/*** ************************ EJERCICIO FIZZ BUZZ ************* */
   
   
-  function FizzBuzz() {
-    /*
-    var numerosEx6 = 100;
+  function FizzBuzz(number) {
+    
+        var contador = ''
 
-    for(var i = 0; i < numerosEx6; i++){
-        if(i % 3 === 0 && i % 5 === 0){
-            return('FizzBuzz')
-        } else if (i % 5 === 0) {
-            return('Buzz')
-        } else if (i % 3 === 0){
-            return('Fizz')
-        } else {
-            return(io  +  ' Nuniguno de los dos. ')
+        for(var i = 1; i <= number; i++){
+            if(i % 3 === 0){
+                 contador = contador + 'Fizz'
+            } else if (i % 5 === 0) {
+                 contador = contador + 'Buzz'
+            }
         }
+        return contador;   
     }
-    */
-  }
+    
   
   
-
 
   
   /* ************************* EJERCICIO 8 ******************* */
