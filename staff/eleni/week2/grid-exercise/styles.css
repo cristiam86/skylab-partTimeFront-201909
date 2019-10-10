@@ -1,0 +1,105 @@
+body{
+    box-sizing: border-box;
+    color:#fff;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.item{
+    background: salmon;
+    border:1px solid red;
+    text-align: center;
+}
+.lightpink{
+    background:lightpink
+}
+.col1:nth-child(1) {
+    grid-row: 1;
+    grid-column: 1;
+}
+.col1:nth-child(2) {
+    grid-row: 1;
+    grid-column: 2;
+}
+.col1:nth-child(3) {
+    grid-row: 1;
+    grid-column: 3;
+}
+.col1:nth-child(4) {
+    grid-row: 1;
+    grid-column: 4;
+}
+.col1:nth-child(5) {
+    grid-row: 1;
+    grid-column: 5;
+}
+.col1:nth-child(6) {
+    grid-row: 1;
+    grid-column: 6;
+}
+.col2:nth-child(1) {
+    grid-row: 2;
+    grid-column-start:1;
+    grid-column-end:3;
+}
+.col2:nth-child(2) {
+    grid-row: 2;
+    grid-column-start:3;
+    grid-column-end:5;
+}
+.col2:nth-child(3) {
+    grid-row: 2;
+    grid-column-start:5;
+    grid-column-end:7;
+}
+@media only screen and (max-width: 768px){
+    .col1:nth-child(1) {
+        grid-row: 1;
+        grid-column-start:1;
+        grid-column-end:4;
+    }
+    .col1:nth-child(2) {
+        grid-row: 1;
+        grid-column-start:4;
+        grid-column-end:7;
+    }
+    .col1:nth-child(3) {
+        grid-row: 2;
+        grid-column-start:1;
+        grid-column-end:4;
+    }
+    .col1:nth-child(4) {
+        grid-row: 2;
+        grid-column-start:4;
+        grid-column-end:7;
+    }
+    .col1:nth-child(5) {
+        grid-row: 3;
+        grid-column-start:1;
+        grid-column-end:4;
+    }
+    .col1:nth-child(6) {
+        grid-row: 3;
+        grid-column-start:4;
+        grid-column-end:7;
+    }
+    .col2:nth-child(1) {
+        grid-row: 4;
+        grid-column-start:1;
+        grid-column-end:7;
+    }
+    .col2:nth-child(2) {
+        grid-row: 5;
+        grid-column-start:1;
+        grid-column-end:7;
+    }
+    .col2:nth-child(3) {
+        grid-row: 6;
+        grid-column-start:5;
+        grid-column-end:7;
+    }
+}
