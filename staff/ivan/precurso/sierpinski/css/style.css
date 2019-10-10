@@ -1,0 +1,64 @@
+
+/*classes*/
+
+.displayColumn{
+    display: flex;
+    flex-direction: column;
+}
+
+.justifyContentCenter{
+    justify-content: center;
+}
+
+.justifyContentAround{
+    justify-content: space-around;
+}
+
+
+.displayRow{
+    display: flex;
+    flex-direction: row;
+}
+
+.grayBack{background-color: #e6e6e6;}
+.whiteBack{background-color: white;}
+
+/*id*/
+
+#content{
+    width: 100%;
+}
+
+#header{
+    text-align: center;
+}
+
+#explanation{
+    margin: 3%;
+    text-align: left;
+}
+
+#explanation button{
+    margin: 0 auto;
+}
+
+#canvas{
+    width:300px;
+    height:200px;
+    margin: 1%;
+}
+
+@media (min-width:900px){
+
+    /*CLASSES*/
+    
+    #main_view{
+        flex-direction: row;
+    }
+
+    #content{
+        width:80%;
+        margin: 0 auto;
+    }
+
+
