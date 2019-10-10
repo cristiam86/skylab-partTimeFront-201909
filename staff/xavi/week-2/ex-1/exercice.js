@@ -141,17 +141,27 @@ for(x3a = 0; x3a < numerosEx3A; x3a++){
 }
 
 
-//********************** EJERCICIO 6 ***********/
+//**************************** EJERCICIO 6 ************************/
 
+// Creo la variable numerosEx6 con un valor númerico de 100.
 var numerosEx6 = 100;
+
+// Creo un bucle en el que la variable x6 itera mientras sea menor que el valor de 100.
+// Dentro del for creo un condicional en que le digo:
+// si x6 es múltiplo de 3 = imprime Fizz.
+// si no x6 es múltiplo de 5 = imprime Buzz.
+// si x6 es múltiplo de 3 y además múltiplo de 5 = entonces imprime FizzBuzz
+// y si no =  Imprime : Ninguno de los dos.
 
 for(x6 = 0; x6 < numerosEx6; x6++){
    if(x6 % 3 === 0){
-       console.log(x6 + ' es múltiplo de 3')
+       console.log('Fizz')
    } else if (x6 % 5 === 0) {
-       console.log(x6 +' es múltiplo de 5')
-   } else{
-       console.log(x6 + ' No es múltiplo de ninguno de los dos')
+       console.log('Buzz')
+   } else if (x6 % 3 === 0 && x6 % 5 === 0){
+       console.log('FizzBuzz')
+   } else {
+       console.log('Nuniguno de los dos. ')
    }
 }
 
@@ -175,7 +185,21 @@ for(x4 = 0; x4 < numEx4; x4++ ){
 
 
 
+/******************************** EJERICIO 8  **********************++*/
 
+
+var numerosEx8 = 1000;
+var sumaEx8 = 0;
+
+for(x8 = 0; x8 < numerosEx8; x8++){
+    if(x8 % 3 === 0){
+        sumaEx8.push(x8)
+    } else {
+      console.log('fin')
+    }
+}
+
+console.log(sumaEx8)
 
 
 
