@@ -1,44 +1,35 @@
 /*larger_integer*/
 
-function larger_interger(num1,num2){
-    if (parseInt(num1) > parseInt(num2)){
-        console.log ("numero1 mayor numero2");
-    }else if (parseInt(num1) < parseInt(num2)){
-        console.log ("numero2 mayor numero1");
-    }else {
-        console.log ("iguales");
-    }
+function largerInteger(num1,num2){
+    if (parseInt(num1) > parseInt(num2)) return num1;
+    return num2;
 }
 /*sign_product*/
 
-function sign_product(num1,num2,num3){
-    var result = num1 * num2 * num3;
-    console.log(result);
-    if (result < 0){
-        console.log("negative");
-    }else console.log("positive");
+function signProduct(num1,num2,num3){
+    if (num1 * num2 * num3 < 0) return "-";
+    return "+";
 }
 
 /*sort_numbers*/
 
-function sort_numbers(num1,num2,num3){
-    var result = [num1,num2,num3];
-    result.sort();
-    console.log(result);
+function sortNumbers(num1,num2,num3){
+    var result = [num1,num2,num3];   
+    return result.sort((a, b) => b - a);
 }
 
 /*largest_number*/
 
-function largest_number(num1,num2,num3,num4,num5){
+function largestNumber(num1,num2,num3,num4,num5){
     var numbers = [num1,num2,num3,num4,num5];
     var result = numbers.sort();
-    console.log(result[result.length-1]);
+   return(result[result.length-1]);
 }
 
 /*odd_or_even*/
 
-function odd_or_even() {
-    for (var i=0; i<=15; i +=1){
+function odd_or_even(num) {
+    for (var i=0; i<=num; i +=1){
         if (i % 2){
             console.log(element,"is odd");
         }else {
@@ -47,18 +38,25 @@ function odd_or_even() {
     }
 }
 
+function oddOrEven(num) {
+      if (num % 2) return "odd";
+      return "even";
+}
+
+
 /*FizzBuzz*/
-function fizzBuzz(){
-    for (var i=0; i<100; i +=1){
-        var result="";
+function FizzBuzz(num){
+    var result="";
+    for (var i=1; i<num+1; i +=1){
         if (i % 15 === 0) {
-            console.log(i + " is: Multiple 3 y 5" );         
+           result = result + "FizzBuzz";         
         }else if (i % 3  === 0){
-            console.log(i + " is: Multiple 3");
+            result = result + "Fizz";
         }else if (i % 5  === 0){
-            console.log(i + " is: Multiple 5");
+            result = result + "Buzz";
         }          
     }
+    return result;
 }
 
 /*contruct_pattern*/
@@ -70,12 +68,10 @@ function contructPattern() {
     }
 }
 /*under_1000*/
-function uner1000(){
+function under1000(num){
     var result = 0;
-    for (var i=0;i<1001; i +=1){
-        if ((i % 3  === 0) || (i % 5  === 0)) { 
-            result = result + i;
-        }
+    for (var i=1;i<num+1; i +=1){
+        if ((i % 3  === 0) || (i % 5  === 0))  result = result + i;
     }
-    console.log(result);
+    return result;
 }
