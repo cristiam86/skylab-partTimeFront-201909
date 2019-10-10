@@ -75,10 +75,6 @@ function oddOrEven() {
     }
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> develop
 function fizzBuzz() {
     for (var i = 1; i <= 100; i += 1){
         if (i%15 === 0){
@@ -92,7 +88,7 @@ function fizzBuzz() {
 }
 
 function constructPattern() {
-<<<<<<< HEAD
+
 
 }
 
@@ -101,8 +97,6 @@ function constructPattern() {
 }
 
 fizzBuzz()
-
-=======
     for (var i =1; i <= 5; i += 1){
         document.write(' * '.repeat(i)+"<br>")
     }
