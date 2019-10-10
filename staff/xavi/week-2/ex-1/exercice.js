@@ -30,7 +30,7 @@ if(numero1Ex1 === numero2Ex1){
 
 /********************************** EJERCICIO 2  signProduct (num1, num2, num3) */
 
-/*signProduct (num1, num2, num3)
+signProduct (num1, num2, num3)
 
 var numb1 = 3;
 var numb2 = -7;
@@ -40,10 +40,19 @@ var numerob1 = parseInt(numb1, 10);
 var numerob2 = parseInt(numb2, 10);
 var numerob3 = parseInt(numb3, 10);
 
-var numbers = [3, -7, 2]
+var numbers = [3, '-7', '2']
 var parsedNumbers = numbers.map((number) =>  Number(number))
-console.log('array modified ->', parsedNumbers) */
+console.log('array modified ->', parsedNumbers) 
 
+function map(fn){
+    var newArray = []
+    for (let index = 0; index < array.length; index++) {
+        newArray.push(fn(array[index]));
+    }
+    return newArray
+}
+
+var parsedArray = map(function(numb){ return Number(numb) })
 
 /********************************** EJERCICIO 3  sortNumbers (num1, num2, num3) */
 
@@ -128,59 +137,78 @@ for( x3 = 1; x3 < numerosEx3.length; x3++){
 // otra forma de hacerlo:
 // 1. No es necesario un array de 15 elementos en la variable numerosEx3. solo con el número 15 es necesario.
 // 2. Compara la variable declarada en el bucle for.
-var numerosEx3A = 15;
 
-for(x3a = 0; x3a < numerosEx3A; x3a++){
-  if(x3a === 0){
-    console.log(x3a + ' ES PAR')
-  } else if( x3a % 2 == 0){
-    console.log(x3a + ' ES PAR')
-  } else {
-    console.log(x3a + ' ES IMPAR')
-  }
+function parimpar (){
+    var numerosEx3A = 15;
+
+    for(x3a = 0; x3a < numerosEx3A; x3a++){
+    if(x3a === 0){
+        console.log(x3a + ' ES PAR')
+    } else if( x3a % 2 == 0){
+        console.log(x3a + ' ES PAR')
+    } else {
+        console.log(x3a + ' ES IMPAR')
+    }
+    }
 }
+
+return
+
+
 
 
 //**************************** EJERCICIO 6 ************************/
 
-// Creo la variable numerosEx6 con un valor númerico de 100.
-var numerosEx6 = 100;
+function FizzBuzz(){
 
-// Creo un bucle en el que la variable x6 itera mientras sea menor que el valor de 100.
-// Dentro del for creo un condicional en que le digo:
-// si x6 es múltiplo de 3 = imprime Fizz.
-// si no x6 es múltiplo de 5 = imprime Buzz.
-// si x6 es múltiplo de 3 y además múltiplo de 5 = entonces imprime FizzBuzz
-// y si no =  Imprime : Ninguno de los dos.
+    // Creo la variable numerosEx6 con un valor númerico de 100.
+    var numerosEx6 = 100;
 
-for(x6 = 0; x6 < numerosEx6; x6++){
-   if(x6 % 3 === 0 && x6 % 5 === 0){
-       console.log(x6  + ' LOS DOS')
-   } else if (x6 % 5 === 0) {
-       console.log(x6  +  ' Buzz')
-   } else if (x6 % 3 === 0){
-       console.log(x6  +  ' Fizz')
-   } else {
-       console.log(x6  +  ' Nuniguno de los dos. ')
-   }
+    // Creo un bucle en el que la variable x6 itera mientras sea menor que el valor de 100.
+    // Dentro del for creo un condicional en que le digo:
+    // si x6 es múltiplo de 3 = imprime Fizz.
+    // si no x6 es múltiplo de 5 = imprime Buzz.
+    // si x6 es múltiplo de 3 y además múltiplo de 5 = entonces imprime FizzBuzz
+    // y si no =  Imprime : Ninguno de los dos.
+
+    for(x6 = 0; x6 < numerosEx6; x6++){
+        if(x6 % 3 === 0 && x6 % 5 === 0){
+            console.log(x6  + ' FIZZBUZZ')
+        } else if (x6 % 5 === 0) {
+            console.log(x6  +  ' Buzz')
+        } else if (x6 % 3 === 0){
+            console.log(x6  +  ' Fizz')
+        } else {
+            console.log(x6  +  ' Nuniguno de los dos. ')
+        }
+    }
+
 }
+
+return FizzBuzz();
+
 
 
 //********************** EJERCICIO 7 contructPattern () ***********/
 
 // Declaro una variable (numEx4) con el valor numérico que  quiero que se repita.
 // Declaro una variable (asteristo) con el string * para poder dibujar el símbolo en consola. 
-var numEx4 = 5;
-var asterisco = '*';
+function contructPattern() {
+    var numEx4 = 5;
+    var asterisco = '*';
 
-// Creo un bucle for para iterar la variable x4 tantas veces como el valor de numEx4.
-// Por cada iteración imprimo en consola la variable asterisco. 
-// Con el método .repeat multiplicas el string que lo precede tantas veces como este escrito entre ().
-// Por cada iteración el valor de .repeat(x4) va incrementando en 1. así que pintará tantos asteriscos como valor tenga la iteración (x4).
-// Ejemplo del método .repeat: https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/String/repeat
-for(x4 = 0; x4 < numEx4; x4++ ){
-  console.log(asterisco.repeat(x4))
+    // Creo un bucle for para iterar la variable x4 tantas veces como el valor de numEx4.
+    // Por cada iteración imprimo en consola la variable asterisco. 
+    // Con el método .repeat multiplicas el string que lo precede tantas veces como este escrito entre ().
+    // Por cada iteración el valor de .repeat(x4) va incrementando en 1. así que pintará tantos asteriscos como valor tenga la iteración (x4).
+    // Ejemplo del método .repeat: https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/String/repeat
+    for(x4 = 0; x4 < numEx4; x4++ ){
+    console.log(asterisco.repeat(x4))
+    }
 }
+
+return contructPattern();
+
 
 
 
@@ -188,94 +216,20 @@ for(x4 = 0; x4 < numEx4; x4++ ){
 /******************************** EJERICIO 8  **********************++*/
 
 
-var numerosEx8 = 1000;
-var sumaEx8 = 0;
+function under1000(number) {
 
-for(x8 = 0; x8 < numerosEx8; x8++){
-    if(x8 % 3 === 0){
-        sumaEx8.push(x8)
-    } else {
-      console.log('fin')
+    var acumulador = 0;
+
+    for (var i = 0; i <= number; i++) {
+        if(i % 15 === 0){
+            acumulador += i
+        }
     }
+
+    return acumulador
 }
 
-console.log(sumaEx8)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(under1000(100));
+console.log(under1000(30));
+console.log(under1000(15));
 

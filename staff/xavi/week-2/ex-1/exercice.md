@@ -60,6 +60,6 @@ Escriba un programa JavaScript para construir el siguiente patrón, utilizando u
 * * * * *
 `` `
 
-### 8.  under1000 ()
+### 8.under1000 ()  
 
 Escriba un programa de JavaScript para sumar los múltiplos de 3 y 5 por debajo de 1000.
