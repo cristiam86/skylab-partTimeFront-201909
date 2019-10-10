@@ -88,6 +88,15 @@ function fizzBuzz() {
 }
 
 function constructPattern() {
+
+
+}
+
+function constructPattern() {
+
+}
+
+fizzBuzz()
     for (var i =1; i <= 5; i += 1){
         document.write(' * '.repeat(i)+"<br>")
     }
