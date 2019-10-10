@@ -278,6 +278,16 @@ ul.ul-aside li:before {
         justify-content: center;
     }
 
+    .main-cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-cards .card {
+        width: 100%;
+        margin: auto;
+    }
+
 }
 
 /****** mobile ******************************/
@@ -301,6 +311,16 @@ ul.ul-aside li:before {
 
     .navbar {
         display: none;
+    }
+
+    .main-cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-cards .card {
+        width: 100%;
+        margin: auto;
     }
 
 }
