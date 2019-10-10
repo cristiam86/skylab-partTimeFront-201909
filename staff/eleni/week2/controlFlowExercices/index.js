@@ -1,9 +1,10 @@
 //larger_integer
 
-var num1;
-var num2;
 
 function larger_integer(num1,num2){
+
+var num1;
+var num2;
     if(num1>num2){
         console.log(num1+" is bigger than "+num2)
     }else if (num1===num2){
@@ -15,10 +16,11 @@ function larger_integer(num1,num2){
 larger_integer(2,3)
 
 //sign_product
-var num1;
+
+function sign_product(num1,num2,num3){
+    var num1;
 var num2;
 var num3;
-function sign_product(num1,num2,num3){
     var result=num1*num2*num3;
     if (result<0){
         console.log("The sign is -");
@@ -29,11 +31,12 @@ function sign_product(num1,num2,num3){
 sign_product(1,4,-9)
 
 //sort_numbers
-var num1;
-var num2;
-var num3;
+
 
 function sort_numbers(num1,num2,num3){
+    var num1;
+var num2;
+var num3;
     if(num1>num2 && num2>num3){
         console.log(num1+","+num2+","+num3)
     }else if(num1<num2 && num2<num3){
