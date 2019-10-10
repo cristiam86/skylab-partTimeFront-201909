@@ -175,7 +175,7 @@ if(result !== 'Fizz') {
 }
 
 var result = FizzBuzz(5);
-if(result !== 'Buzz') {
+if(result !== 'FizzBuzz') {
   errors += 1;
   console.error("ERROR: result should be Buzz");
 }
