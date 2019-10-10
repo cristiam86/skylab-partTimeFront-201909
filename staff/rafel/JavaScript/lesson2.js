@@ -8,31 +8,19 @@ function isString(input){
 }
 
 function isBlank(input){
+    var input = ["aa"]
     if (input.length > 0){
-        console.log("isBlank('')")
-      }else{console.log("this is NOT Blank")
-          
-      }
-
+        console.log("true")
+      }else{console.log("false") 
+    }
 }
 
-isString()
 
+function stringToArray(input){
+    var input
+}
 
-/*### 
-
-### isBlank(input)
-
-Write a JavaScript function to check whether a string *is blank or not*.
-
-    console.log(isBlank(''));
-    console.log(isBlank('abc'));
-    true
-    false
-
-### stringToArray(input)
-
-Write a JavaScript *function to split a string and convert it into an array* of words.
+/*Write a JavaScript *function to split a string and convert it into an array* of words.
 
     console.log(stringToArray("Robin Singh"));
     ["Robin", "Singh"]
