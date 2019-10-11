@@ -14,67 +14,77 @@ function isBlank(input){
       }else{console.log("false") 
     }
 }
+/*no funciona*/
 
 
 function stringToArray(input){
-    var input
+    var res = input.split(" ");
+    return res
 }
 
-/*Write a JavaScript *function to split a string and convert it into an array* of words.
+function truncate(input, number){
+    var res = input.substring(0, number);
+    return res 
+}
 
-    console.log(stringToArray("Robin Singh"));
-    ["Robin", "Singh"]
+function abbrevName(input){
+    var spacePosition = input.indexOf(" ")+2
+    var abbr = input.substring (0, spacePosition)+ '.'
+    return abbr
+    }
 
-### truncate(input, number)
+    function protect(input) {
+        var arrobaPosition = input.indexOf('@')
+        var abbr
+       if (arrobaPosition > 5 ){
+        abbr = input.replace(input.substring(5, arrobaPosition), '...')
+       } else if (arrobaPosition = 5 ){
+         abbr = input.replace(input.substring(5, arrobaPosition+1), '...@')
+       }
+    }
 
-Write a JavaScript function to remove specified number of characters from a string.
+function parameterize(input) {
+    var text = input.replace(/ /g, '-').toLowerCase() 
+}
 
-    console.log(truncate_string("Robin Singh",4));
-    "Robi"
+function capitalizeFirst(input) {
+    var letter = input.substring(0,1).toUpperCase()
+    var text = input.replace(input.substring(0,1),letter)
+}
 
-### abbrevName(input)
 
-Write a JavaScript function *to convert* a string in *abbreviated form*.
+function capitalizeWords(input) {
 
-    console.log(abbrev_name("Robin Singh"));
-    "Robin S."
+}
 
-### protect(input)
+/*Write a JavaScript function to *capitalize* the first letter *of each word* in a string.
 
-Write a JavaScript function to hide email addresses to protect from unauthorized user.
+            var input = 'rafel olmos'
 
-    console.log(protect_email("robin_singh@example.com"));
-    "robin...@example.com"
+            var inputArray = input.split(" ")
+            inputArray
 
-### parameterize(input)
+            for (var i = 0; i < inputArray.length; i += 1){
+            var capitalLetter = inputArray[i][0].toUpperCase 
+            }
 
-Write a JavaScript function to *parameterize a string*.
 
-    console.log(string_parameterize("Robin Singh from USA."));
-    "robin-singh-from-usa"
-
-### capitalizeFirst(input)
-
-Write a JavaScript function to *capitalize the first letter of a string*.
-
-    console.log(capitalize('js string exercises'));
-    "Js string exercises"
-
-### capitalizeWords(input)
-
-Write a JavaScript function to *capitalize* the first letter *of each word* in a string.
 
     console.log(capitalize_Words('js string exercises'));
     "Js String Exercises"
 
-### swapcase(input)
+### function swapcase(input) {
+
+}
 
 Write a JavaScript function that takes a string which has lower and upper case letters as a parameter and *converts upper case letters to lower case*, and lower case letters to upper case.
 
     console.log(swapcase('AaBbc'));
     "aAbBC"
 
-### camelize(input)
+### function camelize(input) {
+
+}
 
 Write a JavaScript function *to convert a string into camel case*.
 
@@ -85,7 +95,9 @@ Write a JavaScript function *to convert a string into camel case*.
     "JavaScriptExercises"
     "JavaScriptExercises"
 
-### uncamelize(input)
+### function uncamelize(input) {
+
+}
 
 Write a JavaScript function to *uncamelize* a string.
 
@@ -93,14 +105,18 @@ Write a JavaScript function to *uncamelize* a string.
     console.log(uncamelize('helloWorld', '_'));    // "hello_world"
 ```
 
-### repeat(input, n)
+### function repeat(input, n) {
+
+}
 
 Write a JavaScript function to *concatenates a given string n times* (default is 1).
 
     console.log(repeat('Ha!',3));
     "Ha!Ha!Ha!"
 
-### insert(input, insert, position)
+### function insert(input, insert, position) {
+
+}
 
 Write a JavaScript function to insert a string within a string at a *particular position* (default is 1).
 
