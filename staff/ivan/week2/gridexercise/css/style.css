@@ -1,7 +1,7 @@
 #content{
     display: grid;
     grid-template-columns: 100px 100px;
-    grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
   }
 
 .col1{
@@ -24,9 +24,30 @@
   grid-column: span 2;
 }
 
+.col4{
+  background-color: yellowgreen;
+  border: solid;
+  text-align: center;
+  grid-column: span 2;
+}
+
 @media (min-width:900px){
-    #content{
-      grid-template-columns: 100px 100px 100px 100px 100px 100px;
-      grid-template-rows: 100px 100px 100px 100px 100px 100px;
-  }  
+  #content{
+    grid-template-columns: 100px 100px 100px 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px 100px 100px 100px;
+  }
+  
+  .col3{
+    background-color: tomato;
+    border: solid;
+    text-align: center;
+    grid-column: span 3;
+  }
+
+  .col4{
+    background-color: tomato;
+    border: solid;
+    text-align: center;
+    grid-column: span 4;
+  }
 }
