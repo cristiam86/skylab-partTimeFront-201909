@@ -89,24 +89,48 @@ function parameterize(input) {
 
 }
 function capitalizeFirst(input) {
-  var res = input[0].toUpperCase();
-  var res1 = input.slice(0, 1);
-  res += res1;
+  var res = input.charAt(0).toUpperCase() + input.substr(1).toLowerCase();
 
   console.log(res);
   return res;
 
 }
 function capitalizeWords(input) {
-  return '';
+  var array = input.split(' ');
 
+  for (i = 0; i < array.length; i++) {
+    array[i] = array[i].charAt(0).toUpperCase() + array[i].substr(1).toLowerCase();
+  }
+  res = array.join(' ');
+  console.log(res);
+  return res;
 }
 function swapcase(input) {
-  return '';
+  var res = '';
+  var character;
 
+  for (i = 0; i < input.length; i++) {
+    character = input.charAt(i);
+    if (character == character.toUpperCase()) {
+      res += character.toLowerCase();
+    }
+    if (character == character.toLowerCase()) {
+      res += character.toUpperCase();
+    }
+  }
+
+  console.log(res);
+  return res;
 }
 function camelize(input) {
-  return '';
+  var array = input.split(' ');
+
+  for (i = 0; i < array.length; i++) {
+    array[i] = array[i].charAt(0).toUpperCase() + array[i].substr(1);
+  }
+  res = array.join('');
+  console.log(res);
+  return res;
 
 }
 function uncamelize(input) {
