@@ -51,7 +51,7 @@ function protect(input){
     var points = '...';
     var pos;
     var part1;
-    if (email[0].length > 5) {
+    if (email[0].length > 5) { 
         part1 = email[0].slice(0,5);
     }
     else{

@@ -124,7 +124,7 @@ footer {
     border: 1px solid #d8d8d8;
 }
 /* HOME */
-.content-home .section-main {
+.content-home .section-main-index {
     display: flex;
     flex-direction: column;
 }
