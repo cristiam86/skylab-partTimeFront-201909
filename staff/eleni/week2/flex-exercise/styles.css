@@ -1,0 +1,62 @@
+.container, .container .flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .flex {
+  background: lightpink;
+  border: solid 1px red;
+  color:white;
+}
+
+.container {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+
+.container .flex.one {
+  width: calc(16.5vw - 2px);
+}
+
+.container .flex.two {
+  width: calc(33vw - 2px);
+}
+
+.container .flex.three {
+  width: calc(49.5vw - 2px);
+}
+
+.container .flex.four {
+  width: calc(66vw - 2px);
+}
+
+.container .flex.five {
+  width: calc(82.5vw - 2px);
+}
+
+.container .flex.six {
+  width: calc(99vw - 2px);
+}
+
+@media (max-width: 768px) {
+  
+  .container .flex.one {
+    width: calc(49.5vw - 2px);
+  }
+  .container .flex.two {
+    width: calc(99vw - 2px);
+  }
+  .container .flex.three {
+    width: calc(99vw - 2px);
+  }
+  .container .flex.four {
+    width: calc(99vw - 2px);
+  }
+  .container .flex.five {
+    width: calc(99vw - 2px);
+  }
+  .container .flex.six {
+    width: calc(99vw - 2px);
+  }
+}

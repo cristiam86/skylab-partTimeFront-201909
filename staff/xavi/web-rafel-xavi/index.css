@@ -6,6 +6,7 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 nav {
@@ -33,6 +34,7 @@ nav {
 
 .navbar li a {
     text-decoration: none;
+    color:#646464;
 }
 
 .navbar li:visited {
@@ -54,8 +56,46 @@ nav {
     background-image: url(assets/site_showcase_bg.jpg);
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
+/************************ HEADER ****************/
+.advice {
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.advice-capture {
+    font-size: 2em;
+}
+
+.advice-capture, .advice-sentence , .AppStore , .GooglePlay {
+    margin: 1rem;
+}
+
+.logos {
+    display: flex;
+    flex-direction: row;
+}
+
+.GooglePlay {
+    display: flex;
+    justify-content: center;
+}
+
+.mobil-hand {
+    position: relative;
+
+}
+
+.highLight {
+    color: #3D9B87
+}
 
 
 .inner{
@@ -64,10 +104,13 @@ nav {
     margin: auto;
 }
 
-footer{
-    background: rgb(92, 180, 146);
+aside{
+    background: #00B09C;
 }
 
+footer{
+    background: #333333;;
+}
 
 /************************ CARDS ****************/
 .main-cards {
@@ -76,7 +119,8 @@ footer{
     justify-content: space-between;
     padding: 1rem;
     margin: 1rem;
-    max-width: 1200px;;
+    max-width: 1000px;
+    margin: auto;
 }
 
 .main-cards .card{
@@ -89,7 +133,7 @@ footer{
 .card .card-header{
     padding: 5px;
     border-bottom: 1px solid rgb(226, 226, 226);
-    min-height: 17em;
+    max-height: 17em;
 }
 
 .card .card-body{
@@ -115,6 +159,77 @@ footer{
 }
 
 
+.footer-home{
+    max-width: 1000px;
+    margin: auto;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.inner{
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.col-left{
+    width: 100%;
+    text-align: justify;
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+}
+
+h2.title-aside{
+    margin-bottom: .5rem
+}
+
+ul.ul-aside {
+    list-style: none;
+}
+ul.ul-aside li{
+    margin-bottom: .5rem;
+}
+  
+ul.ul-aside li:before {
+    content:"\2714\0020";
+    margin-right: .5rem;
+    
+}
+
+.col-right{
+    width: 100%;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.nav-footer{
+    max-width: 1000px;
+    color: white;
+    margin: auto;
+}
+
+.ul-footer{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.ul-footer li {
+    margin: .5rem;
+}
+
+.ul-footer li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.legal-text span{
+    text-align: right;
+}
+
+
 /****** Tablet ********************************/
 @media all and (max-width: 1024px){
     h1{
@@ -135,6 +250,40 @@ footer{
         align-items: center;
     }
 
+    .mobil-hand {
+        display: none;
+    }
+
+    .footer-home .inner{
+        display: inline;
+    }
+
+    .nav-footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nav-footer .inner{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .ul-footer{
+        justify-content: center;
+    }
+
+    .main-cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-cards .card {
+        width: 100%;
+        margin: auto;
+    }
+
 }
 
 /****** mobile ******************************/
@@ -146,6 +295,30 @@ footer{
         display: flex;
         flex-direction: row;
     }
+
+    .mobil-hand {
+        display: none;
+    }
+ 
+    .logos {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .main-cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-cards .card {
+        width: 100%;
+        margin: auto;
+    }
+
 }
    
 
