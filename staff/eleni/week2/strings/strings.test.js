@@ -72,7 +72,7 @@ if (result !== "") {
 }
 
 var result = truncate("word1 word2 word3", 6);
-if (result !== "word1 w") {
+if (result !== "word1 ") {
   errors += 1;
   console.error("ERROR: truncate expected to return word1 w");
 }
@@ -122,9 +122,9 @@ if (result !== "robin-singh-from-usa") {
 }
 
 var result = parameterize("My name is Robin Singh. I'm from USA.");
-if (result !== "my-name-es-robin-singh-im-from-usa") {
+if (result !== "my-name-is-robin-singh-im-from-usa") {
   errors += 1;
-  console.error("ERROR: parameterize expected to return my-name-es-robin-singh-im-from-usa");
+  console.error("ERROR: parameterize expected to return my-name-is-robin-singh-im-from-usa");
 }
 
 /////////////////
