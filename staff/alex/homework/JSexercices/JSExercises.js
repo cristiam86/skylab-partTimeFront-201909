@@ -8,14 +8,15 @@ function largerInteger(){
     
     function larger_interger(num1, num2) {
         if(num1 > num2) {
-            console.log(num1 + " Es Mayor");   
+            return(num1 + " Es Mayor");   
         } 
         else {
-            console.log(num2 + " Incorrecto este es menor");
+            return(num2 + " Incorrecto este es menor");
         }
     };
     larger_interger(num1,num2);
-    };
+};
+
     
     // ### sign_product
     
@@ -39,11 +40,11 @@ function largerInteger(){
         num2 = -7;
         num3 = 2;
         if (num1 < 0) {
-            console.log("The sign is -");
+            return("The sign is -");
         } else if (num2 < 0) {
-            console.log("The sign is -");
+            return("The sign is -");
         } else if (num3 < 0){
-            console.log ("The sign is -");
+            return("The sign is -");
         }
     }
     
@@ -124,11 +125,11 @@ function largerInteger(){
     function fizzBuzz () {
         for (var i = 0; i < 100; i++) {
             if(i % 3 === 0 && i % 5 === 0) {
-                console.log('FizzBuzz')
+                return('FizzBuzz')
             } else if (i % 3 === 0) {
-                console.log('Buzz')
+                return('Buzz')
             } else if  (i % 5 === 0) {
-                console.log('Fizz')
+                return('Fizz')
             } 
         }
     }
@@ -163,27 +164,6 @@ function largerInteger(){
     }
     under1000();
     
-    // ### sign_product
-    
-    //Write a JavaScript conditional statement to find the sign of product of three numbers. Display an alert box with the specified sign.
-    
-    //Sample numbers : 3, -7, 2 
-    //Output : The sign is -
-    
-    
-    function signProduct (num1, num2, num3) {
-        num1 = 3;
-        num2 = -7;
-        num3 = 2;
-        if (num1 < 0) {
-            console.log("-");
-        } else if (num2 < 0) {
-            console.log("-");
-        } else if (num3 < 0){
-            console.log ("-");
-        }
-    }
-    
-    signProduct();
 
+    
 }
