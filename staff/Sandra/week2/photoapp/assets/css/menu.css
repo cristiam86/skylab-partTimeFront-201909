@@ -1,0 +1,124 @@
+.menu {
+    display: flex;
+    flex-direction: row;
+    max-width: 50rem;
+    margin: 0 auto;
+}
+.menu .menu-elements {
+  display: flex;
+}
+.menu .logo a {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: 3rem;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    display: block;
+    color: #1DA591;
+    text-decoration: none;
+}
+
+.menu ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+.menu li {
+    list-style: none;
+    width: 4.5rem;
+}
+.menu li a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #707070;
+    text-decoration: none;
+}
+.menu li.active a,
+.menu li a:hover {
+    background-color: #E3E3E3;
+}
+.menu input[type="checkbox"] {
+  display: none;
+}
+
+@media screen and (max-width: 640px) {
+
+  .menu {
+      justify-content: space-between;
+  }
+  .menu ul {
+      right: 0;
+      flex-direction: column;
+      position: absolute;
+      top: 58px;
+      left: 0%;
+      display: none;
+  }
+  .menu li {
+      flex-basis: 100%;
+      display: block;
+      width: 100%;
+      padding: 0px;
+      background-color: #e6e4e4;
+  }
+  .menu li a {
+    padding: 1rem 10px;
+  }
+  .menu li.active a,
+  .menu li a:hover {
+      background-color: #c5c5c5;
+  }
+  .menu input[type="checkbox"] {
+    display: block;
+    opacity: 0;
+    cursor: pointer;
+    width: 54px;
+    height: 54px;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .menu input[type="checkbox"]:checked ~ .navbar-collapse {
+    display: block;
+  }
+  .menu input[type="checkbox"]:checked ~ .menu-toggle span:first-child {
+    transform: rotate(45deg) translate(5px, 3px);
+  }
+  .menu input[type="checkbox"]:checked ~ .menu-toggle span:nth-child(2) {
+    opacity: 0;
+  }
+  .menu input[type="checkbox"]:checked ~ .menu-toggle span:last-child {
+    transform: rotate(-45deg) translate(4px, -2px);
+  }
+  .menu-toggle {
+    border: 1px solid #E2E2E2;
+    margin: 0.8rem 0.5rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    height: 2rem;
+    z-index: 1;
+  }
+  .menu-toggle span {
+    width: 20px;
+    height: 2px;
+    margin-bottom: 3px;
+    display: block;
+    background-color: #9E9E9E;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+  }
+  .menu-toggle span:last-child {
+    margin-bottom: 0;
+  } 
+}
