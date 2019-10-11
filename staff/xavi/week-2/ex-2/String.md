@@ -9,6 +9,7 @@
 ### isString(input)
 
 Write a JavaScript function to check whether an `input` is a *string or not*.
+
 Escriba una función de JavaScript para verificar si una `entrada` es una * cadena o no *.
 
     console.log(isString('w3resource'));
