@@ -1,0 +1,46 @@
+.container{
+	width:40%;
+}
+
+#title{
+	background-color: lightgrey;
+	display:block; /*This makes the label take up the width of the parent*/
+}
+
+#check{
+	display:none;
+}
+
+/*This whole block is just for displaying the little arrow next to the collapsible */
+#title::before {
+  content: ' ';
+  display: inline-block;
+
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid currentColor;
+
+  vertical-align: middle;
+  margin-right: .7rem;
+  transform: translateY(-2px);
+
+  transition: transform .2s ease-out;
+}
+
+/*initial setup for the collapsible content*/
+.collapsible_content{
+	max-height: 0px;
+	overflow: hidden;
+
+	transition: max-height 0.25s ease-in-out;
+}
+
+/*This will make the text appear and disappear based on clicking the label*/
+#check:checked + #title + .collapsible_content{
+	max-height: 350px;
+}
+
+/*This address the little arrow contained on the before*/
+#check:checked + #title::before{
+	transform: rotate(90deg) translate(-3px);
+}
