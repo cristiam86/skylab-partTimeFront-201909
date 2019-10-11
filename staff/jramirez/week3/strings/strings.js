@@ -38,7 +38,7 @@ function parameterize(input) {
   var parametros = input.toLowerCase();
   for (var i=0; i < parametros.length+1; i++){
     if (){
-      
+
     }
   }
   return resultado;
