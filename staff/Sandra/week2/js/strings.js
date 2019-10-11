@@ -3,36 +3,30 @@ isString(input)
 Write a JavaScript function to check whether an input is a string or not.
 */
 function isString(input){
-    if (typeof(input) === 'string'){
-        console.log("true");
-    }else{
-        console.log("flase");
-    }
+    if (typeof(input) === 'string') return true;
+    return false;
 }
 /*
 isBlank(input)
 Write a JavaScript function to check whether a string is blank or not.
 */
 function isBlank(input){
-    if (input.length == 0){
-        console.log("true");
-    }else{
-        console.log("flase");
-    }
+    if (input.length == 0) return true;
+    return false;
 }
 /*
 stringToArray(input)
 Write a JavaScript function to split a string and convert it into an array of words.
 */
 function stringToArray(input) {
-    console.log(input.split(" "));
+  return input.split(" ");
 }
 /*
 truncate(input, number)
 Write a JavaScript function to remove specified number of characters from a string.
 */
 function truncate(input, number) {
-    console.log(input.slice(0,number));
+    return input.slice(0,number);
 }
 /*
 abbrevName(input)
@@ -43,11 +37,10 @@ function abbrevName(input){
     var name;
     if (input.length > 0){ 
         name = input.split(" ");
-        if (name.length == 2){
-            nameAbbrev = name[0] + ' ' + name[1][0] + '.';
-            console.log(nameAbbrev);
-        }
+        nameAbbrev = name[0];
+        if (name.length == 2) nameAbbrev = name[0] + ' ' + name[1][0] + '.';
     }
+    return nameAbbrev;
 }
 /*
 protect(input)
@@ -56,23 +49,32 @@ Write a JavaScript function to hide email addresses to protect from unauthorized
 function protect(input){
     var email = input.split("@");
     var points = '...';
-    var part1 = email[0].slice(0,5);
+    var pos;
+    var part1;
+    if (email[0].length > 5) {
+        part1 = email[0].slice(0,5);
+    }
+    else{
+        pos = email[0].length / 2;
+        part1 = email[0].slice(0,pos);
+    }
     var part2 = email[1];
-    console.log(part1.concat(points,"@",part2));
+    return part1.concat(points,"@",part2);
 }
+
 /*
 parameterize(input)
 Write a JavaScript function to parameterize a string.
 */
 function parameterize(input){
-  console.log(input.toLowerCase().replace('/\s', "-"));
+  return input.toLowerCase().replace(/\s/g, "-").replace(/\./g,"").replace(/\'/g,"");
 }
 /*
 capitalizeFirst(input)
 Write a JavaScript function to capitalize the first letter of a string.
 */
 function capitalizeFirst(input){
-    console.log(input.charAt(0).toUpperCase() + input.slice(1));
+    return input.charAt(0).toUpperCase() + input.slice(1).toLowerCase();
 }
 /*
 capitalizeWords(input)
@@ -85,7 +87,7 @@ function capitalizeWords(input){
         modInput[i] = modInput[i].charAt(0).toUpperCase() + modInput[i].slice(1) + " ";
         resultFinal = resultFinal.concat(modInput[i]);
     }
-    console.log(resultFinal);
+   return resultFinal.slice(0,-1);
 }
 
 /*
@@ -105,7 +107,7 @@ function swapcase(input){
             result=result.concat(input.charAt(i).toUpperCase());
         }
     }
-    console.log(result);
+    return result;
 }
 
 /*
@@ -119,26 +121,26 @@ function camelize(input){
         result = result.concat(words[i].charAt(0).toUpperCase() + words[i].slice(1));
     }
     
-    console.log(result.replace(" ",""));
+    return result.replace(" ","");
 }
 
 /*
 uncamelize(input)
 Write a JavaScript function to uncamelize a string.
 */
-function unCamelize(input){
+function uncamelize(input,char){
     var words = input.split("");
     var letterUpper;
     var result = "";
     for (var i = 0; i < words.length; i +=1){
         letterUpper = words[i].toUpperCase();
         if(words[i] == letterUpper){
-            result = result.concat("_",words[i]);
+            result = result.concat(char,words[i]);
         }else {
             result = result.concat(words[i]);
         }
     }    
-    console.log(result);
+   return result.toLowerCase();
 }
 
 /*
@@ -146,7 +148,7 @@ repeat(input, n)
 Write a JavaScript function to concatenates a given string n times (default is 1).
 */
 function repeat(input,n){
-    console.log(input.repeat(n));
+    return input.repeat(n);
 }
 
 /*
@@ -156,5 +158,5 @@ Write a JavaScript function to insert a string within a string at a particular p
 function insert(input, insert, position){
     var part1 = input.slice(0,position);
     var part2 = input.slice(position,input.length);
-    console.log(part1.concat(insert,part2));
+   return part1.concat(insert,part2);
 }
