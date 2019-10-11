@@ -133,15 +133,32 @@ function camelize(input) {
   return res;
 
 }
-function uncamelize(input) {
-  return '';
+function uncamelize(input, parameter) {
+  var res;
+  var array = input.split(/(?=[A-Z])/);
+  for (i = 0; i < array.length; i++) {
+    array[i] = array[i].toLowerCase();
+  }
+  res = array.join(parameter);
+  console.log(res);
+  return res;
 
 }
 function repeat(input, n) {
-  return '';
+  var res = '';
+  for (i = 0; i < n; i++) {
+    res += input;
+  }
+  console.log(res);
+  return res;
 
 }
 function insert(input, insert, position) {
-  return '';
+  var res = '';
+
+  res = input.slice(0, position) + insert + input.slice(position);
+
+  console.log(res);
+  return res;
 
 }
