@@ -1,0 +1,57 @@
+@import "resets";
+@import "variables";
+
+.container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 6fr 6fr 6fr 6fr 6fr 6fr;
+    background-color: $background-pink;
+}
+
+.row {
+    display: grid;
+    border: 1px solid $border-color;
+}
+
+.row1 {
+    grid-template-columns: repeat(6,1fr);    
+}
+
+.row2 {
+    grid-template-columns: repeat(2,2fr);
+}
+
+.row3 {
+    grid-template-columns: repeat(2, 3fr);
+}
+
+.row4 {
+    grid-template-columns: 4fr 2fr;
+}
+
+.row5 {
+    grid-template-columns: 5fr 1fr;
+}
+
+.row6 {
+    grid-template-columns: 6fr;
+}
+
+
+.col {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+    border: 1px solid $border-color;
+}
+
+
+.content-col{
+    background-color: $background-pink-ligth;
+}
+.contentText-col {
+    text-align: center;
+    color:$color-white;
+    background-color: $background-pink;
+}
+
