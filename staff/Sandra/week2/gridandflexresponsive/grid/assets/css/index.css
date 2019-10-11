@@ -1,0 +1,76 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 20px;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: 6fr 6fr 6fr 6fr 6fr 6fr;
+      grid-template-rows: 6fr 6fr 6fr 6fr 6fr 6fr;
+  background-color: pink;
+}
+
+.row {
+  display: -ms-grid;
+  display: grid;
+  border: 1px solid palevioletred;
+}
+
+.row1 {
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+}
+
+.row2 {
+  -ms-grid-columns: (2fr)[2];
+      grid-template-columns: repeat(2, 2fr);
+}
+
+.row3 {
+  -ms-grid-columns: (3fr)[2];
+      grid-template-columns: repeat(2, 3fr);
+}
+
+.row4 {
+  -ms-grid-columns: 4fr 2fr;
+      grid-template-columns: 4fr 2fr;
+}
+
+.row5 {
+  -ms-grid-columns: 5fr 1fr;
+      grid-template-columns: 5fr 1fr;
+}
+
+.row6 {
+  -ms-grid-columns: 6fr;
+      grid-template-columns: 6fr;
+}
+
+.col {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  border: 1px solid palevioletred;
+}
+
+.content-col {
+  background-color: #ffd4db;
+}
+
+.contentText-col {
+  text-align: center;
+  color: white;
+  background-color: pink;
+}
+/*# sourceMappingURL=index.css.map */
