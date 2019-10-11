@@ -122,7 +122,7 @@ if (result !== "robin-singh-from-usa") {
 }
 
 var result = parameterize("My name is Robin Singh. I'm from USA.");
-if (result !== "my-name-es-robin-singh-im-from-usa") {
+if (result !== "my-name-is-robin-singh-im-from-usa") {
   errors += 1;
   console.error("ERROR: parameterize expected to return my-name-es-robin-singh-im-from-usa");
 }
@@ -233,4 +233,6 @@ if (result !== "We are doing some JavaScript exercises.") {
 /// TOTAL
 if (errors > 0) {
   console.error("ERRORS FOUND: "+errors)
+} else {
+  console.log("CONGRATULATIONS! ALL TESTS PASSED")
 }

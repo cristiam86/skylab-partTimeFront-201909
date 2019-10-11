@@ -216,4 +216,6 @@ if(result !== 45) {
 /// TOTAL
 if (errors > 0) {
   console.error("ERRORS FOUND: "+errors)
+} else {
+  console.log("CONGRATULATIONS! ALL TESTS PASSED")
 }
