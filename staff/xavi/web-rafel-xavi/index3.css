@@ -1,0 +1,317 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: #F6F6F6;
+    align-items: baseline;
+}
+
+/** ************* navbar *************/
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    color: #666666;
+    font-size: 20px;
+    
+}
+
+.navbar li {
+    list-style: none;
+    padding: 1rem;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color:#646464;
+}
+
+.navbar li:visited {
+    text-decoration: none;
+}
+
+.navbar li:hover {
+    background-color: #E1E1E1;
+}
+
+
+.logoGamma {
+    color: #3D9B87;
+    font-size: 30px;
+    margin-left: 10%;
+}
+
+/*-- green brand -->*/
+
+.brand {
+    background-color: #3D9B87;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 30px;
+    padding: 5px 0 5px 30px;  
+}
+
+.inner{
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+}
+
+aside{
+    background: #00B09C;
+}
+
+footer{
+    background: #666666;
+}
+
+/************************ FORM ****************/
+
+main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    justify-content: space-around;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 65%;
+    margin-left: 10%;
+    position: relative;
+}
+
+form input {
+    width: 50em;
+    height: 2.5em;
+    margin: 1em;
+}
+
+form textarea {
+    width: 50em;
+    height: 3em;
+    margin: 1em;
+}
+
+form button {
+    width: 50px;
+    margin: 1em;
+}
+/************************ CARDS ****************/
+
+
+.card{
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 5px;
+    width: 300px;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10%;
+}
+
+.card .card-header{
+    padding: 5px;
+    border-bottom: 1px solid rgb(226, 226, 226);
+    max-height: 17em;
+}
+
+.card-header img{
+    position: relative;
+}
+
+.card .card-body{
+    padding: 1rem;
+}
+
+.card .card-footer{
+    padding: 1rem;
+}
+
+
+.btn-read{
+    border: 1px solid lightgray;
+    padding: 1em;
+    border-radius: 5px;
+    background: transparent;
+}
+
+.btn-read:hover{
+    background: lightgray;
+    color: black;
+    cursor: pointer;
+}
+
+
+.footer-home{
+    max-width: 1000px;
+    margin: auto;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.inner{
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.col-left{
+    width: 100%;
+    text-align: justify;
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+}
+
+h2.title-aside{
+    margin-bottom: .5rem
+}
+
+ul.ul-aside {
+    list-style: none;
+}
+ul.ul-aside li{
+    margin-bottom: .5rem;
+}
+  
+ul.ul-aside li:before {
+    content:"\2714\0020";
+    margin-right: .5rem;
+    
+}
+
+.col-right{
+    width: 100%;
+    justify-content: center;
+    padding: 1rem;
+}
+
+
+.nav-footer{
+    max-width: 1000px;
+    padding: 1rem;
+    color: white;
+    margin: auto;
+}
+
+.ul-footer{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.ul-footer li {
+    margin: .5rem;
+}
+
+.ul-footer li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.legal-text span{
+    text-align: right;
+}
+
+
+/****** Tablet ********************************/
+@media all and (max-width: 1024px){
+    h1{
+        color: red;
+    }
+    .logoGamma {
+        font-size: 25px;
+    }
+
+    .main-cards{
+        display: flex;
+        flex-direction: row;
+    }
+    .main-cards .card{
+        width: 33%;
+        max-width: 400px;
+        margin: auto;
+        
+    }
+    .footer-home .inner{
+        display: inline;
+    }
+
+    .nav-footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nav-footer .inner{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 400px;
+        margin: 2em,;
+    }
+form {
+    margin: 1em;
+}
+
+    form input {
+        width: 40em;
+    }
+    
+    form textarea {
+        width: 40em;
+        height: 3em;
+    }
+}
+
+/****** mobile ******************************/
+@media all and (max-width: 567px){
+    h1{
+        color: #3D9B87;
+    }
+    .logoGamma {
+        font-size: 20px;
+    }
+    .main-cards{
+        display: flex;
+        flex-direction: row;
+    }
+
+    form input {
+        width: 30em;
+    }
+    
+    form textarea {
+        width: 30em;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+
+}
+   
+
