@@ -92,10 +92,19 @@ function swapcase(input) {
 }
 
 function camelize(input) {
-  return '';
+  var split = input.split(" ");
+  var camel = split[0];
+  for(var i=1; i<split.length; i++){
+    camel += split[i].substr(0,1).toUpperCase() + split[i].substr(1,split[i].length);
+    //console.log(split[i].substr(0,1))
+    //console.log(split[i].substr(1,split[i].length))
+  }
+  //console.log(camel)
+  return camel;
 }
 
-function uncamelize(input) {
+function uncamelize(input, separator) {
+  
   return '';
 
 }
