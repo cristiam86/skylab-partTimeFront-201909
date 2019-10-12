@@ -96,3 +96,12 @@ getRandom() // imprimo uno de los 4 elementos.
 
 
 /******************* EJERCICIO 11 findDuplicates */
+
+function findDuplicates(item){
+    
+    var beatles = ['Paul', 'Ringo', 'John', 'George', 'Paul'];
+
+    for(var x = 0; x < beatles.length; x ++){
+        console.log(beatles[x])
+    }
+}
