@@ -63,6 +63,20 @@ function findDifferences(arr1, arr2) {
   return res;
 }
 
+function Sum_And_Product(arr){
+  var res=[];
+
+  res[0]=arr.reduce(function(acc,actual){
+    return acc + actual;
+  });
+
+  res[1]=arr.reduce(function(acc,actual){
+    return acc * actual;
+  });
+
+  return res;
+}
+
 
 
 
