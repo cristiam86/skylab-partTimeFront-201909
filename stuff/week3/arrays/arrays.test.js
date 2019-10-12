@@ -30,21 +30,30 @@ var a = [1, 2, [4, 0]]; //
 var aclone = arrayClone(a);
 var b = aclone;
 b.pop();
-console.log(a,b)
+//console.log(a,b)
 
 if(a.length === b.length) {
   errors += 1;
   console.error("array clone 1 not be the same length");
 }
 
-var a2 = arrayClone([1, 2, [4, 0]]);
-
 // find differences
 
-findDifferences([1, 2, 3, 4, 5], [1, [2], [3, [[4]]],[5,6]]);
+var difa = [1, 2, 3, 4, 5];
+var difb = [1, [2], [3, [[4]]],[5,6]];
+var dif = findDifferences(difa,difb);
 
+if(dif[0] !== 6) {
+  errors += 1;
+  console.error("array find differences should have returned 6");
+}
 
+var dif2 = findDifferences([1,2,3,4,5],[1,2,7]);
 
+if(dif2.join() !== "3,4,5") {
+  errors += 1;
+  console.error("array find differences should have returned '3,4,5,7'");
+}
 
 
 

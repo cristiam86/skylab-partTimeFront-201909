@@ -15,7 +15,7 @@ function isArray(arr){
 
 var joinElements = function(arr){
   var j = arr.join();
-  console.log(j)
+  //console.log(j)
   return j;
 }
 
@@ -28,33 +28,26 @@ var arrayClone = function(arr){
 }
 
 var findDifferences = function(arr1, arr2){
-  var arr1flat = arr1.flat(3);
-  var arr2flat = arr2.flat(3);
-
-  var c = arr1flat.concat(arr2flat);
-  console.log(c)
-
-  // var deduped = sandwiches.filter(function (sandwich, index) {
-  //   return sandwiches.indexOf(sandwich) === index;
-  // });
-
-  var filtered = c.filter(function(number,index){
-    return c.indexOf(number) === index;
-  })
-
-  for(var i in filtered){
-    c.splice(c.indexOf(filtered[i]),1);
-    c.splice(c.indexOf(filtered[i]),1);
+  array_of_differences = [];
+  arr1flat = arr1.join().split(",");
+  //console.log(arr1flat)
+  arr2flat = arr2.join().split(",");
+  //console.log(arr2flat)
+  if(arr1flat.length>=arr2flat.length){
+    for(i in arr1flat){
+      if(arr1flat[i]!==arr2flat[i]){
+        array_of_differences[array_of_differences.length]=parseInt(arr1flat[i]);
+        //array_of_differences[array_of_differences.length]=parseInt(arr2flat[i]);
+      }
+    }
+  } else{
+    for(i in arr2flat){
+      if(arr2flat[i]!==arr1flat[i]){
+        array_of_differences[array_of_differences.length]=parseInt(arr2flat[i]);
+        //array_of_differences[array_of_differences.length]=parseInt(arr1flat[i]);
+      }
+    }    
   }
-
-  console.log(c);
-
-  console.log(filtered);
-
-  console.log(arr1.flat(3));
-  console.log(arr2.flat(3));
-
-  differences = [];
-
-  console.log(differences);
+  console.log(array_of_differences);
+  return array_of_differences;
 }
