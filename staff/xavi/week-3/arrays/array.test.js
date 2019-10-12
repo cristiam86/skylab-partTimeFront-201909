@@ -12,6 +12,25 @@ if(typeof isArr === 'undefined' || isArr === true) {
   console.error("2. isArray should have returned false");
 }
 
+var joinEl = joinElements([]);
+if(joinEl) 
+
+/*
+
+var isBl = isBlanK([]);
+if(isBl === false){
+    errors += 1;
+    console.error("isBlank debería vhaber sido True")
+} 
+
+var isBl = isBlanK(['a']);
+if(isBl === true){
+    errors += 1;
+    console.error("isBlank debería vhaber sido False")
+} 
+
+*/
+
 
 if (errors){
   console.error(errors+" ERROR(S) FOUND");

@@ -26,7 +26,7 @@ arr.reverse() // lo reveierte
 arr.slice(1,4) // me da posición inicial y posición final( pedir antes el .length y sabes cuantas posiciones tienes).
 arr.splice(5,6) // <sacar o introducir elementos. // eliminamos las posiciones indicadas.
 arr.splice(2,0,5,6) // le indica que introduzcq 5 y 6. debido al 0 que se indica que no elimine nada.
-
+arr.join('/') // los une todos los elementos con ese caracter
 
 
 
@@ -112,5 +112,19 @@ var book = {
         surname: 'Apellido'
     },
     price: 10,
-    
+
 }
+
+
+// suma recursiva
+
+
+function suma(arr){
+    if(arr.length <= 0) return 0;
+    if(arr.length === 1){
+        return arr[0];
+    }
+    return arr.pop() + suma;
+}
+
+suma([1,2,3,4,5,6])

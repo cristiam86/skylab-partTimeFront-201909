@@ -10,6 +10,7 @@ Write a JavaScript function to check whether an `input` is an array or not.
 ### joinElements
 
 Write a simple JavaScript program to join all elements of the following array into a string.
+Escriba un programa simple de JavaScript para unir todos los elementos de la siguiente matriz en una cadena.
 
     Sample array : beatles = ['John','George','Ringo','Paul'];
     
@@ -20,6 +21,7 @@ Write a simple JavaScript program to join all elements of the following array in
 ### arrayClone
 
 Write a JavaScript function to clone an array.
+Escriba una función de JavaScript para clonar una matriz.
 
     Test Data :
     console.log(array_Clone([1, 2, 4, 0])); 
