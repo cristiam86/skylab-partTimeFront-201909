@@ -16,7 +16,25 @@ function arrayClone(arr1){
   return arr2;
 }
 
-var arr = [1,2,3];
-var arr2 = arrayClone(arr);
-console.log(arr2);
+var arr2 = [1, 2, 3, 4]
+var arr1 = [1, 2, 4, 10]
+var arr3 = []
 
+function findDifferences(a, b){
+  if(a.length < b.length){
+    for(var x = 0; x < b.length; x++){
+      if(b[x] !== a[x]){
+        arr3.push(b[x]);
+      }
+    }  
+  }else{
+    for(var y = 0; y < a.length; y++){
+      if(a[y] !== b[y]){
+        arr3.push(a[y]);
+      }
+    }
+  }
+  return arr3;
+}
+
+console.log(findDifferences(arr1,arr2));

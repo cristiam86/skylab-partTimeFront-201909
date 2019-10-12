@@ -29,7 +29,13 @@ if (a.length === b.length){
   console.error("3. ERROR: should have returned 'John,George,Ringo,Paul'");
 }
 
-
+var a = [1, 2, 3]
+var b = [100, 2, 1, 10]
+var difference = findDifferences(a, b);
+/*if(){
+  errors += 1;
+  console.error("3. ERROR: should have returned hola");
+}*/
 
 if (errors){
   console.error(errors+" ERROR(S) FOUND");
