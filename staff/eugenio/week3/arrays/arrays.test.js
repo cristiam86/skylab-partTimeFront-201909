@@ -32,10 +32,15 @@ if (a.length === b.length){
 var a = [1, 2, 3]
 var b = [100, 2, 1, 10]
 var difference = findDifferences(a, b);
-/*if(){
+if(difference.join() === a.join() || difference.join() === b.join()){
   errors += 1;
   console.error("3. ERROR: should have returned hola");
-}*/
+}
+
+if(difference.length() === a.length() || difference.length() === b.length()){
+  errors += 1;
+  console.error("3. ERROR: should have returned hola");
+}
 
 if (errors){
   console.error(errors+" ERROR(S) FOUND");
