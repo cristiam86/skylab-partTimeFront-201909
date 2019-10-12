@@ -36,12 +36,6 @@ var arrayClone = arrayClone([1, 2, [4, 0]])
 
 
 
-if (arrayClone2 !== [1, 2, [4, 0]]){
-    errors += 1;
-    console.error("1. there're spaces in the string")
-}
-
-
 
 
 if (errors){
