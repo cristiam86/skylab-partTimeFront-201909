@@ -1,4 +1,4 @@
-### isArray
+### 1. isArray
 
 Write a JavaScript function to check whether an `input` is an array or not.
 
@@ -7,9 +7,10 @@ Write a JavaScript function to check whether an `input` is an array or not.
     console.log(isArray([3, 5]));      // this should returns true
 
 
-### joinElements
+### 2. joinElements
 
 Write a simple JavaScript program to join all elements of the following array into a string.
+
 Escriba un programa simple de JavaScript para unir todos los elementos de la siguiente matriz en una cadena.
 
     Sample array : beatles = ['John','George','Ringo','Paul'];
@@ -18,9 +19,10 @@ Escriba un programa simple de JavaScript para unir todos los elementos de la sig
     'John,George,Ringo,Paul'
 
 
-### arrayClone
+### 3. arrayClone
 
 Write a JavaScript function to clone an array.
+
 Escriba una función de JavaScript para clonar una matriz.
 
     Test Data :
@@ -29,9 +31,12 @@ Escriba una función de JavaScript para clonar una matriz.
     [1, 2, 4, 0] 
     [1, 2, [4, 0]]
 
-### findDifferences
+### 4. findDifferences
 
 Write a JavaScript function to find the difference of two arrays.
+
+Escriba una función de JavaScript para encontrar la diferencia de dos matrices.
+
 
     Test Data :
     console.log(difference([1, 2, 3], [100, 2, 1, 10])); 
@@ -41,17 +46,25 @@ Write a JavaScript function to find the difference of two arrays.
     console.log(difference([1, 2, 3], [100, 2, 1, 10]));
     ["3", "10", "100"] 
 
-### Sum and Product
+### 5. Sum and Product
 
 Write a JavaScript program to compute the sum and product of an array of integers.
 
-### addItems
+Escriba un programa de JavaScript para calcular la suma y el producto de una matriz de enteros.
+
+### 6. addItems
 
 Write a JavaScript program to add items in an blank array and display the items.
 
-### generateArrayLength
+
+Escriba un programa de JavaScript para agregar elementos en una matriz en blanco y mostrar los elementos.
+
+
+### 7. generateArrayLength
 
 Write a JavaScript function to generate an array of specified length, filled with integer numbers, increase by one from starting position.
+
+Escriba una función de JavaScript para generar una matriz de longitud especificada, llena de números enteros, aumentar en uno desde la posición inicial.
 
     Test Data :
     console.log(array_range(1, 4)); 
@@ -59,9 +72,11 @@ Write a JavaScript function to generate an array of specified length, filled wit
     console.log(array_range(-6, 4));
     [-6, -5, -4, -3]
 
-### last
+### 8. last
 
 Write a JavaScript function to get the last element of an array. Passing a parameter 'n' will return the last 'n' elements of the array.
+
+Escriba una función de JavaScript para obtener el último elemento de una matriz. Pasar un parámetro 'n' devolverá los últimos elementos 'n' de la matriz.
 
     Test Data : 
     console.log(last([7, 9, 0, -2])); 
@@ -72,20 +87,28 @@ Write a JavaScript function to get the last element of an array. Passing a param
     [9, 0, -2] 
     [7, 9, 0, -2]
 
-### sortItems
+### 9. sortItems
 
 Write a JavaScript program to sort the items of an array.
+
+Escriba un programa de JavaScript para ordenar los elementos de una matriz.
 
     Sample array : var arr1 = [ 3, 8, 7, 6, 5, -4, -3, 2, 1 ];
     Sample Output : -4,-3,1,2,3,5,6,7,8
 
-### getRandom
+
+# DONE
+### 10. getRandom
 
 Write a JavaScript function to get a random item from an array.
 
-### findDuplicates
+Escriba una función de JavaScript para obtener un elemento aleatorio de una matriz.
+
+### 11. findDuplicates
 
 Write a JavaScript program to find duplicate values in a JavaScript array.
+
+Escriba un programa de JavaScript para encontrar valores duplicados en una matriz de JavaScript.
 
 ### mergeArrays
 
