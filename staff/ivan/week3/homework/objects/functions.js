@@ -62,6 +62,17 @@ var LinkedList = function(){
             this.chain[position+1].previous_value = value; //then go fetch the next and change its previous
         }
     }
+    this.getElement = function(index){
+        var selected = this.chain[index];
+        console.log(selected);
+    }
+    this.print = function(){
+        var values = '';
+        for(node in this.chain){
+            values += this.chain[node].value+","
+        }
+        console.log(values);
+    }
 }
 
 var list1 = new LinkedList();
@@ -75,6 +86,8 @@ list1.insertElement("-2",2);
 list1.insertElement("-4",4);
 list1.insertElement(6);
 console.log("TCL: list1", list1)
+list1.getElement(2);
+list1.print();
 
 
 
