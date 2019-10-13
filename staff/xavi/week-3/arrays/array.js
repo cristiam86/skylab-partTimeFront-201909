@@ -105,3 +105,13 @@ function findDuplicates(item){
         console.log(beatles[x])
     }
 }
+
+/*  Solución para entender.
+
+const beatles = ['john', 'ringo', 'john', 'george', 'paul', 'paul']
+function getUnique(arr){
+
+ return arr.filter((e,i) => arr.indexOf(e) >= i)
+}
+console.log(getUnique(beatles))
+*/
