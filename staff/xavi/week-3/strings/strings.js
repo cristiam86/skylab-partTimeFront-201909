@@ -91,3 +91,32 @@ truncate2()
 
 
 // EJERICIO 5 - abbrevName(input) Write a JavaScript function to convert a string in abbreviated form.
+
+
+/// EJERCICIO 9 - Escriba una función de JavaScript para concatenar una cadena dada n veces (el valor predeterminado es 1).
+
+function repeat(input,n){
+  
+    var input = 4;
+    var n = 18;
+    return(input.repeat(n));
+}
+
+repeat()
+
+
+// EJERCICIO 10 - Escriba una función de JavaScript para insertar una cadena dentro de una cadena en una posición particular (el valor predeterminado es 1).
+
+
+function insertString(input, insert, position){
+
+    var input = ['john', 'george', 'paul']
+    var insert = ['ringo']
+    
+    var part1 = input.slice(0,position);
+    var part2 = input.slice(position,input.length);
+    var part3 = input
+    return(part1.concat(part2,insert,part3));
+}
+
+insertString()
