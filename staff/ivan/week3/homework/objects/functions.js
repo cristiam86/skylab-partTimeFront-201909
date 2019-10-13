@@ -43,11 +43,39 @@ stack_a.print();
 
 //Linked List
 
-var List() = function(){
-    this.content = {};
-    this.insertElement = function(element, index){
-        this.content()
+//structure of each node to be added to the link list. A node is like a block.
+var Node = function(value,position,array){
+    //if arrat is empty, then previous value is set to string 'origin'
+    this.previous_value = array.length===0 ? "origin" : array[position-1].value;
+    this.value = value;
+}
+
+var LinkedList = function(){
+    this.chain = [];//array to contain the chain of nodes
+    this.insertElement = function(value, position=this.chain.length){ //by default adds in the last position if no parameter is provided
+        if(position>=this.chain.length){ //if you go to far, the new node just goes last...
+            position=this.chain.length; 
+        }
+        var newNode = new Node(value, position, this.chain); //create the node from class
+        this.chain[position] = newNode; //add the node at the defined position
+        if(this.chain.length>position+1){ //only if you didn't add to the last position...
+            this.chain[position+1].previous_value = value; //then go fetch the next and change its previous
+        }
     }
 }
+
+var list1 = new LinkedList();
+list1.insertElement(0);
+list1.insertElement(1);
+list1.insertElement(2);
+list1.insertElement(3,10);//even with position 10, it will just be appended as the last.
+list1.insertElement(4);
+list1.insertElement(5); 
+list1.insertElement("-2",2);
+list1.insertElement("-4",4);
+list1.insertElement(6);
+console.log("TCL: list1", list1)
+
+
 
 
