@@ -34,6 +34,8 @@ console.log('input', input)
 
 // findDifferences: 
 
+
+
 var find1 = [[1, 2, 3], [100, 2, 1, 10],];
 var find2 = [[1, 12, 3], [50, 2, 10, 10],]
 
