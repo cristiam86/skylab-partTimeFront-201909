@@ -115,3 +115,25 @@ function duplicado(array){
   duplicado()
 
 /*********************************** */
+
+/********************* EJERCICIO 12 MERGE ARRAY
+ Escriba una función de JavaScript para fusionar dos matrices y elimine todos los elementos duplicados.
+*/
+
+function anadir(){
+  
+    var list1 = ['uno', 'dos', 'tres', 'cuatro'];
+    var list2 = ['cuatro', 'cinco', 'seis', 'siete'];
+    
+    var twoLists = list1.concat(list2);
+    
+    for(var x = 0; x < twoLists.length; x++){
+      for(var w = x+1; w < twoLists.length; w++){
+        if(twoLists[x] === twoLists[w]){
+          return ('El elemento repetido es: ' + twoLists[w])
+        }
+      }
+    }
+  }
+  
+  anadir()
