@@ -99,21 +99,19 @@ getRandom() // imprimo uno de los 4 elementos.
 
 /******************* EJERCICIO 11 findDuplicates */
 
-function findDuplicates(item){
+function duplicado(array){
+
+    var array = ['uno', 'dos', 'tres', 'cuatro', 'tres',]
     
-    var beatles = ['Paul', 'Ringo', 'John', 'George', 'Paul'];
-
-    for(var x = 0; x < beatles.length; x ++){
-        console.log(beatles[x])
+    for(var x = 0; x < array.length; x++){
+      for(var y = x+1; y < array.length; y++){
+        if(array[x] === array[y]){
+          return('Los elementos duplicados son: ' + array[x])
+        }
+      }
     }
-}
+  }
+  
+  duplicado()
 
-/*  Solución para entender.
-
-const beatles = ['john', 'ringo', 'john', 'george', 'paul', 'paul']
-function getUnique(arr){
-
- return arr.filter((e,i) => arr.indexOf(e) >= i)
-}
-console.log(getUnique(beatles))
-*/
+/*********************************** */

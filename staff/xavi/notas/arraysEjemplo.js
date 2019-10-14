@@ -62,7 +62,9 @@ function arrayClone(arr){
 
     console.log(arr)
     console.log(novaArray)
-    // Return 
+    // Return: puedo retornar los dos y ver que cualquier modificación será clonada desde el original al clon.
   }
   
   arrayClone()
+
+/*************************************************************************** */
