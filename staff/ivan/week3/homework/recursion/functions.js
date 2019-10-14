@@ -45,3 +45,11 @@ var regex = new RegExp(x,"g");
 console.log(regex)
 console.log("pizzzzza".replace(/z/g,""));
 console.log("pizzzzza".replace(/z/g,""));
+
+function factorial(n) {
+    if (n<=1) return 1;
+    return n* factorial(n-1);
+ }
+
+ console.log(4*3*2*1);
+ console.log(factorial(4));
