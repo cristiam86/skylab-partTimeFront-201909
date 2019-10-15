@@ -136,9 +136,13 @@ Write a JavaScript program which accept a number as input and insert dashes (-) 
 
 Escriba un programa de JavaScript que acepte un número como entrada e inserte guiones (-) entre cada dos números pares. Por ejemplo, si acepta 025468, la salida debería ser 0-254-6-8.
 
+
+# DONE
 ### 14. mostFrequentItem
 
 Write a JavaScript program to find the most frequent item of an array.
+
+Escriba un programa de JavaScript para encontrar el elemento más frecuente de una matriz.
 
     Sample array : var arr1=[3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
     Sample Output : a ( 5 times ) 
@@ -146,6 +150,8 @@ Write a JavaScript program to find the most frequent item of an array.
 ### 15. moveElement
 
 Write a JavaScript function to move an array element from one position to another.
+
+Escriba una función de JavaScript para mover un elemento de matriz de una posición a otra.
 
     Test Data :
     console.log(move([10, 20, 30, 40, 50], 0, 2));

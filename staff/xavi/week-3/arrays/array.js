@@ -164,3 +164,19 @@ for (var i=0; i<arr1.length; i++)
         m=0;
 }
 console.log('El elemento ' + item+" ( " +mf +" times ) ") ;
+
+
+/************************************************************** */
+
+//EJERCICIO 19. S   m squares.
+// Escriba un programa de JavaScript para encontrar la suma de cuadrados de un vector numérico.
+
+function sumsquare(array) {
+    var suma = 0, 
+        i = array.length;
+    while (i--) 
+     suma += Math.pow(array[i], 2);
+    return suma;
+  }
+   
+  sumsquare([0,1,2,3]);
