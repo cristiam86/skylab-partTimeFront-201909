@@ -53,6 +53,7 @@ console.log(diferencias)
 
 
 /******************** ejercicio 4 */
+// ### 4. findDifferences
 
 var find1 = [[1, 2], 3, 100, 2, 1, 10];
 var find2 = [[1, 12], 3, 50, 2, 10, 10]
@@ -76,7 +77,27 @@ function checkDiferences (arr1, arr2, storeDifferences) {
 checkDiferences(find1, find2, diferencias)
 console.log(diferencias)
 
+/**************************************************************** */
 
+
+
+// EJERCICIO 5
+// programa de javascript para calcular la suma y el producto de un array de enteros.
+
+function sumAndProduct(array){
+  
+  var arr = [2,4,6,8];
+  var sum = 0;
+  var prod = 1;
+  
+  for(var x = 0; x < arr.length; x++ ){
+    sum += arr[x];
+    prod *= arr[x];
+  }
+  return('La suma es: ' + sum + ', y el producto es: ' + prod)
+}
+
+sumAndProduct()
 
 
 
@@ -180,3 +201,10 @@ function sumsquare(array) {
   }
    
   sumsquare([0,1,2,3]);
+
+
+
+/***************************************************************** */
+
+
+// EJERCICIO 
