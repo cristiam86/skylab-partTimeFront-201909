@@ -68,3 +68,49 @@ function arrayClone(arr){
   arrayClone()
 
 /*************************************************************************** */
+
+
+// Ejercicio 11
+// Encontrar el elemento repetido en un array.
+
+function duplicado(array){
+
+    // declaro un array con el elemento tres repetido.
+    var array = ['uno', 'dos', 'tres', 'cuatro', 'tres',]
+    
+
+    // creo un for que itere la variable x sobre array.length
+    for(var x = 0; x < array.length; x++){
+      // dentro del for creo otro for que itera a partir de x+1 sobre el array.length
+      for(var y = x+1; y < array.length; y++){
+        // en el condicional comparo los dos variable en igualdad.
+        // en el momento que ve un repetido cierra la condición y muesta el numero repetido.
+        if(array[x] === array[y]){
+          return('Los elementos duplicados son: ' + array[x])
+        }
+      }
+    }
+  }
+  
+  duplicado()
+
+
+  /** ejemplo para encontrar mas de un elemento duplicado
+
+  function duplicado(array){
+
+  var array = ['uno', 'dos', 'tres', 'cuatro', 'tres', 'dos']
+  var repe = [];
+  
+  for(var x = 0; x < array.length; x++){
+    for(var y = x+1; y < array.length; y++){
+      if(array[x] === array[y]){
+        repe.push(array[y])
+      }
+      console.log(repe)
+    }
+  }
+}
+
+duplicado()
+*/

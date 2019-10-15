@@ -107,12 +107,15 @@ Write a JavaScript function to get a random item from an array.
 
 Escriba una función de JavaScript para obtener un elemento aleatorio de una matriz.
 
+
+# DONE
 ### 11. findDuplicates
 
 Write a JavaScript program to find duplicate values in a JavaScript array.
 
 Escriba un programa de JavaScript para encontrar valores duplicados en una matriz de JavaScript.
 
+# DONE
 ### 12. mergeArrays
 
 Write a JavaScript function to merge two arrays and removes all duplicates elements.
@@ -125,9 +128,13 @@ Escriba una función de JavaScript para fusionar dos matrices y elimine todos lo
     console.log(merge_array(array1, array2));
     [3, 2, 30, 1]
 
+
+
 ### 13. separateEven
 
 Write a JavaScript program which accept a number as input and insert dashes (-) between each two even numbers. For example if you accept 025468 the output should be 0-254-6-8.
+
+Escriba un programa de JavaScript que acepte un número como entrada e inserte guiones (-) entre cada dos números pares. Por ejemplo, si acepta 025468, la salida debería ser 0-254-6-8.
 
 ### 14. mostFrequentItem
 
