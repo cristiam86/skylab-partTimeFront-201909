@@ -35,27 +35,41 @@ function protect(input) {
 }
 
 function parameterize(input) {
-  var parametros = input.toLowerCase();
-  for (var i=0; i < parametros.length+1; i++){
-    
-  }
-  return resultado;
-
+  var url = input.toLowerCase().replace(/\s/g, "-").replace(/\'/g, "");
+  return result = url.replace(/\./g, "");
 }
 function capitalizeFirst(input) {
-  return '';
+  text = input.toLowerCase();
+  result = text.charAt(0).toUpperCase() + text.slice(1);
+  return result;
 
 }
+
 function capitalizeWords(input) {
-  return '';
-
+  var text = input.toLowerCase().split(' ');
+  for (var i = 0; i < text.length; i++) {
+    text[i] = text[i].charAt(0).toUpperCase() + text[i].substring(1);     
+  }
+  return text.join(' ');
 }
+
 function swapcase(input) {
-  return '';
+  var result = "";
+    for(var i = 0; i<input.length; i++){
+        if(input[i] === input[i].toLowerCase()){
+          result += input[i].toUpperCase();
+        }else {
+          result += input[i].toLowerCase();
+        }
+    }
+    return result;
 
 }
 function camelize(input) {
-  return '';
+  return input.replace(/^([a-z])|[\s-_]+(\w)/g, function(match, p1, p2, offset) {
+    if (p2) return p2.toUpperCase();
+    return p1.toLowerCase();        
+});
 
 }
 function uncamelize(input) {
