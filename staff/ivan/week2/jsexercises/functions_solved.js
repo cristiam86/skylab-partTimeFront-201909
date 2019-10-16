@@ -1,6 +1,11 @@
-function largerInteger(num1, num2) {
-  if (num1 > num2) return num1;
-  return num2;
+function largerInteger(int1, int2) {
+    if(int1>int2){
+      return int1;
+  } else if(int2>int1){
+      return int2;
+  } else{
+      return int2
+  }
 }
 
 
