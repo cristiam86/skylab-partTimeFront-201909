@@ -82,8 +82,8 @@ var hash = function(s) {
 
 
 var Block = function(value,position,array,timestamp=1){
-    //if arrat is empty, then previous value is set to string 'origin'
-    this.previous_hash = array.length===0 ? "" : hash(array[position-1].previous_hash);
+    //if array is empty, then previous value is set to string 'origin'
+    this.previous_hash = array.length===0 ? "" : hash(array[position-1].value.toString());
     this.value = value;
 }
 
@@ -96,7 +96,7 @@ var Blockchain = function(){
         var newBlock = new Block(value, position, this.chain); //create the node from class
         this.chain[position] = newBlock; //add the node at the defined position
         if(this.chain.length>position+1){ //only if you didn't add to the last position...
-            this.chain[position+1].previous_hash = hash(newBlock.previous_hash); //then go fetch the next and change its previous
+            this.chain[position+1].previous_hash = hash(newBlock.value.toString()); //then go fetch the next and change its previous hash
         }
     }
     this.getElement = function(index){
@@ -111,14 +111,14 @@ var Blockchain = function(){
         console.log(values);
     }
     this.isValidChain = function(){
-        for(var i=this.chain.length-1; i>0; i--){
-            if(this.chain[i].previous_hash === hash(this.chain[i-1].previous_hash)){
-                console.log("all ok"+i);
-            } else{
-                console.log("wrong");
+        for(var i=this.chain.length-1; i>0; i--){ //starts on the last
+            if(this.chain[i].previous_hash !== hash(this.chain[i-1].value.toString())){
+                console.error("ERROR! Mistake in blockchain");
+                break;
             }
         }
-        return "all ok"         
+        console.log("All OK")
+        return true;        
     }
 }
 
@@ -138,14 +138,3 @@ blockchain1.insertElement(10,5);
 blockchain1.isValidChain()
 
 console.log(blockchain1)
-
-// 0: Block {previous_hash: "", value: 0}
-// 1: Block {previous_hash: "802865", value: 1}
-// 2: Block {previous_hash: "133041543", value: 2}
-// 3: Block {previous_hash: "88044888", value: 3}
-// 4: Block {previous_hash: "133612935", value: 4}
-// 5: Block {previous_hash: "45587044", value: 5}
-// 6: Block {previous_hash: "16692723", value: 6}
-// 7: Block {previous_hash: "106496899", value: 7}
-// 8: Block {previous_hash: "216901654", value: 8}
-// 9: Block {previous_hash: "88845912", value: 9}
