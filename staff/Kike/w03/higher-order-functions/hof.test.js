@@ -16,10 +16,29 @@ var arr = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'augu
 var results = someMonths(arr);
 
 
+var results = countVowels('frase');
+if (results !== 2) {
+    errors += 1;
+    console.error("1. countVowels not 2");
+}
 
+var results = countVowels('mUrcielagO');
+if (results !== 5) {
+    errors += 1;
+    console.error("1. countVowels not 5");
+}
 
+var results = greatThanFiveLetters(['grandioso','catarata','Nabucodonosor']);
+if (!results) {
+    errors += 1;
+    console.error("1. greatThanFiveLetters should be true");
+}
 
-
+var results = greatThanFiveLetters(['hola','es','guay']);
+if (results) {
+    errors += 1;
+    console.error("2. greatThanFiveLetters should be false");
+}
 
 
 if (errors) {

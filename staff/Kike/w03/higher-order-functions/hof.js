@@ -13,13 +13,38 @@ function capitalCase(arr) {
 }
 
 function someMonths(arr) {
-    var res = [];
+    var res;
+    var copyArr = arr.map(i => { return i; });
 
-    arr.filter(element => {
-        element.charAt(0) === ('j' || 'J')
+    res = copyArr.filter(element => { return element.charAt(0) === ('j' || 'J') });
+
+
+    console.log("TCL: someMonths -> res", res)
+    return res;
+}
+
+function countVowels(lorem) {
+    var loremArr = lorem.split('');
+    var count = 0;
+
+    loremArr.reduce(function (anterior, actual, i) {
+        if (actual === 'a' || actual === 'A' || actual === 'e' || actual === 'E' || actual === 'i' || actual === 'I' || actual === 'o' || actual === 'O' || actual === 'u' || actual === 'U') {
+            count++;
+        }
     });
+    res = count;
+
+    console.log("TCL: countVowels -> res", res)
+    return res;
+}
 
 
-    console.log("TCL: capitalCase -> res", res)
+function greatThanFiveLetters(arr) {
+    var res;
+    var limit = 5;
+
+    res = arr.every(element => { return element.length > limit });
+
+    console.log("TCL: greatThanFiveLetters -> res", res)
     return res;
 }
