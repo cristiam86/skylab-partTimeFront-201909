@@ -17,9 +17,10 @@ function findDifferences(arrA, arrB) {
   return isArr ;
 }
 
-var a = [1, 2, 4, 0];
 function sumAndProduct(a){
-  return a;
+  var a = [1, 2, 3, 2];
+  var arrayCreada = a;
+  return arrayCreada;
 }
 
 ///ejercicio de suma recursiva

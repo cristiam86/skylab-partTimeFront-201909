@@ -41,10 +41,14 @@ if (a.length === isArr.length && a.join() === isArr.join()) {
 /////////////////
 /// findDifferences ////
 ////////////////
-var arrA = [1, 2, 4, 0];
-var arrB = [1, 2, 4, 0];
+var arrA = [1, 2];
+var arrB = [1, 3];
 var isArr = findDifferences(arrA, arrB);
 if (arrA.join() === isArr.join() || arrB.join() === isArr.join() ) {
+  errors += 1;
+  console.error("4. Las Arrays son iguales colega");
+}
+if (arrA.length === isArr.length || arrB.length === isArr.length) {
   errors += 1;
   console.error("4. Las Arrays son iguales colega");
 }
@@ -60,11 +64,9 @@ for (i = 0; i < isArr.length; i += 1) {
   product *= isArr[i];
 }
 
-return suma;
-return product;
-if (suma.join() === isArr.join() || arrB.join() === isArr.join() ) {
+if (suma !== 9 || product !== 16 ) {
   errors += 1;
-  console.error("4. Las Arrays son iguales colega");
+  console.error("5. La suma debe ser 9 y el producto 16");
 }
 
 
