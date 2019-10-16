@@ -116,9 +116,14 @@ if (result.join()!="7,9,0,-2"){
 var result = sortItems([ 3, 8, 7, 6, 5, -4, -3, 2, 1 ]);
 if (result.join()!="-4,-3,1,2,3,5,6,7,8"){
     errors +=1;
-    console.error("18. last should have returned: [-4,-3,1,2,3,5,6,7,8]");
+    console.error("19. sortItems should have returned: [-4,-3,1,2,3,5,6,7,8]");
 }
 
+var result = getRandom([ 3, 8, 7, 6, 5, -4, -3, 2, 1 ]);
+if (typeof result === 'number'){
+    errors +=1;
+    console.error("20. getRandom should have returned: typeof number");
+}
 
 if (errors){
   console.error(errors+" ERROR(S) FOUND");

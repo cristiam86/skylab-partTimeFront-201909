@@ -62,11 +62,13 @@ function last(arr,num){
 }
 
 function sortItems(arr){
-    arr.sort(function(a, b) {
+   var result = arr.sort(function(a, b) {
        if (a < b) return -1;
-       if (b > a) return 1
-      });;
-    
+       if (b > a) {
+        return 1;
+       }else return 0;
+      });
+    return result;  
 }
 
 function getRandom(arr){
