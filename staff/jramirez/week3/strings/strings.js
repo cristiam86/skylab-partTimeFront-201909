@@ -26,11 +26,11 @@ function abbrevName(input) {
 }
 function protect(input) {
   var email = input.split("@");
-  var resultado = "";
+  var result = '';
   if (email[0].length > 5) {
     return resultado =  email[0].slice(0,5) + "..." + "@" + email[1];
   } else {
-    return resultado =  email[0].slice(0,2) + "..." + "@" + email[1];
+    return result =  email[0].slice(0,2) + "..." + "@" + email[1];
   }
 }
 
@@ -54,7 +54,7 @@ function capitalizeWords(input) {
 }
 
 function swapcase(input) {
-  var result = "";
+  var result = '';
     for(var i = 0; i<input.length; i++){
         if(input[i] === input[i].toLowerCase()){
           result += input[i].toUpperCase();
@@ -70,17 +70,28 @@ function camelize(input) {
     if (p2) return p2.toUpperCase();
     return p1.toLowerCase();        
 });
+}
+
+function uncamelize(input, union) {
+  var text = input.split(/(?=[A-Z])/);
+  for (i = 0; i < text.length; i++) {
+    text[i] = text[i].toLowerCase();
+  }
+  result = text.join(union);
+  return result;
 
 }
-function uncamelize(input) {
-  return '';
 
-}
 function repeat(input, n) {
-  return '';
-
+  result = '';
+  for (i = 0; i < n; i++) {
+    result += input;
+  }
+  return result;
 }
-function insert(input, insert, position) {
-  return '';
 
+function insert(input, insert, position) {
+  var result = '';
+  result = input.slice(0, position) + insert + input.slice(position);
+  return result;
 }

@@ -175,21 +175,18 @@ if (result !== "aAbBCddKK") {
 /// camelize ////
 ////////////////
 var result = camelize("JavaScript Exercises");
-console.log(result);
 if (result !== "JavaScriptExercises") {
   errors += 1;
   console.error("ERROR: camelize expected to return JavaScriptExercises");
 }
 
 var result = camelize("JavaScript exercises");
-console.log(result);
 if (result !== "JavaScriptExercises") {
   errors += 1;
   console.error("ERROR: camelize expected to return JavaScriptExercises");
 }
 
 var result = camelize("JavaScriptExercises");
-console.log(result);
 if (result !== "JavaScriptExercises") {
   errors += 1;
   console.error("ERROR: camelize expected to return JavaScriptExercises");
@@ -199,7 +196,6 @@ if (result !== "JavaScriptExercises") {
 /// uncamelize ////
 ////////////////
 var result = uncamelize("helloWorld", '_');
-console.log(result);
 if (result !== "hello_world") {
   errors += 1;
   console.error("ERROR: uncamelize expected to return hello_world");
