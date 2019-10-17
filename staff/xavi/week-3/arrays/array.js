@@ -84,7 +84,8 @@ console.log(diferencias)
 // EJERCICIO 5
 // programa de javascript para calcular la suma y el producto de un array de enteros.
 
-function sumAndProduct(array){
+
+function sumAndProduct(){
   
   var arr = [2,4,6,8];
   var sum = 0;
@@ -98,6 +99,11 @@ function sumAndProduct(array){
 }
 
 sumAndProduct()
+
+
+/***************************************************************** */
+
+
 
 
 
@@ -207,4 +213,7 @@ function sumsquare(array) {
 /***************************************************************** */
 
 
-// EJERCICIO 
+// EJERCICIO 40 filterFalsy.
+// Una función de JavaScript para filtrar valores falsos, nulos, 0 y en blanco de una matriz.
+
+

@@ -1,3 +1,4 @@
+# DONE
 ### 1. isArray
 
 Write a JavaScript function to check whether an `input` is an array or not.
@@ -6,7 +7,7 @@ Write a JavaScript function to check whether an `input` is an array or not.
     console.log(isArray('Skylab'));    // this should returns false
     console.log(isArray([3, 5]));      // this should returns true
 
-
+#DONE
 ### 2. joinElements
 
 Write a simple JavaScript program to join all elements of the following array into a string.
@@ -19,6 +20,7 @@ Escriba un programa simple de JavaScript para unir todos los elementos de la sig
     'John,George,Ringo,Paul'
 
 
+#DONE
 ### 3. arrayClone
 
 Write a JavaScript function to clone an array.
@@ -31,6 +33,8 @@ Escriba una función de JavaScript para clonar una matriz.
     [1, 2, 4, 0] 
     [1, 2, [4, 0]]
 
+
+# DONE
 ### 4. findDifferences
 
 Write a JavaScript function to find the difference of two arrays.
@@ -46,11 +50,14 @@ Escriba una función de JavaScript para encontrar la diferencia de dos matrices.
     console.log(difference([1, 2, 3], [100, 2, 1, 10]));
     ["3", "10", "100"] 
 
+#DONE
 ### 5. Sum and Product
 
 Write a JavaScript program to compute the sum and product of an array of integers.
 
 Escriba un programa de JavaScript para calcular la suma y el producto de una matriz de enteros.
+
+
 
 ### 6. addItems
 
@@ -99,6 +106,7 @@ Escriba un programa de JavaScript para ordenar los elementos de una matriz.
     Sample Output : -4,-3,1,2,3,5,6,7,8
 
 
+------------------------------------------
 
 # DONE
 ### 10. getRandom
@@ -108,12 +116,17 @@ Write a JavaScript function to get a random item from an array.
 Escriba una función de JavaScript para obtener un elemento aleatorio de una matriz.
 
 
+____________________________________________
+
 # DONE
 ### 11. findDuplicates
 
 Write a JavaScript program to find duplicate values in a JavaScript array.
 
 Escriba un programa de JavaScript para encontrar valores duplicados en una matriz de JavaScript.
+
+
+____________________________________________
 
 # DONE
 ### 12. mergeArrays
@@ -137,6 +150,8 @@ Write a JavaScript program which accept a number as input and insert dashes (-) 
 Escriba un programa de JavaScript que acepte un número como entrada e inserte guiones (-) entre cada dos números pares. Por ejemplo, si acepta 025468, la salida debería ser 0-254-6-8.
 
 
+_______________________________________________
+
 # DONE
 ### 14. mostFrequentItem
 
@@ -146,6 +161,7 @@ Escriba un programa de JavaScript para encontrar el elemento más frecuente de u
 
     Sample array : var arr1=[3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
     Sample Output : a ( 5 times ) 
+
 
 ### 15. moveElement
 
@@ -387,6 +403,8 @@ Write a JavaScript function to create a specified number of elements with pre-fi
 ### 40. filterFalsy
 
 Write a JavaScript function to filter false, null, 0 and blank values from an array.
+
+Escriba una función de JavaScript para filtrar valores falsos, nulos, 0 y en blanco de una matriz.
 
     Test Data :
     console.log(filter_array_values([58, '', 'abcd', true, null, false, 0]));
