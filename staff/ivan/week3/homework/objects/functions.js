@@ -83,7 +83,7 @@ var hash = function(s) {
 
 var Block = function(value,position,array,timestamp=1){
     //if array is empty, then previous value is set to string 'origin'
-    this.previous_hash = array.length===0 ? "" : hash(array[position-1].value.toString());
+    this.previous_hash = array.length===0 ? "" : hash(array[position-1].value.toString()+array[position-1].previous_hash);
     this.value = value;
 }
 
@@ -96,7 +96,7 @@ var Blockchain = function(){
         var newBlock = new Block(value, position, this.chain); //create the node from class
         this.chain[position] = newBlock; //add the node at the defined position
         if(this.chain.length>position+1){ //only if you didn't add to the last position...
-            this.chain[position+1].previous_hash = hash(newBlock.value.toString()); //then go fetch the next and change its previous hash
+            this.chain[position+1].previous_hash = hash(newBlock.value.toString()+newBlock.previous_hash); //then go fetch the next and change its previous hash
         }
     }
     this.getElement = function(index){
@@ -112,7 +112,7 @@ var Blockchain = function(){
     }
     this.isValidChain = function(){
         for(var i=this.chain.length-1; i>0; i--){ //starts on the last
-            if(this.chain[i].previous_hash !== hash(this.chain[i-1].value.toString())){
+            if(this.chain[i].previous_hash !== hash(this.chain[i-1].value.toString()+this.chain[i-1].previous_hash)){
                 console.error("ERROR! Mistake in blockchain");
                 break;
             }
@@ -134,7 +134,7 @@ blockchain1.insertElement(6);
 blockchain1.insertElement(7);
 blockchain1.insertElement(8);
 blockchain1.insertElement(9);
-blockchain1.insertElement(10,5);
+blockchain1.insertElement(9,5);
 blockchain1.isValidChain()
 
 console.log(blockchain1)
