@@ -94,9 +94,13 @@ var Blockchain = function(){
             position=this.chain.length; 
         }
         var newBlock = new Block(value, position, this.chain); //create the node from class
+        //at the moment of creation, the new block makes its hash from previous block...
         this.chain[position] = newBlock; //add the node at the defined position
         if(this.chain.length>position+1){ //only if you didn't add to the last position...
-            this.chain[position+1].previous_hash = hash(newBlock.value.toString()+newBlock.previous_hash); //then go fetch the next and change its previous hash
+            var toReprocess = this.chain.length-position-1;
+            for(var i=0; i<toReprocess; i++){
+                this.chain[position+1+i].previous_hash = hash(this.chain[position+i].value.toString()+this.chain[position+i].previous_hash);
+            }
         }
     }
     this.getElement = function(index){
