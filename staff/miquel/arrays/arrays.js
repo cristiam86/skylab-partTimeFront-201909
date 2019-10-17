@@ -16,63 +16,128 @@ function arrayClone(arr) {
 }
 
 function findDifferences(arr1, arr2) {
-  console.log("TCL: findDifferences -> arr1, arr2", arr1, arr2)
-  var diffArr = [];
-  for(var i = 0; i < arr1.length; i++) {
-    for(var j = 0; j < arr2.length; j++) {
-      
-      if(arr1[i] == arr2[j]) console.log("equal",arr1[i], arr2[j]);
-      else console.log("diff",arr1[i], arr2[j]);
-      //diffArr[] = 
-    }
-  }
-  return arr1;
+  let arrDiff = [];
+  arr1.find(function(value) {
+    if(arr2.indexOf(value) < 0) arrDiff.push(value)
+  });
+  arr2.find(function(value) {
+    if(arr1.indexOf(value) < 0) arrDiff.push(value)
+  });
+  return arrDiff;
 }
 
 function arraySumProduct(arr) {
-  return '';
+  return arr.reduce(function(acc, num) {
+    return acc + parseInt(num);
+  }, 0);
 }
 
-function addItems(arr) {
-  return '';
+function addItems() {
+  let newArr = [];
+  for(var values in arguments) {
+    newArr.push(arguments[values]);
+  }
+  return newArr;
 }
 
-function generateArrayLength(arr) {
-  return '';
+function generateArrayLength(init, len) {
+  let arr = [], inc = init
+  for(let i = 0; i < len; i ++) {
+    arr.push(inc);
+    inc += 1;
+  }
+  return arr;
 }
 
-function arrayLast(arr) {
-  return '';
+function arrayLast(arr, len) {
+  if(!len || len <= 0) return arr.pop();
+  return arr.slice(arr.length - len)
 }
 
 function arraySortItems(arr) {
-  return '';
+  return arr.sort(function(elem1, elem2) {
+    return elem1 - elem2;
+  });
 }
 
 function arrayGetRandom(arr) {
-  return '';
+  return arr[Math.floor(Math.random() * Math.floor(arr.length))];
 }
 
 function arrayFindDuplicates(arr) {
-  return '';
+  let diffArr = [];
+  arr.map(function(item) {
+    if(arr.indexOf(item) !== arr.lastIndexOf(item) && 
+       diffArr.indexOf(item) < 0)
+      diffArr.push(item);
+  });
+  return diffArr;
 }
 
-function mergeArrays(arr) {
-  return '';
+function mergeArrays(arr1, arr2) {
+  let mergeArr = arr1.concat(arr2);
+  let uniqueArr = [];
+
+  mergeArr.filter(function(item, index) {
+    if(mergeArr.indexOf(item) === mergeArr.lastIndexOf(item)) uniqueArr.push(item);
+    if(mergeArr.indexOf(item) !== mergeArr.lastIndexOf(item) && 
+       uniqueArr.indexOf(item) < 0) {
+        uniqueArr.push(item);
+    }
+  });
+
+  return uniqueArr;
 }
 
-function separateEven() {
-  return '';
+function separateEven(nums) {
+  var newArr = [];
+  nums.split('').forEach(function(item, index) {  
+    if(parseInt(nums[index-1]) % 2 === 0 &&
+       parseInt(item) % 2 === 0) {
+         newArr.push("-");
+    }
+    newArr.push(item);
+  });
+
+  return newArr.join('');
 }
 
-function mostFrequentItem() {
-  return '';
+function mostFrequentItem(arr) {
+  "use strict";
+  var results = {}, resultsSorted = {};
+
+  if(arr instanceof Array) { // input is Array
+    arr.forEach(function(item) {
+      if(!results[item]) results[item] = 1;
+      else results[item] += 1;
+    });
+  }
+  
+  resultsSorted = Object.keys(results).sort(function(a, b) {
+    return results[b] - results[a];
+  });
+  
+  return `${resultsSorted[0]} (${results[resultsSorted[0]]} times)`;
 }
 
-function moveElement() {
-  return '';
+function moveElement(arr, init_pos, final_pos) {
+  let newArr = [], arrAux;
+
+  arr.forEach(function(item, index) {  
+    if(index === init_pos) arrAux = item;
+    else newArr.push(item);
+    if(index === final_pos) newArr.push(arrAux);
+  });
+
+  return newArr;
 }
 
-function swapCase() {
-  return '';
+function swapCase(str) {
+  let strOutput = [];
+  str = str.split('');
+  str.forEach(function(char, index) {
+    if(char.toLowerCase() === char) strOutput.push(char.toUpperCase())
+    else strOutput.push(char.toLowerCase())
+  })
+  return strOutput.join('');
 }
