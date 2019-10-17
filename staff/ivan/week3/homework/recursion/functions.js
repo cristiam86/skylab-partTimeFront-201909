@@ -16,28 +16,31 @@ removeRepeatCharsSimple("aabbcc");
 removeRepeatCharsSimple("cccddffdfffdcccdcvv");
 
 //option with recursion
-
-final=''; //how can we handle this?
-var removeRepeatChars = function(string){
-    current = string[0]; //first letter on string
-
-    sub = string.substr(1,string.length) //rest of the string.
-
-    if(sub.length===0){ //we need some sort of break so that recursion can stop
-        console.log(final);
-        return final;
+function removeAllRepeatChars(chars){
+    final=''; //how can we handle this?
+    var removeRepeatChars = function(string){
+        current = string[0]; //first letter on string
+    
+        sub = string.substr(1,string.length) //rest of the string.
+    
+        if(!sub.length){ //we need some sort of break so that recursion can stop
+            console.log(final);
+            return final;
+        }
+    
+        final += current;
+    
+        var regex = new RegExp(current,"g");
+        var clean = sub.replace(regex,"");//removes the repeated letters
+    
+        removeRepeatChars(clean);
     }
-
-    final += current;
-
-    var regex = new RegExp(current,"g");
-    var clean = sub.replace(regex,"");//removes the repeated letters
-
-    removeRepeatChars(clean);
+    removeRepeatChars(chars)
+    console.log(final);
 }
 
-removeRepeatChars("1112223333333444455555555556666");
-removeRepeatChars("aaabbbbccddfgyyuuuuuuu");
+removeAllRepeatChars("1112223333333444455555555556666");
+removeAllRepeatChars("aaabbbbccddfgyyuuuuuuu");
 
 //how to use regular expression constructors for replace...
 var x = 'z'
