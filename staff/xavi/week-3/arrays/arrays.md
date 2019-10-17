@@ -204,15 +204,16 @@ Write a JavaScript function to create a specified number of elements with pre-fi
     ["password", "password", "password", "password"]
 
 
+# DONE
 ### 19. Sum squares
 
 Write a JavaScript program to find the sum of squares of a numeric vector.
 
-### removeDuplicate
+### 20. removeDuplicate
 
 Write a JavaScript program to remove duplicate items from an array (ignore case sensitivity).
 
-### 20. showChoices
+### 21. showChoices
 
 We have the following arrays :
 color = ["Blue ", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow "];
@@ -224,15 +225,15 @@ Write a JavaScript program to display the colors in the following way :
 
 Note : Use ordinal numbers to tell their position.
 
-### 21. showLeapYears
+### 22. showLeapYears
 
 Find the leap years in a given range of years.
 
-### 22. shuffleArray
+### 23. shuffleArray
 
 Write a JavaScript program to shuffle an array.
 
-### 23. binarySearch
+### 24. binarySearch
 
 Write a JavaScript program to perform a binary search.
 
@@ -244,7 +245,7 @@ Note : A binary search or half-interval search algorithm finds the position of a
     console.log(binary_Search(items, 1)); //0 
     console.log(binary_Search(items, 5)); //4
 
-### 24. sumPositions
+### 25. sumPositions
 
 There are two arrays with individual values, write a JavaScript program to compute the sum of each individual index value from the given arrays.
 
@@ -254,7 +255,7 @@ There are two arrays with individual values, write a JavaScript program to compu
     Expected Output : 
     [4, 5, 8, 10, 12, 13] 
 
-### 25. generateArraySteps
+### 26. generateArraySteps
 
 Write a JavaScript function to generate an array between two integers of 1 step length.
 
@@ -264,7 +265,7 @@ Write a JavaScript function to generate an array between two integers of 1 step 
     console.log(rangeBetwee(-4, 7));
     [-4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7]
 
-### 26. flattenArray
+### 27. flattenArray
 
 Write a JavaScript program to flatten a nested (any depth) array. If you pass shallow, the array will only be flattened a single level.
 
@@ -274,7 +275,7 @@ Write a JavaScript program to flatten a nested (any depth) array. If you pass sh
     console.log(flatten([1, [2], [3, [[4]]],[5,6]], true)); 
     [1, 2, 3, [[4]], 5, 6]
 
-### 27. unionArray
+### 28. unionArray
 
 Write a JavaScript program to compute the union of two arrays.
 Sample Data :
@@ -282,14 +283,14 @@ Sample Data :
     console.log(union([1, 2, 3], [100, 2, 1, 10]));
     [1, 2, 3, 10, 100]
 
-### 28. removeFalsy
+### 29. removeFalsy
 
 Write a JavaScript function to remove. 'null', '0', '""', 'false', 'undefined' and 'NaN' values from an array.
 
     Sample array : [NaN, 0, 15, false, -22, '',undefined, 47, null]
     Expected result : [15, -22, 47]
 
-### 29. first
+### 30. first
 
 Write a JavaScript function to get the first element of an array. Passing a parameter 'n' will return the first 'n' elements of the array.
 
@@ -306,7 +307,7 @@ Write a JavaScript function to get the first element of an array. Passing a para
     [7, 9, 0, -2] 
     [] 
 
-### 30. sortObjectsTitle
+### 31. sortObjectsTitle
 
 Write a JavaScript function to sort the following array of objects by title value.
 
@@ -333,28 +334,28 @@ Write a JavaScript function to sort the following array of objects by title valu
       title: "Walter Isaacson"
     }]
 
-###  31. findPairSum
+###  32. findPairSum
 
 Write a JavaScript program to find a pair of elements (indices of the two numbers) from an given array whose sum equals a specific target number.
 
     Input: numbers= [10,20,10,40,50,60,70], target=50
     Output: 3, 4
 
-### 32. validValues
+### 33. validValues
 
 Write a JavaScript function to retrieve the value of a given property from all elements in an array.
 
     Sample array : [NaN, 0, 15, false, -22, '',undefined, 47, null]
     Expected result : [15, -22, 47]
 
-### 33. longestCommon
+### 34. longestCommon
 
 Write a JavaScript function to find the longest common starting substring in a set of strings.
 
     Sample array : console.log(longest_common_starting_substring(['go', 'google']));
     Expected result : "go"
 
-### 34. fillArray
+### 35. fillArray
 
 Write a JavaScript function to fill an array with values (numeric, string with one character) on supplied bounds.
 
@@ -362,7 +363,7 @@ Test Data :
 console.log(num_string_range('a', "z", 2));
 ["a", "c", "e", "g", "i", "k", "m", "o", "q", "s", "u", "w", "y"]
 
-### 35. removeElement
+### 36. removeElement
 
 Write a JavaScript function to remove a specific element from an array.
 
@@ -370,7 +371,7 @@ Write a JavaScript function to remove a specific element from an array.
     console.log(remove_array_element([2, 5, 9, 6], 5));
     [2, 9, 6]
 
-### 36. findArrayWithElement
+### 37. findArrayWithElement
 
 Write a JavaScript function to find an array contains a specific element.
 
@@ -378,11 +379,11 @@ Write a JavaScript function to find an array contains a specific element.
     console.log(remove_array_element([2, 5, 9, 6], 5));
     [2, 9, 6]
 
-### 37. emptyArray
+### 38. emptyArray
 
 Write a JavaScript script to empty an array keeping the original size.
 
-### 38. getNthLargest
+### 39. getNthLargest
 
 Write a JavaScript function to get nth largest element from an unsorted array.
 
@@ -390,7 +391,7 @@ Write a JavaScript function to get nth largest element from an unsorted array.
     console.log(nthlargest([ 43, 56, 23, 89, 88, 90, 99, 652], 4));
     89
 
-### 39. array_filled (numeric)
+### 40. array_filled (numeric)
 
 Write a JavaScript function to create a specified number of elements with pre-filled numeric value array.
 
@@ -400,7 +401,7 @@ Write a JavaScript function to create a specified number of elements with pre-fi
     console.log(array_filled(4, 11));
     [11, 11, 11, 11]
 
-### 40. filterFalsy
+### 41. filterFalsy
 
 Write a JavaScript function to filter false, null, 0 and blank values from an array.
 
