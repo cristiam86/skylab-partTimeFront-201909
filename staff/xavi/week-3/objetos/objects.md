@@ -57,6 +57,15 @@ The object should have its constructor `new Queue()` and the following methods:
 * getElement(): retrieves the corresponding element from the queue
 * print(): prints the queue as comma-separated string elements 
 
+--------------------
+
+Cree un objeto que gestione una estructura de datos siguiendo los principios de cola FIFO (primero en entrar, primero en salir), lo que significa que el primer objeto que se insertará debe ser el primero en extraerse.
+
+El objeto debe tener su constructor `new Queue ()` y los siguientes métodos:
+* insertElement (elemento): inserta un elemento en la cola
+* getElement (): recupera el elemento correspondiente de la cola
+* print (): imprime la cola como elementos de cadena separados por comas
+
 
 ### Linked List
 

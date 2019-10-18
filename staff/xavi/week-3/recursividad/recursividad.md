@@ -8,6 +8,11 @@
 
 ```
 input -> removeRepeatChars('aabcbcb') output -> abc
+
+- Escribir una función recursiva que elimine los caracteres repetidos.
+
+`` `
+input -> removeRepeatChars ('aabcbcb') output -> abc
 ```
 
 ## fibonacci
