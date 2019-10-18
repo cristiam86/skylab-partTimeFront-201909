@@ -52,9 +52,9 @@ intput-> binarySearch([1,2,3,4,5,6],3) output -> attempts: 3 to find the number 
 
 ### mergeSort
 
-Write a recursive function that sort an array using de follow algorithm:
+Write a recursive function that sorts an array using the following algorithm:
 
 [merge sort algorithm](https://en.wikipedia.org/wiki/Merge_sort)
 
 ```
-input-> mergeSort([3,1,7,5,4]) outpu-> 1,3,4,5,7
+input-> mergeSort([3,1,7,5,4]) output-> 1,3,4,5,7
