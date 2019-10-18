@@ -102,6 +102,7 @@ countVowels(('Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
 
 
 
+
 // EJERCICIO 5.
 
 function entrada(age) {
