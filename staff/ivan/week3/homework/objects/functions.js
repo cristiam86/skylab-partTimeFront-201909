@@ -1,4 +1,4 @@
-console.log('hello');
+//console.log('hello');
 
 //constructor function for CAR
 var Car = function(name,model,color){
@@ -52,7 +52,7 @@ var LinkedList = function(){
     }
     this.getElement = function(index){
         var selected = this.chain[index];
-        console.log(selected);
+        return selected;
     }
     this.print = function(){
         var values = '';
@@ -125,20 +125,3 @@ var Blockchain = function(){
         return true;        
     }
 }
-
-
-var blockchain1 = new Blockchain();
-blockchain1.insertElement(0);
-blockchain1.insertElement(1);
-blockchain1.insertElement(2);
-blockchain1.insertElement(3);
-blockchain1.insertElement(4);
-blockchain1.insertElement(5);
-blockchain1.insertElement(6);
-blockchain1.insertElement(7);
-blockchain1.insertElement(8);
-blockchain1.insertElement(9);
-blockchain1.insertElement(9,5);
-blockchain1.isValidChain()
-
-console.log(blockchain1)
