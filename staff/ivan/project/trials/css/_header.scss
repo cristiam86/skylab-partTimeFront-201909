@@ -1,0 +1,50 @@
+header{
+    width:90%;
+    border-right:3px solid $primary;
+    height:100vh;
+}
+
+.header_identity{
+    @include flex-complete($direction: column, $justify: flex-start, $align: flex-start);
+
+    padding-top: 1rem;
+    padding-left: $header-left-padding;
+    margin-bottom:1rem;
+
+    .header_identity_img img{
+        width:5rem;
+        border-radius: 50%;//markes circular border for pic
+        border: solid $lightgrey 2px;
+        margin-bottom:0.5rem;
+    }
+    .header_identity_name{
+        padding-bottom: 0.3rem;
+        p{
+            color: $lightgrey;
+        }
+    }
+    .header_identity_counts{
+        padding-top:0.2rem;
+        padding-bottom: 0.3rem;
+   
+    }
+}
+
+hr.header_division{
+    size:1px;
+}
+
+.header_options{
+    padding-left: $header-left-padding;
+    padding-bottom:0.3rem;
+    margin-top:1rem;
+    margin-bottom:1rem;
+    ul li{
+        padding-top: 0.7rem;
+        padding-bottom:0.7rem;
+    }
+}
+
+.header_settings{
+    @extend .header_options;
+}

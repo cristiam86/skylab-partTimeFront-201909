@@ -15,18 +15,6 @@ a{
     text-decoration: none;
 }
 
-// button{
-//   border: 1px solid #EBEBEB;
-//   padding: 16px;
-//   color: #000;
-//   font-size: 16px;
-//   border-radius: 4px;
-//   @media only screen and (min-width: $tablet){
-//     cursor: pointer;
-//     &:hover{
-//       background-color: $primary;
-//       color: white;
-//       border: 1px solid $primary;
-//     }
-//   }
-// }
+ul{
+    list-style-type: none;
+}
