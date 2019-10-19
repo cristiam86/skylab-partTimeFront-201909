@@ -1,17 +1,15 @@
 function isString(input){
     if (typeof input == 'string'){
-        console.log("this is a string")
-      }else{console.log("this is NOT a string")
-          
+         return "this is a string"
+      } else { return "this is NOT a string"  
       }
-
 }
 
 function isBlank(input){
     var input = ["aa"]
     if (input.length > 0){
-        console.log("true")
-      }else{console.log("false") 
+        return "true"
+      } else {return"false" 
     }
 }
 /*no funciona*/
@@ -33,15 +31,15 @@ function abbrevName(input){
     return abbr
     }
 
-    function protect(input) {
-        var arrobaPosition = input.indexOf('@')
-        var abbr
-       if (arrobaPosition > 5 ){
-        abbr = input.replace(input.substring(5, arrobaPosition), '...')
-       } else if (arrobaPosition = 5 ){
-         abbr = input.replace(input.substring(5, arrobaPosition+1), '...@')
-       }
+function protect(input) {
+    var arrobaPosition = input.indexOf('@')
+    var abbr
+    if (arrobaPosition > 5 ){
+    abbr = input.replace(input.substring(5, arrobaPosition), '...')
+    } else if (arrobaPosition = 5 ){
+        abbr = input.replace(input.substring(5, arrobaPosition+1), '...@')
     }
+}
 
 function parameterize(input) {
     var text = input.replace(/ /g, '-').toLowerCase() 
@@ -55,33 +53,29 @@ function capitalizeFirst(input) {
 
 function capitalizeWords(input) {
 
-}
-
-/*Write a JavaScript function to *capitalize* the first letter *of each word* in a string.
-
-            var input = 'rafel olmos'
-
-            var inputArray = input.split(" ")
-            inputArray
-
-            for (var i = 0; i < inputArray.length; i += 1){
-            var capitalLetter = inputArray[i][0].toUpperCase 
-            }
+    var inputArray = input.split(" ")
+    for (var i = 0; i < inputArray.length; i += 1){
+    var capitalLetter = inputArray[i][0].toUpperCase();
+        console.log(capitalLetter)
+        var capitalizedWord = ('')
+        var capitalized = inputArray[i].replace(inputArray[i][0], capitalLetter)
+    console.log(capitalized)
+    }
+} // no és completa, he d'unir les dues paraules en un string
 
 
+function swapcase(input){
+    var output =('')
+    for(var i = 0; i < input.length; i +=1){
+    if (input[i] ===  input[i].toUpperCase()){
+    output = output + input[i].toLowerCase()
+    } else {
+      output = output + input[i].toUpperCase()
+    } 
+    } return output
+    }
 
-    console.log(capitalize_Words('js string exercises'));
-    "Js String Exercises"
-
-### function swapcase(input) {
-
-}
-
-Write a JavaScript function that takes a string which has lower and upper case letters as a parameter and *converts upper case letters to lower case*, and lower case letters to upper case.
-
-    console.log(swapcase('AaBbc'));
-    "aAbBC"
-
+/*
 ### function camelize(input) {
 
 }
