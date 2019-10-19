@@ -42,6 +42,12 @@ function removeAllRepeatChars(chars){
 removeAllRepeatChars("1112223333333444455555555556666");
 removeAllRepeatChars("aaabbbbccddfgyyuuuuuuu");
 
+
+
+
+
+
+
 //how to use regular expression constructors for replace...
 var x = 'z'
 var regex = new RegExp(x,"g");

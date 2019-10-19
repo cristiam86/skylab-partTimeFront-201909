@@ -26,5 +26,3 @@ var textTruncate = function(string,len,seq="..."){
 
 console.log(textTruncate("I am so happy to be here and I can play the drums",10));
 console.log(textTruncate("There is great wisdom in jokes, Falk",10,"&&&"));
-
-//
