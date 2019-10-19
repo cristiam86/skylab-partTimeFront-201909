@@ -7,11 +7,14 @@
     <link media="screen" type="text/css" rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+    <input type="checkbox" id="header_toggle">
+    <label for="header_toggle">
+        <div id="header_overlay"></div>
+    </label>
     <header>
         <div class="header_identity">
             <div class="header_identity_img">
-                <img src="images/ivan.jpg" alt="">
+                <img src="images/ivan.jpg" alt="user_icon">
             </div>
             <div class="header_identity_name">
                 <h3>Ivan Dario</h3>
@@ -43,7 +46,7 @@
     <main>
         <!-- micro header meant to show little pic to toggle the header on mobile... should be hidden when on desktop display -->
         <div class="micro_header">
-
+            <label for="header_toggle"><img src="images/ivan.jpg" alt="user_icon"></label>
         </div>
 
     </main>
