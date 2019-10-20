@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&display=swap");
+
+$sSize: 0.75rem;
+$mSize: 1rem;
+$lSize: 1.5rem;
+$xlSize: 2rem;
+
+$primaryColor: #383838;
+$borderColor: #ccc;
+
+@mixin text($size, $color) {
+  font-size: $size;
+  color: $color;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+textarea,
+select,
+input,
+button {
+  outline: none;
+}
+button {
+  @include text($mSize, $primaryColor);
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  opacity: 0.9;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.1;
+  }
+}
+input {
+  @include text($mSize, $primaryColor);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  border: solid 1px $borderColor;
+}
+
+.flexTotalCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flexBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.shadow {
+  -webkit-box-shadow: 5px 5px 10px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 10px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 5px 10px -5px rgba(0, 0, 0, 0.75);
+}
+
+.generalContainer {
+  @extend .flexTotalCenter;
+  background: #e4e4e4;
+  width: 100vw;
+  height: 100vh;
+  .hangmanContainer {
+    @extend .shadow;
+    border-radius: 0.125rem;
+    background: white;
+    width: 75vw;
+    height: 75vh;
+
+    .titleContainer {
+      @extend .flexTotalCenter;
+      padding: 1rem;
+      height: 15vh;
+      .title {
+        @include text($xlSize, $primaryColor);
+      }
+    }
+    .gameContainer {
+      @extend .flexTotalCenter;
+      flex-wrap: wrap;
+      height: 45vh;
+      .mobilePart {
+        @extend .flexTotalCenter;
+        background: beige;
+        width: 70%;
+        height: 100%;
+        .hiddenWord {
+          @include text($xlSize, $primaryColor);
+        }
+      }
+      .fixedPart {
+        background: aliceblue;
+        position: relative;
+        width: 30%;
+        height: 100%;
+        .img {
+          width: 6rem;
+          height: 6rem;
+          position: absolute;
+          background-size: contain;
+          background-position: center;
+          background-repeat: no-repeat;
+          &.head {
+            background-image: url(../hangman/img/head.svg);
+            top: 2rem;
+            left: calc(50% - 3rem);
+          }
+
+          &.torso {
+            background-image: url(../hangman/img/torso.svg);
+            top: 8rem;
+            left: calc(50% - 3rem);
+          }
+
+          &.hLeft {
+            background-image: url(../hangman/img/hLeft.svg);
+            top: 8rem;
+            left: calc(50% - 9rem);
+          }
+
+          &.hRight {
+            background-image: url(../hangman/img/hRight.svg);
+            top: 8rem;
+            left: calc(50% + 3rem);
+          }
+
+          &.lLeft {
+            background-image: url(../hangman/img/lLeft.svg);
+            top: 14rem;
+            left: calc(50% - 6.125rem);
+          }
+
+          &.lRight {
+            background-image: url(../hangman/img/lRight.svg);
+            top: 14rem;
+            left: calc(50% - 0.125rem);
+          }
+        }
+      }
+    }
+    .guessContainer {
+      @extend .flexBetween;
+      padding: 1rem;
+      height: 15vh;
+      .guessForm {
+        @extend .flexBetween;
+        width: 70%;
+        .guessWord {
+          display: none;
+        }
+        .submitButton {
+          display: none;
+        }
+      }
+      .newGameButton {
+        color: white;
+        background: darkorange;
+        border-color: darkorange;
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="generalContainer">
+        <div class="hangmanContainer">
+            <div class="titleContainer">
+                <div class="title">Ahorcado especial Halloween</div>
+            </div>
+            <div class="gameContainer">
+                <div class="mobilePart">
+                    <div class="hiddenWord" id='hiddenWord'>Suerte!</div>
+                </div>
+                <div class="fixedPart">
+                    <div class="img head" id='head'></div>
+                    <div class="img torso" id='torso'></div>
+                    <div class="img hLeft" id='hLeft'></div>
+                    <div class="img hRight" id='hRight'></div>
+                    <div class="img lLeft" id='lLeft'></div>
+                    <div class="img lRight" id='lRight'></div>
+                
+                </div>
+            </div>
+            <div class="guessContainer">
+                <div class="guessForm" id="guessForm" >
+                    <input class="guessWord" id="guessWord" type="text" required placeholder="escribe una letra" />
+                    <button type="button" class="submitButton" id="submitButton" onclick="testLetter()">prueba!</button>
+                </div>
+                <button class="newGameButton" onclick="newGame()">nueva palabra</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

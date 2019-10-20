@@ -40,8 +40,8 @@ function reverseString(string) {
     return res;
 }
 
-function mergeSort(arr){
-    var copyArr = arr.map(element =>{return element});
+function mergeSort(arr) {
+    var copyArr = arr.map(element => { return element });
     console.log("TCL: mergeSort -> copyArr", copyArr)
 
 }
