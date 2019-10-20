@@ -98,7 +98,6 @@ input {
 }
 
 .generalContainer .hangmanContainer .gameContainer .mobilePart {
-  background: beige;
   width: 70%;
   height: 100%;
 }
@@ -109,7 +108,6 @@ input {
 }
 
 .generalContainer .hangmanContainer .gameContainer .fixedPart {
-  background: aliceblue;
   position: relative;
   width: 30%;
   height: 100%;

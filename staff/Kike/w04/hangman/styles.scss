@@ -87,7 +87,6 @@ input {
       height: 45vh;
       .mobilePart {
         @extend .flexTotalCenter;
-        background: beige;
         width: 70%;
         height: 100%;
         .hiddenWord {
@@ -95,7 +94,6 @@ input {
         }
       }
       .fixedPart {
-        background: aliceblue;
         position: relative;
         width: 30%;
         height: 100%;

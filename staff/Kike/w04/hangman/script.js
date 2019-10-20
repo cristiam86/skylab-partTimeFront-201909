@@ -66,9 +66,6 @@ function compareLetterWord(letra, palabra, amagada) {
             document.getElementById('hiddenWord').innerHTML = amagada;
             acierto = true;
         }
-        else {
-            acierto = false;
-        }
     });
 
     if (!acierto) {
