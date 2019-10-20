@@ -1,0 +1,66 @@
+//variables
+$tablet: 764px;
+$desktop: 1024px;
+$primary: #ffff80; 
+$lightgrey: #404040;
+
+@mixin flex-complete($direction: row, $justify: space-between, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}  
+
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    border:0;
+}
+
+body{
+    @include flex-complete(column,flex-start,center);
+}
+
+header{
+    background-color: $primary;
+    width: 100%;
+    text-align: center;
+    padding:3%;
+}
+
+main{
+    width:100%
+}
+
+.game_container{
+    padding-top: 2rem;
+    @include flex-complete(column,flex-start,center);
+
+    div{
+        @include flex-complete(column,center,center);
+        padding-bottom: 2rem;
+        img{
+            width:50%;
+        }
+    }
+}
+
+#guess_form{
+    background-color: $primary;
+    width:100%;
+    padding:2%;
+    @include flex-complete(column, flex-start, center);
+    
+    input{
+        border: solid black 1px;
+        margin:1%;
+        padding:1rem;
+    }
+    button{
+        margin-top: 0.5rem;
+        font-weight: bold;
+        padding:1rem;
+    }
+}
+
