@@ -17,14 +17,14 @@
     <main>
         <div class="game_container">
             <div id="image_container">
-                <img src="images/1.png" alt="hangman progression">
+                <img id="hangman_img" src="images/1.png" alt="hangman progression">
             </div>
             <form id="guess_form" method="" action="#">
                 <div id="word_to_guess">
 
                 </div>
                 <input id="input_guess" type="text" maxlength="1" id="letter_input" />
-                <button id="submit_button" type="submit">GUESS</button>
+                <input type="submit">
                 <button id="reset_button" type="button">RESET</button>
             </form>
 
@@ -32,5 +32,6 @@
     </main>
 
 </body>
+<script src="js/functions.js"></script>
 
 </html>

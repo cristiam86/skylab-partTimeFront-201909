@@ -20,13 +20,14 @@ $lightgrey: #404040;
 
 body{
     @include flex-complete(column,flex-start,center);
+    background-color: $primary;
 }
 
 header{
     background-color: $primary;
     width: 100%;
     text-align: center;
-    padding:3%;
+    padding:2rem;
 }
 
 main{
@@ -34,12 +35,13 @@ main{
 }
 
 .game_container{
-    padding-top: 2rem;
     @include flex-complete(column,flex-start,center);
 
-    div{
+    div#image_container{
         @include flex-complete(column,center,center);
         padding-bottom: 2rem;
+        background-color: white;
+        width:100%;
         img{
             width:50%;
         }
@@ -51,7 +53,11 @@ main{
     width:100%;
     padding:2%;
     @include flex-complete(column, flex-start, center);
-    
+
+    #word_to_guess{
+        font-size: 1.5rem;
+        padding-bottom:0.5rem;
+    }
     input{
         border: solid black 1px;
         margin:1%;
