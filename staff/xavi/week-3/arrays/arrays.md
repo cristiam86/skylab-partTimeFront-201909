@@ -58,13 +58,14 @@ Write a JavaScript program to compute the sum and product of an array of integer
 Escriba un programa de JavaScript para calcular la suma y el producto de una matriz de enteros.
 
 
-
+#DONE
 ### 6. addItems
 
 Write a JavaScript program to add items in an blank array and display the items.
 
 
 Escriba un programa de JavaScript para agregar elementos en una matriz en blanco y mostrar los elementos.
+
 
 
 ### 7. generateArrayLength
