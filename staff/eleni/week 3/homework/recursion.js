@@ -5,6 +5,24 @@ function removeRepeatChars(input) {
         })
         .join('');
 }
+///remove repeat chars---AWESOME
+function removeDupes(stringWithDupes){
+    var charsSet=new Set(stringWithDupes);
+    var arrWithoutDupes=Array.from(charsSet);
+    return arrWithoutDupes.join('');
+}
+///recursion repeat chars
+function removeDupes(stringWithDupes,charsNoDupes){
+    if(stringWithDupes===""){
+        return Object.keys(charsNoDupes).join('');
+    }
+    ///1.sacar un caracter del string
+    var char=stringWithDupes.substr(0,1);
+    charsNoDupes[char]=true;
+
+    //2.preocesar rest of string
+    return removeDupes(stringWithDupes.substr(1),charsNoDupes)
+}
 ///fibonacci
 function fibonacci(n) {
     if (n === 1) return 1;
@@ -81,3 +99,6 @@ function merge(leftArray, rightArray) {
     }
     return sorted;
 }
+
+
+

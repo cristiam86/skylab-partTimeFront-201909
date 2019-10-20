@@ -32,15 +32,19 @@ function capitalCase(input) {
     }
 
     /// greatThanFiveLetters DOESNT WORK
-    function isgreater(element, index, array) {
-        return (element.length > 5);
-    }
-
-    function func() {
-        var months = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december']
-            // check for odd number 
-        var value = months.every(isgreater);
-        return value;
+    function isgreaterThanFiveLetters(arr) {
+        function moreThanFive(arr) {
+            for (var i = 0; i < arr.length; i++) {
+                if (arr[i].length === 5) {
+                    return true;
+                }
+            }
+        }
+        if (arr.every(moreThanFive(arr)) && arr.some(moreThanFive(arr))) {
+            return true
+        } else {
+            return false
+        }
     }
 
 
