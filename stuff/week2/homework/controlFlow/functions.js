@@ -36,11 +36,11 @@ var largerInteger= function(){
 var multiply = function(n1,n2,n3){
     var product = n1*n2*n3;
     if(product>0){
-        return "+";
+        alert("+");
     } else if(product<0){
-        return "-";
+        alert("-");
     } else{
-        return "0";
+        alert("0");
     }
 }
 
