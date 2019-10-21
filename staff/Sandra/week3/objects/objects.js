@@ -71,30 +71,63 @@ myQueue.getElement();
 myQueue.print();
 
 //Linked List
-function node (index, element) {
-    this.prevElement = index;
-    this.data = element;
+function node (data) {
+    this.next = null;
+    this.data = data;
 }
 
 function LinkedList(){
-    this.elements =[]
-    this.insertElement = function (index,element) {
-        if (this.elements.length == 0){
-            this.elements.push(new node(0,element));
-        }else{
-        
-        }
-    }
+    this.start = null;
+    this.insertElement = function (data,insertIndex) {
+        if (this.start === null){
+            this.start = new node(data);
+         }else if (insertIndex === 0){
+            element = new node(data);
+            element.next = this.start;
+            this.start = element;
+        } else {
+            var previous = this.getElement(insertIndex-1);
+            var newNode = new node(data);
+            newNode.next = previous.next;
+            previous.next = newNode;       
+            
+            }
+    }   
     this.getElement = function (index){
-        return this.elements[index].prevElement;
+        var count = 0;
+        var element = this.start;
+        var current = this.start;
+        while (element){
+            if (count === index) return element;
+            count +=1;
+            current = element;
+            element = element.next;
+        }
+        return current;
     }
     this.print = function (){
-        console.log(this.elements);
+       return this.recursivePrint(this.start);
+    }
+    this.recursivePrint = function(element) {
+        if (element === null) return '';
+        return element.data + this.recursivePrint(element.next);
     }
 }
 
 var myLinkedList = new LinkedList();
+myLinkedList.insertElement('a',0);
+myLinkedList.insertElement('b',1);
+myLinkedList.insertElement('c',2);
+myLinkedList.insertElement('d',4);
+myLinkedList.insertElement('e',3);
+myLinkedList.insertElement('f',5);
 
+var result = myLinkedList.print();
+if (result !== 'abcedf'){
+    console.log("ERROR");
+}else{
+    console.log("OK");
+}
 
 //The blockchain
 var hash = function(s) {
