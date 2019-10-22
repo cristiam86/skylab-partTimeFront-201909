@@ -76,7 +76,7 @@ var HangmanGame = function(obj){
             this.placeholder += "_"; //adds "_" for every letter on the selected word.
         }
         modifyScreenWithPlaceholder(this.placeholder);
-        updateImage('images/1.png');
+        updateImage('images/10.png');
         updateStatus("Hint: '"+obj.category+"', "+this.turns+" turns remaining");
     }
     this.checkUserInput = function(){
@@ -85,6 +85,7 @@ var HangmanGame = function(obj){
 
         if(this.used_letters.indexOf(this.input_letter)>-1){
             updateStatus("Letter used already!"); //check if user is not repeating a letter...
+            document.getElementById("input_guess").value = "";
         }else{
             if(this.input_letter.length){ //triggers the function action only if there is an input with length...
                 this.placeholder = replaceCharOnPlaceholder(this.selected_word, this.input_letter, this.placeholder);
@@ -92,6 +93,7 @@ var HangmanGame = function(obj){
                 this.turns -= 1;
                 this.used_letters.push(this.input_letter); //adds used letter to the list
                 updateStatus("Hint: '"+obj.category+"', "+this.turns+" turns remaining");
+                updateImage('images/'+this.turns+'.png');
                 document.getElementById("input_guess").value = "";
                 if(this.placeholder===this.selected_word){ //if you won, do this
                     //console.log("Game completed! You won!");

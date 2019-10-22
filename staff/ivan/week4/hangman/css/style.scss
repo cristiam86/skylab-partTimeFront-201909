@@ -43,7 +43,13 @@ main{
         background-color: white;
         width:100%;
         img{
-            width:50%;
+            width:40%;
+            @media only screen and (min-width: $tablet){
+                width:150px;
+            }
+            @media only screen and (min-width: $desktop){
+                width:250px;
+            }
         }
     }
 }
@@ -62,6 +68,10 @@ main{
         border: solid black 1px;
         margin:1%;
         padding:1rem;
+    }
+    #status{
+        padding:1rem;
+        font-weight: bold;
     }
     button{
         margin-top: 0.5rem;

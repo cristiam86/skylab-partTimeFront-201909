@@ -70,7 +70,19 @@ main {
 }
 
 .game_container div#image_container img {
-  width: 50%;
+  width: 40%;
+}
+
+@media only screen and (min-width: 764px) {
+  .game_container div#image_container img {
+    width: 150px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .game_container div#image_container img {
+    width: 250px;
+  }
 }
 
 #guess_form {
@@ -101,6 +113,11 @@ main {
   border: solid black 1px;
   margin: 1%;
   padding: 1rem;
+}
+
+#guess_form #status {
+  padding: 1rem;
+  font-weight: bold;
 }
 
 #guess_form button {
