@@ -4,7 +4,7 @@ var guessing = "";
 var wordToGuess ="";
 var lives;
 
-function iniWord(){
+function setWord(){
     document.getElementById('word-to-guess').innerHTML=guessing.join(' ');
 }
 function deleteLetterInput(){
@@ -44,10 +44,10 @@ function checkLetter(event){
     if (inputLetter.length > 0 && continueGame()){
         if (existsLetter(inputLetter)) {
             replaceLetter(inputLetter);
-            iniWord();       
+            setWord();       
         } else  lives -=1;
     }
-    
+
     deleteLetterInput();
 }
 
@@ -56,7 +56,7 @@ function iniGame(){
     lives = 4;
     wordToGuess = words[index].split('');
     guessing = wordToGuess.map(function(){return '_'});
-    iniWord();
+    setWord();
     document.getElementById("solution").innerHTML = "VIDAS: " + lives;
 }
 
