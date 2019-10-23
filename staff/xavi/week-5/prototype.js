@@ -24,15 +24,16 @@ function Student(firstName, lastName, age, gender, interests, degree){
     person.call(this, firstName, lastName, age, gender, interests)
     this.degree = degree;
 
-    this.greeting() = function(){
-        return 'Yo! Im '+firstName
-    }
+    
 }
 
 
 
 Student.prototype = Object.create(Person.prototype);
 Student.prototype.constructor = Student;
+Student.prototype.greeting = function(){
+    alert('ya im' + this.firstName)
+}
 
 
 
