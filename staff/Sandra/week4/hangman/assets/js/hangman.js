@@ -7,6 +7,7 @@ var lives;
 function setWord(){
     document.getElementById('word-to-guess').innerHTML=guessing.join(' ');
 }
+
 function deleteLetterInput(){
     document.getElementById('input-guess').value = "";
 }
@@ -24,15 +25,13 @@ function existsLetter(letter){
 }
 
 function continueGame(){
-    var result  = "VIDAS: " + lives ;
     var cont = true;
     if (!guessing.includes("_") && lives > 0){
-        result = "HAS GANADO";
+        document.getElementById("solution").innerHTML  = "HAS GANADO";
     } else if (lives == 0)  {
-        result = "HAS PERDIDO";
+        document.getElementById("solution").innerHTML  = "HAS PERDIDO";
         cont = false;        
     }     
-    document.getElementById("solution").innerHTML = result;
     return cont;
 }
 
@@ -45,9 +44,12 @@ function checkLetter(event){
         if (existsLetter(inputLetter)) {
             replaceLetter(inputLetter);
             setWord();       
-        } else  lives -=1;
+        } else{
+            lives -=1;
+            document.getElementById("solution").innerHTML = "VIDAS: " + lives ;
+        }  
     }
-
+    continueGame();
     deleteLetterInput();
 }
 
