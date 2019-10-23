@@ -20,7 +20,7 @@ function newGame() {
 
     var newWord;
     document.getElementById('guessWord').style.display = 'block';
-    document.getElementById('submitButton').style.display = 'block'; 
+    document.getElementById('submitButton').style.display = 'block';
 
     newWord = getNewWord();
     palabraEscogida = newWord.split('').join(' ');
@@ -42,7 +42,6 @@ function generateHiddenWord(word) {
     palabraAmagada = wordHidden;
     document.getElementById('hiddenWord').innerHTML = wordHidden;
 }
-
 
 function testLetter() {
     document.getElementById('guessWord').style.display = 'block';
