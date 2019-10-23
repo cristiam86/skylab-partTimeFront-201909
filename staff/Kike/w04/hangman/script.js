@@ -10,9 +10,18 @@ function newGame() {
     palabraAmagada = '';
     letraEscogida = '';
     vidas = 6;
+
+    document.getElementById('lLeft').style.display = 'block';
+    document.getElementById('lRight').style.display = 'block';
+    document.getElementById('hLeft').style.display = 'block';
+    document.getElementById('hRight').style.display = 'block';
+    document.getElementById('torso').style.display = 'block';
+    document.getElementById('head').style.display = 'block';
+
     var newWord;
     document.getElementById('guessWord').style.display = 'block';
-    document.getElementById('submitButton').style.display = 'block';
+    document.getElementById('submitButton').style.display = 'block'; 
+
     newWord = getNewWord();
     palabraEscogida = newWord.split('').join(' ');
     generateHiddenWord(newWord);
