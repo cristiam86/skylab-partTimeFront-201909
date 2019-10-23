@@ -12,7 +12,7 @@
 
     </header>
     <main>
-        <div class="picture-zone">
+        <div class="picture-zone" id="picture">
             <div class="hangman">
                 <div class="pierna-d" id="show-10"></div>
                 <div class="pierna-i" id="show-9"></div>
@@ -33,8 +33,14 @@
             <div class="linea" id="linea">
                 <div>Errores: <span id="points"></span></div>
             </div>
+            <div class="linea botton" id="btnreload">
+                <button value="Jugar de nuevo" onClick="window.location.reload();">Jugar de nuevo</botton>
+            </div>
         </div>
         <div class="ahorcado-zone">
+            <div>
+                <p>Bienvenidos al ahorcado, tienes hasta 10 fallos para saber cual es la palabra oculta tras la pista, introduce letra a letra y suerte.</p>
+            </div>
             <div id="word-to-guess" class="words"></div>
             <h3>Pista:</h3>
             <div id="hint" class="hint"></div>

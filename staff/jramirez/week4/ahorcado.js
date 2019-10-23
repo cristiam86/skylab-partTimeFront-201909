@@ -18,6 +18,8 @@ document.getElementById('hint').innerHTML = word[randomNum].hint;
 
 document.getElementById('submit-button').addEventListener('click', checkLetter);
 
+
+
 function checkLetter(event){
     event.preventDefault();
     var inputLetter = document.getElementById('letter-input').value;
@@ -25,8 +27,8 @@ function checkLetter(event){
     // Miro si el campo es empty
     if (inputLetter === "") {
         alert("Si no pones una letra o un número, ná de ná");
-    } else if (points > 10) {
-        document.getElementById('points').innerHTML = "Tas to ahorcao"
+    } else if (points > 9) {
+        document.getElementById('points').innerHTML = "Tas to ahorcao";
     } else {
         //check if inputLetter exists on wordToGuess
         var wordcheck = wordToGuess.includes(inputLetter);
@@ -34,11 +36,12 @@ function checkLetter(event){
             // replace matching letters with inputLetter
             var sitios = [];
             var index = wordToGuess.indexOf(inputLetter);
-            console.log(index);
+
             while (index != -1) {
                 sitios.push(index);
                 guessing[index] = inputLetter;
                 index = wordToGuess.indexOf(inputLetter, index + 1); 
+                youWin();
             }
             document.getElementById('word-to-guess').innerHTML = guessing.join(' ');
             resetInput();
@@ -62,6 +65,18 @@ function getRandomArbitrary(max) {
 function resetInput() {
     document.getElementById('letter-input').value = "";
 }   
+
+// Cuando se gana
+function youWin() {
+    if (word[randomNum].word === guessing.join('')) {
+        document.getElementById('linea').style.display = "block";
+        document.getElementById('btnreload').style.display = "block";
+        document.getElementById('linea').innerHTML = "Has ganaooo pringaooo";
+        document.getElementById('picture').style.backgroundColor = "green";
+    }
+}
+
+
 
 // Pintado muñeco
 function paintAhoracado() { 

@@ -57,7 +57,12 @@ main{
          }
     }
     .ahorcado-zone{
-        padding: 24px
+        padding: 24px;
+        p{
+            color: #555;
+            margin: 24px 0;
+            max-width: 400px;
+        }
     }
     h3{
         margin-top: 24px;
