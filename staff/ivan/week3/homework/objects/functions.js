@@ -1,4 +1,4 @@
-console.log('hello');
+//console.log('hello');
 
 //constructor function for CAR
 var Car = function(name,model,color){
@@ -10,10 +10,6 @@ var Car = function(name,model,color){
     }
 }
 
-var chevy = new Car('Chevrolet', 'Optra', 'Silver');
-chevy.message();
-var seat = new Car('Seat', 'Leon', 'black');
-seat.message();
 
 //Stack
 
@@ -31,15 +27,7 @@ var Stack = function(){
     }
 }
 
-var stack_a = new Stack();
-stack_a.insertElement(1);
-stack_a.insertElement("f");
-stack_a.insertElement("foo");
-stack_a.insertElement([1,2,3]);
-var just_removed = stack_a.getElement();
-console.log("TCL: just_removed", just_removed)
-console.log(stack_a);
-stack_a.print();
+
 
 //Linked List
 
@@ -64,7 +52,7 @@ var LinkedList = function(){
     }
     this.getElement = function(index){
         var selected = this.chain[index];
-        console.log(selected);
+        return selected;
     }
     this.print = function(){
         var values = '';
@@ -75,20 +63,65 @@ var LinkedList = function(){
     }
 }
 
-var list1 = new LinkedList();
-list1.insertElement(0);
-list1.insertElement(1);
-list1.insertElement(2);
-list1.insertElement(3,10);//even with position 10, it will just be appended as the last.
-list1.insertElement(4);
-list1.insertElement(5); 
-list1.insertElement("-2",2);
-list1.insertElement("-4",4);
-list1.insertElement(6);
-console.log("TCL: list1", list1)
-list1.getElement(2);
-list1.print();
+
+// blockchain...
+
+var hash = function(s) {
+    var a = 1, c = 0, h, o;
+    if (s) {
+        a = 0;
+        for (h = s.length - 1; h >= 0; h--) {
+            o = s.charCodeAt(h);
+            a = (a<<6&268435455) + o + (o<<14);
+            c = a & 266338304;
+            a = c!==0?a^c>>21:a;
+        }
+    }
+    return String(a);
+};
 
 
+var Block = function(value,position,array,timestamp=1){
+    //if array is empty, then previous value is set to string 'origin'
+    this.previous_hash = array.length===0 ? "" : hash(array[position-1].value.toString()+array[position-1].previous_hash);
+    this.value = value;
+}
 
-
+var Blockchain = function(){
+    this.chain = [];//array to contain the chain of nodes
+    this.insertElement = function(value, position=this.chain.length){ //by default adds in the last position if no parameter is provided
+        if(position>=this.chain.length){ //if you go to far, the new node just goes last...
+            position=this.chain.length; 
+        }
+        var newBlock = new Block(value, position, this.chain); //create the node from class
+        //at the moment of creation, the new block makes its hash from previous block...
+        this.chain[position] = newBlock; //add the node at the defined position
+        if(this.chain.length>position+1){ //only if you didn't add to the last position...
+            var toReprocess = this.chain.length-position-1;
+            for(var i=0; i<toReprocess; i++){
+                this.chain[position+1+i].previous_hash = hash(this.chain[position+i].value.toString()+this.chain[position+i].previous_hash);
+            }
+        }
+    }
+    this.getElement = function(index){
+        var selected = this.chain[index];
+        console.log(selected);
+    }
+    this.print = function(){
+        var values = '';
+        for(node in this.chain){
+            values += this.chain[node].value+","
+        }
+        console.log(values);
+    }
+    this.isValidChain = function(){
+        for(var i=this.chain.length-1; i>0; i--){ //starts on the last
+            if(this.chain[i].previous_hash !== hash(this.chain[i-1].value.toString()+this.chain[i-1].previous_hash)){
+                console.error("ERROR! Mistake in blockchain");
+                break;
+            }
+        }
+        console.log("All OK")
+        return true;        
+    }
+}
