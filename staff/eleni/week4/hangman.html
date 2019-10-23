@@ -69,9 +69,6 @@
            }
        }
     
-       
-/////////////////*****************/////////////////////
-
         function checkLetter(event){
             event.preventDefault();
             var inputLetter = document.getElementById('input-guess').value;
@@ -99,7 +96,7 @@
                 //Muerte
                 if(lives<0){                
                 document.getElementById('error-text').innerHTML="It´s over man";
-                document.getElementById('stickman').innerHTML="<img src=\"https://media.giphy.com/media/dkuZHIQsslFfy/giphy.gif\">";
+                return document.getElementById('stickman').innerHTML="<img src=\"https://media.giphy.com/media/dkuZHIQsslFfy/giphy.gif\">";
 
 
                 //disable button
