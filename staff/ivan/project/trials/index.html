@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Microblog</title>
+    <link media="screen" type="text/css" rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <input type="checkbox" id="header_toggle">
+    <label for="header_toggle">
+        <div id="header_overlay"></div>
+    </label>
+    <header>
+        <div class="header_identity">
+            <div class="header_identity_img">
+                <img src="images/ivan.jpg" alt="user_icon">
+            </div>
+            <div class="header_identity_name">
+                <h3>Ivan Dario</h3>
+                <p>@ivandax</p>
+            </div>
+            <div class="header_identity_counts">
+                <span class="follow_labels" id="following">150</span>
+                <span>Following</span>
+                <span class="follow_labels" id="followers">201</span>
+                <span>Followers</span>
+            </div>
+        </div>
+        <hr class="header_division">
+        <div class="header_options">
+            <ul>
+                <li>My Stream</li>
+                <li>Who follows me?</li>
+                <li>Who do I follow?</li>
+            </ul>
+        </div>
+        <hr class="header_division">
+        <div class="header_settings">
+            <ul>
+                <li>Settings and Privacy</li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- micro header meant to show little pic to toggle the header on mobile... should be hidden when on desktop display -->
+        <div class="micro_header">
+            <label for="header_toggle"><img src="images/ivan.jpg" alt="user_icon"></label>
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
