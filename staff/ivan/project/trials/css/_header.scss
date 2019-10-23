@@ -1,0 +1,83 @@
+#header_toggle{ //this is crazy but...
+    display:none; //this is a none-displaying checkbox
+    &:checked + label + header{ //the + allows us to move along the siblings...
+        left:0%; //an image in the main triggers the checked
+    }//to show the header which is hidden on the left...
+    &:checked + label > #header_overlay{
+        height:100vh;
+        z-index:2;
+        opacity:0.5;
+        transition: opacity 0.4s;       
+    }
+}
+
+#header_overlay{
+    width:100%;
+    height:0vh;
+    position:fixed;
+    top:0;
+    left:0;
+    opacity: 0;
+    z-index: -1;
+    background-color: $lightgrey;
+    transition: opacity 0.4s;
+}
+
+header{
+    width:90%;
+    border-right:3px solid $primary;
+    height:100vh;
+
+    position:fixed;
+    top:0;
+    left:-100%;
+    z-index:3; //main z=1, overlay z=2
+    transition-duration: 0.4s;
+    background-color: white;
+}
+
+.header_identity{
+    @include flex-complete($direction: column, $justify: flex-start, $align: flex-start);
+
+    padding-top: 1rem;
+    padding-left: $header-left-padding;
+    margin-bottom:1rem;
+
+    .header_identity_img img{
+        width:5rem;
+        border-radius: 50%;//markes circular border for pic
+        border: solid $lightgrey 2px;
+        margin-bottom:0.5rem;
+    }
+    .header_identity_name{
+        padding-bottom: 0.3rem;
+        p{
+            color: $lightgrey;
+        }
+    }
+    .header_identity_counts{
+        padding-top:0.2rem;
+        padding-bottom: 0.3rem;
+   
+    }
+}
+
+hr.header_division{
+    size:1px;
+}
+
+.header_options{
+    padding-left: $header-left-padding;
+    padding-bottom:0.3rem;
+    margin-top:1rem;
+    margin-bottom:1rem;
+    ul li{
+        padding-top: 0.7rem;
+        padding-bottom:0.7rem;
+    }
+}
+
+.header_settings{
+    @extend .header_options;
+}
+
