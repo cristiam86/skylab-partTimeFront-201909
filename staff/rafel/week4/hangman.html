@@ -1,0 +1,93 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="hangman.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>HANGMAN</h1>
+    <div id="main">
+        <div class="header">
+            <div id="word-to-guess"></div>
+            <div id="Attemps">Attemps</div>
+            <div id="life"></div>
+        </div>
+        <div class="form">
+            <form id="guess-form" method="" action="#">
+                <input id="input-guess" type="text" maxlength="1" id="letter-input" />
+                <button id="submit-button" type="button">GUESS</button>
+            </form>
+        </div>
+        <button id="newGame" type="button">NEW GAME</button>
+    </div>
+    <script>
+        //var amountWords = ['DESCARTES', 'SPINOZA', 'KANT', 'FICHTE', 'LEIBNIZ', 'HUME', 'POPPER', 'MILL']
+        var amountWords = ['DESCARTES']
+        var wordToGuess = []
+        var guessing = []
+        var life = []
+
+
+        // choose one word of the list and separate letters in a Array
+
+        function addWord() {
+            var randomNum = Math.floor(Math.random() * amountWords.length)
+            var word = amountWords[randomNum]
+            wordToGuess = word.split('');
+            guessing = wordToGuess.map(function () { return '_' })
+            document.getElementById('life').innerHTML = Math.round(wordToGuess.length / 1.5)
+            return document.getElementById('word-to-guess').innerHTML = guessing.join(' ');
+        }
+        addWord()
+
+        // New Word restart de game
+        document.getElementById("newGame").onclick = addWord
+
+
+        document.getElementById('guess-form').addEventListener('submit', checkLetter)
+        //document.getElementById('submit-button').addEventListener('click', checkLetter)
+
+        function checkLetter(event) {
+            event.preventDefault(); // don't refresh webpage
+            var inputLetter = document.getElementById('input-guess').value;
+
+            //var position = wordToGuess.map((element,index) => element === inputLetter ? index : undefined).filter(x => x)
+            //check if inputLetter exists on wordToGuess
+            if (word.includes(inputLetter) {
+                return life = life - 1
+            } else {
+                var position = []
+                for (var i = 0; i < wordToGuess.length; i += 1) {
+                    if (wordToGuess[i] === inputLetter) {
+                        position.push(i)
+                    }
+
+                    // replace matching letters with inputLetter
+                    for (var i = 0; i < position.length; i++) {
+                        guessing[position[i]] = inputLetter
+                    }
+                }
+
+                // Borrar contenido del input
+                document.getElementById('input-guess').value = "";
+
+                return document.getElementById('word-to-guess').innerHTML = guessing.join(' ')
+
+
+
+                //not matching letter
+                // decrease lives
+                //Check lives > 0
+                //Continue
+                //Muerte
+            }
+        }
+
+    </script>
+</body>
+
+</html>
