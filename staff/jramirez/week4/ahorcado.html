@@ -4,21 +4,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Juego Ahoracado</title>
-    <script src="ahorcado.js"></script>
-    <script src="ahorcado.test.js"></script>
+
     <link media="screen" type="text/css" rel="stylesheet" href="ahorcado.css">
 </head>
 <body>
-    <div class="picture-zone">
+    <header>
 
-    </div>
-    <div class="ahorcado-zone">
-        <div class="letras">
-            
+    </header>
+    <main>
+        <div class="picture-zone">
+            <div class="hangman">
+                <div class="pierna-d" id="show-10"></div>
+                <div class="pierna-i" id="show-9"></div>
+                <div class="brazo-d" id="show-8"></div>
+                <div class="brazo-i" id="show-7"></div>
+                <div class="tronco" id="show-6"></div>
+                <div class="cabeza" id="show-5">
+                    <div class="ojo-d"></div>
+                    <div class="ojo-i"></div>
+                    <div class="boca"></div>
+                    <div class="lengua"></div>
+                </div>
+                <div class="lazo" id="show-4"></div>
+                <div class="palo" id="show-3"></div>
+                <div class="columna" id="show-2"></div>
+                <div class="base" id="show-1"></div>     
+            </div>
+            <div class="linea" id="linea">
+                <div>Errores: <span id="points"></span></div>
+            </div>
         </div>
-        <div class="resultados">
-
+        <div class="ahorcado-zone">
+            <div id="word-to-guess" class="words"></div>
+            <h3>Pista:</h3>
+            <div id="hint" class="hint"></div>
+            <div class="form">
+                <form id="guess-form" method="" action="#">
+                    <input  type="text" maxlength="1" id="letter-input"/>
+                    <button id="submit-button" type="button">COMPROBAR</button>
+                </form>
+            </div>
         </div>
-    </div>
+    </main>
+   <footer></footer>
+   <script src="ahorcado.js"></script>
+   <script src="ahorcado.test.js"></script>
 </body>
 </html>

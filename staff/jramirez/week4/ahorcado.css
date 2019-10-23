@@ -22,11 +22,12 @@ div {
 }
 
 button {
-  border: 1px solid #EBEBEB;
   padding: 16px;
-  color: #000;
+  color: #fff;
+  background-color: #5851E9;
   font-size: 16px;
   border-radius: 4px;
+  border: none;
 }
 
 @media only screen and (min-width: 764px) {
@@ -34,9 +35,213 @@ button {
     cursor: pointer;
   }
   button:hover {
-    background-color: #00B09B;
+    background-color: #1F10FE;
     color: white;
-    border: 1px solid #00B09B;
   }
+}
+
+@media only screen and (min-width: 764px) {
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+main .picture-zone {
+  background-color: #555;
+}
+
+@media only screen and (min-width: 764px) {
+  main .picture-zone {
+    width: 40%;
+    height: 100vh;
+  }
+}
+
+main .picture-zone .linea {
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  margin-top: 48px;
+  display: none;
+}
+
+main .ahorcado-zone {
+  padding: 24px;
+}
+
+main h3 {
+  margin-top: 24px;
+  color: #1F10FE;
+  font-size: 16px;
+}
+
+main .hint {
+  color: #a2a2a2;
+  margin-top: 4px;
+}
+
+.words {
+  font-size: 24px;
+}
+
+.form {
+  margin-top: 48px;
+}
+
+.form input[type=text] {
+  padding: 10px 16px;
+  border: 1px solid #a2a2a2;
+  border-radius: 4px;
+  width: 52px;
+  line-height: 14px;
+  font-size: 24px;
+  float: left;
+  text-align: center;
+}
+
+.form button {
+  float: left;
+  margin-left: 8px;
+}
+
+.hangman {
+  height: 258px;
+  width: 110px;
+  margin: 0 auto;
+}
+
+.hangman div {
+  background-color: #fff;
+}
+
+.hangman div.base {
+  width: 100px;
+  height: 3px;
+  opacity: 0;
+}
+
+.hangman div.columna {
+  width: 3px;
+  height: 150px;
+  margin-left: 47px;
+  opacity: 0;
+}
+
+.hangman div.palo {
+  width: 60px;
+  height: 3px;
+  margin-left: 47px;
+  opacity: 0;
+}
+
+.hangman div.lazo {
+  width: 3px;
+  height: 10px;
+  margin-left: 104px;
+  top: 13px;
+  position: relative;
+  opacity: 0;
+}
+
+.hangman div.cabeza {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  position: relative;
+  top: 53px;
+  margin-left: 90px;
+  opacity: 0;
+}
+
+.hangman div.cabeza .ojo-d, .hangman div.cabeza .ojo-i {
+  position: absolute;
+  border-radius: 50%;
+  height: 6px;
+  width: 6px;
+  background-color: #555;
+  top: 5px;
+}
+
+.hangman div.cabeza .ojo-d {
+  right: 2px;
+}
+
+.hangman div.cabeza .ojo-i {
+  left: 3px;
+}
+
+.hangman div.cabeza .boca {
+  background-color: #555;
+  height: 8px;
+  width: 16px;
+  border-radius: 50%;
+  position: absolute;
+  top: 13px;
+  left: 4px;
+}
+
+.hangman div.cabeza .lengua {
+  position: absolute;
+  background-color: red;
+  top: 18px;
+  left: 12px;
+  height: 8px;
+  width: 6px;
+  border-radius: 6px;
+  -webkit-transform: rotate(-32deg);
+          transform: rotate(-32deg);
+}
+
+.hangman div.tronco {
+  width: 3px;
+  height: 50px;
+  position: relative;
+  top: 133px;
+  margin-left: 104px;
+  opacity: 0;
+}
+
+.hangman div.brazo-d, .hangman div.brazo-i, .hangman div.pierna-i, .hangman div.pierna-d {
+  width: 30px;
+  height: 3px;
+  border-radius: 3px;
+  position: relative;
+}
+
+.hangman div.brazo-d {
+  margin-left: 100px;
+  top: 153px;
+  opacity: 0;
+}
+
+.hangman div.brazo-i {
+  top: 152px;
+  margin-left: 79px;
+  opacity: 0;
+}
+
+.hangman div.pierna-i {
+  top: 200px;
+  margin-left: 79px;
+  opacity: 0;
+}
+
+.hangman div.pierna-d {
+  top: 202px;
+  margin-left: 101px;
+  opacity: 0;
+}
+
+.hangman div.brazo-d, .hangman div.pierna-d {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.hangman div.brazo-i, .hangman div.pierna-i {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 /*# sourceMappingURL=ahorcado.css.map */
