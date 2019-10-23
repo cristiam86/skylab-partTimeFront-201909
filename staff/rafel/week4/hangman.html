@@ -64,10 +64,10 @@
                 for (var i = 0; i < wordToGuess.length; i += 1) {
                     if (wordToGuess[i] === inputLetter) {
                         position.push(i)
+                        }
                     }
-
                     // replace matching letters with inputLetter
-                    for (var i = 0; i < position.length; i++) {
+                for (var i = 0; i < position.length; i++) {
                         guessing[position[i]] = inputLetter
                     }
                 }
