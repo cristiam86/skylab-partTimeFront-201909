@@ -116,9 +116,7 @@ var game = new HangmanGame(words[returnRandomUpTo(words.length)]);
 game.initialize();
 
 //handle user input... we check the progress of the game
-document.getElementById('guess_form').addEventListener('submit',function(){
-    game.checkUserInput();
-});
+document.getElementById('guess_form').addEventListener('submit',game.checkUserInput.bind(game));
 
 //reset to basic status if the reset button is hit, makes a new game instance and initialize it.
 document.getElementById('reset_button').addEventListener('click',function(){
