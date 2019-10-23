@@ -1,0 +1,130 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="hangman.css">
+</head>
+<body>
+    <div class="container">
+    <div class="title">The hangman game</div>
+     <div id="stickman">
+         <img src="https://media.giphy.com/media/8b29QJQgVwUW4/giphy.gif">
+     </div>
+        <div id="word-to-guess"></div>
+        <div class="form">
+            <form id="guess-form" method="" action="#">
+                <input id="input-guess" type="text" placeholder="Write your guess"/>
+                <button id="submit-button" type="button">GUESS THE WORD</button>
+                <button id="reset-button" type="button">RESTART</button>
+                <div id="error-text"></div>
+                <div id="success-text"></div>
+            </form>
+
+        </div>
+    </div>
+    <script>
+        Array.prototype.randomElement = function () {
+            return this[Math.floor(Math.random() * this.length)]
+        }
+        var words = ["Mars","Venus","Mercury","Pluto","Jupiter","Neptune","Earth", "Saturn","Uranus"];
+        var lives;
+        var wordToGuess;
+        var guessing;
+
+        lives=3;
+        wordToGuess = words.randomElement().toLowerCase().split('');
+        guessing = wordToGuess.map(function(){return '_'});
+
+        document.getElementById('word-to-guess').innerHTML = guessing.join(' ');
+        document.getElementById('guess-form').addEventListener('submit', checkLetter);
+        document.getElementById('submit-button').addEventListener('click', guessWord);
+        document.getElementById('reset-button').addEventListener('click',reset);
+
+
+        function reset(){
+            lives=3;
+            document.getElementById('success-text').innerHTML="";
+            document.getElementById('error-text').innerHTML="";
+            document.getElementById('input-guess').value = "";
+            wordToGuess = words.randomElement().toLowerCase().split('');
+            guessing = wordToGuess.map(function(){return '_'});
+            document.getElementById('word-to-guess').innerHTML = guessing.join(' ');
+
+        }
+
+       function guessWord(){
+        var input = document.getElementById('input-guess').value;
+        var word=wordToGuess.join("");
+           if(word==input){
+            document.getElementById('error-text').innerHTML="";
+            document.getElementById('word-to-guess').innerHTML = word;
+            document.getElementById('success-text').innerHTML="You won!";
+            document.getElementById('stickman').innerHTML="<img src=\"https://media.giphy.com/media/5VKbvrjxpVJCM/giphy.gif\" width=\"400px\" height=\"150px\">";
+            return document.getElementById('error-text').innerHTML="";
+           }else{
+            return document.getElementById('error-text').innerHTML="Try again smarty pants";
+
+           }
+       }
+    
+       
+/////////////////*****************/////////////////////
+
+        function checkLetter(event){
+            event.preventDefault();
+            var inputLetter = document.getElementById('input-guess').value;
+            // replace matching letters with inputLetter
+            if(wordToGuess.includes(inputLetter)){
+                for(var i=0;i<wordToGuess.length;i++){
+                       if(wordToGuess[i]==inputLetter){         
+                        guessing.splice(i, 1, inputLetter);
+                        }          
+                         document.getElementById('word-to-guess').innerHTML=guessing.join(" ");    
+                        }  
+            //not matching letter
+            // decrease lives
+            }  else{
+                lives--;
+                document.getElementById('error-text').innerHTML="You have "+lives+" lives left";
+                document.getElementById('stickman').innerHTML="<img src=\"https://media.giphy.com/media/3o85xnYxeojLcZ7GNy/giphy.gif\">";
+
+            }       
+                // Borrar contenido del input
+                document.getElementById('input-guess').value = "";
+
+            //Check lives > 0
+                //Continue
+                //Muerte
+                if(lives<0){                
+                document.getElementById('error-text').innerHTML="It´s over man";
+                document.getElementById('stickman').innerHTML="<img src=\"https://media.giphy.com/media/dkuZHIQsslFfy/giphy.gif\">";
+
+
+                //disable button
+                }
+                else if(!guessing.includes("_")){
+                document.getElementById('error-text').innerHTML="";
+                document.getElementById('stickman').innerHTML="<img src=\"https://media.giphy.com/media/5GoVLqeAOo6PK/giphy.gif\" width=\"400px\" height=\"150px\">";
+                return document.getElementById('success-text').innerHTML="You solved it!";
+
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+    </script>
+</body>
+</html>
