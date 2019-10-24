@@ -22,13 +22,18 @@ h1 {
     font-size: 6em;
     color: gray;
     justify-content: space-around;
-    
-
 }
+
 #guess-form input #submit-button #newGame{ 
     font-size: 6em;
 }
 
-#newGame {
+#word-to-guess {
+    font-size: 6em;
+    color:darkgreen;
+    text-align: center;
+}
 
+#life {
+    color: darkred;
 }

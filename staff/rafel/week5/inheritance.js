@@ -1,3 +1,5 @@
+// Creem el constructor Person
+
 function Person(firstName, lastName, age, gender, interests ) {
     this.firstName = firstName;
     this.lastName = lastName;
@@ -5,7 +7,7 @@ function Person(firstName, lastName, age, gender, interests ) {
     this.gender = gender;
     this.interests = interests
     this.greeting = function () {
-        return "Hi! I'm " + this.firstName + "."
+        return "Hi! I\'m " + this.firstName + "."
     }
     this.farewell = function () {
         return this.firstName + " has left the building. Bye for now!"
@@ -26,6 +28,7 @@ function Person(firstName, lastName, age, gender, interests ) {
     }
 }
 
+// Creem el constructor Student
 function Student (firstName, lastName, age, gender, interests) {
     Person.call(this, firstName, lastName, age, gender, interests)
     this.greeting = function(){
@@ -37,6 +40,7 @@ function Student (firstName, lastName, age, gender, interests) {
 Student.prototype = Object.create(Person.prototype);
 Student.prototype.constructor = Student;
 
+// Creem el constructor Teacher
 function Teacher (firstName, lastName, age, gender, interests, subject) {
     Person.call(this, firstName, lastName, age, gender, interests);
     this.subject = subject;

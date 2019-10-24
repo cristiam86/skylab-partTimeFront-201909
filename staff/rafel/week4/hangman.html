@@ -57,35 +57,35 @@
 
             //var position = wordToGuess.map((element,index) => element === inputLetter ? index : undefined).filter(x => x)
             //check if inputLetter exists on wordToGuess
-            if (word.includes(inputLetter) {
+            if (word.includes(inputLetter)) {
                 return life = life - 1
             } else {
                 var position = []
                 for (var i = 0; i < wordToGuess.length; i += 1) {
                     if (wordToGuess[i] === inputLetter) {
                         position.push(i)
-                        }
-                    }
-                    // replace matching letters with inputLetter
-                for (var i = 0; i < position.length; i++) {
-                        guessing[position[i]] = inputLetter
                     }
                 }
-
-                // Borrar contenido del input
-                document.getElementById('input-guess').value = "";
-
-                return document.getElementById('word-to-guess').innerHTML = guessing.join(' ')
-
-
-
-                //not matching letter
-                // decrease lives
-                //Check lives > 0
-                //Continue
-                //Muerte
+                // replace matching letters with inputLetter
+                for (var i = 0; i < position.length; i++) {
+                    guessing[position[i]] = inputLetter
+                }
             }
+
+            // Borrar contenido del input
+            document.getElementById('input-guess').value = "";
+
+            return document.getElementById('word-to-guess').innerHTML = guessing.join(' ')
+
+
+
+            //not matching letter
+            // decrease lives
+            //Check lives > 0
+            //Continue
+            //Muerte
         }
+
 
     </script>
 </body>
