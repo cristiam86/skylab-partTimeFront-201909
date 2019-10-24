@@ -52,10 +52,12 @@ function Hangman() {
     this.computeLifes = function() {
         return Math.floor(this.wordToGuess.length / 2);
     }
+    // constructor
+    this.genWordToGuess();
 }
 
 var game1 = new Hangman();
-game1.genWordToGuess();
+//game1.genWordToGuess();
 
 document.getElementById('word-to-guess').innerHTML = game1.progressWordToGuess.join(' ');
 document.getElementById('turn-count').innerHTML = 'Tienes ' + game1.lifeCount + ' vidas';
