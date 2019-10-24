@@ -39,3 +39,14 @@ Student.prototype.constructor = Student;
 Student.prototype.greeting = () => { return console.log("Yo! I'm " + this.firstName) };
 
 estudiante = new Student("kike", "garcia", 28, "chico", ['dormir', 'jugar', 'roomscapes']);
+
+
+
+function Professor(firstName, lastName, age, gender, interests) {
+    Person.call(this, firstName, lastName, age, gender, interests);
+}
+Professor.prototype = Object.create(Person.prototype);
+Professor.prototype.constructor = Professor;
+Professor.prototype.greeting = () => { return console.log("Hi! I'm " + this.firstName) };
+
+profe = new Professor("kike", "garcia", 28, "chico", ['dormir', 'jugar', 'roomscapes']);
