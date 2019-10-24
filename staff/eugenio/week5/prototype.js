@@ -8,8 +8,8 @@ Array.prototype.getLastElement = function() {return this[this.length-1]}
 //CREAMOS UN CONSTRUCTOR CON SU FUNCION
 function Car(name){
   this.name = name;
-  this.start = function(){
-    return "engine of "+this.name+" starting";
+  this.start = function(date){
+    return date + " engine of "+this.name+" starting";
   }
 }
 
@@ -19,15 +19,32 @@ Car.prototype.stop = function(){
   return "engine of "+this.name+" stoping";
 }
 
-var c = new Car('tesla');
+var c1 = new Car('Tesla');
 //CREAMOS UN NUEVO MÉTODO DESDE EL OBJETO, MAS ABAJO VEREMOS QUE SE HEREDAN PARA LOS OTROS OBJETOS
-c.__proto__.nonMethod = function(){
+c1.__proto__.nonMethod = function(){
   return "hola";
 }
-var d = new Car('Porsche');
-console.log(c.stop());
-console.log(c.nonMethod());
-console.log(d.nonMethod());
+var c2 = new Car('Porsche');
+var d = new Date();
+console.log(c2.start());
+//LA FUNCIÓN CALL() LE PASAMOS OTRO OBJETO Y NOS COGE EL SCOPE DE ESE OBJETO, NO NOS CAMBIA
+//EL OBJETO
+//EL PRIMER ARGUMENTO ES EL NUEVO SCOPE, Y EL SEGUNDO ARGUMENTO ES EL ARGUMENTO QUE NECESITA START
+console.log(c2.start.call(c1,d));
+console.log(c2.start(d));
+
+//CREAMOS OTRO CONSTRUCTOR ''SUBCLASE'' DE CAR Y HEREDAREMOS TODO LO DE CAR
+function Tesla(model){
+  Car.call(this, 'Tesla')
+  this.model = model;
+} 
+//ESTAS DOS SENTENCIAS HACEN QUE HEREDE TODO DE CAR, PROPIEDADES, FUNCIONES Y CONSTRUCTOR
+Tesla.prototype = Object.create(Car.prototype);
+Tesla.prototype.constructor = Tesla;
+
+var t = new Tesla('C');
+console.log(t.name);
+
 
 
 
