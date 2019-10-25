@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1572022357827" clover="3.2.0">
+  <project timestamp="1572022357827" name="All files">
+    <metrics statements="18" coveredstatements="18" conditionals="14" coveredconditionals="14" methods="4" coveredmethods="4" elements="36" coveredelements="36" complexity="0" loc="18" ncloc="18" packages="1" files="1" classes="1"/>
+    <file name="rockPaperScissorsLogic.js" path="C:\Users\Eugenio_2\Dropbox\SkylabCoders\Skylab\skylab-partTimeFront-201909\staff\eugenio\week5\rockPaperScissors\rockPaperScissorsLogic.js">
+      <metrics statements="18" coveredstatements="18" conditionals="14" coveredconditionals="14" methods="4" coveredmethods="4"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="12" count="1" type="stmt"/>
+      <line num="18" count="1" type="stmt"/>
+      <line num="22" count="5" type="cond" truecount="4" falsecount="0"/>
+      <line num="23" count="1" type="stmt"/>
+      <line num="25" count="4" type="stmt"/>
+      <line num="29" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="30" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="31" count="2" type="stmt"/>
+      <line num="35" count="5" type="cond" truecount="2" falsecount="0"/>
+      <line num="36" count="1" type="stmt"/>
+      <line num="43" count="4" type="stmt"/>
+      <line num="44" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="45" count="2" type="stmt"/>
+      <line num="52" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="53" count="1" type="stmt"/>
+      <line num="61" count="1" type="stmt"/>
+      <line num="97" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
