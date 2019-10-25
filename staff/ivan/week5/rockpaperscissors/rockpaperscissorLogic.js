@@ -17,11 +17,10 @@ var areValidHands = function(hand1,hand2){
     return true;
 }
 
-var checPlay = function(hand1,hand2){
+var checkPlay = function(hand1,hand2){
     if(WINS[hand1]===hand2) return "hand1";
     else if(WINS[hand2]===hand1) return "hand2";
     return "tie";
-
 }
 
 var play = function(selection1,selection2){
@@ -29,7 +28,7 @@ var play = function(selection1,selection2){
     if(!areValidHands(selection1,selection2)){
         return "error!";
     }
-    return checkPlay(selection1,selection);
+    return checkPlay(selection1,selection2);
 }
 
 module.exports = {initGame, play}

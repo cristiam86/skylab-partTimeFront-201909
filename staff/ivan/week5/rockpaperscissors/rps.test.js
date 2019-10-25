@@ -1,5 +1,6 @@
 var functions = require("./rockpaperscissorLogic");
 
+//each describe is a suite of tests... 
 describe("RPS game logic", function(){
     test("initialize game", function(){
         var game = functions.initGame();
@@ -14,6 +15,14 @@ describe("RPS game logic", function(){
         expect(result).toBe('hand1');
     })
 
+    test("should win hand 2", function(){
+        var result = functions.play('paper', 'scissors');
+        expect(result).toBe('hand2');
+    })
 
+    test("should be tie", function(){
+        var result = functions.play('paper', 'paper');
+        expect(result).toBe('tie');
+    })
 })
 
