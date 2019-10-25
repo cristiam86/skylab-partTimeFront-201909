@@ -14,6 +14,11 @@ libreria jest, para hacer tests...
 * also in the package.json we can put "test-coverage": "jest --coverage" to display a percentaje of advancement-- to run this, type "npm run test-coverage"
 
 
+ECMAScript 6
+
+Ahora vamos a escribir strings... concatenar:: `hello, ${variable} how are you`
+
+
 #Questions
 * debo tener los modulos de node en todos y cada uno de los proyectos que armo?
 
