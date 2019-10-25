@@ -1,4 +1,4 @@
-*test driving development
+* test driving development
 
 focusing on tests first...
 
@@ -10,6 +10,15 @@ libreria jest, para hacer tests...
 * npm init to initialize the package.json
 * npm install --save-dev jest (this will actually download...)
 * make sure to modify .gitignore in the root of your directory, so we ignore the npm modules... we don't want to upload all modules to our repository...
+* in the package.json, make sure to modify : test: "jest", so npm knows that you want to use jest.
+* also in the package.json we can put "test-coverage": "jest --coverage" to display a percentaje of advancement-- to run this, type "npm run test-coverage"
+
+
+#Questions
+* debo tener los modulos de node en todos y cada uno de los proyectos que armo?
+
+
+
 
 
 
