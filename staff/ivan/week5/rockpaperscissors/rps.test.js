@@ -26,3 +26,4 @@ describe("RPS game logic", function(){
     })
 })
 
+//on the directory, type npm test to run your tests...

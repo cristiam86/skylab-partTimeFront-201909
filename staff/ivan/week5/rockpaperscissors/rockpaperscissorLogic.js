@@ -24,7 +24,6 @@ var checkPlay = function(hand1,hand2){
 }
 
 var play = function(selection1,selection2){
-
     if(!areValidHands(selection1,selection2)){
         return "error!";
     }
