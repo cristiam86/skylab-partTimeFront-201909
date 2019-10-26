@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+      .red {
+        color: tomato;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="game-status">
+        <div class="score-item">
+          Games played: <span id="games-played-counter"></span>
+        </div>
+        <div class="score-item">
+          Hand 1: <span id="hand1-score">12361623</span>
+        </div>
+        <div class="score-item">
+          Hand 2: <span id="hand2-score">876543</span>
+        </div>
+        <div class="score-item">
+          Ties: <span id="tie-score"></span>
+        </div>
+        <div class="score-item">
+            Last Winner: <span id="game-last-winner"></span>
+        </div>
+        <div class="score-item">
+            Last Error?: <span id="game-last-error"></span>
+        </div>
+        <button id="show-hand1-button">Show hand1 score</button>
+        <button id="hide-hand1-button">Hide hand1 score</button>
+        <button id="hide-show-hand1-button">Hide All</button>
+        <button id="fadein-hand1">Fade IN</button>
+        <button id="fadeout-hand1">Fade OUT</button>
+      </section>
+      <script>
+        $('#fadein-hand1').click(()=>{
+          $('#hand1-score').fadeIn('fast');
+        })
+
+        $('#fadeout-hand1').click(()=>{
+          $('#hand1-score').fadeOut('slow')
+        })
+
+        $('.score-item').hover(function(){
+          $(this).css('color','tomato');
+        },
+        function(){
+          $(this).css('color','black');
+        })
+
+
+
+
+
+
+        const show = (elemId) => {
+          $(`#${elemId}`).animate({opacity: 1, 'margin-left': 0}, 1000, 'linear', () => {
+            console.log("Show has ended")
+          });
+        }
+
+        const hide = (elemId, pistolaArg) => {
+          $(`#${elemId}`).animate({opacity: 0, 'margin-left': '-100px'}, 1000, 'linear', pistolaArg);
+        }
+
+        const noop = () => {};
+
+        const pistola = () => { 
+          hide('hand2-score', noop)
+        };
+        const hideAll = () => {
+          hide('hand1-score', pistola );
+          
+        }
+
+        $('#hide-hand1-button').click(() => hide('hand1-score'));
+        $('#show-hand1-button').click(() => show('hand1-score'));
+        $('#hide-show-hand1-button').click(()=> hideAll());
+
+        // $('#hand1-change-color-button, #hand2-change-color-button').dblclick(function() {
+        //   const hand = $(this).data('hand');
+        //   toggleColor(`${hand}-score`);
+        // })
+      </script>
+  </body>
+</html>
