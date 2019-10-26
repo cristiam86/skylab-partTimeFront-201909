@@ -5,18 +5,22 @@ describe("New RPS logic functions...", function(){
 
     g = new Game();
 
-    test("initialize game", function(){
+    test("Initialize the game object", function(){
         expect(g.gamesPlayed).toBe(0);
     })
 
-    test("should win hand 1", function(){
-        var result = functions.play('paper', 'rock');
-        expect(result).toBe('hand1');
+    test("original score1 should be 0", function(){
+        expect(g.score1).toBe(0);
     })
 
-    test("should win hand 2", function(){
-        var result = functions.play('paper', 'scissors');
-        expect(result).toBe('hand2');
+    test("should win rock", function(){
+        var result = g.play('paper', 'rock');
+        expect(result).toBe('rock');
+    })
+
+    test("should win paper", function(){
+        var result = g.play('rock', 'paper');
+        expect(result).toBe('paper');
     })
 
     test("should be tie", function(){
@@ -25,8 +29,8 @@ describe("New RPS logic functions...", function(){
     })
 
     test("should be hand2", function(){
-        var result = functions.play('scissors', 'rock');
-        expect(result).toBe('hand2');
+        var result = functions.play('scissors', 'paper');
+        expect(result).toBe('scissors');
     })
 })
 

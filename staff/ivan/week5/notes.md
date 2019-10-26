@@ -32,6 +32,12 @@ This allows us to save stuff to the local storage.
 
 Local storage is exclusive to each domain and port.
 
+* specifying route to run a test:
+npm run test js/rps.test.js  (note that in this way i don't run all tests available in the directory)
+
+also, we can define in the package.json a particular test to run, this is even cleaner...
+"test-rps": "jest ./rps/js"
+
 
 
 
