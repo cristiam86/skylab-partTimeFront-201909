@@ -16,3 +16,4 @@
 * Develop a tool to visually inspect and interact with a blockchain following the TDD process.
 * Separate login and ui in different files
 * Try to use ES6 as much as possible
+* [Use this page as reference](https://blockchaindemo.io/)
