@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div id="word-to-guess"></div>
+        <div class="form">
+            <form id="guess-form" method="" action="#">
+                <input id="input-guess" type="text" maxlength="1" id="letter-input"/>
+                <button id="submit-button" type="button">GUESS</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        var word = "LinkedList";
+        var wordToGuess = word.split('');
+        var guessing = wordToGuess.map(function(){return '_'})
+        document.getElementById('word-to-guess').innerHTML = guessing.join(' ');
+
+        document.getElementById('guess-form').addEventListener('submit', checkLetter)
+        // document.getElementById('submit-button').addEventListener('click', submitForm)
+
+        function checkLetter(event){
+            event.preventDefault();
+            var inputLetter = document.getElementById('input-guess').value;
+            console.log(inputLetter);
+            //check if inputLetter exists on wordToGuess
+
+                // replace matching letters with inputLetter
+                // Borrar contenido del input
+                document.getElementById('input-guess').value = "";
+
+            //not matching letter
+            // decrease lives
+            //Check lives > 0
+                //Continue
+                //Muerte
+        }
+
+    </script>
+</body>
+</html>
