@@ -1,0 +1,14 @@
+{
+  "name": "rockpaperscissors",
+  "version": "1.0.0",
+  "description": "game",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "rafel",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}
