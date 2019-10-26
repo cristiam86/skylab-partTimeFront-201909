@@ -6,6 +6,8 @@ describe('RPS GAME LOGIC TEST',function(){
         expect(game.gamesPlayed).toBe(0);
         expect(game.score1).toBe(0);
         expect(game.score2).toBe(0);
+        expect(game.lastPlayWinner).toBe(null);
+        expect(game.lastPlayStatus).toBe(null);
     });
 })
 describe('RPS GAME WINS HAND 1',function(){

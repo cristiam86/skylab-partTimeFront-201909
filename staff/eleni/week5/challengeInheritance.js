@@ -23,7 +23,10 @@ function Student(firstName,lastName,age,gender,interests){
 }
 Student.prototype = Object.create(Person.prototype);
 Student.prototype.constructor=Student;
-
+/*
+Person.prototype.greeting=function(){
+    console.log('Yo, I´m ' + this.firstName);
+}*/
 var s=new Student();
 
 function Teacher(firstName,lastName,age,gender,interests,subject){
