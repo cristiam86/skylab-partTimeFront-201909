@@ -1,52 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <section class="gameStatus">
-        <div class="lineFlex">
-            <div class="title">Partidas Jugadas</div>
-            <div class="result" id="gamesPlayedCounter">0</div>
-        </div>
-        <div class="lineFlex">
-            <div class="title">Puntos Jugador 1</div>
-            <div class="result" id="gamesPlayedCounter">0</div>
-        </div>
-        <div class="lineFlex">
-            <div class="title">Puntos Jugador 2</div>
-            <div class="result" id="gamesPlayedCounter">0</div>
-        </div>
-        <div class="lineFlex">
-            <div class="title">Partidas Empatadas</div>
-            <div class="result" id="gamesPlayedCounter">0</div>
-        </div>
+  <section class="game-status">
+    <div class="score-item">
+      Games played: <span id="games-played-counter"></span>
+    </div>
+    <div class="score-item">
+      Hand 1: <span id="hand1-score"></span>
+    </div>
+    <div class="score-item">
+      Hand 2: <span id="hand2-score"></span>
+    </div>
+    <div class="score-item">
+      Ties: <span id="tie-score"></span>
+    </div>
+    <div class="score-item">
+        Last Winner: <span id="game-last-winner"></span>
+    </div>
+    <div class="score-item">
+        Last Error?: <span id="game-last-error"></span>
+    </div>
+  </section>
+  <section class="game-controls">
+    <section class="player1-controls">
+      <button data-move="rock" class="player1-button">ROCK</button>
+      <button data-move="paper" class="player1-button">PAPER</button>
+      <button data-move="scissors" class="player1-button">SCISSORS</button>
     </section>
-
-    <section class="mano1">
-        <input type="radio" name="hand1" value="rock"> Piedra
-        <input type="radio" name="hand1" value="paper"> Papel
-        <input type="radio" name="hand1" value="scissors"> Tijera
+    <section class="player2-controls">
+      <button data-move="rock" class="player2-button">ROCK</button>
+      <button data-move="paper" class="player2-button">PAPER</button>
+      <button data-move="scissors" class="player2-button">SCISSORS</button>
     </section>
-
-    <section class="mano2">
-        <input type="radio" name="hand2" value="rock"> Piedra
-        <input type="radio" name="hand2" value="paper"> Papel
-        <input type="radio" name="hand2" value="scissors"> Tijera
-    </section>
-
-    <section class="juego">
-        <div>Un, dos, tres, piedra, papel, tijeras, un, dos, tres</div>
-        <button type="button" class="yaButton" id='yaButton'>YA</button>
-    </section>
-
-    <script src="./rockPaperScissorsUI.js"></script>
+  </section>
+  <script src="./rockPaperScissorsLogic.js"></script>
+  <script src="./rockpaperScissorsUI.js"></script>
 </body>
-
 </html>

@@ -1,68 +1,94 @@
+function getFromLocalStorage() {
+  const localStr = window.localStorage;
+  const LOCAL_STORAGE_KEY = 'sessionInit';
+  const data = localStr.getItem(LOCAL_STORAGE_KEY);
+  return JSON.parse(data)
+}
+
+function setFromLocalStorage(state) {
+  const localStr = window.localStorage;
+  const LOCAL_STORAGE_KEY = 'sessionInit';
+  localStr.setItem(LOCAL_STORAGE_KEY, JSON.stringify(state));
+  return state
+}
+
+function checkPreviousGame(state) {
+  const currentData = getFromLocalStorage()
+  return currentData ? currentData : setFromLocalStorage(state)
+}
+
+
 function initGame() {
-    return {
-        gamesPlayed: 0,
-        score1: 0,
-        score2: 0
-    }
+  const sessionInit = {
+    gamesPlayed: 0,
+    score1: 0,
+    score2: 0,
+    lastPlayWinner: null,
+    lastPlayError: false
+  }
+
+  return checkPreviousGame(sessionInit)
 }
 
-function play(hand1, hand2) {
-    var posiblesVal = ['rock','paper','scissors'];
-    
-    var incluye1 = posiblesVal.includes(hand1);
-    var incluye2 = posiblesVal.includes(hand2);
+const WINS = {paper: 'rock',scissors: 'paper',rock: 'scissors'};
 
-    if(!incluye1){
-        return 'introduce un valor valido';
-    }
-    if(!incluye2){
-        return 'introduce un valor valido';
-    }
+const PLAYS = ['rock', 'paper', 'scissors'];
 
-    switch (hand1) {
-        case 'rock':
-            switch (hand2) {
-                case 'rock':
-                    return 'ninguno';
-                    break;
-                case 'paper':
-                    return 'hand2';
-                    break;
-                case 'scissors':
-                    return 'hand1';
-                    break;
-            }
-            break;
-        case 'paper':
-            switch (hand2) {
-                case 'rock':
-                    return 'hand1';
-                    break;
-                case 'paper':
-                    return 'ninguno';
-                    break;
-                case 'scissors':
-                    return 'hand2';
-                    break;
-            }
-            break;
-        case 'scissors':
-            switch (hand2) {
-                case 'rock':
-                    return 'hand2';
-                    break;
-                case 'paper':
-                    return 'hand1';
-                    break;
-                case 'scissors':
-                    return 'ninguno';
-                    break;
-            }
-            break;
-    }
+function areValidHands(hand1, hand2) {
+  return (!PLAYS.includes(hand1) || !PLAYS.includes(hand2)) ? false : true;
 }
 
-module.exports = {
-    initGame,
-    play
+function checkPlay(hand1, hand2) {
+  return (WINS[hand1] === hand2) ? 'hand1' : (WINS[hand2] === hand1) ? 'hand2' : 'tie';
 }
+
+function play(hand1, hand2, gameState) {
+
+  const currentData = getFromLocalStorage();
+
+  if (!areValidHands(hand1, hand2)) {
+    const result = {
+      ...currentData,
+      gamesPlayed: gameState.gamesPlayed + 1,
+      lastPlayWinner: null,
+      lastPlayError: true
+    }
+    return setFromLocalStorage(result)
+  }
+
+  const winner = checkPlay(hand1, hand2);
+  if (winner === 'tie') {
+    const result = {
+      ...currentData,
+      gamesPlayed: gameState.gamesPlayed + 1,
+      lastPlayWinner: 'tie',
+      lastPlayError: false
+    }
+    return setFromLocalStorage(result)
+  } else if (winner === 'hand1') {
+    const result = {
+      ...currentData,
+      gamesPlayed: gameState.gamesPlayed + 1,
+      score1: gameState.score1 + 1,
+      lastPlayWinner: 'hand1',
+      lastPlayError: false
+    }
+    return setFromLocalStorage(result)
+  } else {
+    const result = {
+      ...currentData,
+      gamesPlayed: gameState.gamesPlayed + 1,
+      score2: gameState.score2 + 1,
+      lastPlayWinner: 'hand2',
+      lastPlayError: false
+    }
+    return setFromLocalStorage(result)
+  }
+}
+
+
+const gameLogic = {
+  initGame,
+  play
+};
+// module.exports = gameLogic;
