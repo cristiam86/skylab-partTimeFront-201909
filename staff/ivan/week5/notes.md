@@ -22,6 +22,17 @@ Ahora vamos a escribir strings... concatenar:: `hello, ${variable} how are you`
 #Questions
 * debo tener los modulos de node en todos y cada uno de los proyectos que armo?
 
+#local storage
+JSON.stringfy(), if we want to save an object, for example, into the local storage...
+JSON.parse() does the opposite
+
+localStorage.setItem("name","Ivan")
+
+This allows us to save stuff to the local storage. 
+
+Local storage is exclusive to each domain and port.
+
+
 
 
 

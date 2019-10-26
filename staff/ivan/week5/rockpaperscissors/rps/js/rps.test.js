@@ -1,4 +1,4 @@
-var functions = require("./rockpaperscissorLogic");
+var functions = require("./rpsLogic");
 
 //each describe is a suite of tests... 
 describe("RPS game logic", function(){
