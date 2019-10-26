@@ -1,10 +1,6 @@
 .DS_Store
 .vscode
-<<<<<<< HEAD
-node_modules
-=======
 node_modules
 coverage
 
 
->>>>>>> de5031f7049a393ea95b027163ed5132e4c406b2
