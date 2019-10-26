@@ -2,9 +2,9 @@
 var hand = ['paper', 'scissors', 'rock'];
 var hand1 = hand[getRandomArbitrary(hand.length)];
 var hand2 = hand[getRandomArbitrary(hand.length)];
-var gamesPlayed = 0;
 var score1 = 0;
 var score2 = 0;
+var gamesPlayed = 0
 console.log(hand1);
 console.log(hand2);
 
@@ -12,6 +12,16 @@ console.log(hand2);
 initGame();
 function initGame (){
     play(hand1, hand2);
+    games(gamesPlayed);
+    return {
+        gamesPlayed: 0,
+        score1: 0,
+        score2: 0
+    }
+}
+
+function games(gamesPlayed) {
+    return gamesPlayed += 1;
 }
 
 function play (hand1, hand2){
@@ -43,6 +53,7 @@ function play (hand1, hand2){
         score2 += 1;
         return 'hand2';
     } 
+    gamesPlayed += 1;
 }
 
 

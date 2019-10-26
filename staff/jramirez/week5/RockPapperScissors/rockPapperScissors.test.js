@@ -1,4 +1,4 @@
-var rockPapperScissors = require('./rockPapperScissors.js');
+var rockPapperScissors = require('./rockPapperScissorsLogic.js');
 
 describe('RPS GAME LOGIC TEST', function() {
     
