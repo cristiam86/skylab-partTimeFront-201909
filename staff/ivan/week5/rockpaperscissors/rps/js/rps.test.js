@@ -1,12 +1,12 @@
 var functions = require("./rpsLogic");
 
 //each describe is a suite of tests... 
-describe("RPS game logic", function(){
+describe("New RPS logic functions...", function(){
+
+    g = new Game();
+
     test("initialize game", function(){
-        var game = functions.initGame();
-        expect(game.gamesPlayed).toBe(0);
-        expect(game.score1).toBe(0);
-        expect(game.score2).toBe(0); 
+        expect(g.gamesPlayed).toBe(0);
     })
 
     test("should win hand 1", function(){
@@ -22,6 +22,11 @@ describe("RPS game logic", function(){
     test("should be tie", function(){
         var result = functions.play('paper', 'paper');
         expect(result).toBe('tie');
+    })
+
+    test("should be hand2", function(){
+        var result = functions.play('scissors', 'rock');
+        expect(result).toBe('hand2');
     })
 })
 
