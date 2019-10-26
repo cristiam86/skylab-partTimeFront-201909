@@ -1,5 +1,4 @@
 .DS_Store
 .vscode
-node_module
-.gitignore
-node_modules/
+node_modules
+coverage
