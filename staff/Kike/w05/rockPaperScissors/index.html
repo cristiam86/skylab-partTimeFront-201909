@@ -12,29 +12,38 @@
 <body>
     <section class="gameStatus">
         <div class="lineFlex">
-            <div class="title"></div>
+            <div class="title">Partidas Jugadas</div>
             <div class="result" id="gamesPlayedCounter">0</div>
         </div>
         <div class="lineFlex">
-            <div class="title"></div>
+            <div class="title">Puntos Jugador 1</div>
             <div class="result" id="gamesPlayedCounter">0</div>
         </div>
         <div class="lineFlex">
-            <div class="title"></div>
+            <div class="title">Puntos Jugador 2</div>
             <div class="result" id="gamesPlayedCounter">0</div>
         </div>
         <div class="lineFlex">
-            <div class="title"></div>
+            <div class="title">Partidas Empatadas</div>
             <div class="result" id="gamesPlayedCounter">0</div>
         </div>
-        <div class="lineFlex">
-            <div class="title"></div>
-            <div class="result" id="gamesPlayedCounter">0</div>
-        </div>
-        <div class="lineFlex">
-            <div class="title"></div>
-            <div class="result" id="gamesPlayedCounter">0</div>
-        </div>
+    </section>
+
+    <section class="mano1">
+        <input type="radio" name="hand1" value="rock"> Piedra
+        <input type="radio" name="hand1" value="paper"> Papel
+        <input type="radio" name="hand1" value="scissors"> Tijera
+    </section>
+
+    <section class="mano2">
+        <input type="radio" name="hand2" value="rock"> Piedra
+        <input type="radio" name="hand2" value="paper"> Papel
+        <input type="radio" name="hand2" value="scissors"> Tijera
+    </section>
+
+    <section class="juego">
+        <div>Un, dos, tres, piedra, papel, tijeras, un, dos, tres</div>
+        <button type="button" class="yaButton" id='yaButton'>YA</button>
     </section>
 
     <script src="./rockPaperScissorsUI.js"></script>
