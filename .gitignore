@@ -2,3 +2,4 @@
 .vscode
 node_module
 .gitignore
+node_modules/
