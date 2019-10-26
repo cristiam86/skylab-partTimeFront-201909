@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#header_toggle {
+  display: none;
+}
+
+#header_toggle:checked + label + header {
+  left: 0%;
+}
+
+#header_toggle:checked + label > #header_overlay {
+  height: 100vh;
+  z-index: 2;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+
+#header_overlay {
+  width: 100%;
+  height: 0vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
+  background-color: #404040;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+
+header {
+  width: 90%;
+  border-right: 3px solid #ffff80;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  z-index: 3;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  background-color: white;
+}
+
+.header_identity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.header_identity .header_identity_img img {
+  width: 5rem;
+  border-radius: 50%;
+  border: solid #404040 2px;
+  margin-bottom: 0.5rem;
+}
+
+.header_identity .header_identity_name {
+  padding-bottom: 0.3rem;
+}
+
+.header_identity .header_identity_name p {
+  color: #404040;
+}
+
+.header_identity .header_identity_counts {
+  padding-top: 0.2rem;
+  padding-bottom: 0.3rem;
+}
+
+hr.header_division {
+  size: 1px;
+}
+
+.header_options, .header_settings {
+  padding-left: 1rem;
+  padding-bottom: 0.3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.header_options ul li, .header_settings ul li {
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+}
+
+main {
+  background-color: lightblue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+main .micro_header label > img {
+  width: 3rem;
+  border-radius: 50%;
+  padding-top: 0.3rem;
+  padding-left: 0.3rem;
+}
+/*# sourceMappingURL=style.css.map */

@@ -16,16 +16,49 @@ removeRepeatCharsSimple("aabbcc");
 removeRepeatCharsSimple("cccddffdfffdcccdcvv");
 
 //option with recursion
-final = ''
-var removeRepeatChars = function(string){
-    current = string[0]; //first letter on string
-    sub = string.substr(1,string.length) //rest of the string.
-    final += current;
-    if(sub.indexOf(current)>0){
-        sub.replace(/current/g,"");
+function removeAllRepeatChars(chars){
+    final=''; //how can we handle this?
+    var removeRepeatChars = function(string){
+        current = string[0]; //first letter on string
+    
+        sub = string.substr(1,string.length) //rest of the string.
+    
+        if(!sub.length){ //we need some sort of break so that recursion can stop
+            console.log(final);
+            return final;
+        }
+    
+        final += current;
+    
+        var regex = new RegExp(current,"g");
+        var clean = sub.replace(regex,"");//removes the repeated letters
+    
+        removeRepeatChars(clean);
     }
-    removeRepeatChars(sub)
-    console.log(sub)
+    removeRepeatChars(chars)
+    console.log(final);
 }
 
-removeRepeatChars("xxxaabbcc");
+removeAllRepeatChars("1112223333333444455555555556666");
+removeAllRepeatChars("aaabbbbccddfgyyuuuuuuu");
+
+
+
+
+
+
+
+//how to use regular expression constructors for replace...
+var x = 'z'
+var regex = new RegExp(x,"g");
+console.log(regex)
+console.log("pizzzzza".replace(/z/g,""));
+console.log("pizzzzza".replace(/z/g,""));
+
+function factorial(n) {
+    if (n<=1) return 1;
+    return n* factorial(n-1);
+ }
+
+ console.log(4*3*2*1);
+ console.log(factorial(4));
