@@ -11,10 +11,10 @@ const updateResults = (obj, hand1, hand2, userWins=0) => {
     get("score2").innerHTML = obj.score2; 
     get("userWins").innerHTML = parseInt(get("userWins").innerHTML)+userWins;
     //statistics with frequencies...
-    get("freqRock").innerHTML = `${obj.frequency["rock"]} times won. ${((obj.frequency["rock"]/obj.gamesPlayed)*100).toFixed(2)}% ocurrence`;
-    get("freqPaper").innerHTML = `${obj.frequency["paper"]} times won. ${((obj.frequency["paper"]/obj.gamesPlayed)*100).toFixed(2)}% ocurrence`;
-    get("freqScissors").innerHTML = `${obj.frequency["scissors"]} times won. ${((obj.frequency["scissors"]/obj.gamesPlayed)*100).toFixed(2)}% ocurrence`
-    get("freqTie").innerHTML = `${obj.frequency["tie"]} results. ${((obj.frequency["tie"]/obj.gamesPlayed)*100).toFixed(2)}% ocurrence`
+    get("freqRock").innerHTML = `${obj.frequency["rock"]} times won. ${((obj.frequency["rock"]/obj.gamesPlayed)*100).toFixed(2)}%`;
+    get("freqPaper").innerHTML = `${obj.frequency["paper"]} times won. ${((obj.frequency["paper"]/obj.gamesPlayed)*100).toFixed(2)}%`;
+    get("freqScissors").innerHTML = `${obj.frequency["scissors"]} times won. ${((obj.frequency["scissors"]/obj.gamesPlayed)*100).toFixed(2)}%`
+    get("freqTie").innerHTML = `${obj.frequency["tie"]} results. ${((obj.frequency["tie"]/obj.gamesPlayed)*100).toFixed(2)}%`
     //change images and text of the results...
     get("hand1play").innerHTML = hand1;
     get("hand2play").innerHTML = hand2;
