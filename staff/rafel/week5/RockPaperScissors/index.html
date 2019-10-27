@@ -5,21 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Rock Paper Scissors</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./RockPaperScissorsLogic.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     
 </head>
 <body>
-    <section>
-        <div id = 'gamesPlayed'>GAMES PLAYED</div>
-        <div id = 'score1'>SCORE 1</div>
-        <div id = 'score2'>SCORE2</div>
-        <button id = 'rock'>ROCK</button>
-        <button id = 'paper'>PAPER</button>
-        <button id = 'scissors'>SCISSORS</button>
+    <section class="game-status">
+        <div class="score-item">GAMES PLAYED : 
+            <div id = "gamesPlayed">0</div>
+        </div>
+        <div class="score-item">SCORE 1 :
+            <div id = "score1">0</div>
+        </div>
+        <div  class="score-item">SCORE2 : 
+            <div id = "score2">0</div>
+        </div>
+        <div class="score-item">TIE :
+            <div id = "tie">0</div>
+        </div>
+        <div class = hand1>HAND1
+            <button data-move="rock" class="player1-button">ROCK</button>
+            <button data-move="paper" class="player1-button">PAPER</button>
+            <button data-move="scissors" class="player1-button">SCISSORS</button>
+        </div>
+        <div class = hand2>HAND2
+            <button data-move="rock" class="player2-button">ROCK</button>
+            <button data-move="paper" class="player2-button">PAPER</button>
+            <button data-move="scissors" class="player2-button">SCISSORS</button>
+        </div>
+
 
     </section>
-<script src="./RockPaperScissorsLogic.js"></script>
-<script src="./RockPaperScissorsLogicUI.js"></script>
+
+<script src="./RockPaperScissorsUI.js"></script>
 
 </body>
 </html>

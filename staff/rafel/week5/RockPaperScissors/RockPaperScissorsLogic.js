@@ -1,16 +1,15 @@
 function initGame() {
-    return game = {
+    return {
         gamesPlayed: 0,
         score1: 0,
         score2: 0,
-        tie: function(gamesPlayed, score1,score2){
-            return tie = gamesPlayed - score1 - score2
-        } 
-
+        tie: 0
     }
 }
+// I need to checking the errr, but I think is not necessary because of de button
+// var PLAYS = ['rock', 'paper', 'scissors'];
 
-function play(hand1, hand2){
+function play(hand1, hand2, gameState){
 
     //comprovar si les dues mans son correctes
 
@@ -23,25 +22,38 @@ function play(hand1, hand2){
 
     
     if (winFirstHandOpt1|| winFirstHandOpt2 || winFirstHandOpt3){
-        //score2 +1
-        //gamesPlayed +1
-        return 'hand2'        
+        return {
+            gamesPlayed: gamesState.gamesPlayed +1,
+            score1: gamesState.score1,
+            score2: gamesState.score2 +1,
+            tie: gameState.tie
+        } 
     } 
 
     if (winSecondHandOpt1 || winSecondHandOpt2 || winSecondHandOpt3){
-        //score1 +1
-        //gamesPlayed +1
-        return 'hand1'
+        return {
+            gamesPlayed: gamesState.gamesPlayed +1,
+            score1: gamesState.score1 +1,
+            score2: gamesState.score2, 
+            tie: gameState.tie
+        } 
     } 
 
     if (hand1 === hand2){
-        //gamesPlayed +1
-        return 'tie'
+        return {
+            gamesPlayed: gamesState.gamesPlayed +1,
+            score1: gamesState.score1,
+            score2: gamesState.score2, 
+            tie: gameState.tie +1
+        } 
     }
 }
 
-//every turn push up 1 gamesPlayed
-//increse score for each hand
+const gameLogic = {
+    initGame,
+    play
+  };
+
 //cada button hauria de fer el setdata quan es premi el button
 
 
