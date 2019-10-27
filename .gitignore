@@ -1,3 +1,10 @@
 .DS_Store
 .vscode
+<<<<<<< HEAD
 node_modules
+=======
+node_modules
+coverage
+
+
+>>>>>>> develop
