@@ -17,7 +17,10 @@
         </div>
     </div>
     <script>
-      var word = "skylabcoders";
+      const hangmanWords = ['Marcelo', 'Modric', 'Courtois', 'Hazard', 'Benzema', 'Casemiro', 'Varane', 'Carvajal', 'Vinicius']
+
+      let wordRandom = Math.floor(Math.random() * (9 - 0)) + 0;
+      let word = hangmanWords[wordRandom]
       var wordToGuess = word.split('');
       var guessing = wordToGuess.map(function(){return '_'})
       document.getElementById('word-to-guess').innerHTML = guessing.join(' ');

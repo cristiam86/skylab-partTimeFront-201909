@@ -3,21 +3,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="hangmanUI.js">
     </script>
     <title>Document</title>
 </head>
 <body>
         <div>
             <div><h2 id="bienvenida-mensaje"></h2></div>
+            <div><h3 id="show-lives"></h3></div>
+            <div><h3>Hint: Jugadores del Real Madrid</h3></div>
             <div id="word-to-guess"></div>
             <div class="form">
                 <form id="guess-form" method="" action="#">
                     <input id="input-guess" type="text" maxlength="1" id="letter-input"/>
-                    <button id="submit-button" type="button">GUESS</button>
+                    <button id="submit-button" type="button">RESET</button>
                 </form>
             </div>
         </div>
+
+        <script>
+
+            document.getElementById('guess-form').addEventListener('click', startHangman);
+            
+            function startHangman(){
+                const hangmanWords = ['marcelo', 'modric', 'courtois', 'hazard', 'benzema', 'casemiro', 'varane', 'carvajal', 'vinicius']
+                let wordRandom = Math.floor(Math.random() * (9 - 0)) + 0;
+                let word = hangmanWords[wordRandom]
+                document.getElementById('input-guess').value = "";
+                return word;
+            }
+
+            let wordToGuess = startHangman().split('');
+            let guessing = wordToGuess.map(function(){return '_'});
+            
+            let lives = startHangman().length -2;
+            let bienvenida = 'Bienvenido a HANGMAN!!';
+            console.log('wordToGuess: '+wordToGuess);
+            console.log('guessing: '+guessing);
+
+            document.getElementById('bienvenida-mensaje').innerHTML = bienvenida;
+            document.getElementById('word-to-guess').innerHTML = guessing.join(' ');
+            document.getElementById('guess-form').addEventListener('submit', checkLetter);
+
+            function checkLetter(event){
+                event.preventDefault();
+                let inputLetter = document.getElementById('input-guess').value;
+                if(lives > 0){
+ 
+                        if(wordToGuess.includes(inputLetter)){
+                            document.getElementById('show-lives').innerHTML = 'Vidas: '+lives;
+                            console.log("Ha elegido la letra: ",inputLetter);
+                            console.log("Tiene: "+lives+" vidas.");
+                            for(var x = 0; x < wordToGuess.length; x++){
+                                if(inputLetter == wordToGuess[x]){
+                                    for(var y = 0; y < wordToGuess.length; y++){
+                                    guessing[x] = inputLetter;
+                                    // Borrar contenido del input
+                                    document.getElementById('input-guess').value = "";
+                                    }
+                                }
+                            }
+                        } else {
+                            lives--;
+                            console.log("Ha elegido la letra: ",inputLetter);
+                            document.getElementById('show-lives').innerHTML = 'Vidas: '+lives;
+                            console.log("Tiene: ",lives);
+                            // Borrar contenido del input
+                            document.getElementById('input-guess').value = "";
+                        }
+                   
+                    } else {
+                        alert ('No te quedan vidas!! Mongolo!!');
+                    }
+
+                    
+                document.getElementById('word-to-guess').innerHTML = guessing.join(' ');
+                if(!guessing.includes('_')){
+                    return alert ('Hangman conseguido!!!');
+                }
+                
+            }
+
+        </script>
     
 </body>
 </html>
