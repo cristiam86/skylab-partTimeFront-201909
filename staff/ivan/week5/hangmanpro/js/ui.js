@@ -17,6 +17,7 @@ const updateFromObject = (obj) => {
 //Execution
 
 var game = new Hangman();
+//console.log(game);
 get("word_to_guess").innerHTML = game.placeholder.split("").join(" ");
 get("hint").innerHTML = `Hint: ${game.word[1]}`
 
@@ -24,8 +25,7 @@ get("hint").innerHTML = `Hint: ${game.word[1]}`
 get('guess_form').addEventListener('submit',()=>{
     game.processInput(get("input_guess").value); //this will run the function and modifies the object state
     updateFromObject(game);
-
-    console.log(game)
+    //console.log(game);
 });
 
 get("reset_button").addEventListener('click',()=>{
@@ -42,4 +42,6 @@ get("reset_button").addEventListener('click',()=>{
     get("hangman_img").src="images/7.png";
     get("submit_button").disabled = false;
     get("input_guess").value = '';
+    get("hint").innerHTML = `Hint: ${game.word[1]}`
+    //console.log(game)
 });
