@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" url="styles.css">
+    <script src="./rockPaperScissorsLogic.js"></script>
+</head>
+
+<body>
+    <section class="game-status">
+        <div class="score-item">
+            Games played: <span id="games-played-counter"></span>
+        </div>
+        <div class="score-item">
+            Hand 1: <span id="hand1-score"></span>
+        </div>
+        <div class="score-item">
+            Hand 2: <span id="hand2-score"></span>
+        </div>
+        <div class="score-item">
+            Ties: <span id="tie-score"></span>
+        </div>
+        <div class="score-item">
+            Last Winner: <span id="game-last-winner"></span>
+        </div>
+        <div class="score-item">
+            Last Error?: <span id="game-last-error"></span>
+        </div>
+    </section>
+    <section class="game-controls">
+        <section class="player1-controls">
+            <button data-move="rock" class="player1-button">ROCK</button>
+            <button data-move="paper" class="player1-button">PAPER</button>
+            <button data-move="scissors" class="player1-button">SCISSORS</button>
+        </section>
+        <section class="player2-controls">
+            <button data-move="rock" class="player2-button">ROCK</button>
+            <button data-move="paper" class="player2-button">PAPER</button>
+            <button data-move="scissors" class="player2-button">SCISSORS</button>
+        </section>
+    </section>
+    <script src="./rockpaperScissorsUI.js"></script>
+</body>
+
+</html>

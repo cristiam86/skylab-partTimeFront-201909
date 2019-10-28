@@ -38,3 +38,6 @@ c.move(1, 2)
 const s = new Shape("circle", 5, 9);
 console.log(s.getPosition());
 s.move(1, 2)
+
+
+localStorage.
