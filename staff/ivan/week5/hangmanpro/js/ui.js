@@ -4,18 +4,42 @@ const get = (id) => {
     return elem;
 }
 
-//executions
+const updateFromObject = (obj) => {
+    get("status").innerHTML = obj.message;
+    get("word_to_guess").innerHTML = obj.placeholder.split("").join(" ");
+    get("hangman_img").src = `images/${obj.attempts}.png`;
+    if(obj.isFinished){
+        get("submit_button").disabled = true;
+    }
+    get("input_guess").value = '';
+}
+
+//Execution
 
 var game = new Hangman();
+get("word_to_guess").innerHTML = game.placeholder.split("").join(" ");
+get("hint").innerHTML = `Hint: ${game.word[1]}`
 
 //on player submitting a letter, do this...
 get('guess_form').addEventListener('submit',()=>{
-    let char = get("input_guess").value;
-    let message = game.processInput(char);
-    if(message){
-        get('status').innerHTML=message;
-    } else{
-        get('status').innerHTML="Match!";
-    }
-    console.log(game);
+    game.processInput(get("input_guess").value); //this will run the function and modifies the object state
+    updateFromObject(game);
+
+    console.log(game)
+});
+
+get("reset_button").addEventListener('click',()=>{
+    //reset object.
+    game.word = randomWord(words);
+    game.placeholder = buildPlaceholder(game.word[0]);
+    game.attempts = 7;
+    game.usedLetters = [];
+    game.message = 'Status displays here.';
+    game.isFinished = false;
+    //reset the screen.
+    get("status").innerHTML=game.message;
+    get("word_to_guess").innerHTML = game.placeholder.split("").join(" ");
+    get("hangman_img").src="images/7.png";
+    get("submit_button").disabled = false;
+    get("input_guess").value = '';
 });
