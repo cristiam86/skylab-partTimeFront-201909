@@ -2,11 +2,11 @@
 function initGame() {
     return {
       //gamesPlayed: 0,
-      gamesNumber: 0,
+      gamesCounter: 0,
       //score1: 0,
-      ResultA: 0,
+      resultA: 0,
       //score2: 0,
-      ResultB: 0,
+      resultB: 0,
       //lastPlayWinner: null,
       playerWin: null,
     }
@@ -25,66 +25,43 @@ function initGame() {
   var JUGADAS = ['paper', 'rock', 'scissors'];
 
 
-  // validador de jugadores
-  /*function areValidHands(hand1, hand2) {
-    if(!PLAYS.includes(hand1) || !PLAYS.includes(hand2)) {
-      return false;
-    }
-    return true;
-  } */
-
-
-// FUNCIÓN VALIDADORA
- function validadorJugadores(hand1, hand2) {
-        if(JUGADAS.includes(hand1) || JUGADAS.includes(hand2)) {
-        return true;
-        }
-        return false;
-    } 
 
   
   function checkPlay(playerA, playerB) {
-    // si la gugada ganadora sobre playerA es igual a player b = retorna PLayerA como ganador
+    // si cualquiera de las jugadas ganadoras sobre un player es igual al otro.
     if(JUGADASGANADORAS[playerA] === playerB) return 'playerA';
     else if(JUGADASGANADORAS[playerB] === playerA) return 'playerB';
-    
+
+    // En caso que no sea así. devuelve un empate
     return 'tie';
   }
   
-  function play(hand1, hand2, gameState) {
-    if (validadorJugadores(hand1, hand2)) {
-      return {
-        gamesPlayed: gameState.gamesPlayed + 1,
-        score1: gameState.score1,
-        score2: gameState.score2,
-        lastPlayWinner: null,
-        lastPlayError: true
+  // FUNCIÓN DEL JUEGO
+  function play(playerA, playerB, gameState) {
+
+    var ganador = checkPlay(playerA, playerB);
+
+
+    if(ganador === 'tie') {
+      return {  
+        gamesCounter: gameState.gamesCounter + 1,
+        resultA: gameState.resultA,
+        resultB: gameState.resultB,
+        playerWin: 'tie'
       }
-    }
-    var winner = checkPlay(hand1, hand2);
-    if(winner === 'tie') {
+    } else if(ganador === 'playerA') {
       return {
-        gamesPlayed: gameState.gamesPlayed + 1,
-        score1: gameState.score1,
-        score2: gameState.score2,
-        lastPlayWinner: 'tie',
-        lastPlayError: false
-      }
-    } else if(winner === 'hand1') {
-      return {
-        gamesPlayed: gameState.gamesPlayed + 1,
-        score1: gameState.score1 + 1,
-        score2: gameState.score2,
-        lastPlayWinner: 'hand1',
-        lastPlayError: false
+        gamesCounter: gameState.gamesCounter + 1,
+        resultA: gameState.resultA + 1,
+        resultB: gameState.resultB,
+        playerWin: 'playerA'
       }
     } else {
       return {
-        gamesPlayed: gameState.gamesPlayed + 1,
-        score1: gameState.score1,
-        score2: gameState.score2 + 1,
-        lastPlayWinner: 'hand2',
-        lastPlayError: false
+        gamesCounter: gameState.gamesCounter + 1,
+        resultA: gameState.resultA,
+        resultB: gameState.resultB + 1,
+        playerWin: 'playerB'
       }
     }
   }

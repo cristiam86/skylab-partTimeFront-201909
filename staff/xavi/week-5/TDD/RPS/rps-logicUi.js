@@ -1,24 +1,108 @@
 
 
-
-
-
-/*var gameLogic = require('./rps-logic');
-
-
-var gameState = gameLogic.initGame();
-$_id('game-played-counter').innnerHTML = gameState.gamesPlayed
-
-
-function $_id(id){
-    return document.getElementById(id)
-}
-*/
-
-// init game
 (function(){
 
+    // Animtaion: 
+    $( "#openGame" ).click(function() {
+        $( "#playGameFI" ).fadeIn( 2000, function() {
 
-    var gameStatus = logicGame.initGame()
+        });
+        $( "#hideTitle" ).fadeOut( 1000, function(){
+            
+        })
+    });
+      
+    $( "#closeGame" ).click(function() {
+        $( "#playGameFI" ).fadeOut( 1000, function() {
+           
+        });
+        $( "#hideTitle" ).fadeIn( 1000, function(){
+            
+        })
+    });
 
-})
+
+    
+
+    var gameState = gameLogic.initGame();
+    var gameUiState = initUiState();
+  
+    function resetUiHands() {
+      gameUiState = initUiState();
+    }
+  
+    function setGameUiStatus(gameLogicState) {
+      //
+      $_id('games-played-counter').innerHTML = gameLogicState.gamesCounter;
+      $_id('hand1-score').innerHTML = gameLogicState.resultA;
+      $_id('hand2-score').innerHTML = gameLogicState.resultB;
+      $_id('tie-score').innerHTML = getTieScore(gameLogicState);
+      $_id('game-last-winner').innerHTML = getWinnerAsString(gameLogicState.lastPlayWinner);
+      $_id('game-last-error').innerHTML = getErrorAsString(gameLogicState.lastPlayError);
+
+      // recompnesa:
+      $_id('recompensa').innerHTML = gameLogicState.resultA;
+    }
+  
+    Array.from($_class('player1-button')).forEach(function(button){
+      button.addEventListener('click', function() {
+        gameUiState.hand1 = this.dataset.move;
+        checkGameResult(gameUiState);
+      })
+    })
+  
+    Array.from($_class('player2-button')).forEach(function(button){
+      button.addEventListener('click', function() {
+        gameUiState.hand2 = this.dataset.move;
+        checkGameResult(gameUiState);
+      })
+    })
+  
+    function checkGameResult(uiState) {
+      if (uiState.hand1 && uiState.hand2) {
+        gameState = gameLogic.play(uiState.hand1, uiState.hand2, gameState);
+        setGameUiStatus(gameState);
+        resetUiHands();
+      }
+    }
+  
+    function initUiState() {
+      return {
+        hand1: null,
+        hand2: null
+      } 
+    }
+  
+    function $_id(id){
+      return document.getElementById(id);
+    }
+  
+    function $_class(className){
+      return document.getElementsByClassName(className);
+    }
+  
+    function getWinnerAsString(winner) {
+      if (winner === 'hand1') return 'HAND 1';
+      else if (winner === 'hand2') return 'HAND 2';
+      else return 'NONE';
+    }
+  
+    function getErrorAsString(error) {
+      return error ? 'ERROR' : 'NO ERROR';
+    }
+  
+    function getTieScore(gameLogicState) {
+      return gameLogicState.gamesCounter - (gameLogicState.resultA + gameLogicState.resultB);
+    }
+
+
+    function getRecompensa(){
+        if(winner === 'hand 1'){
+            console.log('sasasa')
+        }
+    }
+
+
+  
+    setGameUiStatus(gameState);
+  })();

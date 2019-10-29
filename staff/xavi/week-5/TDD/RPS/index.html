@@ -1,48 +1,62 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>RPS</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="./rps-logic.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Rock Paper Scissors</title>
+  <script src="./rps-logic.js"></script>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700&display=swap" rel="stylesheet">
 </head>
-<body style="max-width: 500px; margin: auto;">
+<body>
+
+<div>
+    <div id="openGame" class="initGame">
+    <p id="hideTitle" class="text-init">Init Game</p>
+    </div>
+</div>
+        
+              
+<div id="playGameFI">
     <section class="game-status">
-        <div class="score-item">
-            Games played: <span id="games-played-counter"></span>
-        </div>
-        <div class="score-item">
-            Player A: <span id="hand1-score"></span>
-        </div>
-        <div class="score-item">
-            Player B: <span id="hand2-score"></span>
-        </div>
-        <div class="score-item">
-            Ties: <span id="tie-score"></span>
-        </div>
-        <div class="score-item">
-            Last Winner: <span id="game-last-winner"></span>
-        </div>
-        <div class="score-item">
-            Last Error?: <span id="game-last-error"></span>
-        </div>
+    <div class="score-item">
+        Counter: <span id="games-played-counter"></span>
+    </div>
+    <div class="score-item">
+        Player 1: <span id="hand1-score"></span>
+    </div>
+    <div class="score-item">
+        Player 2: <span id="hand2-score"></span>
+    </div>
+    <div class="score-item">
+        Ties: <span id="tie-score"></span>
+    </div>
+    <div class="score-item">
+        Winner: <span id="game-last-winner"></span>
+    </div class="score-item">
+        recompensa<p id="recompensa"></p>
     </section>
-    <hr>
-    <section>
-        <div class="player 1">
-            <p>Player 1</p>
-            <button data-move="rock" class="player1-button" type="button">Rock</button>
-            <button data-move="paper" class="player1-button" type="button">Paper</button>
-            <button data-move="scissors" class="player1-button" type="button">Scissors</button>
-        </div>
-        <div class="player 2">
-            <p>player 2</p>
-            <button data-move="rock" class="player2-button" type="button">Rock</button>
-            <button data-move="paper" class="player2-button" type="button">Paper</button>
-            <button data-move="scissors" class="player2-button" type="button">Scissors</button>
-        </div>
+    <section class="game-controls">
+    <section class="player1-controls">
+        <p>Jugador A</p>
+        <button type="button"  data-move="rock" class="player1-button">ROCK</button>
+        <button data-move="paper" class="player1-button">PAPER</button>
+        <button data-move="scissors" class="player1-button">SCISSORS</button>
     </section>
-    <script src="./rps-logicUi.js"></script>
+    <section class="player2-controls">
+        <p>Jugador B</p>
+        <button data-move="rock" class="player2-button">ROCK</button>
+        <button data-move="paper" class="player2-button">PAPER</button>
+        <button data-move="scissors" class="player2-button">SCISSORS</button>
+    </section>
+    </section>
+    <div id="closeGame">
+            Fadeout the box
+            </div>
+</div>
+  
+  <script src="./rps-logicUI.js"></script>
 </body>
 </html>

@@ -1,0 +1,61 @@
+body{
+    background: #ffefd7;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+#playGameFI{
+    display: none;
+  }
+
+.initGame{
+    max-width: 300px;
+    margin: auto;
+}
+
+.text-init{
+    background: #9dce3c;
+    width: fit-content;
+    padding: 1em;
+    color: white;
+    border-radius: 5px;
+}
+
+.game-status{
+    max-width: 600px;
+    margin: auto;
+}
+
+.section-players{
+    display: flex;
+}
+
+.player-a{
+    display: flex;
+}
+
+.player1-button{
+    padding: .5em 1em;
+    color: rgb(244, 230, 230);
+    background: rgb(70, 174, 211);
+    border-radius: 5px;
+}
+
+
+.player2-button{
+    padding: .5em 1em;
+    color: rgb(244, 230, 230);
+    background: rgb(180, 70, 211);
+    border-radius: 5px;
+}
+
+
+
+.game-controls{
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10em;
+}
