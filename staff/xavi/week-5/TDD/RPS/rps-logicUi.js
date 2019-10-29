@@ -58,7 +58,7 @@
       $('#show-image2B').on("click", function(){
           $('#viewPaperB').toggle('slow');
           $('#viewRockB').fadeOut( 1000, function(){});
-          $('#viewScissorsA').fadeOut( 1000, function(){})
+          $('#viewScissorsB').fadeOut( 1000, function(){})
           });
       });
   

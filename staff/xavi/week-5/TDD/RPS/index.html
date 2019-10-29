@@ -25,12 +25,6 @@
         Counter: <span id="games-played-counter"></span>
     </div>
     <div class="score-item">
-        Player 1: <span id="hand1-score"></span>
-    </div>
-    <div class="score-item">
-        Player 2: <span id="hand2-score"></span>
-    </div>
-    <div class="score-item">
         Ties: <span id="tie-score"></span>
     </div>
     <div class="score-item">
@@ -40,6 +34,10 @@
     </section>
     <section class="game-controls">
     <section class="player1-controls">
+        <div class="score-item">
+            Jugador A: <span id="hand1-score" class="span-a"></span>
+        </div>
+        <br><br><br>
         <p>Jugador A</p>
             <img id="viewRockA" style="display:none;"  src="./assets/letter-s.svg" width="120px;">
             <img id="viewPaperA" style="display:none;"  src="./assets/letter-c.svg" width="120px;">
@@ -50,6 +48,10 @@
         <button data-move="scissors" id="show-image3"  class="player1-button">SCISSORS</button>
     </section>
     <section class="player2-controls">
+        <div class="score-item">
+            Jugador B: <span id="hand2-score" class="span-b"></span>
+        </div>
+        <br><br><br>
         <p>Jugador B</p>
             <img id="viewRockB" style="display:none;"  src="./assets/letter-s.svg" width="120px;">
             <img id="viewPaperB" style="display:none;"  src="./assets/letter-c.svg" width="120px;">

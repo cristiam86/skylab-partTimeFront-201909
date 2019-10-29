@@ -9,6 +9,7 @@ body{
   }
 
 .initGame{
+    width: fit-content;
     max-width: 300px;
     margin: auto;
 }
@@ -70,4 +71,20 @@ body{
     justify-content: space-between;
     margin-top: 10em;
     margin-bottom: 5em;
+}
+
+.span-a{
+    font-size: 2em;
+    background: #47aed3;
+    padding: .5em .9em;
+    margin-left: 1.2em;
+    border-radius: 50%;
+}
+
+.span-b{
+    font-size: 2em;
+    background: #be6bd5;
+    padding: .5em .9em;
+    margin-left: 1.2em;
+    border-radius: 50%;
 }
