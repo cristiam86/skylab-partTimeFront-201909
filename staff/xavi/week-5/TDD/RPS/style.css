@@ -21,6 +21,17 @@ body{
     border-radius: 5px;
 }
 
+.btn-end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: auto;
+    background: tomato;
+    padding: 1em;
+    border-radius: 5px;
+}
+
 .game-status{
     max-width: 600px;
     margin: auto;
@@ -58,4 +69,5 @@ body{
     flex-direction: row;
     justify-content: space-between;
     margin-top: 10em;
+    margin-bottom: 5em;
 }

@@ -37,8 +37,7 @@
       $_id('hand1-score').innerHTML = gameLogicState.resultA;
       $_id('hand2-score').innerHTML = gameLogicState.resultB;
       $_id('tie-score').innerHTML = getTieScore(gameLogicState);
-      $_id('game-last-winner').innerHTML = getWinnerAsString(gameLogicState.lastPlayWinner);
-      $_id('game-last-error').innerHTML = getErrorAsString(gameLogicState.lastPlayError);
+      $_id('game-last-winner').innerHTML = getWinnerAsString(gameLogicState.playerWin);
 
       // recompnesa:
       $_id('recompensa').innerHTML = gameLogicState.resultA;
@@ -82,9 +81,9 @@
     }
   
     function getWinnerAsString(winner) {
-      if (winner === 'hand1') return 'HAND 1';
-      else if (winner === 'hand2') return 'HAND 2';
-      else return 'NONE';
+      if (winner === 'resultA') return 'HAND 1';
+      else if (winner === 'resultB') return 'HAND 2';
+      else return 'Empate';
     }
   
     function getErrorAsString(error) {

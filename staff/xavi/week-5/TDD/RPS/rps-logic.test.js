@@ -90,7 +90,7 @@ describe('RPS -> Empate', function(){
 })
 
 
-describe('ACCUMULATES GAMES PLAYED', function(){
+describe('RPS ACUMULADO', function(){
   test('should sum 1 game played when error', function() {
     var newGameState = rockPaperScissorsLogic.play('tt', 'paper', gameState);
     expect(newGameState.gamesCounter).toBe(1);

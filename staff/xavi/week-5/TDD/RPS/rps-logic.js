@@ -51,16 +51,16 @@ function initGame() {
       }
     } else if(ganador === 'playerA') {
       return {
-        gamesCounter: gameState.gamesCounter + 1,
-        resultA: gameState.resultA + 1,
+        gamesCounter: gameState.gamesCounter +1,
+        resultA: gameState.resultA +1,
         resultB: gameState.resultB,
         playerWin: 'playerA'
       }
     } else {
       return {
-        gamesCounter: gameState.gamesCounter + 1,
+        gamesCounter: gameState.gamesCounter +1,
         resultA: gameState.resultA,
-        resultB: gameState.resultB + 1,
+        resultB: gameState.resultB +1,
         playerWin: 'playerB'
       }
     }
