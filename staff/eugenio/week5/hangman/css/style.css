@@ -1,0 +1,29 @@
+.resultado-hangman-4{
+    background-image: url('img/hangman4.png');
+    height: 250px;
+    width: 250px;
+}
+
+.resultado-hangman-3{
+    background-image: url('img/hangman3.png');
+    height: 250px;
+    width: 250px;
+}
+
+.resultado-hangman-2{
+    background-image: url('img/hangman2.png');
+    height: 250px;
+    width: 250px;
+}
+
+.resultado-hangman-1{
+    background-image: url('img/hangman1.png');
+    height: 250px;
+    width: 250px;
+}
+
+.resultado-hangman-no-lives{
+    background-image: url('img/hangman.png');
+    height: 250px;
+    width: 250px;
+}
