@@ -21,6 +21,55 @@
         })
     });
 
+    $(document).ready(function(){
+      $('#show-image').on("click", function(){
+        $('#viewRockA').toggle('slow');
+        $('#viewPaperA').fadeOut( 1000, function(){});
+        $('#viewScissorsA').fadeOut( 1000, function(){})
+        });
+    });
+
+    $(document).ready(function(){
+    $('#show-image2').on("click", function(){
+        $('#viewPaperA').toggle('slow');
+        $('#viewRockA').fadeOut( 1000, function(){});
+        $('#viewScissorsA').fadeOut( 1000, function(){})
+        });
+    });
+
+    $(document).ready(function(){
+    $('#show-image3').on("click", function(){
+        $('#viewScissorsA').toggle('slow');
+        $('#viewPaperA').fadeOut( 1000, function(){});
+        $('#viewRockA').fadeOut( 1000, function(){})
+        });
+    });
+
+
+    $(document).ready(function(){
+        $('#show-imageB').on("click", function(){
+          $('#viewRockB').toggle('slow');
+          $('#viewPaperB').fadeOut( 1000, function(){});
+          $('#viewScissorsB').fadeOut( 1000, function(){})
+          });
+      });
+  
+      $(document).ready(function(){
+      $('#show-image2B').on("click", function(){
+          $('#viewPaperB').toggle('slow');
+          $('#viewRockB').fadeOut( 1000, function(){});
+          $('#viewScissorsA').fadeOut( 1000, function(){})
+          });
+      });
+  
+      $(document).ready(function(){
+      $('#show-image3B').on("click", function(){
+          $('#viewScissorsB').toggle('slow');
+          $('#viewPaperB').fadeOut( 1000, function(){});
+          $('#viewRockB').fadeOut( 1000, function(){})
+          });
+      });
+
 
     
 
@@ -38,6 +87,9 @@
       $_id('hand2-score').innerHTML = gameLogicState.resultB;
       $_id('tie-score').innerHTML = getTieScore(gameLogicState);
       $_id('game-last-winner').innerHTML = getWinnerAsString(gameLogicState.playerWin);
+
+      $_id('porcentaje-A').innerHTML = gameLogicState.resultA/gameLogicState.gamesCounter;
+
 
       // recompnesa:
       $_id('recompensa').innerHTML = gameLogicState.resultA;

@@ -36,20 +36,28 @@
     <div class="score-item">
         Winner: <span id="game-last-winner"></span>
     </div class="score-item">
-        recompensa<p id="recompensa"></p>
+        porcentaje vitorias A: <span id="porcentaje-A"></span>
     </section>
     <section class="game-controls">
     <section class="player1-controls">
         <p>Jugador A</p>
-        <button type="button"  data-move="rock" class="player1-button">ROCK</button>
-        <button data-move="paper" class="player1-button">PAPER</button>
-        <button data-move="scissors" class="player1-button">SCISSORS</button>
+            <img id="viewRockA" style="display:none;"  src="./assets/letter-s.svg" width="120px;">
+            <img id="viewPaperA" style="display:none;"  src="./assets/letter-c.svg" width="120px;">
+            <img id="viewScissorsA" style="display:none;"  src="./assets/letter-k.svg" width="120px;">
+            <br>
+        <button type="button" id="show-image"  data-move="rock" class="player1-button">ROCK</button>
+        <button data-move="paper" id="show-image2" class="player1-button">PAPER</button>
+        <button data-move="scissors" id="show-image3"  class="player1-button">SCISSORS</button>
     </section>
     <section class="player2-controls">
         <p>Jugador B</p>
-        <button data-move="rock" class="player2-button">ROCK</button>
-        <button data-move="paper" class="player2-button">PAPER</button>
-        <button data-move="scissors" class="player2-button">SCISSORS</button>
+            <img id="viewRockB" style="display:none;"  src="./assets/letter-s.svg" width="120px;">
+            <img id="viewPaperB" style="display:none;"  src="./assets/letter-c.svg" width="120px;">
+            <img id="viewScissorsB" style="display:none;"  src="./assets/letter-k.svg" width="120px;">
+            <br>
+        <button data-move="rock" id="show-imageB" class="player2-button">ROCK</button>
+        <button data-move="paper" id="show-image2B" class="player2-button">PAPER</button>
+        <button data-move="scissors" id="show-image3B" class="player2-button">SCISSORS</button>
     </section>
     </section>
     <div class="btn-end" id="closeGame">
