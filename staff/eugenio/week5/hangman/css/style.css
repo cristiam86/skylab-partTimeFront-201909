@@ -1,29 +1,33 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .resultado-hangman-4{
-    background-image: url('img/hangman4.png');
+    background-image: url('../img/hangman4.png');
     height: 250px;
     width: 250px;
 }
 
 .resultado-hangman-3{
-    background-image: url('img/hangman3.png');
+    background-image: url('../img/hangman3.png');
     height: 250px;
     width: 250px;
 }
 
 .resultado-hangman-2{
-    background-image: url('img/hangman2.png');
+    background-image: url('../img/hangman3.png');
     height: 250px;
     width: 250px;
 }
 
 .resultado-hangman-1{
-    background-image: url('img/hangman1.png');
+    background-image: url('../img/hangman1.png');
     height: 250px;
     width: 250px;
 }
 
 .resultado-hangman-no-lives{
-    background-image: url('img/hangman.png');
+    background-image: url('../img/hangman.png');
     height: 250px;
     width: 250px;
 }
