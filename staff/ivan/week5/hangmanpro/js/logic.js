@@ -1,3 +1,5 @@
+var c = require("./options");
+
 const buildPlaceholder = (string) => {
     let placeholder = '';
     for(let letter in string){
@@ -47,7 +49,7 @@ const processLetter = (char, string, placeholder)=>{
 class Hangman{
     constructor(){
         //this.score = 0; //starts on 0 by default.
-        this.word = randomWord(words); //0 is the word, 1 is the category
+        this.word = randomWord(c.words); //0 is the word, 1 is the category
         this.placeholder = buildPlaceholder(this.word[0]);
         this.attempts = 7;
         this.usedLetters = [];
@@ -86,3 +88,5 @@ class Hangman{
         this.usedLetters.push(result[0]);//if there is a success, letter is already used.
     }
 }
+
+module.exports = {buildPlaceholder, checkValidInput, processLetter, Hangman}

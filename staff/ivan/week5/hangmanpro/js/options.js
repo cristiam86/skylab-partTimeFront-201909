@@ -28,3 +28,5 @@ const words = [{word:"pizza", category:"Type of Food"},
 {word:"crocodile", category:"Animals or insects"},
 {word:"sushi", category:"Type of Food"},
 {word:"scotland", category:"Countries"}]
+
+module.exports = {words}
