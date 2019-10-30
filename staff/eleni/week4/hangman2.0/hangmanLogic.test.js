@@ -1,4 +1,4 @@
-var hangmanLogic = require('./hangmanLogic');
+var hangmanLogic = require('./hangmanLogic').default;
 
 var gameState;
 beforeEach(function() {
@@ -19,8 +19,9 @@ describe('HANGMAN GAME INIT', function() {
 })
 describe('HANGMAN GET RANDOM WORD', function() {
     test('should give random word', function() {
-        var result = hangmanLogic.getWord(["mars", "uranus", "neptune"]);
-        expect(result).toBe(("mars") || ("uranus") || ("neptune"));
+        const names = ["maria", "eleni", "thanasis"]
+        var result = hangmanLogic.getWord(names);
+        expect(names.includes(result)).toBe(true);
     });
 })
 
