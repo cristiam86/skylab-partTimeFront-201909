@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+textarea,
+select,
+input,
+button {
+  outline: none;
+}
+
+button {
+  font-size: 1rem;
+  color: #383838;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button:active {
+  opacity: 0.1;
+}
+
+input {
+  font-size: 1rem;
+  color: #383838;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  border: solid 1px #ccc;
+}
+
+.flexTotalCenter, .generalContainer, .generalContainer .hangmanContainer .titleContainer, .generalContainer .hangmanContainer .gameContainer, .generalContainer .hangmanContainer .gameContainer .mobilePart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flexBetween, .generalContainer .hangmanContainer .guessContainer, .generalContainer .hangmanContainer .guessContainer .guessForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shadow, .generalContainer .hangmanContainer {
+  -webkit-box-shadow: 5px 5px 10px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 5px 10px -5px rgba(0, 0, 0, 0.75);
+}
+
+.generalContainer {
+  background: #e4e4e4;
+  width: 100vw;
+  height: 100vh;
+}
+
+.generalContainer .hangmanContainer {
+  border-radius: 0.125rem;
+  background: white;
+  width: 75vw;
+  height: 75vh;
+}
+
+.generalContainer .hangmanContainer .titleContainer {
+  padding: 1rem;
+  height: 15vh;
+}
+
+.generalContainer .hangmanContainer .titleContainer .title {
+  font-size: 2rem;
+  color: #383838;
+}
+
+.generalContainer .hangmanContainer .gameContainer {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 45vh;
+}
+
+.generalContainer .hangmanContainer .gameContainer .mobilePart {
+  width: 70%;
+  height: 100%;
+}
+
+.generalContainer .hangmanContainer .gameContainer .mobilePart .hiddenWord {
+  font-size: 2rem;
+  color: #383838;
+}
+
+.generalContainer .hangmanContainer .gameContainer .fixedPart {
+  position: relative;
+  width: 30%;
+  height: 100%;
+}
+
+.generalContainer .hangmanContainer .gameContainer .fixedPart .img {
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.generalContainer .hangmanContainer .gameContainer .fixedPart .img.head {
+  background-image: url(../hangman/img/head.svg);
+  top: 2rem;
+  left: calc(50% - 3rem);
+}
+
+.generalContainer .hangmanContainer .gameContainer .fixedPart .img.torso {
+  background-image: url(../hangman/img/torso.svg);
+  top: 8rem;
+  left: calc(50% - 3rem);
+}
+
+.generalContainer .hangmanContainer .gameContainer .fixedPart .img.hLeft {
+  background-image: url(../hangman/img/hLeft.svg);
+  top: 8rem;
+  left: calc(50% - 9rem);
+}
+
+.generalContainer .hangmanContainer .gameContainer .fixedPart .img.hRight {
+  background-image: url(../hangman/img/hRight.svg);
+  top: 8rem;
+  left: calc(50% + 3rem);
+}
+
+.generalContainer .hangmanContainer .gameContainer .fixedPart .img.lLeft {
+  background-image: url(../hangman/img/lLeft.svg);
+  top: 14rem;
+  left: calc(50% - 6.125rem);
+}
+
+.generalContainer .hangmanContainer .gameContainer .fixedPart .img.lRight {
+  background-image: url(../hangman/img/lRight.svg);
+  top: 14rem;
+  left: calc(50% - 0.125rem);
+}
+
+.generalContainer .hangmanContainer .guessContainer {
+  padding: 1rem;
+  height: 15vh;
+}
+
+.generalContainer .hangmanContainer .guessContainer .guessForm {
+  width: 70%;
+}
+
+.generalContainer .hangmanContainer .guessContainer .guessForm .guessWord {
+  display: none;
+}
+
+.generalContainer .hangmanContainer .guessContainer .guessForm .submitButton {
+  display: none;
+}
+
+.generalContainer .hangmanContainer .guessContainer .newGameButton {
+  color: white;
+  background: darkorange;
+  border-color: darkorange;
+}
+/*# sourceMappingURL=styles.css.map */
