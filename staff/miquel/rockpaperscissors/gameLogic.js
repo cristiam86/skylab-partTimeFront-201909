@@ -88,5 +88,5 @@ class RpsLogic {
 //     initGame,
 //     play
 //   };
-
-// //module.exports = gameLogic;
+//const gameLogic = new RpsLogic();
+//module.exports = gameLogic;

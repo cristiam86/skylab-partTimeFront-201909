@@ -1,4 +1,5 @@
 var rockGame = require('./gameLogic');
+console.log(rockGame);
 
 describe('RPS GAME INIT', function() {
     test('should initialize game properly', function() {
