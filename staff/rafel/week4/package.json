@@ -1,0 +1,11 @@
+{
+  "name": "week4",
+  "version": "1.0.0",
+  "description": "hangman",
+  "main": "hangmanLogic.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC"
+}

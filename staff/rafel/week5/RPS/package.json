@@ -1,0 +1,11 @@
+{
+  "name": "rps",
+  "version": "1.0.0",
+  "description": "",
+  "main": "RPSLogic.js",
+  "scripts": {
+    "test": "RPSLogic"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+
+</head>
+
+<body>
+    <h1>ROCK-PAPER-SCISSORS</h1>
+<main>
+    <section class="game-status">
+        <div class="score-item">GAMES PLAYED:
+            <div id="gamesPlayed"></div>
+        </div>
+        <div class="score-item">SCORE 1:
+            <div id="score1"></div>
+        </div>
+        <div class="score-item">SCORE2:
+            <div id="score2"></div>
+        </div>
+        <div class="score-item">TIE:
+            <div id="tie"></div>
+        </div>
+        <div class="score-item">LAST WINNER:
+            <div id="winner"></div>
+        </div>
+    </section>
+    <section class="blackboard">
+        <div class="game-display">
+            <div class=hand><span>HAND1</span>
+                <input type="radio" name="player1" value="rock" id="rock" class="input-player">
+                <label for="rock">
+                    <img src="http://freepngdownload.com/image/thumb/stone-png-free-download-15.png" alt="rock" />
+                </label>
+                <input type="radio" name="player1" value="paper" id="paper" class="input-player">
+                <label for="paper">
+                    <img src="https://www.seekpng.com/png/detail/48-485999_torn-notebook-paper-png-folha-de-papel-rasgado.png"
+                        alt="paper" />
+                </label>
+                <input type="radio" name="player1" value="scissors" id="scissors" class="input-player">
+                <label for="scissors">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTA9PObxdD3jmBlOsHBDva0pnvkSAbPwJBz6aqD58GYwJmILzBz"
+                        alt="scissors" />
+                </label>
+            </div>
+
+            <div class=hand><span>HAND2</span>
+                <input type="radio" name="player2" value="rock" id="rock2" class="input-player">
+                <label for="rock2">
+                    <img src="http://freepngdownload.com/image/thumb/stone-png-free-download-15.png" alt="rock" />
+                </label>
+                <input type="radio" name="player2" value="paper" id="paper2" class="input-player">
+                <label for="paper2">
+                    <img src="https://www.seekpng.com/png/detail/48-485999_torn-notebook-paper-png-folha-de-papel-rasgado.png"
+                        alt="paper" />
+                </label>
+                <input type="radio" name="player2" value="scissors" id="scissors2" class="input-player">
+                <label for="scissors2">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTA9PObxdD3jmBlOsHBDva0pnvkSAbPwJBz6aqD58GYwJmILzBz"
+                        alt="scissors" />
+
+                </label>
+            </div>
+        </div>
+        <div class="commands">
+            <button id="newGame" type="button" onclick="play()">RUN</button>
+            <button id="newGame" type="button" onclick="resetGame()">RESTART</button>
+            <button id="newGame" type="button" onclick="randomPlay()">AGAINST MACHINE</button>
+        </div>
+    </section>
+
+</main>
+
+
+    <script src="./RPSLogic.js"></script>
+
+</body>
+
+</html>

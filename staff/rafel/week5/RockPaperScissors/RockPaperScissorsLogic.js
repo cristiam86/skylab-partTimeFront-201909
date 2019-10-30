@@ -54,6 +54,7 @@ const gameLogic = {
     play
   };
 
+  module.exports = gameLogic;
 //cada button hauria de fer el setdata quan es premi el button
 
 

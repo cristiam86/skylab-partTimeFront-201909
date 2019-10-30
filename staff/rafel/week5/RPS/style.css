@@ -1,0 +1,106 @@
+h1 {
+	text-align: center;
+	font-family: sans-serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	font-family: sans-serif;
+	font-size: 1.5em;
+	color: darkolivegreen;
+
+}
+
+main{
+	display: flex;
+	flex-direction: row;
+}
+.game-status {
+	border: 2px solid darkolivegreen;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 300px;
+	border-radius: 20%;
+	margin: 0 0 0 20px;
+	padding: 40px 20px 20px 20px;
+	height: 200px;
+
+}
+
+.score-item{
+	display: flex;
+	flex-direction: row;
+	padding: 5px 15px 0 0;
+	justify-content: space-between;
+}
+
+.score-item *{
+	color:red;
+
+}
+
+.blackboard{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.game-display{
+	display: flex;
+	flex-direction: column;
+	padding: 1em;
+}
+
+.commands{
+	display: flex;
+	flex-direction: column;
+	margin: 40px 0 0 0;
+}
+
+#newGame{
+	margin: 10px;
+}
+
+.hand {
+	display: flex;
+	justify-content: space-around;
+	padding: 5px;
+}
+
+.input-player {
+	position: absolute;
+	left: -9999px;
+}
+
+input[type=radio] + label{
+	margin: 8px;
+}
+
+input[type=radio] + label>img {
+	border-radius: 50%;
+	box-shadow: 0 0 3px 3px yellowgreen;
+	width: 150px;
+	height: 150px;
+	transition: 500ms all;
+	padding: 5px;
+}
+   
+input[type=radio]:checked + label>img {
+	border: 2px solid #fff;
+	box-shadow: 0 0 3px 3px darkred;
+	transform:
+	  rotateZ(-360deg)
+	  rotateX(360deg);
+}
+
+button {
+	border-radius: 20%;
+	box-shadow: 0 0 3px 3px yellowgreen;
+	width: 100px;
+	height: 60px;
+
+}

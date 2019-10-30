@@ -1,3 +1,5 @@
+(function(){
+
 var gameState = gameLogic.initGame();
 
 var handsChosen = handInitial();
@@ -27,7 +29,7 @@ Array.from($('.player1-button')).forEach(function(button){
 function checkGameResult(uiState) {
     if (uiState.hand1 && uiState.hand2) {
       gameState = gameLogic.play(uiState.hand1, uiState.hand2, gameState);
-      //setGameUiStatus(gameState);
+      setGameUiStatus(gameState);
       //resetUiHands();
     }
   }
@@ -39,6 +41,8 @@ function handInitial(){
     }
 }
 
+setGameUiStatus(gameState);
+})();
 
 //saber quantes partides s'han jugat - cada nova ronda +1
 //sumar partides guanyades de cada mà a l'SCORE
