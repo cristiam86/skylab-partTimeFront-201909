@@ -1,1 +1,90 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+textarea,
+select,
+input,
+button {
+  outline: none;
+}
+
+.myShadow, .rpsContainer {
+  -webkit-box-shadow: 5px 5px 10px 0px #949494;
+  box-shadow: 5px 5px 10px 0px #949494;
+}
+
+.flexed, body, .rpsContainer, .rpsContainer .game-status .score-item, .rpsContainer .game-controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #eee;
+}
+
+.rpsContainer {
+  background: #fff;
+  border: solid 1px #ccc;
+  border-radius: 0.125rem;
+  width: 50vw;
+  padding: 1rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.rpsContainer .game-status {
+  width: 50%;
+  padding: 1rem;
+}
+
+.rpsContainer .game-status .score-item {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.25rem;
+  color: darkblue;
+}
+
+.rpsContainer .game-status .score-item .score-item-intern {
+  color: #383838;
+}
+
+.rpsContainer .game-controls {
+  width: 50%;
+}
+
+button {
+  background: transparent;
+  border: none;
+  width: 100%;
+}
+
+button svg {
+  height: 3rem;
+  width: 3rem;
+  fill: #383838;
+}
+
+button svg:hover {
+  fill: darkblue;
+}
+
+button svg:active {
+  fill: darkorange;
+}
+/*# sourceMappingURL=styles.css.map */

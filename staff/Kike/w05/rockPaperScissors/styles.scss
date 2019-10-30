@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+textarea,
+select,
+input,
+button {
+  outline: none;
+}
+.myShadow {
+  -webkit-box-shadow: 5px 5px 10px 0px rgba(148, 148, 148, 1);
+  -moz-box-shadow: 5px 5px 10px 0px rgba(148, 148, 148, 1);
+  box-shadow: 5px 5px 10px 0px rgba(148, 148, 148, 1);
+}
+.flexed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  @extend .flexed;
+  width: 100vw;
+  height: 100vh;
+  background: #eee;
+}
+.rpsContainer {
+  @extend .flexed;
+  @extend .myShadow;
+  background: #fff;
+  border: solid 1px #ccc;
+  border-radius: 0.125rem;
+  width: 50vw;
+  padding: 1rem;
+  flex-wrap: wrap;
+  .game-status {
+    width: 50%;
+    padding: 1rem;
+    .score-item {
+      @extend .flexed;
+      justify-content: space-between;
+      font-size: 1.25rem;
+      color: darkblue;
+      .score-item-intern {
+        color: #383838;
+      }
+    }
+  }
+  .game-controls {
+    @extend .flexed;
+    width: 50%;
+    .player1-controls {
+    }
+    .player2-controls {
+    }
+  }
+}
+
+button {
+  background: transparent;
+  border: none;
+  width: 100%;
+  svg {
+    height: 3rem;
+    width: 3rem;
+    fill: #383838;
+    &:hover {
+      fill: darkblue;
+    }
+    &:active {
+      fill: darkorange;
+    }
+  }
+}
