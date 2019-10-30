@@ -1,0 +1,33 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">The hangman game</div>
+        <div id="stickman">
+            <img src="https://media.giphy.com/media/8b29QJQgVwUW4/giphy.gif">
+        </div>
+        <div id="word-to-guess"></div>
+        <div class="form">
+            <form id="guess-form" method="" action="#">
+                <input id="input-guess" type="text" placeholder="Write your guess" />
+                <button id="submit-button" type="button">GUESS THE WORD</button>
+                <button id="reset-button" type="button">RESTART</button>
+                <div id="score"></div>
+                <div id="error-text"></div>
+                <div id="success-text"></div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="./hangmanUI.js"></script>
+<script src="./hangmanLogic.js"></script>
+
+</html>
