@@ -95,11 +95,13 @@ function checkLetter(word, input, gameState) {
 
     }
 }
-module.exports = {
+
+const gameLogic = {
     initGame,
     guessWord,
     getWord,
     checkLetter,
     renewWord
+};
 
-}
+module.exports = gameLogic;

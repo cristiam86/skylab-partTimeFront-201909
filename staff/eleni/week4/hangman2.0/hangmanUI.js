@@ -1,10 +1,12 @@
 var gameState = gameLogic.initGame();
 
 function setGameUiStatus(gameLogicState) {
-    $_id('word-to-guess').innerHTML = getWord(words);
-    getWord(words) = renewWord(word);
+    let newWord = getWord(words).toLowerCase().split('');
+    newWord = newWord.map(function() { return '_' });
+    newWord = newWord.join(' ')
+    $_id('word-to-guess').innerHTML = newWord;
     $_id('input-guess').value = gameLogicState.input;
-    $_id('error-text').innerHTML = gameLogicState.errorText;
+    $_id('error-text').innerHTML = "You lost";
     $_id('success-text').innerHTML = gameLogicState.successText;
     $_id('stickman').innerHTML = "<img src=\"https://media.giphy.com/media/5VKbvrjxpVJCM/giphy.gif\" width=\"400px\" height=\"150px\">";
     $_id('guess-form').addEventListener('submit', checkLetter);
@@ -26,11 +28,6 @@ function guessWord(uiState) {
         setGameUiStatus(gameState);
         initGame();
     }
-}
-
-function renewWord(word) {
-    let newWord = word.toLowerCase().split('');
-    return newWord.map(function() { return '_' })
 }
 
 function $_id(id) {
