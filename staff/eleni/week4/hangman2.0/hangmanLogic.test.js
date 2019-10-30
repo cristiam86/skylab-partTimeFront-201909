@@ -19,8 +19,8 @@ describe('HANGMAN GAME INIT', function() {
 })
 describe('HANGMAN GET RANDOM WORD', function() {
     test('should give random word', function() {
-        var result = hangmanLogic.getWord(["maria", "eleni", "thanasis"]);
-        expect(result).toBe(("maria") || ("eleni") || ("thanasis"));
+        var result = hangmanLogic.getWord(["mars", "uranus", "neptune"]);
+        expect(result).toBe(("mars") || ("uranus") || ("neptune"));
     });
 })
 
