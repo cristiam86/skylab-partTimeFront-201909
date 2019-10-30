@@ -1,4 +1,9 @@
 const words = ["Mars", "Venus", "Mercury", "Pluto", "Jupiter", "Neptune", "Earth", "Saturn", "Uranus"];
+const failure = "You lost";
+const success = "Keep going champ";
+const totalFailure = "Today´s not your day";
+const totalSuccess = "Wow, you´re a wizard";
+
 
 function initGame() {
     const gameStatusStorage = localStorage.getItem('gameStatus');
@@ -36,10 +41,10 @@ function guessWord(word, input, gameState) {
             score: gameState.score + 1,
             lastPlayError: false,
             errorText: null,
-            successText: "totalSuccess",
+            successText: totalSuccess,
             inputGuess: null,
             lives: 3,
-            image: "totalSuccessImage",
+            image: totalSuccessImage,
         }
         localStorage.setItem('gameStatus', JSON.stringify(result));
         return result;
@@ -48,11 +53,11 @@ function guessWord(word, input, gameState) {
             gamesPlayed: gameState.gamesPlayed + 1,
             score: gameState.score - 1,
             lastPlayError: true,
-            errorText: "totalFailure",
+            errorText: totalFailure,
             successText: null,
             inputGuess: null,
             lives: 0,
-            image: "totalFailureImage",
+            image: totalFailureImage,
         }
         localStorage.setItem('gameStatus', JSON.stringify(result));
         return result;
@@ -72,10 +77,10 @@ function checkLetter(word, input, gameState) {
             score: gameState.score + 1,
             lastPlayError: false,
             errorText: null,
-            successText: "success",
+            successText: success,
             inputGuess: null,
             lives: 3,
-            image: "successImage",
+            image: successImage,
         }
         localStorage.setItem('gameStatus', JSON.stringify(result));
         return result;
@@ -84,11 +89,11 @@ function checkLetter(word, input, gameState) {
             gamesPlayed: gameState.gamesPlayed + 1,
             score: gameState.score,
             lastPlayError: true,
-            errorText: "failure",
+            errorText: failure,
             successText: null,
             inputGuess: null,
             lives: gameState.lives - 1,
-            image: "failureImage"
+            image: failureImage
         }
         localStorage.setItem('gameStatus', JSON.stringify(result));
         return result;
