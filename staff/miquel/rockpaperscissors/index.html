@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock Paper Scissors Tournament</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.slim.js"
+  integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="text-center"><h1>Rock Paper Scissors Tournament</h1></div>
+        <div class="content">
+            <section class="window">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">Jugador 1</th>
+                            <th scope="col">Computer</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Partida 1</th>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="text-center">
+                <form>
+                    <div class="form-group">
+                        <button class="btn btn-light" type="button" data-hand="rock">Rock</button>
+                        <button class="btn btn-light" type="button" data-hand="paper">Paper</button>
+                        <button class="btn btn-light" type="button" data-hand="scissors">Scissors</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+    <script src="gameLogic.js"></script>
+    <script src="gameLogicUi.js"></script>
+</body>
+</html>
