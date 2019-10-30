@@ -1,8 +1,20 @@
 var hangmanLogic = require('./hangmanLogic.js');
 
-describe('HANGMAN', function(){
-    test('should return error', function(){
-        var result = checkLetter(5);
-        expect(result.lastPlayWinner).toBe('error, this should be a string!');
-      })
+describe('RPS FORMAT TEST', function(){
+    test('should be true', function(){
+      var result = hangmanLogic.testChooseWord('marcelo');
+      expect(result).toBe(true);
+    });
+    test('should be false', function(){
+        var result = hangmanLogic.testChooseWord(13456);
+        expect(result).toBe(false);
+    });
+    test('should be true', function(){
+        var result = hangmanLogic.testHideWord('_');
+        expect(result).toBe(true);
+    });
+    test('should be true', function(){
+        var result = hangmanLogic.testHideWord('marcelo');
+        expect(result).toBe(false);
+    })
   })
