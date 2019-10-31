@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>User</title>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+  <div>
+    <img id="user-picture" />
+    <div id="user-name"></div>
+    <div id="user-email"></div>
+  </div>
+  <script>
+
+    //// LOGIC
+    function getRandomUser() {
+      const p = new Promise((resolve, reject) => {
+        axios.get('https://randomuser.me/api/')
+          .then(response => {
+            console.log("AXIOS RESPONSE: ",response);
+
+            const [user] = response.data.results;
+            if (user.gender === 'male') {
+              reject('NOT A FEMALE');
+            } else {
+              resolve({
+                name: `${user.name.title} ${user.name.first} ${user.name.last}`,
+                email: user.email,
+                picture: user.picture.medium
+              })
+            }
+          });
+      });
+      return p;
+    }
+
+
+    //// UI
+    const randomUserPromise = getRandomUser();
+    randomUserPromise.then(user => {
+      console.log("User: ", user);
+      document.getElementById('user-picture').setAttribute('src', user.picture);
+      document.getElementById('user-name').innerHTML = user.name;
+      document.getElementById('user-email').innerHTML = user.email;
+    })
+
+    randomUserPromise.catch(error => {
+      document.getElementById('user-picture').setAttribute('src', '');
+      document.getElementById('user-name').innerHTML = error;
+      document.getElementById('user-email').innerHTML = '';
+    }) 
+
+    
+
+    // console.log("1");
+    // setTimeout(()=>{
+    //   printResult(4);
+    // }, 5000);
+    // console.log("2");
+
+    // console.log("1");
+    // const response = fetch('https://randomuser.me/api/');
+    // console.log("TCL: response", response)
+    // const responseObj = response.then(function(response) {
+    //   const json = response.json();
+    //   console.log("2", response);
+    //   return json;
+    // });
+    // console.log("TCL: responseObj", responseObj)
+    // const responseJson = responseObj.then(function(myJson) {
+    //     console.log("3");
+    //     console.log(myJson);
+    //   });
+    // console.log("4", responseJson);
+  </script>
+</body>
+</html>
