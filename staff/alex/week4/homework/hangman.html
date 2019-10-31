@@ -12,80 +12,87 @@
         <div id="word-to-guess"></div>
         <div class="form">
             <form id="guess-form" method="" action="#">
+                <div id='Anounce'>¿Que fruta es?</div>
+                <div id='hiddenWord'></div>
+                <div></div>
                 <input id="input-guess" type="text" maxlength="1" id="letter-input" />
                 <button id="submit-button" type="button">GUESS</button>
+                <div>GUESSES LEFT:</div>
+                <div id="guesses-left"> </div>
+                <div>WRONG LETTER:</div>
+                <div id="wrong-guesses"> </div>
+
             </form>
         </div>
     </div>
     <script>
-        var words = ["melon", "platano", "naranja", "manazana", "mandarina", "kiwi", "pera",
-            "sandia", "uva", "arandano", "cereza", "frambuesa", "fresa", "albaricoque", "melocoton",
-            "pomelo", "higo", "aguacate", "kumquat", "granada"]
-
-        document.getElementById("word-to-guess").innerHTML = words[Math.floor(Math.random() * words.length)]
+        var words = ["melon", "platano"]
+        document.getElementById('submit-button').addEventListener('click',checkWord)
 
 
+        var wordToGuess = words[Math.floor(Math.random() * words.length)]
+        var vidas = wordToGuess.length;
+        let underScore = [];
 
-        var guessing = wordToGuess.map(function () { return '_' })
-        document.getElementById('word-to-guess').innerHTML = guessing.join(' ');
-
-        document.getElementById('guess-form').addEventListener('submit', checkLetter)
-        // document.getElementById('submit-button').addEventListener('click', submitForm)
-
-        var rightWord = [];
-        var wrongWord = [];
-
-        function checkLetter(event) {
-            event.preventDefault();
-            var inputLetter = document.getElementById('input-guess').value;
-            console.log(inputLetter);
-            //check if inputLetter exists on wordToGuess
-
-
-
-            while (inputLetter > 0) {
-
-
-                for (var i = 0; i < word.length; i++) {
-                    if (word[i] = wordToGuess) {
-                        guessing = wordToGuess;
-                        word.length--;
-                    }
-                } if (inputLetter.indexOf(wordToGuess) > -1) {
-                    //add to right words array
-                    rightWord.push(wordToGuess);
-                    guessing[inputLetter.indexOf(wordToGuess)] = wordToGuess;
-                    
-                    if (guessing.join('') === inputLetter) {
-                        alert('You Win')
-                    }
-                }
-            else  { 
-               //add to wrong words array
-                wrongWord.push(wordToGuess)
-                }
+        let guessing = () => {
+            for (let i = 0; i < wordToGuess.length; i++) {
+                underScore.push('_');
             }
+            return underScore.join('  ')
 
-            if (wrongWord > word.length) {
-                alert ('You Lost')
-            }
-
-
-        
-
-           
-            
-
-            // replace matching letters with inputLetter
-            // Borrar contenido del input
-            document.getElementById('input-guess').value = "";
-
-            //not matching letter
-            // decrease lives
-            //Check lives > 0
-            //Continue
-            //Muerte
         }
+        guessing()
+
+        document.getElementById('hiddenWord').innerHTML = underScore;
+
+        var wrongLetter = [];
+        var guessesLeft = vidas;
+        var userGuesses = '';
+        var winCounter = 0;
+
+        document.getElementById('guesses-left').innerHTML = guessesLeft;
+        document.getElementById('wrong-guesses').innerHTML = wrongLetter;
+
+        function winLose() {
+            if (winCounter === wordToGuess.length) {
+                document.getElementById('hiddenWord').innerHTML = 'YOU WIN'
+            }
+            else if (guessesLeft === 0) {
+                document.getElementById('hiddenWord').innerHTML = 'YOU ARE A LOOSER'
+            }
+        }
+
+        function checkWord() {
+                console.log('entro a checkword')
+debugger
+
+            if (wordToGuess.indexOf(userGuesses) > -1) {
+                for (var i = 0; i < wordToGuess.length; i++) {
+                    if (wordToGuess[i] === userGuesses) {
+                        underScore[i] = userGuesses;
+                        var result = underScore
+                        win++;
+                        document.getElementById('hiddenWord').innerHTML = result
+                        document.getElementById('letter-guess').innerHTML = userGuesses;
+                    }
+
+                }
+            }
+
+//document.getElemtID (value)
+            else {
+                wrongLetter.push(userGuesses);
+                guessesLeft--;
+                winLoser();
+
+            }
+
+        }
+
+       
+
+
+
 
     </script>
 </body>
