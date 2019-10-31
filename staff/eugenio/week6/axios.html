@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>AXIOS</title>
+</head>
+<body>
+    <div>
+      <h2>1 Cerveza</h2>
+      <div id="beer-name"></div>
+      <div id="first-brewed"></div>
+      <div id="description"></div>
+      <img id="image" style="height: 350px; width: 100px"></img>
+    </div>
+
+    <div>
+        <h2>Array de Cervezas</h2>
+        <div>
+          <ul id="beer-list">  
+          </ul>
+        </div>
+      </div>
+
+    <script>
+
+      function getBeer(){
+        axios.get('https://api.punkapi.com/v2/beers/random')
+        .then(response => {
+        document.getElementById('beer-name').innerHTML = response.data[0].name;
+        document.getElementById('first-brewed').innerHTML = response.data[0].first_brewed;
+        document.getElementById('description').innerHTML = response.data[0].description;
+        document.getElementById('image').setAttribute('src', response.data[0].image_url);
+        })
+      }
+      getBeer();
+
+      function arrayBeer(){
+        axios.get('https://api.punkapi.com/v2/beers?page=2&')
+        .then(response => {
+          for(var x = 0; x < response.data.length ; x++){
+            var node = document.createElement("LI");
+            var textnode = document.createTextNode(response.data[x].name);
+            node.appendChild(textnode);
+            document.getElementById("beer-list").appendChild(node);
+            
+            //console.log(response.data[x].name);
+            //document.getElementById('beer-list').innerHTML = response.data[x].name;
+          }
+        })
+      }
+      arrayBeer();
+
+    /*
+    function getBeer(){
+        const response = axios.get('https://api.punkapi.com/v2/beers?page=2&per_page=10')
+        .then(response => {
+            return response;
+        //document.getElementById('beer-name-2').innerHTML = response.data[0].name;
+        
+        })
+        return response;
+    }  
+
+
+    console.log('getBeer();: ', getBeer().then(res => console.log(res)));
+    */
+               
+       
+    </script>
+</body>
+</html>
