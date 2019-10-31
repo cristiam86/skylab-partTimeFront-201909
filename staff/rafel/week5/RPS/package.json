@@ -4,7 +4,7 @@
   "description": "",
   "main": "RPSLogic.js",
   "scripts": {
-    "test": "RPSLogic"
+    "test": "jest"
   },
   "author": "",
   "license": "ISC"

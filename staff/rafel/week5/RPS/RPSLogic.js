@@ -1,3 +1,4 @@
+
 var resultControl = {
     total: 0,
     hand1: 0,
@@ -6,7 +7,19 @@ var resultControl = {
     lastWinner: null
 }
 
+function loadLocalStorage(){
+    if (localStorage.getItem("RPSdata") !== null){
+        var localString = JSON.parse(localStorage.getItem("RPSdata"))
+        resultControl = localString
+    }
+}
+
+loadLocalStorage()
+debugger
+// faltaria recuperar les coses de localStorage al començar i refrescar la pàgina
+
 function play() {
+
     var hand1 = ''
     var hand2 = ''
     

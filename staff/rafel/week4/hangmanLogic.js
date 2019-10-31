@@ -5,6 +5,7 @@ function playHangman() {
     var guessing = []
     var life = []
     var word = []
+    
 
     function randomWord() {
         var randomNum = Math.floor(Math.random() * amountWords.length)
