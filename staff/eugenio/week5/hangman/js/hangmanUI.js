@@ -1,21 +1,21 @@
 function drawHangman(lives) {
     switch(lives){
         case 4:
-        document.getElementById('resultado-hangman').className = "resultado-hangman-4";
-        break;
+            document.getElementById('resultado-hangman').className = "resultado-hangman-4";
+            break;
         case 3:
-        document.getElementById('resultado-hangman').className = "resultado-hangman-3";
-        break;
+            document.getElementById('resultado-hangman').className = "resultado-hangman-3";
+            break;
         case 2:
-        document.getElementById('resultado-hangman').className = "resultado-hangman-2";
-        break;
+            document.getElementById('resultado-hangman').className = "resultado-hangman-2";
+            break;
         case 1:
-        document.getElementById('resultado-hangman').className = "resultado-hangman-1";
-        break;
+            document.getElementById('resultado-hangman').className = "resultado-hangman-1";
+            break;
         default:
-        let errorWord = wordToGuess.join('');    
-        document.getElementById('show-word').innerHTML = 'La palabra era: '+errorWord;
-        document.getElementById('resultado-hangman').className = "resultado-hangman-no-lives";
+            let errorWord = wordToGuess.join('');    
+            document.getElementById('show-word').innerHTML = 'La palabra era: '+errorWord;
+            document.getElementById('resultado-hangman').className = "resultado-hangman-no-lives";
     }
 }
 
@@ -34,13 +34,13 @@ function hideWord(){
 let wordToGuess = hideWord();
 let guessing = wordToGuess.map(function(){return '_'});
 let lives = 5;
-let bienvenida = 'Bienvenido a HANGMAN!!';
+let bienvenida = 'HANGMAN';
 console.log('wordToGuess: '+wordToGuess);
 console.log('guessing: '+guessing);
 document.getElementById('bienvenida-mensaje').innerHTML = bienvenida;
 document.getElementById('word-to-guess').innerHTML = guessing.join(' ');
 document.getElementById('guess-form').addEventListener('submit', checkLetter);
-document.getElementById('show-lives').innerHTML = 'Vidas: '+lives;
+document.getElementById('show-lives').innerHTML = 'Intentos: '+lives;
 
 function checkLetter(event){
     event.preventDefault();

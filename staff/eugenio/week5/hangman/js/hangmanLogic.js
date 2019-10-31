@@ -15,3 +15,8 @@ function testHideWord(wordToHide){
     }
 }
 
+const gameLogic = {
+    testChooseWord,
+    testHideWord
+  };
+  module.exports = gameLogic;
