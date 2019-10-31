@@ -1,16 +1,4 @@
 
-var hand = ['paper', 'scissors', 'rock'];
-
-var WINS = {
-    'paper': 'rock',
-    'scissors': 'paper',
-    'rock': 'scissors'
-};
-
-
-initGame();
-
-
 var data = {
         gamesPlayed: 0,
         score1: 0,

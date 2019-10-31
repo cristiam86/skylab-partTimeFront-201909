@@ -1,8 +1,6 @@
 
    var player1 = "";
    var player2 = "";
- 
-
 
 function setGameUiStatus() {
     $_id('gamePlayed').innerHTML = data.gamesPlayed;
@@ -14,15 +12,11 @@ function setGameUiStatus() {
 $_id('startGame').addEventListener('click', function() {
     player1 = document.getElementById('player1').value;
     player2 = document.getElementById('player2').value;
-    console.log(player1);
-    console.log(player2);
     $_id('player-A').classList.add('show');
     document.getElementById('Player-name-1').innerHTML = "Hola " + player1 + ", ¿que eliges?";
-    
 })
 
 $_id('reStart').addEventListener('click', function() {
-    console.log('Volviendo');
     $_id('player-A').classList.add('show');
     $_id('result').classList.remove('show');
     $_id('prevResult').style.display = "block";
